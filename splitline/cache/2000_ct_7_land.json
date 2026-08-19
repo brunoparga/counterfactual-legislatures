@@ -1,0 +1,22 @@
+{
+  "projection": {"type": "gnomonic", "lon0": -72.7573845000, "lat0": 41.5178790000, "lon_shift": 0.0},
+  "seats": 7,
+  "population": 3405565,
+  "note": "A point (x,y) in projected degrees is in district d by walking from node 0: go left when x*nx + y*ny < c, else right, until a node has a district.",
+  "numbering": "Districts are numbered from 1 by a depth-first walk of this tree, left child first. Every cut normal is canonicalised to point north (east for a due north-south cut), so the left child is always the southern or western side. District 1 is therefore the one reached by always heading south/west, and consecutive numbers are usually neighbours, because the tree is a recursive spatial subdivision. Numbers are not stable across censuses: a shift in population changes the cuts, and the numbering with them.",
+  "nodes": [
+    {"i": 0, "pop": 3405565, "seats": 7, "nx": 0.999847695156, "ny": -0.0174524064373, "c": -0.0452102392195, "left": 2, "right": 1},
+    {"i": 1, "pop": 1459539, "seats": 3, "nx": 0.798635510047, "ny": -0.601815023152, "c": -0.0711907198661, "left": 3, "right": 4},
+    {"i": 2, "pop": 1946026, "seats": 4, "nx": 0.325568154457, "ny": -0.945518575599, "c": 0.107710683653, "left": 7, "right": 8},
+    {"i": 3, "pop": 486552, "seats": 1, "district": 5},
+    {"i": 4, "pop": 972987, "seats": 2, "nx": 0.882947592859, "ny": 0.469471562786, "c": 0.286343663341, "left": 6, "right": 5},
+    {"i": 5, "pop": 486498, "seats": 1, "district": 7},
+    {"i": 6, "pop": 486489, "seats": 1, "district": 6},
+    {"i": 7, "pop": 973030, "seats": 2, "nx": 0.0697564737441, "ny": 0.99756405026, "c": 0.00530433403506, "left": 9, "right": 10},
+    {"i": 8, "pop": 972996, "seats": 2, "nx": 0.933580426497, "ny": 0.358367949545, "c": -0.427783451783, "left": 11, "right": 12},
+    {"i": 9, "pop": 486524, "seats": 1, "district": 1},
+    {"i": 10, "pop": 486506, "seats": 1, "district": 2},
+    {"i": 11, "pop": 486540, "seats": 1, "district": 3},
+    {"i": 12, "pop": 486456, "seats": 1, "district": 4}
+  ]
+}

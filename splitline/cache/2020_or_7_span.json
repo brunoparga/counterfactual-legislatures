@@ -1,0 +1,22 @@
+{
+  "projection": {"type": "gnomonic", "lon0": -120.5148740000, "lat0": 44.1413140000, "lon_shift": 0.0},
+  "seats": 7,
+  "population": 4237256,
+  "note": "A point (x,y) in projected degrees is in district d by walking from node 0: go left when x*nx + y*ny < c, else right, until a node has a district.",
+  "numbering": "Districts are numbered from 1 by a depth-first walk of this tree, left child first. Every cut normal is canonicalised to point north (east for a due north-south cut), so the left child is always the southern or western side. District 1 is therefore the one reached by always heading south/west, and consecutive numbers are usually neighbours, because the tree is a recursive spatial subdivision. Numbers are not stable across censuses: a shift in population changes the cuts, and the numbering with them.",
+  "nodes": [
+    {"i": 0, "pop": 4237256, "seats": 7, "nx": 0.51503807491, "ny": -0.857167300702, "c": -1.8446550742, "left": 1, "right": 2},
+    {"i": 1, "pop": 1816001, "seats": 3, "nx": 0.992546151641, "ny": 0.121869343405, "c": -1.31259910315, "left": 4, "right": 3},
+    {"i": 2, "pop": 2421255, "seats": 4, "nx": 0.996194698092, "ny": 0.0871557427477, "c": -1.70890799679, "left": 8, "right": 7},
+    {"i": 3, "pop": 605375, "seats": 1, "district": 3},
+    {"i": 4, "pop": 1210626, "seats": 2, "nx": 0.965925826289, "ny": -0.258819045103, "c": -1.91869658579, "left": 5, "right": 6},
+    {"i": 5, "pop": 605337, "seats": 1, "district": 1},
+    {"i": 6, "pop": 605289, "seats": 1, "district": 2},
+    {"i": 7, "pop": 1210648, "seats": 2, "nx": 0.743144825477, "ny": -0.669130606359, "c": -1.53013092736, "left": 10, "right": 9},
+    {"i": 8, "pop": 1210607, "seats": 2, "nx": 0.104528463268, "ny": 0.994521895368, "c": -0.272697090663, "left": 11, "right": 12},
+    {"i": 9, "pop": 605337, "seats": 1, "district": 7},
+    {"i": 10, "pop": 605311, "seats": 1, "district": 6},
+    {"i": 11, "pop": 605334, "seats": 1, "district": 4},
+    {"i": 12, "pop": 605273, "seats": 1, "district": 5}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "projection": {"type": "gnomonic", "lon0": -106.0260685000, "lat0": 34.1662665000, "lon_shift": 0.0},
+  "seats": 3,
+  "population": 2059179,
+  "note": "A point (x,y) in projected degrees is in district d by walking from node 0: go left when x*nx + y*ny < c, else right, until a node has a district.",
+  "numbering": "Districts are numbered from 1 by a depth-first walk of this tree, left child first. Every cut normal is canonicalised to point north (east for a due north-south cut), so the left child is always the southern or western side. District 1 is therefore the one reached by always heading south/west, and consecutive numbers are usually neighbours, because the tree is a recursive spatial subdivision. Numbers are not stable across censuses: a shift in population changes the cuts, and the numbering with them.",
+  "nodes": [
+    {"i": 0, "pop": 2059179, "seats": 3, "nx": -1.83697019872e-16, "ny": -1, "c": -1.01808431425, "left": 1, "right": 2},
+    {"i": 1, "pop": 686397, "seats": 1, "district": 1},
+    {"i": 2, "pop": 1372782, "seats": 2, "nx": 0.5, "ny": -0.866025403784, "c": -0.768583112382, "left": 4, "right": 3},
+    {"i": 3, "pop": 686409, "seats": 1, "district": 3},
+    {"i": 4, "pop": 686373, "seats": 1, "district": 2}
+  ]
+}

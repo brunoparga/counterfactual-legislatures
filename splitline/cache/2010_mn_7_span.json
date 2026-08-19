@@ -1,0 +1,22 @@
+{
+  "projection": {"type": "gnomonic", "lon0": -93.3642175000, "lat0": 46.4418570000, "lon_shift": 0.0},
+  "seats": 7,
+  "population": 5303925,
+  "note": "A point (x,y) in projected degrees is in district d by walking from node 0: go left when x*nx + y*ny < c, else right, until a node has a district.",
+  "numbering": "Districts are numbered from 1 by a depth-first walk of this tree, left child first. Every cut normal is canonicalised to point north (east for a due north-south cut), so the left child is always the southern or western side. District 1 is therefore the one reached by always heading south/west, and consecutive numbers are usually neighbours, because the tree is a recursive spatial subdivision. Numbers are not stable across censuses: a shift in population changes the cuts, and the numbering with them.",
+  "nodes": [
+    {"i": 0, "pop": 5303925, "seats": 7, "nx": 0.766044443119, "ny": -0.642787609687, "c": 0.992732164726, "left": 2, "right": 1},
+    {"i": 1, "pop": 2273111, "seats": 3, "nx": 0.121869343405, "ny": 0.992546151641, "c": -1.48710654564, "left": 4, "right": 3},
+    {"i": 2, "pop": 3030814, "seats": 4, "nx": 0.0523359562429, "ny": 0.998629534755, "c": -1.22301634565, "left": 8, "right": 7},
+    {"i": 3, "pop": 757736, "seats": 1, "district": 7},
+    {"i": 4, "pop": 1515375, "seats": 2, "nx": 0.13917310096, "ny": -0.990268068742, "c": 1.74430296811, "left": 6, "right": 5},
+    {"i": 5, "pop": 757712, "seats": 1, "district": 6},
+    {"i": 6, "pop": 757663, "seats": 1, "district": 5},
+    {"i": 7, "pop": 1515438, "seats": 2, "nx": 0.2419218956, "ny": 0.970295726276, "c": -0.443679231161, "left": 9, "right": 10},
+    {"i": 8, "pop": 1515376, "seats": 2, "nx": 0.951056516295, "ny": 0.309016994375, "c": -0.498371813937, "left": 11, "right": 12},
+    {"i": 9, "pop": 757719, "seats": 1, "district": 3},
+    {"i": 10, "pop": 757719, "seats": 1, "district": 4},
+    {"i": 11, "pop": 757720, "seats": 1, "district": 1},
+    {"i": 12, "pop": 757656, "seats": 1, "district": 2}
+  ]
+}

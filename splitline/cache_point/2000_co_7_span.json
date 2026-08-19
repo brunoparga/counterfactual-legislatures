@@ -1,0 +1,22 @@
+{
+  "projection": {"type": "gnomonic", "lon0": -105.5508885000, "lat0": 38.9979350000, "lon_shift": 0.0},
+  "seats": 7,
+  "population": 4301261,
+  "note": "A point (x,y) in projected degrees is in district d by walking from node 0: go left when x*nx + y*ny < c, else right, until a node has a district.",
+  "numbering": "Districts are numbered from 1 by a depth-first walk of this tree, left child first. Every cut normal is canonicalised to point north (east for a due north-south cut), so the left child is always the southern or western side. District 1 is therefore the one reached by always heading south/west, and consecutive numbers are usually neighbours, because the tree is a recursive spatial subdivision. Numbers are not stable across censuses: a shift in population changes the cuts, and the numbering with them.",
+  "nodes": [
+    {"i": 0, "pop": 4301261, "seats": 7, "nx": 0.999847695156, "ny": -0.0174524064373, "c": 0.384657373834, "left": 1, "right": 2},
+    {"i": 1, "pop": 1843429, "seats": 3, "nx": 0.945518575599, "ny": 0.325568154457, "c": 0.597676183432, "left": 4, "right": 3},
+    {"i": 2, "pop": 2457832, "seats": 4, "nx": 0.913545457643, "ny": -0.406736643076, "c": 0.216571362995, "left": 8, "right": 7},
+    {"i": 3, "pop": 614644, "seats": 1, "district": 3},
+    {"i": 4, "pop": 1228785, "seats": 2, "nx": 0.848048096156, "ny": 0.529919264233, "c": 0.420629893765, "left": 5, "right": 6},
+    {"i": 5, "pop": 614412, "seats": 1, "district": 1},
+    {"i": 6, "pop": 614373, "seats": 1, "district": 2},
+    {"i": 7, "pop": 1228993, "seats": 2, "nx": 0.0348994967025, "ny": -0.999390827019, "c": 0.096908713758, "left": 10, "right": 9},
+    {"i": 8, "pop": 1228839, "seats": 2, "nx": 0.224951054344, "ny": 0.974370064785, "c": 0.838968805185, "left": 12, "right": 11},
+    {"i": 9, "pop": 614541, "seats": 1, "district": 7},
+    {"i": 10, "pop": 614452, "seats": 1, "district": 6},
+    {"i": 11, "pop": 614427, "seats": 1, "district": 5},
+    {"i": 12, "pop": 614412, "seats": 1, "district": 4}
+  ]
+}

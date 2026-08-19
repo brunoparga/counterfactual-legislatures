@@ -1,0 +1,32 @@
+{
+  "projection": {"type": "gnomonic", "lon0": -71.7182015000, "lat0": 42.0622765000, "lon_shift": 0.0},
+  "seats": 12,
+  "population": 6547629,
+  "note": "A point (x,y) in projected degrees is in district d by walking from node 0: go left when x*nx + y*ny < c, else right, until a node has a district.",
+  "numbering": "Districts are numbered from 1 by a depth-first walk of this tree, left child first. Every cut normal is canonicalised to point north (east for a due north-south cut), so the left child is always the southern or western side. District 1 is therefore the one reached by always heading south/west, and consecutive numbers are usually neighbours, because the tree is a recursive spatial subdivision. Numbers are not stable across censuses: a shift in population changes the cuts, and the numbering with them.",
+  "nodes": [
+    {"i": 0, "pop": 6547629, "seats": 12, "nx": 0.819152044289, "ny": -0.573576436351, "c": 0.16479562481, "left": 1, "right": 2},
+    {"i": 1, "pop": 3273861, "seats": 6, "nx": 0.927183854567, "ny": 0.374606593416, "c": 0.205626455026, "left": 3, "right": 4},
+    {"i": 2, "pop": 3273768, "seats": 6, "nx": 0.224951054344, "ny": -0.974370064785, "c": -0.0588723531506, "left": 14, "right": 13},
+    {"i": 3, "pop": 1636945, "seats": 3, "nx": 0.819152044289, "ny": -0.573576436351, "c": -0.216055769276, "left": 6, "right": 5},
+    {"i": 4, "pop": 1636916, "seats": 3, "nx": 0.891006524188, "ny": 0.45399049974, "c": 0.566387210077, "left": 10, "right": 9},
+    {"i": 5, "pop": 545664, "seats": 1, "district": 3},
+    {"i": 6, "pop": 1091281, "seats": 2, "nx": 0.999847695156, "ny": -0.0174524064373, "c": -0.62530760372, "left": 7, "right": 8},
+    {"i": 7, "pop": 545657, "seats": 1, "district": 1},
+    {"i": 8, "pop": 545624, "seats": 1, "district": 2},
+    {"i": 9, "pop": 545658, "seats": 1, "district": 6},
+    {"i": 10, "pop": 1091258, "seats": 2, "nx": 0.406736643076, "ny": -0.913545457643, "c": -0.194131615263, "left": 12, "right": 11},
+    {"i": 11, "pop": 545659, "seats": 1, "district": 5},
+    {"i": 12, "pop": 545599, "seats": 1, "district": 4},
+    {"i": 13, "pop": 1636890, "seats": 3, "nx": 0.601815023152, "ny": -0.798635510047, "c": 0.548085641341, "left": 16, "right": 15},
+    {"i": 14, "pop": 1636878, "seats": 3, "nx": 0.0174524064373, "ny": 0.999847695156, "c": 0.352404593816, "left": 20, "right": 19},
+    {"i": 15, "pop": 545657, "seats": 1, "district": 12},
+    {"i": 16, "pop": 1091233, "seats": 2, "nx": 0.891006524188, "ny": 0.45399049974, "c": 0.44088558915, "left": 17, "right": 18},
+    {"i": 17, "pop": 545635, "seats": 1, "district": 10},
+    {"i": 18, "pop": 545598, "seats": 1, "district": 11},
+    {"i": 19, "pop": 545664, "seats": 1, "district": 9},
+    {"i": 20, "pop": 1091214, "seats": 2, "nx": 0.0871557427477, "ny": -0.996194698092, "c": -0.232528717688, "left": 22, "right": 21},
+    {"i": 21, "pop": 545630, "seats": 1, "district": 8},
+    {"i": 22, "pop": 545584, "seats": 1, "district": 7}
+  ]
+}

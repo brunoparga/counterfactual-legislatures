@@ -1,0 +1,22 @@
+{
+  "projection": {"type": "gnomonic", "lon0": -111.5470100000, "lat0": 39.4998350000, "lon_shift": 0.0},
+  "seats": 7,
+  "population": 3271616,
+  "note": "A point (x,y) in projected degrees is in district d by walking from node 0: go left when x*nx + y*ny < c, else right, until a node has a district.",
+  "numbering": "Districts are numbered from 1 by a depth-first walk of this tree, left child first. Every cut normal is canonicalised to point north (east for a due north-south cut), so the left child is always the southern or western side. District 1 is therefore the one reached by always heading south/west, and consecutive numbers are usually neighbours, because the tree is a recursive spatial subdivision. Numbers are not stable across censuses: a shift in population changes the cuts, and the numbering with them.",
+  "nodes": [
+    {"i": 0, "pop": 3271616, "seats": 7, "nx": 0.438371146789, "ny": -0.898794046299, "c": -1.17327672785, "left": 1, "right": 2},
+    {"i": 1, "pop": 1402151, "seats": 3, "nx": 0.656059028991, "ny": -0.754709580223, "c": -1.15921703543, "left": 4, "right": 3},
+    {"i": 2, "pop": 1869465, "seats": 4, "nx": 0.224951054344, "ny": 0.974370064785, "c": 0.821066798709, "left": 7, "right": 8},
+    {"i": 3, "pop": 467410, "seats": 1, "district": 3},
+    {"i": 4, "pop": 934741, "seats": 2, "nx": 0.987688340595, "ny": 0.15643446504, "c": -0.0517140102542, "left": 5, "right": 6},
+    {"i": 5, "pop": 467391, "seats": 1, "district": 1},
+    {"i": 6, "pop": 467350, "seats": 1, "district": 2},
+    {"i": 7, "pop": 934732, "seats": 2, "nx": 0.0523359562429, "ny": -0.998629534755, "c": -0.606835978381, "left": 10, "right": 9},
+    {"i": 8, "pop": 934733, "seats": 2, "nx": 0.994521895368, "ny": 0.104528463268, "c": -0.137976681736, "left": 12, "right": 11},
+    {"i": 9, "pop": 467373, "seats": 1, "district": 5},
+    {"i": 10, "pop": 467359, "seats": 1, "district": 4},
+    {"i": 11, "pop": 467391, "seats": 1, "district": 7},
+    {"i": 12, "pop": 467342, "seats": 1, "district": 6}
+  ]
+}

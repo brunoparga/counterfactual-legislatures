@@ -1,0 +1,22 @@
+{
+  "projection": {"type": "gnomonic", "lon0": -93.3642175000, "lat0": 46.4418570000, "lon_shift": 0.0},
+  "seats": 7,
+  "population": 4919479,
+  "note": "A point (x,y) in projected degrees is in district d by walking from node 0: go left when x*nx + y*ny < c, else right, until a node has a district.",
+  "numbering": "Districts are numbered from 1 by a depth-first walk of this tree, left child first. Every cut normal is canonicalised to point north (east for a due north-south cut), so the left child is always the southern or western side. District 1 is therefore the one reached by always heading south/west, and consecutive numbers are usually neighbours, because the tree is a recursive spatial subdivision. Numbers are not stable across censuses: a shift in population changes the cuts, and the numbering with them.",
+  "nodes": [
+    {"i": 0, "pop": 4919479, "seats": 7, "nx": 0.766044443119, "ny": -0.642787609687, "c": 0.993200140337, "left": 2, "right": 1},
+    {"i": 1, "pop": 2108389, "seats": 3, "nx": 0.121869343405, "ny": 0.992546151641, "c": -1.48468310331, "left": 4, "right": 3},
+    {"i": 2, "pop": 2811090, "seats": 4, "nx": 0.0523359562429, "ny": 0.998629534755, "c": -1.23451072405, "left": 8, "right": 7},
+    {"i": 3, "pop": 702849, "seats": 1, "district": 7},
+    {"i": 4, "pop": 1405540, "seats": 2, "nx": 0.104528463268, "ny": -0.994521895368, "c": 1.73619184482, "left": 6, "right": 5},
+    {"i": 5, "pop": 703101, "seats": 1, "district": 6},
+    {"i": 6, "pop": 702439, "seats": 1, "district": 5},
+    {"i": 7, "pop": 1406108, "seats": 2, "nx": 0.309016994375, "ny": 0.951056516295, "c": -0.40372670054, "left": 10, "right": 9},
+    {"i": 8, "pop": 1404982, "seats": 2, "nx": 0.965925826289, "ny": 0.258819045103, "c": -0.421108125912, "left": 11, "right": 12},
+    {"i": 9, "pop": 703061, "seats": 1, "district": 4},
+    {"i": 10, "pop": 703047, "seats": 1, "district": 3},
+    {"i": 11, "pop": 702661, "seats": 1, "district": 1},
+    {"i": 12, "pop": 702321, "seats": 1, "district": 2}
+  ]
+}
