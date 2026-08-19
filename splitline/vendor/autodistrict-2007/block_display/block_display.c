@@ -1,0 +1,1990 @@
+
+//
+// Copyright 2007 Ivan Ryan
+//
+// Licensed under the Apache License, Version 2.0 (the "License"); 
+// you may not use this file except in compliance with the License. 
+// You may obtain a copy of the License at 
+//
+//   http://www.apache.org/licenses/LICENSE-2.0 
+//
+// Unless required by applicable law or agreed to in writing, 
+// software distributed under the License is distributed on an 
+// "AS IS" BASIS, 
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, 
+// either express or implied. 
+//
+// See the License for the specific language governing permissions 
+// and limitations under the License.
+//
+
+#include <GL/glut.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+
+int winx = 950;
+int winy = 725;
+
+#define MAXDIST (255)
+#define NUMANGS (8)
+#define GAIN (100)
+
+#define min(x,y) (((x)<(y))?(x):(y))
+#define max(x,y) (((x)>(y))?(x):(y))
+#define abs(x)   (((x)<0)?(-(x)):(x))
+int *pa;
+double *px;
+double *py;
+
+int *pxst;
+int *pyst;
+int *pxen;
+int *pyen;
+int pcnt;
+
+int *district;
+int numdist = 1;
+int *border;
+
+int dist_tots[MAXDIST];
+int dist_seats[MAXDIST];
+
+double la0=0,ph1=0;
+
+int ccnt = 0;
+
+GLbyte *frame;
+int *pop;
+
+void putpixel( int x, int y, int r, int g, int b );
+void getpixel( int x, int y, int *r, int *g, int *b );
+void getline(char *buf, FILE *fp);
+void write_bmp(char *filename);
+void update();
+int findlargedist();
+int findnext(int res, int *nx, int *ny, int ang, int dist);
+void splitdist(int dist);
+void findborders();
+void mergewithlast(int dist);
+int check_dist(int x, int y);
+void optcolours();
+double splitquad( int dist, int q, int pop_tgt, int *dbst, int dd, int lx,int ly, int hx, int hy );
+void filltable(int cols);
+
+void gnom_conv(double x, double y, double *cx, double *cy);
+
+int max_cols;
+int tabler[256];
+int tableg[256];
+int tableb[256];
+
+int max_pop;
+
+void renderScene(void) {
+
+glClear( GL_COLOR_BUFFER_BIT );
+
+glViewport(0,0,winx,winy);
+		
+glRasterPos2d( -1, -1 );
+glDrawPixels( winx,winy , GL_RGBA, GL_UNSIGNED_BYTE, frame);
+
+void genpoly(int num);
+
+void line(int x1,int y1, int x2, int y2, int r, int g, int b);
+
+void fill( int r, int g, int b );
+
+int cnt=0;
+int first = 1;
+static int cnt2tgt=2;
+int cnt2=cnt2tgt;
+cnt2tgt++;
+
+glFlush();
+}
+
+void main(int argc, char **argv) {
+
+
+FILE *fp;
+
+int a=-1;
+double b=-1,c=-1;
+
+double maxx=-500,minx=500;
+double maxy=-500,miny=500;
+
+int cnt=0,cnt2=0;
+
+char filenbuf[1000];
+
+if(argc > 2)
+ strcpy(filenbuf, argv[1]);
+else
+ strcpy(filenbuf, "tx");
+
+char fname[1000];
+
+strcpy(fname, filenbuf);
+strcat(fname, "\\st");
+if(argc>2)
+ strcat(fname, argv[2]);
+else
+ strcat(fname, "48");
+
+strcat(fname, "_d00.dat");
+
+fp = fopen(fname,"r");
+
+if(fp==NULL)
+ {
+ printf("file open failure %s\n",fname);
+ exit(0);
+ }
+
+int curv_mem=1000;
+
+pa = malloc(sizeof(int)*curv_mem);
+px = malloc(sizeof(double)*curv_mem);
+py = malloc(sizeof(double)*curv_mem);
+
+pa[0] = -1;
+
+while(fscanf(fp, "%d", &a ) > 0)
+ {
+ //printf("Curve number %d\n", a);
+ pa[cnt] = a;
+ 
+ while( fscanf(fp, "%lf %lf", &b, &c ) > 0 )
+  {
+  //printf("%lf,%lf\n", b,c );
+  if(b>maxx) maxx = b;
+  if(b<minx) minx = b;
+  if(c>maxy) maxy = c;
+  if(c<miny) miny = c;
+  px[cnt] = b;
+  py[cnt] = c;
+  cnt++;
+  if(cnt>=curv_mem)
+   {
+   curv_mem+=1000;
+   pa = realloc(pa,sizeof(int)*curv_mem);
+   px = realloc(px,sizeof(double)*curv_mem);
+   py = realloc(py,sizeof(double)*curv_mem);
+   }
+  pa[cnt] = 0;
+  }
+ pa[cnt] = -1;
+ fscanf(fp , "END" );
+ }
+
+fclose(fp);
+
+double xoff =0;
+
+if(maxx-minx>180)
+ {
+ xoff = 180;
+ }
+
+maxx = -10000;
+minx = 10000;
+
+for(cnt=0;pa[cnt]!=-1;cnt++)
+ {
+ px[cnt]+=xoff;
+ if(px[cnt]>=180)
+  px[cnt]-=360;
+ if(px[cnt]<minx) minx=px[cnt];
+ if(px[cnt]>maxx) maxx=px[cnt];
+ }
+
+
+la0 = (maxx+minx)/2;
+ph1 = (maxy+miny)/2;
+
+
+
+printf("Before: %lf,%lf %lf,%lf\n", minx,miny,maxx,maxy);
+maxx = -10000;
+minx = 10000;
+maxy = -10000;
+miny = 10000;
+
+for(cnt=0;pa[cnt]!=-1;cnt++)
+ {
+ gnom_conv(px[cnt],py[cnt],&px[cnt],&py[cnt]);
+ if(px[cnt]<minx) minx=px[cnt];
+ if(px[cnt]>maxx) maxx=px[cnt];
+ if(py[cnt]<miny) miny=py[cnt];
+ if(py[cnt]>maxy) maxy=py[cnt];
+ }
+printf("After: %lf,%lf %lf,%lf\n", minx,miny,maxx,maxy);
+
+
+/*cnt = 0;
+
+while(pa[cnt]!=-1)
+  {
+  px[cnt] = -0.95 + 1.9*( px[cnt] - minx )/(maxx-minx);
+  py[cnt] = -0.95 + 1.9*( py[cnt] - miny )/(maxy-miny);
+  cnt++;
+  }
+*/
+
+double gnx,gny,gn;
+
+/*
+gnx = (winx-21)/((double)(maxx-minx));
+gny = (winy-21)/((double)(maxy-miny));
+*/
+
+gnx=GAIN;
+gny=GAIN;
+winx = (int)(((double)(maxx-minx))*gnx)+41;
+winy = (int)(((double)(maxy-miny))*gny)+41;
+
+winx = (winx&1)?(winx):(winx+1);
+winy = (winy&1)?(winy):(winy+1);
+
+pxst = malloc(sizeof(int)*winx*winy);
+pyst = malloc(sizeof(int)*winx*winy);
+pxen = malloc(sizeof(int)*winx*winy);
+pyen = malloc(sizeof(int)*winx*winy);
+district = malloc(sizeof(int)*winx*winy);
+border = malloc(sizeof(int)*winx*winy);
+
+
+
+
+//if(winx*winy>MAXPIXS)
+// exit(0);
+
+printf("(%lf,%lf) -> (%lf,%lf\n", minx,miny,maxx,maxy);
+printf("%d,%d\n", winx,winy);
+
+gn = (gnx<gny)?(gnx):(gny);
+//gn = 160;
+
+cnt = 0;
+
+while(pa[cnt]!=-1)
+  {
+  //printf("(%lf,%lf) -> ", px[cnt],py[cnt] );
+  px[cnt] = 20+gn*( px[cnt] - ((double)minx) );
+  py[cnt] = 20+gn*( py[cnt] - ((double)miny) );
+  //printf("(%lf,%lf) \n", px[cnt],py[cnt] );
+  cnt++;
+  }
+
+
+	frame = (GLbyte *)malloc(sizeof(GLbyte)*winx*winy*4);
+        pop = (int *)malloc(sizeof(int)*winx*winy);
+
+for(cnt=0;cnt<winx*winy;cnt++)
+ {
+ pop[cnt]=0;
+ }
+
+//findlargedist();
+
+strcpy(fname, filenbuf);
+strcat(fname, "\\pop_data.dat.");
+
+if(argc>3)
+ strcat(fname, argv[3]);
+else
+ strcat(fname, "blocks");
+
+fp = fopen(fname , "r");
+
+if(fp==NULL)
+ {
+ printf("file open failure %s\n",fname);
+ exit(0);
+ }
+
+
+printf("%p about to start file read\n");
+char buf[16384];
+max_pop = 0;
+while(!feof(fp))
+ {
+ int tractnum,blocknum,popul,curven;
+ double x,y;
+ int xx,yy;
+ getline(buf,fp);
+ //printf("about to print\n");
+ //printf("\n%s\n",buf);
+ int vld = 0;
+ //printf("about to scanf\n");
+ if((vld=sscanf(buf,"%d,%d,%d,%d,%lf,%lf\n", &tractnum,&blocknum,&popul,&curven,&x,&y))>0)
+  {
+  //printf("scanf completed %d\n",vld);
+  //printf("%d,%d,%d,%d,%3.16lf,%3.16lf\n", tractnum,blocknum,popul,curven,x,y);
+  x += xoff;
+  if(x>=180)
+   x -= 360;
+  gnom_conv(x,y,&x,&y);
+  xx = 20+gn*( x - ((double)minx) );
+  yy = 20+gn*( y - ((double)miny) );
+  //putpixel(xx,yy,255,0,0);
+
+  if(xx>=winx || yy>=winy)
+   {
+   printf("xx,yy (%d,%d) out of range\n",x,y);
+   }
+  //printf("about to add pop %d to (%d,%d) window = (%d,%d)\n", popul, xx,yy,winx,winy);
+  
+  //xx = max(0,xx);
+  //xx = min(winx-1,xx);
+  //yy = max(0,yy);
+  //yy = min(winy-1,yy);
+  pop[winx*yy + xx] += popul;
+  //printf("adding population completed\n");
+  //printf("%d %d -> %d (+%d)\n\n", xx,yy,pop[winx*yy + xx], popul);
+  if(pop[winx*yy + xx] > max_pop)
+   {
+   max_pop = pop[winx*yy + xx];
+   }
+  if(vld<6)
+   {
+   printf("fault reading population data\n");
+   exit(0);
+   }
+  }
+ }
+
+fclose(fp);
+
+printf("mark2\n");
+
+int total_population = 0;
+int highest_pop = 0;
+
+for(cnt=0;cnt<winx*winy;cnt++)
+ {
+ total_population += pop[cnt];
+ if(pop[cnt] > highest_pop)
+  highest_pop = pop[cnt];
+ }
+
+printf("Total Population: %d\n", total_population);
+printf("Highest pixel:    %d\n", highest_pop);
+
+
+//findlargedist();
+
+int distrs = 32;
+
+if(argc>4)
+ if(sscanf(argv[4], "%d", &distrs)==0)
+  {
+  printf("Unable to parse seat number %s\n", argv[4]);
+  exit(0);
+  }
+ else
+  {
+  if(distrs==0)
+   {
+   distrs++;
+   printf("increasing districts to 1\n");
+   }
+  printf("Districts set to %d\n", distrs);
+  }
+
+if(distrs > MAXDIST)
+ {
+ printf("to many districts\n");
+ exit(0);
+ }
+
+printf("about to fill table\n");
+
+dist_seats[0]=distrs;
+filltable(distrs);
+
+printf("table filled\n");
+
+findlargedist();
+
+update();
+
+char fname_buf[100];
+
+sprintf(fname_buf, "%s_%03d.bmp", (argc>1)?(argv[1]):("tx"), numdist);
+
+
+if(distrs>1)
+ findborders();
+
+
+
+optcolours();
+update();
+strcpy(fname, filenbuf);
+strcat(fname, "\\");
+strcat(fname, fname_buf);
+write_bmp( fname );
+
+while(numdist < (distrs))
+ {
+ int dcnt;
+ dcnt = findlargedist();
+ printf("about to split\n");
+ splitdist(dcnt);
+ printf("split completed\n");
+ sprintf(fname_buf, "%s_%03d.bmp", (argc>1)?(argv[1]):("tx"), numdist);
+ strcpy(fname, filenbuf);
+ strcat(fname, "\\");
+ strcat(fname, fname_buf);
+ findborders();
+ printf("about to opt colours\n");
+ optcolours();
+ printf("about to update\n");
+ update();
+ write_bmp( fname );
+
+ }
+ 
+printf("about to start final pass\n");
+findlargedist();
+
+if(distrs>1)
+ findborders();
+
+printf("about to opt colours\n");
+
+optcolours();
+
+printf("about to update\n");
+
+update();
+
+printf("update completed\n");
+
+strcpy(fname, "out\\");
+strcat(fname, filenbuf);
+strcat(fname, "_final.bmp");
+
+write_bmp(fname);
+
+printf("bmp written\n");
+
+if(argc <= 5)
+{
+ printf("About to start glut code\n");
+	glutInit(&argc, argv);
+	glutInitDisplayMode(GLUT_DEPTH | GLUT_SINGLE | GLUT_RGBA);
+	glutInitWindowPosition(5,5);
+	glutInitWindowSize(winx,winy);
+	glutCreateWindow("District Display");
+	glutDisplayFunc(renderScene);
+	glutMainLoop();
+ }
+}
+
+void putpixel( int x, int y, int r, int g, int b )
+{
+static GLbyte p[4];
+p[0] = 255;
+p[1] = 255;
+p[2] = 255;
+p[3] = 0;
+
+GLbyte *pix;
+
+//printf("%d,%d\n", x,y);
+
+if (x<0 || x>=winx || y<0 || y>=winy)
+  {
+  return;
+  }
+
+pix = frame + (winx*y + x)*4;
+
+if(r!=-1) *pix = r;
+pix++;
+if(g!=-1) *pix = g;
+pix++;
+if(b!=-1) *pix = b;
+pix++;
+*pix = 0;
+}
+
+void getpixel( int x, int y, int *r, int *g, int *b )
+{
+static GLbyte p[4];
+p[0] = 255;
+p[1] = 255;
+p[2] = 255;
+p[3] = 0;
+
+GLbyte *pix;
+
+//printf("%d,%d\n", x,y);
+
+*r=-1;
+*g=-1;
+*b=-1;
+
+if (x<0 || x>=winx || y<0 || y>=winy)
+  {
+  return;
+  }
+
+pix = frame + (winx*y + x)*4;
+
+*r = (int)(*pix);
+pix++;
+*g = (int)(*pix);
+pix++;
+*b = (int)(*pix);
+}
+
+void genpoly(int num)
+{
+int cnt=0,cnt2=0;
+
+while(cnt<num)
+  {
+  if(pa[cnt2]>0)
+    {
+    cnt++;
+    }
+  cnt2++;
+  }
+
+pcnt=0;
+
+int xst,yst;
+
+xst=px[cnt2];
+yst=py[cnt2];
+
+cnt2++;
+
+while(pa[cnt2]<=0  && pa[cnt2]!=-1)
+  {
+  //printf("%d\n", pa[cnt]);
+  if(pa[cnt2]==-99999)
+    {
+    pxst[pcnt]=px[cnt2-1];
+    pxen[pcnt]=xst;
+    pyst[pcnt]=py[cnt2-1];
+    pyen[pcnt]=yst;
+    pcnt++;
+    cnt2++;
+    xst=px[cnt2];
+    yst=py[cnt2];
+    cnt2++;
+    }
+  else
+    {
+    pxst[pcnt]=px[cnt2-1];
+    pxen[pcnt]=px[cnt2];
+    pyst[pcnt]=py[cnt2-1];
+    pyen[pcnt]=py[cnt2];
+    pcnt++;
+    cnt2++;
+    }
+  }
+
+pxst[pcnt]=px[cnt2-1];
+pxen[pcnt]=xst;
+pyst[pcnt]=py[cnt2-1];
+pyen[pcnt]=yst;
+pcnt++;
+
+}
+
+
+/*void fill()
+{
+
+int xx,yy;
+
+for( xx=0;xx<winx;xx++ )
+  {
+  for( yy=0;yy<winy;yy++ )
+    {
+    if(testpix(xx,yy))
+      {
+      putpixel(xx,yy,0,255,0);
+      }
+    }
+  }
+
+}*/
+
+void line(int x1,int y1, int x2, int y2,int r,int g, int b)
+{
+
+double m;
+int xx;
+double yy;
+
+if(x1==x2 && y1==y2)
+  {
+  putpixel(x1,y1,r,g,b);
+  }
+
+if(x1!=x2)
+  {
+  m=(y2-y1)/((double)(x2-x1));
+  if( m>=(-1) && m<=1 )
+    {
+    if( x1 < x2 )
+      {
+      xx = x1;
+      yy = y1;
+      }
+    else
+      {
+      xx = x2;
+      yy = y2;
+      }
+    while( xx<=x1 || xx<=x2 )
+      {
+      putpixel(xx,yy,r,g,b);
+      xx+=1.0;
+      yy+=m;
+      }
+    return;
+    }
+  }
+
+m=(x2-x1)/((double)(y2-y1));
+
+if( y1 < y2 )
+  {
+  xx = y1;
+  yy = x1;
+  }
+else
+  {
+  xx = y2;
+  yy = x2;
+  }
+while( xx<=y1 || xx<=y2 )
+  {
+  putpixel(yy,xx,r,g,b);
+  xx++;
+  yy+=m;
+  }
+}
+
+void fill( int r, int g, int b )
+{
+
+static int *hits=NULL;
+int y;
+
+if(hits == NULL)
+ {
+ hits = malloc(sizeof(int)*(winx+10));
+ } 
+
+for (y=0;y<winy-1;y++)
+//for(y=101;y<102;y++)
+ {
+ int x;
+ for(x=0;x<winx;x++)
+  {
+  hits[x]=0;
+  }
+ int cnt;
+ for(cnt=0;cnt<pcnt;cnt++)
+  {
+  if( ( pyst[cnt] > y && pyen[cnt] <= y ) ||
+      ( pyst[cnt] <= y && pyen[cnt] > y ) ||
+      ( pyst[cnt] == y && pyen[cnt] == y) )
+   {
+   if( pyst[cnt]==pyen[cnt] )
+    {
+    if( pxst[cnt]==pxen[cnt] )
+     {
+     putpixel(pxst[cnt],pyst[cnt],r,g,b);
+     }
+    else
+     {
+     hits[pxst[cnt]]++;
+     hits[pxen[cnt]]++;
+     }
+    }
+   else
+    { // slope
+    int xx = (
+               pxen[cnt]*(pyst[cnt]-pyen[cnt])
+               +
+               (pxst[cnt]-pxen[cnt])*(y-pyen[cnt])
+             )
+             /
+             (pyst[cnt]-pyen[cnt]);
+    //printf("%d ",xx);
+    hits[xx]++;
+    }
+   }
+  }
+ int fill=0;
+ for(cnt=0;cnt<winx;cnt++)
+  {
+  fill=fill+hits[cnt];
+  if((fill%2))
+   {
+   putpixel(cnt,y,r,g,b);
+   }
+  }
+ }
+
+}
+
+void getline(char *buf, FILE *fp)
+ {
+ int cnt = 0;
+ char tmp = 0;
+ while(!feof(fp) && tmp!=10)
+  {
+  fscanf(fp , "%c" , &tmp);
+  buf[cnt] = tmp;
+//  printf("<%c> %d\n" , tmp, tmp);
+  cnt++;
+  }
+ buf[cnt-1] = 0;
+ }
+
+void filltable(int cols)
+{
+
+double xx;
+
+xx = pow(max(1,cols),0.5);
+int xxx;
+
+xxx = xx+0.9999;
+
+int cntx,cnty;
+
+for(cntx=0;cntx<MAXDIST;cntx++)
+ {
+ tabler[cntx]=200;
+ tableg[cntx]=200;
+ tableb[cntx]=200;
+ }
+
+int maxval=0;
+
+
+
+for(cntx=0;cntx<xxx;cntx++)
+ for(cnty=0;cnty<xxx;cnty++)
+  {
+  //tabler[(cntx*xxx)+cnty] = 255*cntx/(xxx-1);
+  //tableb[(cntx*xxx)+cnty] = 255*cnty/(xxx-1);
+  //tableg[(cntx*xxx)+cnty] = 255-0.3*tabler[(cntx*xxx)+cnty]-0.11*tableb[(cntx*xxx)+cnty];
+  //if(tabler[(cntx*xxx)+cnty] > maxval)
+  // maxval = tabler[(cntx*xxx)+cnty];
+  //if(tableg[(cntx*xxx)+cnty] > maxval)
+  // maxval = tableg[(cntx*xxx)+cnty];
+  //if(tableb[(cntx*xxx)+cnty] > maxval)
+  // maxval = tableb[(cntx*xxx)+cnty];
+  }
+
+printf("second loops completed\n");
+
+for(cntx=0;cntx<xxx;cntx++)
+ for(cnty=0;cnty<xxx;cnty++)
+  {
+  tabler[(cntx*xxx)+cnty] = ((double)tabler[(cntx*xxx)+cnty]*254.0)/maxval;
+  tableg[(cntx*xxx)+cnty] = ((double)tableg[(cntx*xxx)+cnty]*254.0)/maxval;
+  tableb[(cntx*xxx)+cnty] = ((double)tableb[(cntx*xxx)+cnty]*254.0)/maxval;
+  }
+
+
+printf("%d -> %d\n", cols, xxx);
+}
+
+//int max_cols;
+//int tabler[255];
+//int tableg[255];
+//int tableb[255];
+
+void write_bmp(char *filename)
+{
+FILE *fp;
+
+long file_size;
+
+file_size = ((long)3)*((long)winx)*((long)winy);
+file_size+= 54;
+
+file_size += winy * (winx&3);
+
+printf("file size = %d\n", file_size);
+printf("%d,%d\n", winx,winy);
+
+fp = fopen(filename, "w");
+
+fprintf(fp, "BM");
+
+fprintf(fp, "%c%c%c%c", (file_size&0x000000FFl)>>0,
+                        (file_size&0x0000FF00l)>>8,
+                        (file_size&0x00FF0000l)>>16,
+                        (file_size&0xFF000000l)>>24); // file size
+
+fprintf(fp, "%c%c%c%c", 0,0,0,0); // reserved
+
+int start = 54;
+
+fprintf(fp, "%c%c%c%c", (start&0x000000FFl)>>0,
+                        (start&0x0000FF00l)>>8,
+                        (start&0x00FF0000l)>>16,
+                        (start&0xFF000000l)>>24); // Start
+ 
+fprintf(fp, "%c%c%c%c", 40,0,0,0);
+
+fprintf(fp, "%c%c%c%c", (winx&0x000000FFl)>>0,
+                        (winx&0x0000FF00l)>>8,
+                        (winx&0x00FF0000l)>>16,
+                        (winx&0xFF000000l)>>24);
+
+fprintf(fp, "%c%c%c%c", (winy&0x000000FFl)>>0,
+                        (winy&0x0000FF00l)>>8,
+                        (winy&0x00FF0000l)>>16,
+                        (winy&0xFF000000l)>>24);
+
+fprintf(fp, "%c%c", 1,0); // panes
+
+fprintf(fp, "%c%c", 24,0);  // bits per pixel
+
+fprintf(fp, "%c%c%c%c", 0,0,0,0); // compression
+
+file_size -= 54;
+
+fprintf(fp, "%c%c%c%c", (file_size&0x000000FFl)>>0,
+                        (file_size&0x0000FF00l)>>8,
+                        (file_size&0x00FF0000l)>>16,
+                        (file_size&0xFF000000l)>>24); // image size
+
+fprintf(fp, "%c%c%c%c", 0,0,0,0); // pixels per m
+fprintf(fp, "%c%c%c%c", 0,0,0,0); // pixels per m
+
+fprintf(fp, "%c%c%c%c", 0,0,0,0); // colours
+fprintf(fp, "%c%c%c%c", 0,0,0,0); // important colours
+
+int cnt,cnt2,cnt3;
+
+for(cnt=0;cnt<winy;cnt++)
+ {
+ for(cnt2=0;cnt2<winx;cnt2++)
+  {
+  int r,g,b;
+  getpixel(cnt2,cnt,&r,&g,&b);
+
+  unsigned char rr,gg,bb;
+  fprintf(fp,"%c%c%c", (char)b,(char)g,(char)r);
+  if(cnt2==winx-1)
+   {
+   r=255;
+   b=255;
+   g=255;
+   }
+  else if(cnt2&0x00FF)
+   {
+   r=200;
+   g=200;
+   b=200;
+   }
+  //fputc(r,fp);
+  //fputc(g,fp);
+  //fputc(b,fp);
+  }
+  for(cnt3=0;cnt3<(winx&3);cnt3++)
+   {
+   fprintf(fp,"%c",0);
+   }
+ }
+
+fclose(fp);
+}
+
+
+void update()
+{
+int cnt,cnt2,ccnt;
+
+cnt = 0;
+ccnt = 0;
+while(pa[cnt] != -1 )
+  {
+  if(pa[cnt]>0)
+    {
+    ccnt++;
+    }
+  cnt++;
+  }
+
+//printf("ccnt = %d\n", ccnt );
+for(cnt2=1;cnt2<=ccnt;cnt2++)
+  {
+  genpoly(cnt2);
+  fill(192,192,192);
+  cnt = 0;
+  for(cnt=0;cnt<pcnt;cnt++)
+    {
+    int alt;
+    alt = (0);
+    int r,g,b;
+    r = (alt)?(-1):(-1);
+    g = (alt)?(-1):(255);
+    b = (alt)?(255):(-1);
+    //line(pxst[cnt],pyst[cnt],pxen[cnt],pyen[cnt],r,g,b);
+    }
+  }
+
+for(cnt=0;cnt<winx;cnt++)
+ for(cnt2=0;cnt2<winy;cnt2++)
+  {
+  int r,g,b;
+  getpixel(cnt,cnt2,&r,&g,&b);
+  if(r==0 && g==0 && b==0 && pop[cnt2*winx + cnt]==0)
+   {
+   pop[cnt2*winx + cnt]--;
+   district[cnt2*winx+cnt]=MAXDIST-1;
+   }
+  }
+
+//findlargedist();
+
+//return;
+
+
+
+max_pop = min(10000,max_pop);
+printf("%d",max_pop);
+for(cnt=0;cnt<winx;cnt++)
+ {
+ for(cnt2=0;cnt2<winy;cnt2++)
+  {
+  double popu;
+  popu = pop[cnt2*winx + cnt];
+  popu = ((double)popu) * 60.0 / ((double)max_pop); 
+  if(popu>60)
+   popu = 60;
+  if(pop[cnt2*winx+cnt]>-1)
+   {
+   double r,g,b;
+   r =((double)(popu+192.0)) * ((double)tabler[district[cnt2*winx+cnt]]) / 255.0;
+   g =((double)(popu+192.0)) * ((double)tableg[district[cnt2*winx+cnt]]) / 255.0;
+   b =((double)(popu+192.0)) * ((double)tableb[district[cnt2*winx+cnt]]) / 255.0;
+   if(border[cnt2*winx+cnt])
+    {
+    r=(r+255)/2;
+    g=(g+255)/2;
+    b=(b+255)/2;
+    //r=min(r,128);
+    //g=min(g,128);
+    //b=min(b,128);
+    //r=0;
+    //g=255;
+    //b=0;
+    }
+   /*else
+    {
+    if(district[cnt2*winx+cnt]<MAXDIST-1)
+     {
+     r=0;
+     g=0;
+     b=64;
+     }
+    else
+     {
+     r=0;
+     g=0;
+     b=0;
+     }
+    }*/
+   //printf("%d %lf -> %lf %lf %lf\n", pop[cnt2*winx+cnt], popu, r,g,b);
+   //r = 255;
+   //g = 255;
+   //b = 255;
+   putpixel(cnt,cnt2,r,g,b);
+   }
+  }
+ }
+}
+
+int findlargedist()
+{
+
+int cnt;
+for(cnt=0;cnt<numdist;cnt++)
+ {
+ dist_tots[cnt]=0;
+ }
+
+int cntx,cnty;
+
+
+for(cntx=0;cntx<winx;cntx++)
+ for(cnty=0;cnty<winy;cnty++)
+  {
+  if(pop[(cnty*winx)+cntx]>0)
+   dist_tots[district[(cnty*winx)+cntx]] += pop[(cnty*winx)+cntx];
+  }
+
+int l_num;
+int l_val=-1;
+int seat_s_val = dist_tots[0]/dist_seats[0];
+int seat_l_val = dist_tots[0]/dist_seats[0];
+
+for(cnt=0;cnt<numdist;cnt++)
+ {
+ printf("\nDistrict % 2d: %d %d seats (%6.0lf per seat) (%d,%d,%d)\n", cnt, dist_tots[cnt],dist_seats[cnt], 
+                                          ((double)dist_tots[cnt])/(dist_seats[cnt]),
+                                          tabler[cnt],tableg[cnt],tableb[cnt] );
+ if(dist_tots[cnt] > l_val)
+  {
+  l_val = dist_tots[cnt];
+  l_num = cnt;
+  }
+ if(dist_tots[cnt]/dist_seats[cnt] < seat_s_val)
+  {
+  seat_s_val = dist_tots[cnt]/dist_seats[cnt];
+  }
+ if(dist_tots[cnt]/dist_seats[cnt] > seat_l_val)
+  {
+  seat_l_val = dist_tots[cnt]/dist_seats[cnt];
+  }
+ }
+
+printf("Max District Size/Seat: %d\n" , seat_l_val);
+printf("Min District Size/Seat: %d\n" , seat_s_val);
+printf("\nDifference: %d (+%1.3f%%)\n" , seat_l_val - seat_s_val, ((double)(seat_l_val-seat_s_val)/(double)(seat_s_val))*100);
+
+
+return(l_num);
+
+}
+
+int findnext(int res, int *nx, int *ny, int ang, int dist)
+{
+
+static int storex = 0;
+static int storey = 0;
+
+static int xstep = 0;
+static int ystep = 0;
+
+static int laststx = 0;
+static int laststy = 0;
+
+static int lastst2x = 0;
+static int lastst2y = 0;
+
+static int firstx =0;
+static int firsty =0;
+static int first_change = 0;
+
+static int lastx = 0;
+static int lasty = 0;
+
+static int length = 0;
+
+if(res)
+ {
+ switch (ang)
+  {
+  case 0:   // vertical starts from left
+    storex = 0;
+    storey = 0;
+    xstep  = 0; 
+    ystep  = 2;
+    break;
+  case 1:  // horizontal start from bottom
+    storex = 0;
+    storey = 0;
+    xstep  = 2; 
+    ystep  = 0;
+    break;
+  case 2: // diagonal start from bottom left
+    storex = 0;
+    storey = 0;
+    xstep  = -2; 
+    ystep  = 2;
+    break;
+  case 3: // diagonal start from bottom right
+    storex = winx*2-2;
+    storey = 0;
+    xstep  = 2; 
+    ystep  = 2;
+    break;
+  case 4: // 60 degrees from right
+    storex = winx*2-2;
+    storey = 0;
+    xstep  = 1; 
+    ystep  = 2;
+    break;
+  case 5: // 60 degrees from left
+    storex = 0;
+    storey = 0;
+    xstep  = -1; 
+    ystep  = 2;
+    break;
+  case 6: // 30 degrees from right
+    storex = winx*2-2;
+    storey = 0;
+    xstep  = 2; 
+    ystep  = 1;
+    break;
+  case 7: // 30 degrees from left
+    storex = 0;
+    storey = 0;
+    xstep  = -2; 
+    ystep  = 1;
+    break;
+  default:  // vertical starts from left
+    storex = 0;
+    storey = 0;
+    xstep  = 0; 
+    ystep  = 2;
+    break;
+  }
+ laststx = storex;
+ laststy = storey;
+ storex = storex - xstep;
+ storey = storey - ystep;
+ lastst2x = storex + xstep;
+ lastst2y = storey + ystep;
+
+ firstx =0;
+ firsty =0;
+ first_change = 0;
+
+ lastx = 0;
+ lasty = 0;
+
+ length = 500000;
+ }
+    
+storex = storex + xstep;
+storey = storey + ystep;
+
+*nx = storex>>1;
+*ny = storey>>1;
+
+if(*nx < winx && *nx >= 0 && *ny < winy && *ny >= 0 )
+ {
+// printf("output %d,%d  (%d,%d)\n", *nx,*ny, storex,storey);
+ if(district[(*ny)*winx + *nx] == dist)
+  {
+  lastx = *nx;
+  lasty = *ny;
+  if(first_change==0)
+   {
+   firstx = *nx;
+   firsty = *ny;
+   first_change=1;
+   }
+  }
+ return length;
+ }
+
+//printf("off edge code\n");
+
+//printf("%d,%d %d,%d\n", firstx,first
+
+length = sqrt(pow(firstx-lastx,2)+pow(firsty-lasty,2));
+first_change = 0;
+
+storex = laststx;
+storey = laststy;
+
+//printf("storex,storey:  %d,%d\n",storex,storey);
+//printf("last2x,last2y:  %d,%d\n",lastst2x,lastst2y);
+
+int cur_dist;
+
+cur_dist = check_dist(storex/2,storey/2);
+
+int chk,chk2;
+int upd = 0;
+
+if( (storex <= 1 && xstep >=0) || (storex >= ((2*winx)-2) && xstep <=0))
+ {
+
+ if( storey < (2*winy-1) && lastst2y <= storey)
+  {
+  storey++;
+  upd=1;
+  }
+ else if ( storey > 0 && lastst2y >= storey )
+  {
+  storey--;
+  upd=1;
+  }
+
+ }
+
+
+if( ( (storey <= 1 && ystep >= 0) || (storey >= ((2*winy)-2) && ystep <=0 ) ) && upd==0)
+ {
+
+ if( storex < (2*winx-1) && lastst2x <= storex )
+  {
+  storex++;
+  upd=1;
+  }
+ else if ( storex > 0 && lastst2x >= storex )
+  {
+  storex--;
+  upd=1;
+  }
+
+ }
+
+
+*nx = storex/2;
+*ny = storey/2;
+
+if(*nx < winx && *nx >= 0 && *ny < winy && *ny >= 0 )
+ {}
+else
+ {
+ printf("Unable to determine next: output %d,%d  (%d,%d)\n", *nx,*ny, storex,storey);
+ exit(0);
+ }
+
+lastst2x = laststx;
+lastst2y = laststy;
+
+laststx = storex;
+laststy = storey;
+
+return length;
+
+//printf("storex,storey:  %d,%d  (after)\n",storex,storey);
+//printf("winx,winy    :  %d,%d\n" , winx,winy);
+
+}  
+
+int check_dist(int x, int y)
+{
+if(x<0 || x>=winx || y<0 || y>=winy)
+ return -1;
+else
+ return(district[y*winx+x]);
+}
+
+
+/*void findnext(int res, int *nx, int *ny, int ang)
+{
+static int store=0;
+static int storex=0;
+static int storey=0;
+static int x=0,y=0;
+
+if(res)
+ {
+ switch(ang)
+  {
+  case 0: *nx = 0; *ny=0; store=1; break;         // vertical, start left
+  case 1: *nx = 0; *ny=0; store=1; break;         // horizontal, start bottom
+  case 2: *nx = winx; *ny=0; store=winx-1; break; // vertical, start right
+  case 3: *nx = 0; *ny=winy; store=winy-1; break; // horizontal, start top
+  default: *nx = -1; *ny=-1; store=-1;break;
+  }
+ x = *nx;
+ y = *ny;
+ return;
+ }
+
+switch(ang) // normal operation
+ {
+ case 0: *nx = x; *ny = y+1; break;
+ case 1: *nx = x+1; *ny = y; break;
+ case 2: *nx = x; *ny = y-1; break;
+ case 3: *nx = x-1; *ny = y; break;
+ default: *nx = -1; *ny=-1; break;
+ }
+
+
+if(*nx>=0 && *nx<winx && *ny>=0 && *ny<=winy)
+ {
+ x = *nx;
+ y = *ny;
+ return;
+ }
+
+
+switch(ang) // end of line
+ {
+ case 0: *nx = store; *ny = 0; store++; break;
+ case 1: *nx = 0; *ny = store; store++; break;
+ case 2: *nx = store; *ny = 0; store--; break;
+ case 3: *nx = 0; *ny = store; store--; break;
+ default: *nx = -1; *ny=-1; store=-1; break;
+ }
+
+
+if(x>=0 && x<winx && y>=0 && y<=winy)
+ {
+ x = *nx;
+ y = *ny;
+ return;
+ }
+
+*nx = -1;
+*ny = -1;
+
+}
+*/
+
+void mergewithlast(int dist)
+{
+
+//printf("Merge with last %d\n",dist);
+
+if(numdist<2)
+ {
+ printf("Starting merge with only 1 district\n");
+ exit(0);
+ }
+
+int cur_pop;
+int x=0,y=0;
+
+dist_seats[dist] += dist_seats[numdist-1];
+
+for(x=0;x<winx;x++)
+ for(y=0;y<winy;y++)
+  {
+  if(district[y*winx+x] == (numdist-1) && pop[y*winx+x]>=0)
+   {
+   dist_tots[dist]+=pop[y*winx+x];
+   district[y*winx+x] = dist;
+   }
+  }
+
+dist_tots[numdist-1]=0;
+dist_seats[numdist-1]=0;
+numdist--;
+}
+
+void splitdist(int dist)
+{
+
+int resu;
+
+int maintime;
+
+maintime = clock();
+
+//printf("dist = %d, ang=%d\n", dist,ang);
+
+if(dist_seats[dist] == 1)
+ {
+ printf("Unable to split district as it has only 1 seat\n");
+ return;
+ }
+
+int d1,d2;
+
+d1 = dist_seats[dist]/2;
+d2 = dist_seats[dist]-d1;
+
+int tgt_pop;
+
+tgt_pop = (dist_tots[dist]*d1)/dist_seats[dist];
+
+int cur_pop = 0;
+
+int x=0,y=0;
+
+int lx=winx;
+int ly=winy;
+int hx=0;
+int hy=0;
+
+for(x=0;x<winx;x++)
+ for(y=0;y<winy;y++)
+  {
+  if(district[y*winx+x]==dist)
+   {
+   if(x>hx) hx=x;
+   if(x<lx) lx=x;
+   if(y>hy) hy=y;
+   if(y<ly) ly=y;
+   }
+  }
+if(hx<winx-1) hx++;
+if(hy<winy-1) hy++;
+if(lx>0) lx--;
+if(ly>0) ly--;
+
+double res=1;
+
+int pos = 0;
+
+int d;
+int qdr;
+double bres;
+int bq,bd;
+
+long time2=0;
+
+for(qdr=0; qdr<4;qdr++)
+ {
+ res = splitquad( dist, qdr, tgt_pop, &d, -1, lx,ly,hx,hy);
+ if(qdr==0 || res < bres)
+  {
+  bres = res;
+  bq = qdr;
+  bd = d;
+  } 
+ time2 = clock();
+ mergewithlast(dist);
+ printf("merge time: %d\n", clock()-time2);
+ }
+
+splitquad( dist, bq, tgt_pop, &d, bd, lx,ly,hx,hy);
+
+//printf("setting %d to %d and %d to %d", numdist, d1, dist, d2);
+
+printf("Main time %d\n", clock()-maintime);
+dist_seats[dist]=d2;
+dist_seats[numdist-1] = d1; 
+
+
+}
+
+
+double splitquad( int dist, int q, int pop_tgt, int *dbst, int dd, int lx,int ly, int hx, int hy )
+{
+
+long time1 = 0;
+long time2 = 0;
+long time3 = 0;
+
+static int *new=NULL;
+static int *old=NULL;
+
+if(new==NULL)
+ {
+ new = malloc(sizeof(int)*(max(winx,winy)));
+ old = malloc(sizeof(int)*(max(winx,winy)));
+ }
+
+int x,y;
+
+int d;
+
+int orig;
+
+int st_ld;
+int st_sd;
+
+int wld;
+int wsd;
+
+//lx = 0;
+//hx = winx-1;
+//ly = 0;
+//hy = winy-1;
+
+switch( q )
+ {       // (ld,sd)
+ case 0: // (x,y)
+   orig = ly*winx + lx;
+   st_ld = 1;
+   st_sd = winx;
+   wld = hx-lx+1;
+   wsd = hy-ly+1;
+   break;
+ case 1: // (-y,-x)
+   orig = hy*winx + hx;
+   st_ld = -winx;
+   st_sd = -1;
+   wld = hy-ly+1;
+   wsd = hx-lx+1;
+   break;
+ case 2: // (-y,x)
+   orig = ly*(winx)+hx;
+   st_ld = winx;
+   st_sd = -1;
+   wld = hy-ly+1;
+   wsd = hx-lx+1;
+   break;
+ case 3: // (-x,y)
+   orig = winx*(hy)+lx;
+   st_ld = 1;
+   st_sd = -winx;
+   wld = hx-lx+1;
+   wsd = hy-ly+1;
+   break;
+ }
+
+int mx;
+
+mx = max(winx,winy);
+
+double bres;
+bres = mx*mx;
+
+int bd   = 0;
+
+int pos;
+
+int cnt,cnt2;
+
+int clow=0;
+int chigh=wsd;
+
+pos = 0;
+
+int pixadr, pixadr2;
+
+int mostlx=wld+1;
+int mostly;
+int mostrx=-1;
+int mostry;
+
+int maxd,mind;
+
+maxd = (dd==-1)?(wld):(dd);
+mind = (dd==-1)?(1):(dd);
+
+printf("Split quad started: ");
+int num_reps;
+for(d = maxd; d>=mind; d--)
+ {
+ //printf("d=%d\n", d);
+ time1 = time1 - clock();
+ for(cnt=0;cnt<wsd;cnt++)
+  {
+  //printf("cnt=%d\n", cnt);
+  if(d==maxd)
+   old[cnt] = ((-cnt*wld)/d);
+  new[cnt] = (-cnt*wld)/d;
+  
+  x = max(0,pos + new[cnt]);
+  y = cnt;
+  pixadr = orig + (st_ld)*(x) + st_sd*y;
+
+
+  num_reps = pos+old[cnt]-x;
+  
+  if(pos+old[cnt]>=0)
+   {
+   for(cnt2=0;cnt2<=num_reps;cnt2++)
+    {
+    //printf("cnt2=%d\n", cnt2);
+    if(x>0 && x<wld && district[pixadr]==numdist)
+     {
+     district[pixadr] = dist;
+     dist_tots[numdist] -= pop[pixadr];
+     dist_tots[dist]    += pop[pixadr];
+     }
+    x++;
+    pixadr = pixadr + (st_ld);
+    }
+   }
+  old[cnt] = new[cnt];
+  }
+ time1 = time1 + clock();
+ time2 = time2 - clock();
+ int brk = 1;
+ while(brk)
+  {
+  for(cnt=clow;(cnt<chigh)&&(brk);cnt++)
+   {
+   x = pos + new[cnt];
+   y = cnt;
+   pixadr = orig + (st_ld)*(x) + st_sd*y;
+   if(x>0 && x<wld && district[pixadr]==dist)
+    {
+    district[pixadr] = numdist;
+    dist_tots[numdist] += pop[pixadr];
+    dist_tots[dist]    -= pop[pixadr];
+    if(dist_tots[numdist] > pop_tgt)
+     {
+     brk=0;
+     //if(dist_tots[numdist]-dist_tots[dist] > (2*pop[pixadr])-dist_tots[numdist]+dist_tots[dist])
+     // {
+     // district[pixadr] = dist;
+     // dist_tots[numdist] -= pop[pixadr];
+     // dist_tots[dist]    += pop[pixadr];
+     // }
+     }
+    }
+   if(x<0)
+    {
+    break;
+    }
+   if(x>wld)
+    {
+    clow=min(0,cnt-1);
+    }
+   }
+  pos++;
+  }
+
+ pos--;
+ time2 = time2 + clock();
+ time3 = time3 - clock();
+
+ mostlx = wld;
+ mostrx = -1;
+ 
+ for(cnt=0;cnt<wsd;cnt++)
+  {
+  int en_pt;
+  en_pt = (cnt==wsd-1)?(-1):(pos+new[cnt+1]);
+  int st_pt;
+  st_pt = (pos + new[cnt]);
+  en_pt = min(en_pt,wld-1);
+  en_pt = max(en_pt,0);
+  st_pt = min(st_pt,wld-1);
+  st_pt = max(st_pt,0);
+  for(cnt2=st_pt; cnt2>en_pt;cnt2--)
+   {
+   pixadr = orig + (st_ld)*(cnt2) + st_sd*(cnt);
+   if(district[pixadr]==numdist || district[pixadr]==dist)
+    {if(cnt2<mostlx && pop[pixadr]>=0)
+     {
+     mostlx = cnt2;
+     mostly = cnt;
+     }
+    if(cnt2>mostrx && pop[pixadr]>=0)
+     {
+     mostrx = cnt2;
+     mostry = cnt;
+     }
+    }
+   }
+  }
+
+ double res;
+ res = (mostrx-mostlx)*(mostrx-mostlx) + (mostry-mostly)*(mostry-mostly);
+ if(d==maxd  ||  res < bres )
+  {
+  bres = res;
+  bd = d;
+  }
+ time3 = time3 + clock();
+ }
+
+*dbst = bd;
+
+numdist++;
+
+printf("%lf, %d\n", bres, bd); 
+printf("time %d,%d,%d\n", time1,time2,time3);
+
+return(bres);
+
+}
+
+void findborders()
+{
+int cntx,cnty;
+
+int curdist;
+
+for(cntx=0;cntx<winx;cntx++)
+ for(cnty=0;cnty<winy;cnty++)
+  {
+  curdist = district[cnty*winx+cntx];
+  if( (cntx+1)<winx && district[cnty*winx+cntx+1]!=curdist && district[cnty*winx+cntx+1]!=MAXDIST-1 )
+   border[cnty*winx+cntx]=1;
+  else if( (cnty+1)<winy && district[(cnty+1)*winx+cntx+1]!=curdist && district[(cnty+1)*winx+cntx+1]!=MAXDIST-1 )
+   border[cnty*winx+cntx]=1;
+  else if( (cntx)>0 && district[cnty*winx+cntx-1]!=curdist && district[cnty*winx+cntx-1]!=MAXDIST-1 )
+   border[cnty*winx+cntx]=2;
+  else if( (cnty)>0 && district[(cnty-1)*winx+cntx+1]!=curdist && district[(cnty-1)*winx+cntx+1]!=MAXDIST-1)
+   border[cnty*winx+cntx]=2;
+  else 
+   border[cnty*winx+cntx]=0;
+  }
+
+}
+
+
+void optcolours()
+{
+
+
+int distcenx[MAXDIST];
+int distceny[MAXDIST];
+
+int distbordering[MAXDIST][MAXDIST];
+
+
+int cntx,cnty,dcnt,dcnt2;
+
+for(dcnt=0;dcnt<numdist;dcnt++)
+ for(dcnt2=0;dcnt2<numdist;dcnt2++)
+  {
+  distbordering[dcnt][dcnt2]=0;
+  }
+
+for(dcnt=0;dcnt<numdist;dcnt++)
+ {
+ int npixs;
+ long totx;
+ long toty;
+ npixs=0;
+ totx=0;
+ toty=0;
+ for(cntx=0;cntx<winx;cntx++)
+  for(cnty=0;cnty<winy;cnty++)
+   {
+   if(district[cnty*winx+cntx] == dcnt)
+    {
+    totx += cntx;
+    toty += cnty;
+    npixs ++;
+
+    if(cntx>0 && district[cnty*winx+cntx-1] != -1)
+     distbordering[dcnt][district[cnty*winx+cntx-1]] ++;
+    if(cnty>0 && district[(cnty-1)*winx+cntx] != -1)
+     distbordering[dcnt][district[(cnty-1)*winx+cntx]] ++;
+    if(cntx<(winx-1) && district[cnty*winx+cntx+1] != -1)
+     distbordering[dcnt][district[cnty*winx+cntx+1]] ++;
+    if(cnty<(winy-1) && district[(cnty+1)*winx+cntx] != -1)
+     distbordering[dcnt][district[(cnty+1)*winx+cntx]] ++;
+    }
+
+
+   }
+ distcenx[dcnt]= totx/npixs;
+ distceny[dcnt]= toty/npixs;
+ }
+
+//for(dcnt=0;dcnt<numdist;dcnt++)
+// {
+// printf("\nDistrict %d\n" , dcnt);
+// printf("Borders:\n");
+// for(dcnt2=0;dcnt2<numdist;dcnt2++)
+//  if(distbordering[dcnt][dcnt2])
+//   printf("District %d: %d,%d\n" , dcnt2, distcenx[dcnt2], distceny[dcnt2]);
+// }
+
+int colsetr[7];
+int colsetg[7];
+int colsetb[7];
+
+colsetr[0] = 0;
+colsetb[0] = 0;
+colsetg[0] = 255-(0.3/0.59)*colsetr[0]-(0.11/0.59)*colsetb[0];
+
+colsetr[1] = 0;
+colsetb[1] = 255;
+colsetg[1] = 255-(0.3/0.59)*colsetr[1]-(0.11/0.59)*colsetb[1];
+
+colsetr[2] = 255;
+colsetb[2] = 255;
+colsetg[2] = 255-(0.3/0.59)*colsetr[2]-(0.11/0.59)*colsetb[2];
+
+colsetr[3] = 255;
+colsetb[3] = 0;
+colsetg[3] = 255-(0.3/0.59)*colsetr[3]-(0.11/0.59)*colsetb[3];
+
+colsetr[4] = 128;
+colsetb[4] = 128;
+colsetg[4] = 255-(0.3/0.59)*colsetr[4]-(0.11/0.59)*colsetb[4];
+
+colsetr[5] = 128;
+colsetb[5] = 255;
+colsetg[5] = 255-(0.3/0.59)*colsetr[5]-(0.11/0.59)*colsetb[5];
+
+colsetr[6] = 128;
+colsetb[6] = 0;
+colsetg[6] = 255-(0.3/0.59)*colsetr[6]-(0.11/0.59)*colsetb[6];
+
+
+for(dcnt=0;dcnt<numdist;dcnt++)
+ {
+ tabler[dcnt]=-1;
+ tableg[dcnt]=-1;
+ tableb[dcnt]=-1;
+ }
+
+for(dcnt=0;dcnt<numdist;dcnt++)
+ {
+ int bcnt;
+ int colset;
+ colset = 0;
+ int mtch = 1;
+ while(mtch)
+  {
+  tabler[dcnt] = colsetr[colset];
+  tableg[dcnt] = colsetg[colset];
+  tableb[dcnt] = colsetb[colset];
+  mtch = 0;
+  for(bcnt=0;bcnt<numdist;bcnt++)
+   {
+   if(distbordering[bcnt][dcnt] > 3 && bcnt != dcnt)
+    {
+    if(tabler[bcnt]==tabler[dcnt] && tableb[bcnt]==tableb[dcnt])
+     {
+     mtch=1;
+     }
+    }
+   }
+  colset++;
+  //printf("colset = %d\n", colset);
+  if(colset>6 && mtch)
+   {
+   printf("out of colsets\n");
+   exit(0);
+   }
+  }
+ printf("District %d assigned colset %d (%d,%d,%d Y %d)\n" , dcnt, colset-1, tabler[dcnt],tableg[dcnt],tableb[dcnt],
+                                                             (int)(0.30*tabler[dcnt] + 0.59*tableg[dcnt] + 0.11*tableb[dcnt]) );
+ }
+
+return;
+ 
+
+
+
+
+
+int ocnt;
+double bscr=0;
+
+int otabler[256];
+int otableg[256];
+int otableb[256];
+
+
+ for(dcnt=0;dcnt<numdist;dcnt++)
+  {
+  tabler[dcnt] = tabler[dcnt];
+  tabler[dcnt] = max(0,tabler[dcnt]);
+  tabler[dcnt] = min(254,tabler[dcnt]);
+  tableb[dcnt] = tableb[dcnt];
+  tableb[dcnt] = max(0,tableb[dcnt]);
+  tableb[dcnt] = min(254,tableb[dcnt]);
+  tableg[dcnt] = 255-(0.3/0.59)*tabler[dcnt]-(0.11/0.59)*tableb[dcnt];
+  tableg[dcnt] = max(0,tableg[dcnt]);
+  tableg[dcnt] = min(254,tableg[dcnt]);
+  }
+
+
+for(ocnt=0;ocnt<40;ocnt++)
+ {
+ for(dcnt=0;dcnt<numdist;dcnt++)
+  {
+  otabler[dcnt] = tabler[dcnt];
+  otableg[dcnt] = tableg[dcnt];
+  otableb[dcnt] = tableb[dcnt];
+  }
+
+  //dcnt = ocnt%numdist;
+ if(ocnt!=0)
+  for(dcnt=0;dcnt<numdist;dcnt++)
+   {
+   tabler[dcnt] = rand()&0xFF; //tabler[dcnt] + (rand()&15) - 8;
+   tabler[dcnt] = max(0,tabler[dcnt]);
+   tabler[dcnt] = min(254,tabler[dcnt]);
+   tableb[dcnt] = rand()&0xFF; //tableb[dcnt] + (rand()&15) - 8;
+   tableb[dcnt] = max(0,tableb[dcnt]);
+   tableb[dcnt] = min(254,tableb[dcnt]);
+   tableg[dcnt] = 255-(0.3/0.59)*tabler[dcnt]-(0.11/0.59)*tableb[dcnt];
+   tableg[dcnt] = max(0,tableg[dcnt]);
+   tableg[dcnt] = min(254,tableg[dcnt]);
+   }
+ double qual,qual2;
+ qual = 0;
+ for(dcnt=0;dcnt<numdist;dcnt++)
+  {
+  qual2 = 10000000000000000.0;
+  for(dcnt2=0;dcnt2<numdist;dcnt2++)
+   {
+   if(dcnt!=dcnt2)
+    {
+    if(distbordering[dcnt][dcnt2])
+     {
+     double temp;
+     //temp = pow(min((0.3*abs(tabler[dcnt]-tabler[dcnt2]) + 0.59*abs(tableg[dcnt]-tableg[dcnt2]) + 0.11*abs(tableb[dcnt]-tableb[dcnt2])),10),0.3);
+     temp = (((
+               0.11*abs(tabler[dcnt]-tabler[dcnt2])*(tabler[dcnt]+tabler[dcnt2])
+               + 
+               0.59*abs(tableg[dcnt]-tableg[dcnt2])*(tableg[dcnt]+tableg[dcnt2])  
+               +
+               0.30*abs(tableb[dcnt]-tableb[dcnt2])*(tableb[dcnt]+tableb[dcnt2])
+            )));
+     temp = min(temp,350);
+     qual += temp; //pow(temp,0.1);
+     //qual2 = min(qual2,temp);
+     //printf("(%d,%d) cur = %0.12lf\n",dcnt,dcnt2,temp);
+     //printf("Best: (%d,%d,%d) (%d,%d,%d) ", otabler[dcnt],otableg[dcnt],otableb[dcnt], otabler[dcnt2],otableg[dcnt2],otableb[dcnt2]);
+     //printf("Current: (%d,%d,%d) (%d,%d,%d)\n", tabler[dcnt],tableg[dcnt],tableb[dcnt], tabler[dcnt2],tableg[dcnt2],tableb[dcnt2]);
+    //qual2 += (1000.0*(abs(tabler[dcnt]-tabler[dcnt2]) + abs(tableg[dcnt]-tableg[dcnt2]) + abs(tableg[dcnt]-tableg[dcnt2])))
+    //            /(2 + abs(distcenx[dcnt]-distcenx[dcnt2]) + abs(distceny[dcnt]-distceny[dcnt2]));
+     //printf("(%d,%d) -> (%d,%d) %d\n\n", distcenx[dcnt], distceny[dcnt], distcenx[dcnt2], distceny[dcnt2], (abs(distcenx[dcnt]-distcenx[dcnt2]) + abs(distceny[dcnt]-distceny[dcnt2])) );
+     }
+    }
+   }
+  //qual = (dcnt==0)?(qual2):(min(qual2,qual));
+  //if(dcnt==0)
+  // qual = qual2;
+  }
+ //qual = 1/(qual+0.1);
+
+ if(ocnt==0)
+  {
+  bscr=qual;
+  }
+
+ if(qual < bscr || ocnt==0)
+  {
+  printf("Reverting\n");
+  for(dcnt=0;dcnt<numdist;dcnt++)
+   {
+   tabler[dcnt] = otabler[dcnt];
+   tableg[dcnt] = otableg[dcnt];
+   tableb[dcnt] = otableb[dcnt];
+   }
+  }
+ else
+  {
+  bscr = qual;
+  }
+ //printf("%d) bscr %0.12lf  qual %0.12lf\n", ocnt, bscr, qual);
+ }
+
+}
+
+void gnom_conv(double la, double ph, double *cx, double *cy)
+{
+
+static double PI = 3.14159;
+
+*cx = la + 9000;
+*cy = ph - 1000;
+
+//printf("Centre: %lf,%lf\n", la0, ph1);
+//printf("Mapping %lf, %lf to ", la, ph);
+
+la = la/180*PI;
+ph = ph/180*PI;
+
+*cx = cos(ph)*sin(la-(la0/180*PI));
+*cx /= sin((ph1/180*PI))*sin(ph) + cos((ph1/180*PI))*cos(ph)*cos(la-(la0/180*PI));
+
+*cy = cos(ph1/180*PI)*sin(ph) - sin(ph1/180*PI)*cos(ph)*cos(la-(la0/180*PI));
+*cy /= sin(ph1/180*PI)*sin(ph) + cos(ph1/180*PI)*cos(ph)*cos(la-(la0/180*PI));
+
+*cx *=180/PI;
+*cy *=180/PI;
+
+//printf("%lf,%lf \n", *cx, *cy);
+
+
+}

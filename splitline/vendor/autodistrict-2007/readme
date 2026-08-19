@@ -1,0 +1,15 @@
+Compiling source:
+
+run compile in compile_dir
+
+downloading census data
+
+run wget_scr in run_dir
+
+extracting block data from census data
+
+run get_block_scr in run_dir
+
+generating images
+
+run gen_images in run_dir

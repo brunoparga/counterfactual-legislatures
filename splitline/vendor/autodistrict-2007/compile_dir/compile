@@ -1,0 +1,2 @@
+gcc ../block_display/block_display.c -o block_display -lopengl32 -lglut32 -lm 
+gcc ../geoproc/geoproc.c -o geoproc -Wl,--stack,300388608 -mno-cygwin

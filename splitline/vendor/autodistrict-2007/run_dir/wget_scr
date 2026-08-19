@@ -1,0 +1,468 @@
+mkdir al
+cd al
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Alabama/al00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Alabama/algeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st01_d00_ascii.zip
+unzip -o al00001_uf1.zip
+unzip -o algeo_uf1.zip
+unzip -o st01_d00_ascii.zip
+cd ..
+mkdir ak
+cd ak
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Alaska/ak00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Alaska/akgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st02_d00_ascii.zip
+unzip -o ak00001_uf1.zip
+unzip -o akgeo_uf1.zip
+unzip -o st02_d00_ascii.zip
+cd ..
+mkdir az
+cd az
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Arizona/az00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Arizona/azgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st04_d00_ascii.zip
+unzip -o az00001_uf1.zip
+unzip -o azgeo_uf1.zip
+unzip -o st04_d00_ascii.zip
+cd ..
+mkdir ar
+cd ar
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Arkansas/ar00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Arkansas/argeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st05_d00_ascii.zip
+unzip -o ar00001_uf1.zip
+unzip -o argeo_uf1.zip
+unzip -o st05_d00_ascii.zip
+cd ..
+mkdir ca
+cd ca
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/California/ca00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/California/cageo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st06_d00_ascii.zip
+unzip -o ca00001_uf1.zip
+unzip -o cageo_uf1.zip
+unzip -o st06_d00_ascii.zip
+cd ..
+mkdir co
+cd co
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Colorado/co00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Colorado/cogeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st08_d00_ascii.zip
+unzip -o co00001_uf1.zip
+unzip -o cogeo_uf1.zip
+unzip -o st08_d00_ascii.zip
+cd ..
+mkdir ct
+cd ct
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Connecticut/ct00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Connecticut/ctgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st09_d00_ascii.zip
+unzip -o ct00001_uf1.zip
+unzip -o ctgeo_uf1.zip
+unzip -o st09_d00_ascii.zip
+cd ..
+mkdir de
+cd de
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Delaware/de00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Delaware/degeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st10_d00_ascii.zip
+unzip -o de00001_uf1.zip
+unzip -o degeo_uf1.zip
+unzip -o st10_d00_ascii.zip
+cd ..
+mkdir dc
+cd dc
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/District_of_Columbia/dc00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/District_of_Columbia/dcgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st11_d00_ascii.zip
+unzip -o dc00001_uf1.zip
+unzip -o dcgeo_uf1.zip
+unzip -o st11_d00_ascii.zip
+cd ..
+mkdir fl
+cd fl
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Florida/fl00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Florida/flgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st12_d00_ascii.zip
+unzip -o fl00001_uf1.zip
+unzip -o flgeo_uf1.zip
+unzip -o st12_d00_ascii.zip
+cd ..
+mkdir ga
+cd ga
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Georgia/ga00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Georgia/gageo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st13_d00_ascii.zip
+unzip -o ga00001_uf1.zip
+unzip -o gageo_uf1.zip
+unzip -o st13_d00_ascii.zip
+cd ..
+mkdir hi
+cd hi
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Hawaii/hi00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Hawaii/higeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st15_d00_ascii.zip
+unzip -o hi00001_uf1.zip
+unzip -o higeo_uf1.zip
+unzip -o st15_d00_ascii.zip
+cd ..
+mkdir id
+cd id
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Idaho/id00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Idaho/idgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st16_d00_ascii.zip
+unzip -o id00001_uf1.zip
+unzip -o idgeo_uf1.zip
+unzip -o st16_d00_ascii.zip
+cd ..
+mkdir il
+cd il
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Illinois/il00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Illinois/ilgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st17_d00_ascii.zip
+unzip -o il00001_uf1.zip
+unzip -o ilgeo_uf1.zip
+unzip -o st17_d00_ascii.zip
+cd ..
+mkdir in
+cd in
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Indiana/in00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Indiana/ingeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st18_d00_ascii.zip
+unzip -o in00001_uf1.zip
+unzip -o ingeo_uf1.zip
+unzip -o st18_d00_ascii.zip
+cd ..
+mkdir ia
+cd ia
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Iowa/ia00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Iowa/iageo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st19_d00_ascii.zip
+unzip -o ia00001_uf1.zip
+unzip -o iageo_uf1.zip
+unzip -o st19_d00_ascii.zip
+cd ..
+mkdir ks
+cd ks
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Kansas/ks00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Kansas/ksgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st20_d00_ascii.zip
+unzip -o ks00001_uf1.zip
+unzip -o ksgeo_uf1.zip
+unzip -o st20_d00_ascii.zip
+cd ..
+mkdir ky
+cd ky
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Kentucky/ky00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Kentucky/kygeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st21_d00_ascii.zip
+unzip -o ky00001_uf1.zip
+unzip -o kygeo_uf1.zip
+unzip -o st21_d00_ascii.zip
+cd ..
+mkdir la
+cd la
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Louisiana/la00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Louisiana/lageo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st22_d00_ascii.zip
+unzip -o la00001_uf1.zip
+unzip -o lageo_uf1.zip
+unzip -o st22_d00_ascii.zip
+cd ..
+mkdir me
+cd me
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Maine/me00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Maine/megeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st23_d00_ascii.zip
+unzip -o me00001_uf1.zip
+unzip -o megeo_uf1.zip
+unzip -o st23_d00_ascii.zip
+cd ..
+mkdir md
+cd md
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Maryland/md00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Maryland/mdgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st24_d00_ascii.zip
+unzip -o md00001_uf1.zip
+unzip -o mdgeo_uf1.zip
+unzip -o st24_d00_ascii.zip
+cd ..
+mkdir ma
+cd ma
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Massachusetts/ma00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Massachusetts/mageo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st25_d00_ascii.zip
+unzip -o ma00001_uf1.zip
+unzip -o mageo_uf1.zip
+unzip -o st25_d00_ascii.zip
+cd ..
+mkdir mi
+cd mi
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Michigan/mi00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Michigan/migeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st26_d00_ascii.zip
+unzip -o mi00001_uf1.zip
+unzip -o migeo_uf1.zip
+unzip -o st26_d00_ascii.zip
+cd ..
+mkdir mn
+cd mn
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Minnesota/mn00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Minnesota/mngeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st27_d00_ascii.zip
+unzip -o mn00001_uf1.zip
+unzip -o mngeo_uf1.zip
+unzip -o st27_d00_ascii.zip
+cd ..
+mkdir ms
+cd ms
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Mississippi/ms00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Mississippi/msgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st28_d00_ascii.zip
+unzip -o ms00001_uf1.zip
+unzip -o msgeo_uf1.zip
+unzip -o st28_d00_ascii.zip
+cd ..
+mkdir mo
+cd mo
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Missouri/mo00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Missouri/mogeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st29_d00_ascii.zip
+unzip -o mo00001_uf1.zip
+unzip -o mogeo_uf1.zip
+unzip -o st29_d00_ascii.zip
+cd ..
+mkdir mt
+cd mt
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Montana/mt00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Montana/mtgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st30_d00_ascii.zip
+unzip -o mt00001_uf1.zip
+unzip -o mtgeo_uf1.zip
+unzip -o st30_d00_ascii.zip
+cd ..
+mkdir ne
+cd ne
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Nebraska/ne00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Nebraska/negeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st31_d00_ascii.zip
+unzip -o ne00001_uf1.zip
+unzip -o negeo_uf1.zip
+unzip -o st31_d00_ascii.zip
+cd ..
+mkdir nv
+cd nv
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Nevada/nv00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Nevada/nvgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st32_d00_ascii.zip
+unzip -o nv00001_uf1.zip
+unzip -o nvgeo_uf1.zip
+unzip -o st32_d00_ascii.zip
+cd ..
+mkdir nh
+cd nh
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/New_Hampshire/nh00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/New_Hampshire/nhgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st33_d00_ascii.zip
+unzip -o nh00001_uf1.zip
+unzip -o nhgeo_uf1.zip
+unzip -o st33_d00_ascii.zip
+cd ..
+mkdir nj
+cd nj
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/New_Jersey/nj00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/New_Jersey/njgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st34_d00_ascii.zip
+unzip -o nj00001_uf1.zip
+unzip -o njgeo_uf1.zip
+unzip -o st34_d00_ascii.zip
+cd ..
+mkdir nm
+cd nm
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/New_Mexico/nm00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/New_Mexico/nmgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st35_d00_ascii.zip
+unzip -o nm00001_uf1.zip
+unzip -o nmgeo_uf1.zip
+unzip -o st35_d00_ascii.zip
+cd ..
+mkdir ny
+cd ny
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/New_York/ny00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/New_York/nygeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st36_d00_ascii.zip
+unzip -o ny00001_uf1.zip
+unzip -o nygeo_uf1.zip
+unzip -o st36_d00_ascii.zip
+cd ..
+mkdir nc
+cd nc
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/North_Carolina/nc00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/North_Carolina/ncgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st37_d00_ascii.zip
+unzip -o nc00001_uf1.zip
+unzip -o ncgeo_uf1.zip
+unzip -o st37_d00_ascii.zip
+cd ..
+mkdir nd
+cd nd
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/North_Dakota/nd00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/North_Dakota/ndgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st38_d00_ascii.zip
+unzip -o nd00001_uf1.zip
+unzip -o ndgeo_uf1.zip
+unzip -o st38_d00_ascii.zip
+cd ..
+mkdir oh
+cd oh
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Ohio/oh00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Ohio/ohgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st39_d00_ascii.zip
+unzip -o oh00001_uf1.zip
+unzip -o ohgeo_uf1.zip
+unzip -o st39_d00_ascii.zip
+cd ..
+mkdir ok
+cd ok
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Oklahoma/ok00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Oklahoma/okgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st40_d00_ascii.zip
+unzip -o ok00001_uf1.zip
+unzip -o okgeo_uf1.zip
+unzip -o st40_d00_ascii.zip
+cd ..
+mkdir or
+cd or
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Oregon/or00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Oregon/orgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st41_d00_ascii.zip
+unzip -o or00001_uf1.zip
+unzip -o orgeo_uf1.zip
+unzip -o st41_d00_ascii.zip
+cd ..
+mkdir pa
+cd pa
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Pennsylvania/pa00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Pennsylvania/pageo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st42_d00_ascii.zip
+unzip -o pa00001_uf1.zip
+unzip -o pageo_uf1.zip
+unzip -o st42_d00_ascii.zip
+cd ..
+mkdir pr
+cd pr
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Puerto_Rico/pr00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Puerto_Rico/prgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st72_d00_ascii.zip
+unzip -o pr00001_uf1.zip
+unzip -o prgeo_uf1.zip
+unzip -o st72_d00_ascii.zip
+cd ..
+mkdir ri
+cd ri
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Rhode_Island/ri00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Rhode_Island/rigeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st44_d00_ascii.zip
+unzip -o ri00001_uf1.zip
+unzip -o rigeo_uf1.zip
+unzip -o st44_d00_ascii.zip
+cd ..
+mkdir sc
+cd sc
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/South_Carolina/sc00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/South_Carolina/scgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st45_d00_ascii.zip
+unzip -o sc00001_uf1.zip
+unzip -o scgeo_uf1.zip
+unzip -o st45_d00_ascii.zip
+cd ..
+mkdir sd
+cd sd
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/South_Dakota/sd00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/South_Dakota/sdgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st46_d00_ascii.zip
+unzip -o sd00001_uf1.zip
+unzip -o sdgeo_uf1.zip
+unzip -o st46_d00_ascii.zip
+cd ..
+mkdir tn
+cd tn
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Tennessee/tn00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Tennessee/tngeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st47_d00_ascii.zip
+unzip -o tn00001_uf1.zip
+unzip -o tngeo_uf1.zip
+unzip -o st47_d00_ascii.zip
+cd ..
+mkdir tx
+cd tx
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Texas/tx00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Texas/txgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st48_d00_ascii.zip
+unzip -o tx00001_uf1.zip
+unzip -o txgeo_uf1.zip
+unzip -o st48_d00_ascii.zip
+cd ..
+mkdir ut
+cd ut
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Utah/ut00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Utah/utgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st49_d00_ascii.zip
+unzip -o ut00001_uf1.zip
+unzip -o utgeo_uf1.zip
+unzip -o st49_d00_ascii.zip
+cd ..
+mkdir vt
+cd vt
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Vermont/vt00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Vermont/vtgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st50_d00_ascii.zip
+unzip -o vt00001_uf1.zip
+unzip -o vtgeo_uf1.zip
+unzip -o st50_d00_ascii.zip
+cd ..
+mkdir va
+cd va
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Virginia/va00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Virginia/vageo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st51_d00_ascii.zip
+unzip -o va00001_uf1.zip
+unzip -o vageo_uf1.zip
+unzip -o st51_d00_ascii.zip
+cd ..
+mkdir wa
+cd wa
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Washington/wa00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Washington/wageo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st53_d00_ascii.zip
+unzip -o wa00001_uf1.zip
+unzip -o wageo_uf1.zip
+unzip -o st53_d00_ascii.zip
+cd ..
+mkdir wv
+cd wv
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/West_Virginia/wv00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/West_Virginia/wvgeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st54_d00_ascii.zip
+unzip -o wv00001_uf1.zip
+unzip -o wvgeo_uf1.zip
+unzip -o st54_d00_ascii.zip
+cd ..
+mkdir wi
+cd wi
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Wisconsin/wi00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Wisconsin/wigeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st55_d00_ascii.zip
+unzip -o wi00001_uf1.zip
+unzip -o wigeo_uf1.zip
+unzip -o st55_d00_ascii.zip
+cd ..
+mkdir wy
+cd wy
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Wyoming/wy00001_uf1.zip
+wget http://www2.census.gov/census_2000/datasets/Summary_File_1/Wyoming/wygeo_uf1.zip
+wget http://www.census.gov/geo/cob/bdy/st/st00ascii/st56_d00_ascii.zip
+unzip -o wy00001_uf1.zip
+unzip -o wygeo_uf1.zip
+unzip -o st56_d00_ascii.zip
+cd ..

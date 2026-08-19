@@ -1,1 +1,31 @@
+# Upstream CVS repository, kept locally for provenance. The extracted
+# checkout is tracked instead, under splitline/vendor/autodistrict-2007.
 autodistrict
+
+# Build output.
+splitline/bin
+
+# Scratch and logs. The logs are worth keeping and will move to their own
+# tracked directory; until then they stay out.
+splitline/work
+
+# Census source data: 9 GB, fetched from the Wayback Machine. Not
+# reproducible cheaply, so it wants a tracked manifest rather than the bytes.
+splitline/data
+
+# Generated artifacts. Trees are ~7 MB of JSON and are the real content;
+# whether they get tracked is still an open decision. The renders and
+# animations derive from them and never need to be.
+splitline/cache
+splitline/cache_anim
+
+# Superseded by cache_anim.
+splitline/anim
+
+# The 2010 point-mass run, kept untouched for comparison, and the symlink
+# views over the cache. The views regenerate from the runner.
+splitline/maps
+splitline/maps_uniform
+
+__pycache__/
+*.pyc

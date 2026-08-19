@@ -1,0 +1,247 @@
+//
+// Copyright 2007 Ivan Ryan
+//
+// Licensed under the Apache License, Version 2.0 (the "License"); 
+// you may not use this file except in compliance with the License. 
+// You may obtain a copy of the License at 
+//
+//   http://www.apache.org/licenses/LICENSE-2.0 
+//
+// Unless required by applicable law or agreed to in writing, 
+// software distributed under the License is distributed on an 
+// "AS IS" BASIS, 
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, 
+// either express or implied. 
+//
+// See the License for the specific language governing permissions 
+// and limitations under the License.
+//
+
+#include <stdio.h>
+
+void getline(char *buf, FILE *fp);
+char *getfield(char *buf, FILE *fp);
+
+main(int argc, char **argv)
+{
+
+char filename[1000];
+char filename_full[1000];
+char filename_geo[1000];
+
+char summary[9];
+
+strcpy(summary,"080");
+
+if(argc>0)
+ {
+ strcpy(filename, argv[1]);
+ printf("setting filename to %s\n", filename);
+ }
+else
+ {
+ strcpy(filename, "tx");
+ }
+
+strcpy(filename_full, filename);
+strcpy(filename_geo, filename);
+
+strcat(filename_full, "00001.uf1");
+strcat(filename_geo, "geo.uf1");
+
+
+if(argc>1)
+ {
+ strncpy(summary, argv[2],3);
+ summary[3]=0;
+ printf("Setting summary level to %s\n", summary);
+ if(strlen(summary)!=3)
+  {
+  printf("illegal summary level\n");
+  printf("080 = tract\n101 = block\n150 = blockgroup\n");
+  exit(0);
+  }   
+ }
+else 
+ {
+ strcpy(summary, "080");
+ }
+
+strcat(summary, "00000");
+
+int tract[10000000];
+int group[10000000];
+int pop[10000000];
+
+double xx;
+double yy;
+
+int curve_nums[1000000][10];
+
+int    curve_max = 0;
+
+int pop_tot = 0;
+
+char buf[16384];
+char buf2[16384];
+
+int cnt;
+
+for(cnt=0;cnt<10000000;cnt++)
+ {
+ tract[cnt]=-1;
+ group[cnt]=-1;
+ pop[cnt]  =-1;
+ }
+
+FILE *fp;
+
+fp = fopen(filename_full, "r");
+
+if(fp==NULL)
+ {
+ printf("Unable to open %s\n", filename_full);
+ exit(0);
+ }
+
+int pop_num;
+int rec_num;
+
+while(!feof(fp))
+ {
+ getline(buf, fp);
+ char *tmp;
+ tmp = buf;
+ while(*tmp!=0 && *tmp!=',')
+  tmp++;
+ tmp++;
+ while(*tmp!=0 && *tmp!=',')
+  tmp++;
+ tmp++;
+ while(*tmp!=0 && *tmp!=',')
+  tmp++;
+ tmp++;
+ while(*tmp!=0 && *tmp!=',')
+  tmp++;
+ tmp++;
+ sscanf(tmp, "%d" , &rec_num);
+ //printf("rec_num = %d\n", rec_num);
+ if(rec_num>999999 || rec_num <0)
+   {
+   printf("illegal recnum %d\n" , rec_num);
+   exit(0);
+   }
+ while(*tmp!=0 && *tmp!=',')
+  tmp++;
+ tmp++;
+ sscanf(tmp, "%d" , &pop_num);
+ pop[rec_num] = pop_num;
+ pop_tot += pop_num;
+ //printf("pop_num = %d\n", pop_num);
+ } 
+
+fprintf(stderr,"Total population %d\n" , pop_tot);
+pop_tot = 0;
+
+fclose(fp);
+
+fp = fopen(filename_geo , "r");
+
+if(fp==NULL)
+ {
+ printf("Unable to open %s\n", filename_geo);
+ exit(0);
+ }
+
+
+
+while(!feof(fp))
+ {
+ getline(buf, fp);  // 080 = tract, 101=block, 150=blockgroup
+ if( strncmp( buf+8, summary , 8) == 0 //&&
+     //strncmp( buf+62 , "    " , 4) == 0 && 
+     //*(buf+62) != ' '
+     )
+  {
+  strncpy(buf2, buf+18, 7);
+  buf2[7]=0;
+  //printf("Record: %s\n" , buf2);
+  int rec_num;
+
+  if(rec_num>999999 || rec_num <0)
+   {
+   printf("illegal recnum %d\n" , rec_num);
+   exit(0);
+   }
+  sscanf(buf2, "%d", &rec_num);
+  //printf("Record: %07d\n" , rec_num);
+  
+  strncpy(buf2, buf+55, 6);
+  buf2[6]=0;
+  int tract_num;
+  sscanf(buf2, "%d", &tract_num);  
+  tract[rec_num] = tract_num;
+  //printf("Tract:  %06d\n" , tract_num);
+  
+  strncpy(buf2, buf+61, 1);
+  buf2[1]=0;
+  int group_num;
+  sscanf(buf2, "%d", &group_num);
+  group[rec_num] = group_num;
+
+  strncpy(buf2, buf+310, 9);
+  buf2[9]=0;
+  sscanf(buf2,"%lf",&yy);
+  yy=yy/1000000.0;
+
+  strncpy(buf2, buf+319, 10);
+  buf2[10]=0;
+  sscanf(buf2,"%lf",&xx);
+  xx=xx/1000000.0;
+
+
+  //printf("Group:  %d\n" , group_num); 
+  //printf("%s\n" , buf );
+  printf("%06d,%d,%d,%d,%3.16lf,%3.16lf\n", tract_num, group_num, pop[rec_num],1,xx,yy);
+  pop_tot += pop[rec_num];
+  }
+  
+ }
+
+fprintf(stderr,"Total population %d\n" , pop_tot);
+
+fclose(fp);
+
+}
+
+
+
+void getline(char *buf, FILE *fp)
+ {
+ int cnt = 0;
+ char tmp = 0;
+ while(!feof(fp) && tmp!=10)
+  {
+  fscanf(fp , "%c" , &tmp);
+  buf[cnt] = tmp;
+//  printf("<%c> %d\n" , tmp, tmp);
+  cnt++;
+  }
+ buf[cnt-1] = 0;
+ }
+
+char *getfield(char *buf, FILE *fp)
+{
+char *tmp, *tmp2;
+getline(buf,fp);
+tmp = buf;
+while(*tmp!=0 && *tmp != '"')
+ tmp++;
+if(*tmp!=0)
+ tmp++;
+tmp2 = tmp;
+while(*tmp2!=0 && *tmp2 != '"')
+ tmp2++;
+*tmp2 = 0;
+return(tmp);
+}
