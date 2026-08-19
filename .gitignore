@@ -13,19 +13,19 @@ splitline/work
 # reproducible cheaply, so it wants a tracked manifest rather than the bytes.
 splitline/data
 
-# Generated artifacts. Trees are ~7 MB of JSON and are the real content;
-# whether they get tracked is still an open decision. The renders and
-# animations derive from them and never need to be.
-splitline/cache
+# The cut trees ARE the content: every district is exact and resolution-free,
+# and the pictures are a pure function of them. So the JSON is tracked and
+# everything derived from it -- renders, animations -- is not.
+splitline/cache/*
+!splitline/cache/*.json
+splitline/cache_point/*
+!splitline/cache_point/*.json
 splitline/cache_anim
 
-# Superseded by cache_anim.
-splitline/anim
-
-# The 2010 point-mass run, kept untouched for comparison, and the symlink
-# views over the cache. The views regenerate from the runner.
-splitline/maps
+# Symlink views over the cache, one tree per population model. They carry no
+# content of their own -- run_all.py rebuilds them with --link-only.
 splitline/maps_uniform
+splitline/maps_point
 
 __pycache__/
 *.pyc

@@ -7,8 +7,10 @@ of whether DC and PR are apportioned) this produces:
   * one map per state that has seats
   * one nationwide all-in-one-go map over the contiguous states
 
-Output goes to  maps_uniform/<metric>-metric/<year>/<rule>/<variant>/
-where metric is span or land -- the two definitions of cut length, generated
+Output goes to  maps_<model>/<metric>-metric/<year>/<rule>/<variant>/
+where model is uniform or point -- the two population models, each with its
+own cache and output tree so neither can overwrite the other -- metric is
+span or land -- the two definitions of cut length, generated
 in parallel rather than one replacing the other -- rule is one of
 fixed, cube-root, smallest-state, and variant is one of states, plus-dc,
 plus-pr, plus-dc-pr.
@@ -51,7 +53,20 @@ ENGINE = ROOT / "bin" / "splitline"
 CACHE = ROOT / "cache"
 OUT = ROOT / "maps_uniform"
 
-UNIFORM = ["--uniform", "--subdiv", "10000"]
+# The two population models. Uniform spreads each block over an equal-area
+# disc and is the better model of where people actually are; point mass keeps
+# a block whole, which is what a state redistricting from PL 94-171 data
+# actually does. They answer different questions, so both are kept.
+#
+# Each model gets its own cache and output directory. The cache stem carries
+# year, state, seats and metric but not the model, so sharing one directory
+# would have a point-mass run silently overwrite the uniform trees.
+MODELS = {
+    "uniform": (["--uniform", "--subdiv", "10000"], "cache", "maps_uniform"),
+    "point": ([], "cache_point", "maps_point"),
+}
+MODEL = "uniform"
+MODEL_ARGS = MODELS[MODEL][0]
 
 # How cut length is measured. These give visibly different maps wherever there
 # is water to hop, so both are generated side by side rather than one
@@ -158,15 +173,17 @@ def national_inputs(year, with_dc):
 
 # --------------------------------------------------------------------- runs --
 
-def run(bnd, pop, seats, stem, timings, label, metric="span"):
+def run(bnd, pop, seats, stem, timings, label, metric="span", want_png=True):
     """One engine invocation, cached by output stem."""
     js, png = CACHE / f"{stem}.json", CACHE / f"{stem}.png"
-    if js.exists() and png.exists():
+    if js.exists() and (png.exists() or not want_png):
         log(f"    cached  {label}")
-        return js, png
+        return js, (png if png.exists() else None)
     cmd = [str(ENGINE), "--boundary", str(bnd), "--pop", str(pop),
-           "--seats", str(seats), *UNIFORM, "--cut-metric", metric,
-           "--tree", str(js), "--png", str(png)]
+           "--seats", str(seats), *MODEL_ARGS, "--cut-metric", metric,
+           "--tree", str(js)]
+    if want_png:
+        cmd += ["--png", str(png)]
     t0 = time.time()
     r = subprocess.run(cmd, capture_output=True, text=True)
     dt = time.time() - t0
@@ -181,7 +198,7 @@ def run(bnd, pop, seats, stem, timings, label, metric="span"):
             spread = line.split("spread")[-1].strip()
     timings.append((label, dt))
     log(f"    {dt:7.1f}s  {label}  spread {spread}")
-    return js, png
+    return js, (png if want_png else None)
 
 
 def main():
@@ -194,7 +211,21 @@ def main():
     ap.add_argument("--link-only", action="store_true",
                     help="rebuild the output tree from the cache without "
                          "invoking the engine at all")
+    ap.add_argument("--population-model", choices=sorted(MODELS),
+                    default="uniform",
+                    help="uniform spreads a block over an equal-area disc; "
+                         "point keeps it whole (default uniform). Each model "
+                         "has its own cache and output directory.")
+    ap.add_argument("--no-png", action="store_true",
+                    help="write only the cut trees. The tree is the real "
+                         "output and the picture derives from it, so this is "
+                         "much faster when only the JSON is wanted.")
     args = ap.parse_args()
+
+    global MODEL, MODEL_ARGS, CACHE, OUT
+    MODEL = args.population_model
+    MODEL_ARGS, cache_dir, out_dir = MODELS[MODEL]
+    CACHE, OUT = ROOT / cache_dir, ROOT / out_dir
 
     M = args.cut_metric
     CACHE.mkdir(exist_ok=True)
@@ -232,7 +263,8 @@ def main():
         label = f"[{i}/{len(st_jobs)}] {st} {year} {n}seats"
         try:
             run(state_boundary(year, st), state_pop(year, st), n,
-                f"{year}_{st.lower()}_{n}_{M}", timings, label, M)
+                f"{year}_{st.lower()}_{n}_{M}", timings, label, M,
+                want_png=not args.no_png)
         except Exception as e:
             log(f"    ERROR {label}: {e}")
 
@@ -243,7 +275,7 @@ def main():
             try:
                 bnd, pop = national_inputs(year, dc)
                 run(bnd, pop, n, f"{year}_us48_{n}_{'dc' if dc else 'nodc'}_{M}",
-                    timings, label, M)
+                    timings, label, M, want_png=not args.no_png)
             except Exception as e:
                 log(f"    ERROR {label}: {e}")
 
@@ -258,7 +290,9 @@ def main():
             {"year": year, "rule": rule,
              "house": size, "house_50_states": base_size,
              "includes_dc": bool(dc), "includes_pr": bool(pr),
-             "population_model": "uniform disc, subdiv=10000",
+             "population_model": ("uniform disc, subdiv=10000"
+                                 if MODEL == "uniform" else
+                                 "point mass, one point per block"),
              "cut_metric": M,
              "seats": seats}, indent=1, sort_keys=True))
         for st, n in seats.items():
