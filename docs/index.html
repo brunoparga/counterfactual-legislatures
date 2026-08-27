@@ -61,15 +61,38 @@ per run. Brightness is population density, so the cities show up as the bright s
   </figure>
 </div>
 
+<h2>Does it reproduce the original?</h2>
+<p>The Center for Range Voting published splitline maps from the 2000 census in 2009.
+Rebuilding them from scratch is the test of whether any of this is right — same census,
+same seat counts, independent code:</p>
+<div class="pair">
+  <figure>
+    <img src="img/co-2000-crv.png" alt="Center for Range Voting's 2009 splitline map of Colorado">
+    <figcaption>Center for Range Voting, 2009.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/co-2000-ours.png" alt="This project's splitline map of Colorado, 2000 census">
+    <figcaption>This project, rebuilt from the raw 2000 census blocks.
+    <b>97.2%</b> of the state's land area falls in the same district in both.</figcaption>
+  </figure>
+</div>
+<p>Colorado is the cleanest comparison because it is landlocked and nearly rectangular.
+Along coastlines the two implementations diverge more, because they turn out to measure the
+length of a cut differently — theirs counts the straight-line span across water, mine measured
+only the land it crosses. Since the algorithm always picks the <i>shortest</i> cut, that one
+definition changes which cut wins, and a single different cut near the root changes everything
+below it.</p>
+
 <h2>A few states</h2>
 <div class="pair">
   <figure>
     <img src="img/tx-2020.png" alt="Texas divided into 38 districts">
-    <figcaption>Texas, 38 districts.</figcaption>
+    <figcaption>Texas — mid-decade redrawn in 2025, and in court over it since.</figcaption>
   </figure>
   <figure>
     <img src="img/ca-2020.png" alt="California divided into 52 districts">
-    <figcaption>California, 52 districts.</figcaption>
+    <figcaption>California — half its districts sit in the Los Angeles and
+    Bay Area knots.</figcaption>
   </figure>
 </div>
 
