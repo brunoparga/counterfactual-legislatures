@@ -1,0 +1,142 @@
+head     1.1;
+branch   1.1.1;
+access   ;
+symbols  v1:1.1.1.1 svg-version:1.1.1;
+locks    ; strict;
+comment  @# @;
+
+
+1.1
+date     2007.09.04.21.27.23;  author raphfrk;  state Exp;
+branches 1.1.1.1;
+next     ;
+
+1.1.1.1
+date     2007.09.04.21.27.23;  author raphfrk;  state Exp;
+branches ;
+next     ;
+
+
+desc
+@@
+
+
+
+1.1
+log
+@Initial revision
+@
+text
+@rm al/*.bmp
+../compile_dir/block_display al 01 blocks 7 noimage
+rm ak/*.bmp
+../compile_dir/block_display ak 02 blocks 1 noimage
+rm az/*.bmp
+../compile_dir/block_display az 04 blocks 8 noimage
+rm ar/*.bmp
+../compile_dir/block_display ar 05 blocks 4 noimage
+rm ca/*.bmp
+../compile_dir/block_display ca 06 blocks 53 noimage
+rm co/*.bmp
+../compile_dir/block_display co 08 blocks 7 noimage
+rm ct/*.bmp
+../compile_dir/block_display ct 09 blocks 5 noimage
+rm de/*.bmp
+../compile_dir/block_display de 10 blocks 1 noimage
+rm dc/*.bmp
+../compile_dir/block_display dc 11 blocks 0 noimage
+rm fl/*.bmp
+../compile_dir/block_display fl 12 blocks 25 noimage
+rm ga/*.bmp
+../compile_dir/block_display ga 13 blocks 13 noimage
+rm hi/*.bmp
+../compile_dir/block_display hi 15 blocks 2 noimage
+rm id/*.bmp
+../compile_dir/block_display id 16 blocks 2 noimage
+rm il/*.bmp
+../compile_dir/block_display il 17 blocks 19 noimage
+rm in/*.bmp
+../compile_dir/block_display in 18 blocks 9 noimage
+rm ia/*.bmp
+../compile_dir/block_display ia 19 blocks 5 noimage
+rm ks/*.bmp
+../compile_dir/block_display ks 20 blocks 4 noimage
+rm ky/*.bmp
+../compile_dir/block_display ky 21 blocks 6 noimage
+rm la/*.bmp
+../compile_dir/block_display la 22 blocks 7 noimage
+rm me/*.bmp
+../compile_dir/block_display me 23 blocks 2 noimage
+rm md/*.bmp
+../compile_dir/block_display md 24 blocks 8 noimage
+rm ma/*.bmp
+../compile_dir/block_display ma 25 blocks 10 noimage
+rm mi/*.bmp
+../compile_dir/block_display mi 26 blocks 15 noimage
+rm mn/*.bmp
+../compile_dir/block_display mn 27 blocks 8 noimage
+rm ms/*.bmp
+../compile_dir/block_display ms 28 blocks 4 noimage
+rm mo/*.bmp
+../compile_dir/block_display mo 29 blocks 9 noimage
+rm mt/*.bmp
+../compile_dir/block_display mt 30 blocks 1 noimage
+rm ne/*.bmp
+../compile_dir/block_display ne 31 blocks 3 noimage
+rm nv/*.bmp
+../compile_dir/block_display nv 32 blocks 3 noimage
+rm nh/*.bmp
+../compile_dir/block_display nh 33 blocks 2 noimage
+rm nj/*.bmp
+../compile_dir/block_display nj 34 blocks 13 noimage
+rm nm/*.bmp
+../compile_dir/block_display nm 35 blocks 3 noimage
+rm ny/*.bmp
+../compile_dir/block_display ny 36 blocks 29 noimage
+rm nc/*.bmp
+../compile_dir/block_display nc 37 blocks 13 noimage
+rm nd/*.bmp
+../compile_dir/block_display nd 38 blocks 1 noimage
+rm oh/*.bmp
+../compile_dir/block_display oh 39 blocks 18 noimage
+rm ok/*.bmp
+../compile_dir/block_display ok 40 blocks 5 noimage
+rm or/*.bmp
+../compile_dir/block_display or 41 blocks 5 noimage
+rm pa/*.bmp
+../compile_dir/block_display pa 42 blocks 19 noimage
+rm pr/*.bmp
+../compile_dir/block_display pr 72 blocks 0 noimage
+rm ri/*.bmp
+../compile_dir/block_display ri 44 blocks 2 noimage
+rm sc/*.bmp
+../compile_dir/block_display sc 45 blocks 6 noimage
+rm sd/*.bmp
+../compile_dir/block_display sd 46 blocks 1 noimage
+rm tn/*.bmp
+../compile_dir/block_display tn 47 blocks 9 noimage
+rm tx/*.bmp
+../compile_dir/block_display tx 48 blocks 32 noimage
+rm ut/*.bmp
+../compile_dir/block_display ut 49 blocks 3 noimage
+rm vt/*.bmp
+../compile_dir/block_display vt 50 blocks 1 noimage
+rm va/*.bmp
+../compile_dir/block_display va 51 blocks 11 noimage
+rm wa/*.bmp
+../compile_dir/block_display wa 53 blocks 9 noimage
+rm wv/*.bmp
+../compile_dir/block_display wv 54 blocks 3 noimage
+rm wi/*.bmp
+../compile_dir/block_display wi 55 blocks 8 noimage
+rm wy/*.bmp
+../compile_dir/block_display wy 56 blocks 1 noimage
+@
+
+
+1.1.1.1
+log
+@
+@
+text
+@@

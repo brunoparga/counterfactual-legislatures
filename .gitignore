@@ -1,31 +1,36 @@
-# Upstream CVS repository, kept locally for provenance. The extracted
-# checkout is tracked instead, under splitline/vendor/autodistrict-2007.
-autodistrict
+# Layout: shared/ is country-neutral (the districting engine, seat-allocation
+# maths, animation, shapefile conversion); usa/ is everything that knows about
+# FIPS codes, census file formats, or the number 435.
 
 # Build output.
-splitline/bin
+shared/splitline/bin
 
-# Scratch and logs. The logs are worth keeping and will move to their own
-# tracked directory; until then they stay out.
-splitline/work
+# Scratch and logs.
+usa/work
 
-# Census source data: 9 GB, fetched from the Wayback Machine. Not
-# reproducible cheaply, so it wants a tracked manifest rather than the bytes.
-splitline/data
+# Census source data: 9 GB, fetched from the Wayback Machine. The bytes stay
+# out; the manifest that makes them verifiable and re-fetchable is tracked.
+# The apportionment tables are the exception -- 104 KB of public-domain federal
+# work whose origin URL was never recorded, so tracking the bytes is the only
+# way to guarantee they survive.
+usa/upstream/*
+!usa/upstream/MANIFEST.json
+!usa/upstream/MANIFEST.sha256
+!usa/upstream/apportionment/
 
 # The cut trees ARE the content: every district is exact and resolution-free,
 # and the pictures are a pure function of them. So the JSON is tracked and
 # everything derived from it -- renders, animations -- is not.
-splitline/cache/*
-!splitline/cache/*.json
-splitline/cache_point/*
-!splitline/cache_point/*.json
-splitline/cache_anim
+usa/cache/*
+!usa/cache/*.json
+usa/cache_point/*
+!usa/cache_point/*.json
+usa/cache_anim
 
 # Symlink views over the cache, one tree per population model. They carry no
 # content of their own -- run_all.py rebuilds them with --link-only.
-splitline/maps_uniform
-splitline/maps_point
+usa/maps_uniform
+usa/maps_point
 
 __pycache__/
 *.pyc

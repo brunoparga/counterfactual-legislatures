@@ -1,0 +1,570 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2007.08.09.21.36.12;	author raphfrk;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2007.08.09.21.23.18;	author raphfrk;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2007.08.09.20.53.24;	author raphfrk;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@pointing to wrong dir
+@
+text
+@cd al
+echo "processing: al (1 of 52)"
+../../compile_dir/geoproc al 101 > pop_data.dat.blocks
+cd ..
+cd ak
+echo "processing: ak (2 of 52)"
+../../compile_dir/geoproc ak 101 > pop_data.dat.blocks
+cd ..
+cd az
+echo "processing: az (3 of 52)"
+../../compile_dir/geoproc az 101 > pop_data.dat.blocks
+cd ..
+cd ar
+echo "processing: ar (4 of 52)"
+../../compile_dir/geoproc ar 101 > pop_data.dat.blocks
+cd ..
+cd ca
+echo "processing: ca (5 of 52)"
+../../compile_dir/geoproc ca 101 > pop_data.dat.blocks
+cd ..
+cd co
+echo "processing: co (6 of 52)"
+../../compile_dir/geoproc co 101 > pop_data.dat.blocks
+cd ..
+cd ct
+echo "processing: ct (7 of 52)"
+../../compile_dir/geoproc ct 101 > pop_data.dat.blocks
+cd ..
+cd de
+echo "processing: de (8 of 52)"
+../../compile_dir/geoproc de 101 > pop_data.dat.blocks
+cd ..
+cd dc
+echo "processing: dc (9 of 52)"
+../../compile_dir/geoproc dc 101 > pop_data.dat.blocks
+cd ..
+cd fl
+echo "processing: fl (10 of 52)"
+../../compile_dir/geoproc fl 101 > pop_data.dat.blocks
+cd ..
+cd ga
+echo "processing: ga (11 of 52)"
+../../compile_dir/geoproc ga 101 > pop_data.dat.blocks
+cd ..
+cd hi
+echo "processing: hi (12 of 52)"
+../../compile_dir/geoproc hi 101 > pop_data.dat.blocks
+cd ..
+cd id
+echo "processing: id (13 of 52)"
+../../compile_dir/geoproc id 101 > pop_data.dat.blocks
+cd ..
+cd il
+echo "processing: il (14 of 52)"
+../../compile_dir/geoproc il 101 > pop_data.dat.blocks
+cd ..
+cd in
+echo "processing: in (15 of 52)"
+../../compile_dir/geoproc in 101 > pop_data.dat.blocks
+cd ..
+cd ia
+echo "processing: ia (16 of 52)"
+../../compile_dir/geoproc ia 101 > pop_data.dat.blocks
+cd ..
+cd ks
+echo "processing: ks (17 of 52)"
+../../compile_dir/geoproc ks 101 > pop_data.dat.blocks
+cd ..
+cd ky
+echo "processing: ky (18 of 52)"
+../../compile_dir/geoproc ky 101 > pop_data.dat.blocks
+cd ..
+cd la
+echo "processing: la (19 of 52)"
+../../compile_dir/geoproc la 101 > pop_data.dat.blocks
+cd ..
+cd me
+echo "processing: me (20 of 52)"
+../../compile_dir/geoproc me 101 > pop_data.dat.blocks
+cd ..
+cd md
+echo "processing: md (21 of 52)"
+../../compile_dir/geoproc md 101 > pop_data.dat.blocks
+cd ..
+cd ma
+echo "processing: ma (22 of 52)"
+../../compile_dir/geoproc ma 101 > pop_data.dat.blocks
+cd ..
+cd mi
+echo "processing: mi (23 of 52)"
+../../compile_dir/geoproc mi 101 > pop_data.dat.blocks
+cd ..
+cd mn
+echo "processing: mn (24 of 52)"
+../../compile_dir/geoproc mn 101 > pop_data.dat.blocks
+cd ..
+cd ms
+echo "processing: ms (25 of 52)"
+../../compile_dir/geoproc ms 101 > pop_data.dat.blocks
+cd ..
+cd mo
+echo "processing: mo (26 of 52)"
+../../compile_dir/geoproc mo 101 > pop_data.dat.blocks
+cd ..
+cd mt
+echo "processing: mt (27 of 52)"
+../../compile_dir/geoproc mt 101 > pop_data.dat.blocks
+cd ..
+cd ne
+echo "processing: ne (28 of 52)"
+../../compile_dir/geoproc ne 101 > pop_data.dat.blocks
+cd ..
+cd nv
+echo "processing: nv (29 of 52)"
+../../compile_dir/geoproc nv 101 > pop_data.dat.blocks
+cd ..
+cd nh
+echo "processing: nh (30 of 52)"
+../../compile_dir/geoproc nh 101 > pop_data.dat.blocks
+cd ..
+cd nj
+echo "processing: nj (31 of 52)"
+../../compile_dir/geoproc nj 101 > pop_data.dat.blocks
+cd ..
+cd nm
+echo "processing: nm (32 of 52)"
+../../compile_dir/geoproc nm 101 > pop_data.dat.blocks
+cd ..
+cd ny
+echo "processing: ny (33 of 52)"
+../../compile_dir/geoproc ny 101 > pop_data.dat.blocks
+cd ..
+cd nc
+echo "processing: nc (34 of 52)"
+../../compile_dir/geoproc nc 101 > pop_data.dat.blocks
+cd ..
+cd nd
+echo "processing: nd (35 of 52)"
+../../compile_dir/geoproc nd 101 > pop_data.dat.blocks
+cd ..
+cd oh
+echo "processing: oh (36 of 52)"
+../../compile_dir/geoproc oh 101 > pop_data.dat.blocks
+cd ..
+cd ok
+echo "processing: ok (37 of 52)"
+../../compile_dir/geoproc ok 101 > pop_data.dat.blocks
+cd ..
+cd or
+echo "processing: or (38 of 52)"
+../../compile_dir/geoproc or 101 > pop_data.dat.blocks
+cd ..
+cd pa
+echo "processing: pa (39 of 52)"
+../../compile_dir/geoproc pa 101 > pop_data.dat.blocks
+cd ..
+cd pr
+echo "processing: pr (40 of 52)"
+../../compile_dir/geoproc pr 101 > pop_data.dat.blocks
+cd ..
+cd ri
+echo "processing: ri (41 of 52)"
+../../compile_dir/geoproc ri 101 > pop_data.dat.blocks
+cd ..
+cd sc
+echo "processing: sc (42 of 52)"
+../../compile_dir/geoproc sc 101 > pop_data.dat.blocks
+cd ..
+cd sd
+echo "processing: sd (43 of 52)"
+../../compile_dir/geoproc sd 101 > pop_data.dat.blocks
+cd ..
+cd tn
+echo "processing: tn (44 of 52)"
+../../compile_dir/geoproc tn 101 > pop_data.dat.blocks
+cd ..
+cd tx
+echo "processing: tx (45 of 52)"
+../../compile_dir/geoproc tx 101 > pop_data.dat.blocks
+cd ..
+cd ut
+echo "processing: ut (46 of 52)"
+../../compile_dir/geoproc ut 101 > pop_data.dat.blocks
+cd ..
+cd vt
+echo "processing: vt (47 of 52)"
+../../compile_dir/geoproc vt 101 > pop_data.dat.blocks
+cd ..
+cd va
+echo "processing: va (48 of 52)"
+../../compile_dir/geoproc va 101 > pop_data.dat.blocks
+cd ..
+cd wa
+echo "processing: wa (49 of 52)"
+../../compile_dir/geoproc wa 101 > pop_data.dat.blocks
+cd ..
+cd wv
+echo "processing: wv (50 of 52)"
+../../compile_dir/geoproc wv 101 > pop_data.dat.blocks
+cd ..
+cd wi
+echo "processing: wi (51 of 52)"
+../../compile_dir/geoproc wi 101 > pop_data.dat.blocks
+cd ..
+cd wy
+echo "processing: wy (52 of 52)"
+../../compile_dir/geoproc wy 101 > pop_data.dat.blocks
+cd ..
+@
+
+
+1.2
+log
+@changed directory
+@
+text
+@d3 1
+a3 1
+../compile_dir/geoproc al 101 > pop_data.dat.blocks
+d7 1
+a7 1
+../compile_dir/geoproc ak 101 > pop_data.dat.blocks
+d11 1
+a11 1
+../compile_dir/geoproc az 101 > pop_data.dat.blocks
+d15 1
+a15 1
+../compile_dir/geoproc ar 101 > pop_data.dat.blocks
+d19 1
+a19 1
+../compile_dir/geoproc ca 101 > pop_data.dat.blocks
+d23 1
+a23 1
+../compile_dir/geoproc co 101 > pop_data.dat.blocks
+d27 1
+a27 1
+../compile_dir/geoproc ct 101 > pop_data.dat.blocks
+d31 1
+a31 1
+../compile_dir/geoproc de 101 > pop_data.dat.blocks
+d35 1
+a35 1
+../compile_dir/geoproc dc 101 > pop_data.dat.blocks
+d39 1
+a39 1
+../compile_dir/geoproc fl 101 > pop_data.dat.blocks
+d43 1
+a43 1
+../compile_dir/geoproc ga 101 > pop_data.dat.blocks
+d47 1
+a47 1
+../compile_dir/geoproc hi 101 > pop_data.dat.blocks
+d51 1
+a51 1
+../compile_dir/geoproc id 101 > pop_data.dat.blocks
+d55 1
+a55 1
+../compile_dir/geoproc il 101 > pop_data.dat.blocks
+d59 1
+a59 1
+../compile_dir/geoproc in 101 > pop_data.dat.blocks
+d63 1
+a63 1
+../compile_dir/geoproc ia 101 > pop_data.dat.blocks
+d67 1
+a67 1
+../compile_dir/geoproc ks 101 > pop_data.dat.blocks
+d71 1
+a71 1
+../compile_dir/geoproc ky 101 > pop_data.dat.blocks
+d75 1
+a75 1
+../compile_dir/geoproc la 101 > pop_data.dat.blocks
+d79 1
+a79 1
+../compile_dir/geoproc me 101 > pop_data.dat.blocks
+d83 1
+a83 1
+../compile_dir/geoproc md 101 > pop_data.dat.blocks
+d87 1
+a87 1
+../compile_dir/geoproc ma 101 > pop_data.dat.blocks
+d91 1
+a91 1
+../compile_dir/geoproc mi 101 > pop_data.dat.blocks
+d95 1
+a95 1
+../compile_dir/geoproc mn 101 > pop_data.dat.blocks
+d99 1
+a99 1
+../compile_dir/geoproc ms 101 > pop_data.dat.blocks
+d103 1
+a103 1
+../compile_dir/geoproc mo 101 > pop_data.dat.blocks
+d107 1
+a107 1
+../compile_dir/geoproc mt 101 > pop_data.dat.blocks
+d111 1
+a111 1
+../compile_dir/geoproc ne 101 > pop_data.dat.blocks
+d115 1
+a115 1
+../compile_dir/geoproc nv 101 > pop_data.dat.blocks
+d119 1
+a119 1
+../compile_dir/geoproc nh 101 > pop_data.dat.blocks
+d123 1
+a123 1
+../compile_dir/geoproc nj 101 > pop_data.dat.blocks
+d127 1
+a127 1
+../compile_dir/geoproc nm 101 > pop_data.dat.blocks
+d131 1
+a131 1
+../compile_dir/geoproc ny 101 > pop_data.dat.blocks
+d135 1
+a135 1
+../compile_dir/geoproc nc 101 > pop_data.dat.blocks
+d139 1
+a139 1
+../compile_dir/geoproc nd 101 > pop_data.dat.blocks
+d143 1
+a143 1
+../compile_dir/geoproc oh 101 > pop_data.dat.blocks
+d147 1
+a147 1
+../compile_dir/geoproc ok 101 > pop_data.dat.blocks
+d151 1
+a151 1
+../compile_dir/geoproc or 101 > pop_data.dat.blocks
+d155 1
+a155 1
+../compile_dir/geoproc pa 101 > pop_data.dat.blocks
+d159 1
+a159 1
+../compile_dir/geoproc pr 101 > pop_data.dat.blocks
+d163 1
+a163 1
+../compile_dir/geoproc ri 101 > pop_data.dat.blocks
+d167 1
+a167 1
+../compile_dir/geoproc sc 101 > pop_data.dat.blocks
+d171 1
+a171 1
+../compile_dir/geoproc sd 101 > pop_data.dat.blocks
+d175 1
+a175 1
+../compile_dir/geoproc tn 101 > pop_data.dat.blocks
+d179 1
+a179 1
+../compile_dir/geoproc tx 101 > pop_data.dat.blocks
+d183 1
+a183 1
+../compile_dir/geoproc ut 101 > pop_data.dat.blocks
+d187 1
+a187 1
+../compile_dir/geoproc vt 101 > pop_data.dat.blocks
+d191 1
+a191 1
+../compile_dir/geoproc va 101 > pop_data.dat.blocks
+d195 1
+a195 1
+../compile_dir/geoproc wa 101 > pop_data.dat.blocks
+d199 1
+a199 1
+../compile_dir/geoproc wv 101 > pop_data.dat.blocks
+d203 1
+a203 1
+../compile_dir/geoproc wi 101 > pop_data.dat.blocks
+d207 1
+a207 1
+../compile_dir/geoproc wy 101 > pop_data.dat.blocks
+@
+
+
+1.1
+log
+@adding block conversion script
+@
+text
+@d3 1
+a3 1
+../geoproc/geoproc al 101 > pop_data.dat.blocks
+d7 1
+a7 1
+../geoproc/geoproc ak 101 > pop_data.dat.blocks
+d11 1
+a11 1
+../geoproc/geoproc az 101 > pop_data.dat.blocks
+d15 1
+a15 1
+../geoproc/geoproc ar 101 > pop_data.dat.blocks
+d19 1
+a19 1
+../geoproc/geoproc ca 101 > pop_data.dat.blocks
+d23 1
+a23 1
+../geoproc/geoproc co 101 > pop_data.dat.blocks
+d27 1
+a27 1
+../geoproc/geoproc ct 101 > pop_data.dat.blocks
+d31 1
+a31 1
+../geoproc/geoproc de 101 > pop_data.dat.blocks
+d35 1
+a35 1
+../geoproc/geoproc dc 101 > pop_data.dat.blocks
+d39 1
+a39 1
+../geoproc/geoproc fl 101 > pop_data.dat.blocks
+d43 1
+a43 1
+../geoproc/geoproc ga 101 > pop_data.dat.blocks
+d47 1
+a47 1
+../geoproc/geoproc hi 101 > pop_data.dat.blocks
+d51 1
+a51 1
+../geoproc/geoproc id 101 > pop_data.dat.blocks
+d55 1
+a55 1
+../geoproc/geoproc il 101 > pop_data.dat.blocks
+d59 1
+a59 1
+../geoproc/geoproc in 101 > pop_data.dat.blocks
+d63 1
+a63 1
+../geoproc/geoproc ia 101 > pop_data.dat.blocks
+d67 1
+a67 1
+../geoproc/geoproc ks 101 > pop_data.dat.blocks
+d71 1
+a71 1
+../geoproc/geoproc ky 101 > pop_data.dat.blocks
+d75 1
+a75 1
+../geoproc/geoproc la 101 > pop_data.dat.blocks
+d79 1
+a79 1
+../geoproc/geoproc me 101 > pop_data.dat.blocks
+d83 1
+a83 1
+../geoproc/geoproc md 101 > pop_data.dat.blocks
+d87 1
+a87 1
+../geoproc/geoproc ma 101 > pop_data.dat.blocks
+d91 1
+a91 1
+../geoproc/geoproc mi 101 > pop_data.dat.blocks
+d95 1
+a95 1
+../geoproc/geoproc mn 101 > pop_data.dat.blocks
+d99 1
+a99 1
+../geoproc/geoproc ms 101 > pop_data.dat.blocks
+d103 1
+a103 1
+../geoproc/geoproc mo 101 > pop_data.dat.blocks
+d107 1
+a107 1
+../geoproc/geoproc mt 101 > pop_data.dat.blocks
+d111 1
+a111 1
+../geoproc/geoproc ne 101 > pop_data.dat.blocks
+d115 1
+a115 1
+../geoproc/geoproc nv 101 > pop_data.dat.blocks
+d119 1
+a119 1
+../geoproc/geoproc nh 101 > pop_data.dat.blocks
+d123 1
+a123 1
+../geoproc/geoproc nj 101 > pop_data.dat.blocks
+d127 1
+a127 1
+../geoproc/geoproc nm 101 > pop_data.dat.blocks
+d131 1
+a131 1
+../geoproc/geoproc ny 101 > pop_data.dat.blocks
+d135 1
+a135 1
+../geoproc/geoproc nc 101 > pop_data.dat.blocks
+d139 1
+a139 1
+../geoproc/geoproc nd 101 > pop_data.dat.blocks
+d143 1
+a143 1
+../geoproc/geoproc oh 101 > pop_data.dat.blocks
+d147 1
+a147 1
+../geoproc/geoproc ok 101 > pop_data.dat.blocks
+d151 1
+a151 1
+../geoproc/geoproc or 101 > pop_data.dat.blocks
+d155 1
+a155 1
+../geoproc/geoproc pa 101 > pop_data.dat.blocks
+d159 1
+a159 1
+../geoproc/geoproc pr 101 > pop_data.dat.blocks
+d163 1
+a163 1
+../geoproc/geoproc ri 101 > pop_data.dat.blocks
+d167 1
+a167 1
+../geoproc/geoproc sc 101 > pop_data.dat.blocks
+d171 1
+a171 1
+../geoproc/geoproc sd 101 > pop_data.dat.blocks
+d175 1
+a175 1
+../geoproc/geoproc tn 101 > pop_data.dat.blocks
+d179 1
+a179 1
+../geoproc/geoproc tx 101 > pop_data.dat.blocks
+d183 1
+a183 1
+../geoproc/geoproc ut 101 > pop_data.dat.blocks
+d187 1
+a187 1
+../geoproc/geoproc vt 101 > pop_data.dat.blocks
+d191 1
+a191 1
+../geoproc/geoproc va 101 > pop_data.dat.blocks
+d195 1
+a195 1
+../geoproc/geoproc wa 101 > pop_data.dat.blocks
+d199 1
+a199 1
+../geoproc/geoproc wv 101 > pop_data.dat.blocks
+d203 1
+a203 1
+../geoproc/geoproc wi 101 > pop_data.dat.blocks
+d207 1
+a207 1
+../geoproc/geoproc wy 101 > pop_data.dat.blocks
+@
+

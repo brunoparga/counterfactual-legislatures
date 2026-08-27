@@ -1,0 +1,38 @@
+counterfactual-legislatures
+Copyright 2026 Bruno Parga
+
+This product includes software derived from autodistrict
+(https://sourceforge.net/projects/autodistrict/):
+
+    Copyright 2007 Ivan Ryan
+    Licensed under the Apache License, Version 2.0
+
+splitline/src/splitline.c and splitline/src/splitline_raster.c are ports of
+that work. What changed is recorded in splitline/vendor/README.md; the
+pristine upstream is kept alongside it under
+splitline/vendor/autodistrict-2007/ so the derivation stays checkable.
+
+Everything else in this repository is original work under the same licence.
+
+---
+
+The shortest splitline method, and the published maps this project reproduces
+and extends, come from the Center for Range Voting. Their page
+https://www.rangevoting.org/SplitLR.html states:
+
+    We give permission to all to re-use these images provided they cite the
+    Center for Range Voting, this web page, and us; the Shortest Splitline
+    algorithm was invented by Warren D. Smith and the program that produced
+    the images was written by Ivan Ryan; the underlying data is from the US
+    Census Bureau.
+
+Accordingly, and for the maps generated here as much as for theirs:
+
+    Shortest Splitline algorithm invented by Warren D. Smith.
+    Original implementation by Ivan Ryan.
+    Published maps and method: Center for Range Voting,
+    https://www.rangevoting.org/SplitLR.html
+    Underlying data: US Census Bureau.
+
+Any reuse of images or maps from this repository should carry that credit.
+

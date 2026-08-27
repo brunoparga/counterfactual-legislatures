@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Counterfactual legislatures</title>
+<style>
+  :root { --bg:#0d0f13; --fg:#e8e6e1; --dim:#9a978f; --rule:#2a2e36; --link:#8fc7ff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width: 62rem; margin:0 auto; padding: 2.5rem 1.1rem 5rem; }
+  h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); line-height:1.15; margin:0 0 .4rem; letter-spacing:-.02em; }
+  h2 { font-size: clamp(1.15rem, 3.2vw, 1.5rem); margin: 3rem 0 .3rem; letter-spacing:-.01em; }
+  .sub { color:var(--dim); margin:0 0 2.5rem; }
+  p { margin:.6rem 0 0; }
+  figure { margin: 1rem 0 0; }
+  img { width:100%; height:auto; display:block; border-radius:6px; background:#000; }
+  figcaption { color:var(--dim); font-size:.9rem; margin-top:.5rem; }
+  .pair { display:grid; gap:1.2rem; }
+  @media (min-width: 46rem) { .pair { grid-template-columns: 1fr 1fr; } }
+  a { color:var(--link); }
+  footer { margin-top:4rem; padding-top:1.2rem; border-top:1px solid var(--rule);
+           color:var(--dim); font-size:.85rem; }
+  code { background:#1a1d23; padding:.1em .35em; border-radius:3px; font-size:.9em; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Counterfactual legislatures</h1>
+<p class="sub">What if the districts were drawn by an algorithm that knows nothing about politics?</p>
+
+<p>US congressional districts are drawn by state legislatures — the people who then run in them.
+The <b>shortest splitline</b> method removes every human decision: cut the state in two with the
+shortest straight line that leaves the right number of people on each side, then recurse.
+No communities of interest, no incumbents, no voting history. Just population and geometry.</p>
+
+<p>These maps are rebuilt from the 2000, 2010 and 2020 censuses — about 8 million census blocks
+per run. Brightness is population density, so the cities show up as the bright speckle.</p>
+
+<h2>The contiguous United States, 432 districts</h2>
+<figure>
+  <img src="img/us48-2020.png" alt="Shortest-splitline districting of the contiguous United States, 432 districts, 2020 census">
+  <figcaption>2020 census. State lines ignored entirely — the country is cut as one region.
+  Alaska and Hawaii keep their own maps, so 435 &minus; 3 = 432 districts here.
+  The first cut runs from Michigan to Louisiana.</figcaption>
+</figure>
+
+<h2>One cut at a time</h2>
+<p>Every map is a binary tree of straight lines, so the whole thing can be replayed:</p>
+<div class="pair">
+  <figure>
+    <img src="img/co-2020.gif" alt="Animation of Colorado being divided into 8 districts">
+    <figcaption>Colorado, 8 districts. The Denver metro takes half of them.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/md-2020.gif" alt="Animation of Maryland being divided into 8 districts">
+    <figcaption>Maryland, 8 districts — currently home to some of the most contorted
+    districts in the country.</figcaption>
+  </figure>
+</div>
+
+<h2>A few states</h2>
+<div class="pair">
+  <figure>
+    <img src="img/tx-2020.png" alt="Texas divided into 38 districts">
+    <figcaption>Texas, 38 districts.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/ca-2020.png" alt="California divided into 52 districts">
+    <figcaption>California, 52 districts.</figcaption>
+  </figure>
+</div>
+
+<h2>What this is for</h2>
+<p>Not a proposal. Splitline districts ignore everything people reasonably care about, and
+multi-member proportional representation is almost certainly a better answer. The point is
+that a politically blind map is a <i>measuring stick</i>: the distance between it and the
+enacted map is a floor on how much the real map was shaped by something other than geography.</p>
+
+<p>That question got sharper in April 2026, when the Supreme Court held in
+<i>Louisiana v. Callais</i> that a state may draw districts for any political purpose regardless
+of racial effect. The defence is now "our intent was partisan, not racial" — and a map drawn
+with no political input at all is the natural thing to measure it against.</p>
+
+<p>The longer aim is to do this for many countries and many electoral systems, and then ask
+whether legislatures elected under different rules would have voted differently on policies
+whose effects we can actually measure.</p>
+
+<footer>
+<p>Code and data:
+<a href="https://github.com/brunoparga/counterfactual-legislatures">github.com/brunoparga/counterfactual-legislatures</a>
+&middot; Bruno Parga</p>
+<p>The Shortest Splitline algorithm was invented by Warren D. Smith and the original program
+was written by Ivan Ryan; the method and the published maps this work reproduces come from the
+<a href="https://www.rangevoting.org/SplitLR.html">Center for Range Voting</a>.
+Underlying data: US Census Bureau.</p>
+</footer>
+
+</main>
+</body>
+</html>

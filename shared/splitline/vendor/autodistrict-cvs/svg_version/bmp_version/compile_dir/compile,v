@@ -1,0 +1,40 @@
+head     1.1;
+branch   1.1.1;
+access   ;
+symbols  v1:1.1.1.1 svg-version:1.1.1;
+locks    ; strict;
+comment  @# @;
+
+
+1.1
+date     2007.09.04.21.27.22;  author raphfrk;  state Exp;
+branches 1.1.1.1;
+next     ;
+
+1.1.1.1
+date     2007.09.04.21.27.22;  author raphfrk;  state Exp;
+branches ;
+next     ;
+
+
+desc
+@@
+
+
+
+1.1
+log
+@Initial revision
+@
+text
+@gcc ../block_display/block_display.c -o block_display -lopengl32 -lglut32 -lm 
+gcc ../geoproc/geoproc.c -o geoproc -Wl,--stack,300388608 -mno-cygwin
+@
+
+
+1.1.1.1
+log
+@
+@
+text
+@@

@@ -1,0 +1,128 @@
+{
+  "_comment": [
+    "Machine-readable provenance for every third-party input. Each generated",
+    "dataset names the source ids it derives from, and its licence is whatever",
+    "is compatible with all of them. See LICENSE-DATA.md for the rule.",
+    "",
+    "'redistributable' is whether the bytes may be republished from here, which",
+    "is a different question from whether they may be used.",
+    "",
+    "'url' is the canonical origin. Where 'via' names the Wayback Machine, the",
+    "bytes were fetched through it because census.gov refuses automated",
+    "clients: snapshots are found with the CDX index at",
+    "http://web.archive.org/cdx/search/cdx and replayed unmodified through",
+    "https://web.archive.org/web/{timestamp}id_/{url}, where the 'id_' suffix",
+    "suppresses the Archive's own rewriting. See usa/tools/fetch_census.py."
+  ],
+  "sources": [
+    {
+      "id": "us-census-2000-sf1",
+      "title": "US Census 2000, Summary File 1",
+      "url": "http://www2.census.gov/census_2000/datasets/Summary_File_1",
+      "publisher": "US Census Bureau",
+      "country": "US",
+      "retrieved": "2026-08-17",
+      "via": "Wayback Machine (census.gov blocks automated access)",
+      "licence": "public domain (17 USC 105, work of the US federal government)",
+      "attribution_required": false,
+      "redistributable": true,
+      "included_here": false,
+      "note": "Excluded for size, not licensing. Freely redownloadable."
+    },
+    {
+      "id": "us-census-2010-pl94171",
+      "title": "US Census 2010, PL 94-171 Redistricting Data",
+      "url": "http://www2.census.gov/census_2010/redistricting_file--pl_94-171",
+      "publisher": "US Census Bureau",
+      "country": "US",
+      "retrieved": "2026-08-17",
+      "via": "Wayback Machine",
+      "licence": "public domain (17 USC 105)",
+      "attribution_required": false,
+      "redistributable": true,
+      "included_here": false
+    },
+    {
+      "id": "us-census-2020-pl94171",
+      "title": "US Census 2020, PL 94-171 Redistricting Data",
+      "url": "https://www2.census.gov/programs-surveys/decennial/2020/data/01-Redistricting_File--PL_94-171",
+      "publisher": "US Census Bureau",
+      "country": "US",
+      "retrieved": "2026-08-18",
+      "via": "Wayback Machine",
+      "licence": "public domain (17 USC 105)",
+      "attribution_required": false,
+      "redistributable": true,
+      "included_here": false,
+      "note": "Carries the VTD code on every block, which is the free block-to-precinct crosswalk for the partisan phase."
+    },
+    {
+      "id": "us-census-boundaries",
+      "title": "Cartographic Boundary Files, state level (2000 ARC/INFO ungenerate; 2010 gz_2010_us_040_00_500k; 2020 cb_2020_us_state_500k)",
+      "url": "http://www.census.gov/geo/cob/bdy/st/st00ascii ; http://www2.census.gov/geo/tiger/GENZ2010/gz_2010_us_040_00_500k.zip ; https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_state_500k.zip",
+      "publisher": "US Census Bureau",
+      "country": "US",
+      "retrieved": "2026-08-17",
+      "licence": "public domain (17 USC 105)",
+      "attribution_required": false,
+      "redistributable": true,
+      "included_here": false
+    },
+    {
+      "id": "us-apportionment-tables",
+      "title": "Apportionment population and representatives by state, 2000/2010/2020",
+      "url": "https://www.census.gov/data/tables/time-series/dec/density-data-text.html",
+      "publisher": "US Census Bureau",
+      "country": "US",
+      "retrieved": "2026-08-19",
+      "licence": "public domain (17 USC 105)",
+      "attribution_required": false,
+      "redistributable": true,
+      "included_here": false,
+      "note": "Apportionment population = resident + overseas federal employees. Distinct from the districting base; see usa/tools/apportion.py."
+    },
+    {
+      "id": "autodistrict-2007",
+      "title": "autodistrict",
+      "url": "https://sourceforge.net/projects/autodistrict/",
+      "author": "Ivan Ryan",
+      "publisher": "SourceForge",
+      "retrieved": "2026-08-14",
+      "licence": "Apache-2.0",
+      "attribution_required": true,
+      "attribution": "Copyright 2007 Ivan Ryan, licensed under the Apache License, Version 2.0",
+      "redistributable": true,
+      "included_here": true,
+      "path": "shared/splitline/vendor/autodistrict-2007/",
+      "note": "The engine is a port of this. See NOTICE and shared/splitline/vendor/README.md."
+    },
+    {
+      "id": "crv-splitline-maps",
+      "title": "Published shortest-splitline maps, 2000 census",
+      "url": "https://www.rangevoting.org/SplitLR.html",
+      "publisher": "Center for Range Voting (rangevoting.org)",
+      "retrieved": "2026-08-16",
+      "licence": "reuse permitted by the publisher, conditional on attribution (stated on the source page)",
+      "attribution_required": true,
+      "redistributable": true,
+      "included_here": false,
+      "note": "Comparison baseline for reproducing the 2000 maps. The publisher grants reuse provided the citation above is carried; see NOTICE for their exact wording. Held locally under usa/upstream/reference/ and not currently committed, which is a size and scope choice rather than a licensing one.",
+      "attribution": "Shortest Splitline algorithm invented by Warren D. Smith; original implementation by Ivan Ryan; published maps and method: Center for Range Voting, https://www.rangevoting.org/SplitLR.html; underlying data: US Census Bureau"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "cut-trees",
+      "path": "usa/cache/*.json, usa/cache_point/*.json",
+      "derived_from": [
+        "us-census-2000-sf1",
+        "us-census-2010-pl94171",
+        "us-census-2020-pl94171",
+        "us-census-boundaries",
+        "us-apportionment-tables"
+      ],
+      "licence": "CC-BY-4.0",
+      "note": "Every input is public domain, so the licence is a choice rather than an inheritance. CC-BY rather than CC0 to keep reuse citable."
+    }
+  ]
+}

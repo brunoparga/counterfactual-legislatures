@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: >-
+  counterfactual-legislatures: what legislatures would look like
+  under different electoral systems
+message: >-
+  If you use this software or the datasets derived from it,
+  please cite it as below.
+type: software
+authors:
+  - given-names: Bruno
+    family-names: Parga
+repository-code: 'https://github.com/brunoparga/counterfactual-legislatures'
+abstract: >-
+  Redraws legislatures under electoral systems other than the ones
+  actually used. The first phase reproduces and extends the shortest
+  splitline districting of the United States across the 2000, 2010 and
+  2020 censuses, under three House-size rules and four choices of
+  whether the District of Columbia and Puerto Rico are apportioned.
+  The districting engine is a port of Ivan Ryan's 2007 autodistrict;
+  everything else is original.
+keywords:
+  - redistricting
+  - electoral systems
+  - apportionment
+  - proportional representation
+  - gerrymandering
+  - shortest splitline
+license: Apache-2.0
