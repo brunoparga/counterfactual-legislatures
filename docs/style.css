@@ -20,7 +20,7 @@
 /* Banner. Deliberately loud against the dark page -- it is not decoration. */
 .banner { background:#fdf6d8; border:1px solid #c0392b; border-radius:6px;
           color:#8c1d13; padding:1rem 1.15rem; margin:0 0 2.2rem;
-          font-weight:700; line-height:1.5; font-size:.95rem; }
+          font-weight:700; line-height:1.5; font-size:.85rem; }
 .banner p { margin:0; }
 .banner p + p { margin-top:.7rem; font-weight:600; }
 .banner a { color:#8c1d13; text-decoration:underline; }
