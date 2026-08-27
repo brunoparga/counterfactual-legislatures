@@ -1,0 +1,28 @@
+:root { --bg:#0d0f13; --fg:#e8e6e1; --dim:#9a978f; --rule:#2a2e36; --link:#8fc7ff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width: 62rem; margin:0 auto; padding: 2.5rem 1.1rem 5rem; }
+  h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); line-height:1.15; margin:0 0 .4rem; letter-spacing:-.02em; }
+  h2 { font-size: clamp(1.15rem, 3.2vw, 1.5rem); margin: 3rem 0 .3rem; letter-spacing:-.01em; }
+  .sub { color:var(--dim); margin:0 0 2.5rem; }
+  p { margin:.6rem 0 0; }
+  figure { margin: 1rem 0 0; }
+  img { width:100%; height:auto; display:block; border-radius:6px; background:#000; }
+  figcaption { color:var(--dim); font-size:.9rem; margin-top:.5rem; }
+  .pair { display:grid; gap:1.2rem; }
+  @media (min-width: 46rem) { .pair { grid-template-columns: 1fr 1fr; } }
+  a { color:var(--link); }
+  footer { margin-top:4rem; padding-top:1.2rem; border-top:1px solid var(--rule);
+           color:var(--dim); font-size:.85rem; }
+  code { background:#1a1d23; padding:.1em .35em; border-radius:3px; font-size:.9em; }
+
+/* Banner. Deliberately loud against the dark page -- it is not decoration. */
+.banner { background:#fdf6d8; border:1px solid #c0392b; border-radius:6px;
+          color:#8c1d13; padding:1rem 1.15rem; margin:0 0 2.2rem;
+          font-weight:700; line-height:1.5; font-size:.95rem; }
+.banner p { margin:0; }
+.banner p + p { margin-top:.7rem; font-weight:600; }
+.banner a { color:#8c1d13; text-decoration:underline; }
+.banner a:hover { color:#c0392b; }
+
