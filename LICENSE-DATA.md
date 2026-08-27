@@ -60,6 +60,30 @@ the Center for Range Voting, whose page grants reuse on one condition:
 generated here, not only to theirs: the method is theirs whoever runs it. Any
 reuse of images from this repository should carry it too.
 
+## The site
+
+`docs/` is published at polisci.brunoparga.net and mixes three kinds of thing,
+so it takes three answers rather than inheriting one:
+
+- **Markup and stylesheet** — code, and Apache-2.0 with the rest of it.
+- **Prose** — CC-BY-4.0. Apache-2.0 would technically cover it, but a licence
+  written about source and object form, derivative works of software and
+  patent grants is the wrong instrument for an essay.
+- **Maps** — CC-BY-4.0, as derivatives of the cut trees, which is the same
+  answer the trees already have.
+- **The Center for Range Voting's map** — theirs, used under the permission
+  quoted above and credited in the page footer.
+
+Nothing else is pulled in. The page loads no webfonts, no CDN, no third-party
+scripts or stylesheets; the only external references are ordinary hyperlinks,
+which carry no licence obligation. Font stacks name system fonts rather than
+distributing any.
+
+DejaVu Sans is used by `shared/tools/label_map.py` to draw captions into the
+map images. Its licence permits this explicitly, and glyphs rendered into a
+raster are not a redistribution of the font, so nothing is owed -- recorded
+here only so an audit does not have to work it out again.
+
 ## Third-party material not committed here
 
 - **rangevoting.org's published maps** (`usa/upstream/reference/`), the comparison
