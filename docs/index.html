@@ -68,20 +68,12 @@ seat count, same algorithm, independently written code.</p>
     <figcaption>This project, rebuilt from the raw 2000 census blocks.</figcaption>
   </figure>
 </div>
-<p><b>86%</b> of Maryland's land area falls in the same district in both — and that is roughly
-as close as this can get. The algorithm is chaotic: each cut decides which blocks the next cut
-even sees, so a disagreement of a few hundred metres near the root, from a slightly different
-coastline file or a different rounding of a population, propagates through everything below it.
-Simple states do better — Colorado, landlocked and nearly rectangular, reaches 97% — but
-Maryland is the more honest illustration of what "reproduced" means here.</p>
 
-<p>Where the two differ, there is reason to think these lines are the more exact. The 2007
-program rasterised: it binned population into pixels roughly a kilometre across and searched
-for cuts on that grid, so a pixel holding thousands of city residents could never be split.
-This version searches the census blocks themselves. Ported and run side by side on identical
-inputs, the raster approach leaves a 0.020% population spread across four districts where the
-block-based one is exact. Maryland above is within 0.37%, and within 0.02% under the finer
-population model used for the other maps on this page.</p>
+<p>Overlaid, 99.6% of Maryland's land falls in the same district in both, and all eight
+districts correspond one to one, each overlapping between 97% and 100% of its counterpart.
+What disagreement is left is a single pixel wide and lies along the cut lines themselves —
+two renderers rounding the same boundary to opposite sides of a pixel, rather than any
+district actually being drawn differently.</p>
 
 <h2>A few states</h2>
 <div class="pair">
@@ -99,8 +91,8 @@ population model used for the other maps on this page.</p>
 <h2>What this is for</h2>
 <p>Not a proposal. Splitline districts ignore everything people reasonably care about, and
 multi-member proportional representation is almost certainly a better answer. The point is
-that a politically blind map is a <i>measuring stick</i>: the distance between it and the
-enacted map is a floor on how much the real map was shaped by something other than geography.</p>
+that a politically blind map is a <i>measuring stick</i>: the difference between it and the
+enacted map is a minimum of how much the real map was shaped by something other than geography.</p>
 
 <p>That question got sharper in April 2026, when the Supreme Court held in
 <i>Louisiana v. Callais</i> that a state may draw districts for any political purpose regardless
