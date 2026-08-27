@@ -46,39 +46,44 @@ per run. Brightness is population density, so the cities show up as the bright s
 <div class="pair">
   <figure>
     <img src="img/co-2020.gif" alt="Animation of Colorado being divided into 8 districts">
-    <figcaption>Colorado, 8 districts. The Denver metro takes half of them.</figcaption>
+    <figcaption>Colorado, 8 districts. One covers half the state; the two smallest,
+    both in Denver, are a fifth of one percent of it each.</figcaption>
   </figure>
   <figure>
-    <img src="img/md-2020.gif" alt="Animation of Maryland being divided into 8 districts">
-    <figcaption>Maryland, 8 districts — currently home to some of the most contorted
-    districts in the country.</figcaption>
+    <img src="img/wa-2020.gif" alt="Animation of Washington being divided into 10 districts">
+    <figcaption>Washington, 10 districts. Three of them cover 72% of the state;
+    three more are too small to see at this scale.</figcaption>
   </figure>
 </div>
 
 <h2>Does it reproduce the original?</h2>
 <p>The Center for Range Voting published splitline maps from the 2000 census in 2009.
-Rebuilding them from scratch is the test of whether any of this is right — same census,
-same seat counts, independent code:</p>
+Rebuilding them from scratch is the test of whether any of this is right: same census, same
+seat count, same algorithm, independently written code.</p>
 <div class="pair">
   <figure>
-    <img src="img/co-2000-crv.png" alt="Center for Range Voting's 2009 splitline map of Colorado">
+    <img src="img/md-2000-crv.png" alt="Center for Range Voting's 2009 splitline map of Maryland">
     <figcaption>Center for Range Voting, 2009.</figcaption>
   </figure>
   <figure>
-    <img src="img/co-2000-ours.png" alt="This project's splitline map of Colorado, 2000 census">
-    <figcaption>This project, rebuilt from the raw 2000 census blocks.
-    <b>97.2%</b> of the state's land area falls in the same district in both.</figcaption>
+    <img src="img/md-2000-ours.png" alt="This project's splitline map of Maryland, 2000 census">
+    <figcaption>This project, rebuilt from the raw 2000 census blocks.</figcaption>
   </figure>
 </div>
-<p>Colorado is the cleanest comparison because it is landlocked and nearly rectangular:
-there is no water for two implementations to disagree about. Elsewhere they can, because the
-length of a cut can be measured two ways — the straight-line span, or only the land it
-crosses. Nothing decides more. Measured as span, the very first national cut is a tilted line
-from Michigan's Lower Peninsula down to the Louisiana coast west of New Orleans, passing
-eight kilometres from downtown Indianapolis. Measured as land, it swings to a near-vertical
-line from the Upper Peninsula across Lake Michigan to the Florida–Alabama border. Since the
-algorithm always takes the <i>shortest</i> cut, that one definition decides which cut wins —
-and a single different cut at the root rearranges every one of the 432 districts beneath it.</p>
+<p><b>86%</b> of Maryland's land area falls in the same district in both — and that is roughly
+as close as this can get. The algorithm is chaotic: each cut decides which blocks the next cut
+even sees, so a disagreement of a few hundred metres near the root, from a slightly different
+coastline file or a different rounding of a population, propagates through everything below it.
+Simple states do better — Colorado, landlocked and nearly rectangular, reaches 97% — but
+Maryland is the more honest illustration of what "reproduced" means here.</p>
+
+<p>Where the two differ, there is reason to think these lines are the more exact. The 2007
+program rasterised: it binned population into pixels roughly a kilometre across and searched
+for cuts on that grid, so a pixel holding thousands of city residents could never be split.
+This version searches the census blocks themselves. Ported and run side by side on identical
+inputs, the raster approach leaves a 0.020% population spread across four districts where the
+block-based one is exact. Maryland above is within 0.37%, and within 0.02% under the finer
+population model used for the other maps on this page.</p>
 
 <h2>A few states</h2>
 <div class="pair">
