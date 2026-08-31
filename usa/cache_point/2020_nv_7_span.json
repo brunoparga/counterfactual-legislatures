@@ -1,0 +1,22 @@
+{
+  "projection": {"type": "gnomonic", "lon0": -117.0230515000, "lat0": 38.5020320000, "lon_shift": 0.0},
+  "seats": 7,
+  "population": 3104614,
+  "note": "A point (x,y) in projected degrees is in district d by walking from node 0: go left when x*nx + y*ny < c, else right, until a node has a district.",
+  "numbering": "Districts are numbered from 1 by a depth-first walk of this tree, left child first. Every cut normal is canonicalised to point north (east for a due north-south cut), so the left child is always the southern or western side. District 1 is therefore the one reached by always heading south/west, and consecutive numbers are usually neighbours, because the tree is a recursive spatial subdivision. Numbers are not stable across censuses: a shift in population changes the cuts, and the numbering with them.",
+  "nodes": [
+    {"i": 0, "pop": 3104614, "seats": 7, "nx": 0.173648177667, "ny": 0.984807753012, "c": -2.03263133043, "left": 1, "right": 2},
+    {"i": 1, "pop": 1330757, "seats": 3, "nx": 0.777145961457, "ny": -0.62932039105, "c": 2.63831261457, "left": 3, "right": 4},
+    {"i": 2, "pop": 1773857, "seats": 4, "nx": 0.374606593416, "ny": -0.927183854567, "c": 2.55670537201, "left": 7, "right": 8},
+    {"i": 3, "pop": 443954, "seats": 1, "district": 1},
+    {"i": 4, "pop": 886803, "seats": 2, "nx": 0.358367949545, "ny": -0.933580426497, "c": 2.83502163787, "left": 6, "right": 5},
+    {"i": 5, "pop": 443406, "seats": 1, "district": 3},
+    {"i": 6, "pop": 443397, "seats": 1, "district": 2},
+    {"i": 7, "pop": 886932, "seats": 2, "nx": 0.956304755963, "ny": 0.292371704723, "c": -1.71133029153, "left": 9, "right": 10},
+    {"i": 8, "pop": 886925, "seats": 2, "nx": 0.992546151641, "ny": 0.121869343405, "c": 1.21457077219, "left": 12, "right": 11},
+    {"i": 9, "pop": 443466, "seats": 1, "district": 4},
+    {"i": 10, "pop": 443466, "seats": 1, "district": 5},
+    {"i": 11, "pop": 443469, "seats": 1, "district": 7},
+    {"i": 12, "pop": 443456, "seats": 1, "district": 6}
+  ]
+}

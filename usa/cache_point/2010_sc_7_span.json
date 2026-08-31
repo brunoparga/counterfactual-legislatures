@@ -1,0 +1,22 @@
+{
+  "projection": {"type": "gnomonic", "lon0": -80.9471625000, "lat0": 33.6250010000, "lon_shift": 0.0},
+  "seats": 7,
+  "population": 4625364,
+  "note": "A point (x,y) in projected degrees is in district d by walking from node 0: go left when x*nx + y*ny < c, else right, until a node has a district.",
+  "numbering": "Districts are numbered from 1 by a depth-first walk of this tree, left child first. Every cut normal is canonicalised to point north (east for a due north-south cut), so the left child is always the southern or western side. District 1 is therefore the one reached by always heading south/west, and consecutive numbers are usually neighbours, because the tree is a recursive spatial subdivision. Numbers are not stable across censuses: a shift in population changes the cuts, and the numbering with them.",
+  "nodes": [
+    {"i": 0, "pop": 4625364, "seats": 7, "nx": 0.882947592859, "ny": -0.469471562786, "c": -0.412187084918, "left": 1, "right": 2},
+    {"i": 1, "pop": 1982301, "seats": 3, "nx": 0.829037572555, "ny": -0.559192903471, "c": -1.60437410543, "left": 3, "right": 4},
+    {"i": 2, "pop": 2643063, "seats": 4, "nx": 0.62932039105, "ny": 0.777145961457, "c": 0.251996701416, "left": 8, "right": 7},
+    {"i": 3, "pop": 660825, "seats": 1, "district": 1},
+    {"i": 4, "pop": 1321476, "seats": 2, "nx": 0.469471562786, "ny": 0.882947592859, "c": 0.56566523584, "left": 5, "right": 6},
+    {"i": 5, "pop": 660928, "seats": 1, "district": 2},
+    {"i": 6, "pop": 660548, "seats": 1, "district": 3},
+    {"i": 7, "pop": 1321546, "seats": 2, "nx": 0.731353701619, "ny": -0.681998360062, "c": 0.186095080697, "left": 9, "right": 10},
+    {"i": 8, "pop": 1321517, "seats": 2, "nx": 0.994521895368, "ny": 0.104528463268, "c": 0.308867216243, "left": 11, "right": 12},
+    {"i": 9, "pop": 660828, "seats": 1, "district": 6},
+    {"i": 10, "pop": 660718, "seats": 1, "district": 7},
+    {"i": 11, "pop": 660760, "seats": 1, "district": 4},
+    {"i": 12, "pop": 660757, "seats": 1, "district": 5}
+  ]
+}

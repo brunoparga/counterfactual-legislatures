@@ -1,0 +1,26 @@
+{
+  "projection": {"type": "gnomonic", "lon0": -85.9785990000, "lat0": 35.8305450000, "lon_shift": 0.0},
+  "seats": 9,
+  "population": 5689283,
+  "note": "A point (x,y) in projected degrees is in district d by walking from node 0: go left when x*nx + y*ny < c, else right, until a node has a district.",
+  "numbering": "Districts are numbered from 1 by a depth-first walk of this tree, left child first. Every cut normal is canonicalised to point north (east for a due north-south cut), so the left child is always the southern or western side. District 1 is therefore the one reached by always heading south/west, and consecutive numbers are usually neighbours, because the tree is a recursive spatial subdivision. Numbers are not stable across censuses: a shift in population changes the cuts, and the numbering with them.",
+  "nodes": [
+    {"i": 0, "pop": 5689283, "seats": 9, "nx": 0.999390827019, "ny": -0.0348994967025, "c": -0.270868294181, "left": 2, "right": 1},
+    {"i": 1, "pop": 2528674, "seats": 4, "nx": 0.951056516295, "ny": 0.309016994375, "c": 1.45670049156, "left": 3, "right": 4},
+    {"i": 2, "pop": 3160609, "seats": 5, "nx": 0.999390827019, "ny": -0.0348994967025, "c": -2.28806619563, "left": 9, "right": 10},
+    {"i": 3, "pop": 1264916, "seats": 2, "nx": 0.766044443119, "ny": -0.642787609687, "c": 0.869265509287, "left": 5, "right": 6},
+    {"i": 4, "pop": 1263758, "seats": 2, "nx": 0.882947592859, "ny": 0.469471562786, "c": 1.91933197287, "left": 7, "right": 8},
+    {"i": 5, "pop": 632466, "seats": 1, "district": 6},
+    {"i": 6, "pop": 632450, "seats": 1, "district": 7},
+    {"i": 7, "pop": 631930, "seats": 1, "district": 8},
+    {"i": 8, "pop": 631828, "seats": 1, "district": 9},
+    {"i": 9, "pop": 1264247, "seats": 2, "nx": 0.913545457643, "ny": 0.406736643076, "c": -3.15786680466, "left": 12, "right": 11},
+    {"i": 10, "pop": 1896362, "seats": 3, "nx": 0.766044443119, "ny": 0.642787609687, "c": -0.266236406569, "left": 14, "right": 13},
+    {"i": 11, "pop": 632145, "seats": 1, "district": 2},
+    {"i": 12, "pop": 632102, "seats": 1, "district": 1},
+    {"i": 13, "pop": 632251, "seats": 1, "district": 5},
+    {"i": 14, "pop": 1264111, "seats": 2, "nx": 0.965925826289, "ny": -0.258819045103, "c": -0.81962955932, "left": 15, "right": 16},
+    {"i": 15, "pop": 632103, "seats": 1, "district": 3},
+    {"i": 16, "pop": 632008, "seats": 1, "district": 4}
+  ]
+}
