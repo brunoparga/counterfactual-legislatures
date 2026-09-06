@@ -1,0 +1,56 @@
+{
+ "splitline_2010": {
+  "districts": 435,
+  "hispanic": {
+   "majority": 22,
+   "opportunity_40_50": 14,
+   "influence_30_40": 23,
+   "national_vap_pct": 14.23
+  },
+  "nh_white": {
+   "majority": 346,
+   "opportunity_40_50": 33,
+   "influence_30_40": 30,
+   "national_vap_pct": 67.04
+  },
+  "nh_black": {
+   "majority": 5,
+   "opportunity_40_50": 12,
+   "influence_30_40": 26,
+   "national_vap_pct": 11.57
+  },
+  "nh_asian": {
+   "majority": 0,
+   "opportunity_40_50": 2,
+   "influence_30_40": 4,
+   "national_vap_pct": 4.81
+  }
+ },
+ "enacted_cd113": {
+  "districts": 435,
+  "hispanic": {
+   "majority": 30,
+   "opportunity_40_50": 9,
+   "influence_30_40": 19,
+   "national_vap_pct": 14.23
+  },
+  "nh_white": {
+   "majority": 338,
+   "opportunity_40_50": 23,
+   "influence_30_40": 32,
+   "national_vap_pct": 67.04
+  },
+  "nh_black": {
+   "majority": 22,
+   "opportunity_40_50": 9,
+   "influence_30_40": 11,
+   "national_vap_pct": 11.57
+  },
+  "nh_asian": {
+   "majority": 1,
+   "opportunity_40_50": 1,
+   "influence_30_40": 4,
+   "national_vap_pct": 4.81
+  }
+ }
+}

@@ -126,7 +126,7 @@
       "attribution": "Election data: Dave's Redistricting (CC BY-SA 4.0), from the Voting and Election Science Team (2016, 2018, 2020), Ryne Rohla / Decision Desk HQ (2012), Steve Gerontakis with John Mifflin (2008), and the Redistricting Data Hub (2024)",
       "redistributable": true,
       "included_here": false,
-      "note": "Votes already disaggregated to 2020 census blocks, which is why it is used: allocating county totals by population erases the sorting inside a county and put 239 districts in Democratic hands on the enacted 2012 map where the true answer is 209. At block level that error disappears. 52 states, 614 MB. Share-alike, so any map carrying these results is CC BY-SA rather than the CC-BY the cut trees carry. DRA's own licence file names its upstreams; those are recorded in 'upstream' with full Dataverse citations, because crediting the packager alone would hide who actually collected the returns.",
+      "note": "Votes already disaggregated to 2020 census blocks, which is why it is used: allocating county totals by population erases the sorting inside a county and put 239 districts in Democratic hands on the enacted 2012 map where the true answer is 209. At block level that error disappears. 52 states, 614 MB. Share-alike, so any map carrying these results is CC BY-SA rather than the CC-BY the cut trees carry. DRA's own licence file names its upstreams; those are recorded in 'upstream' with full Dataverse citations, because crediting the packager alone would hide who actually collected the returns. The bytes are served from data.dra2020.net, not from the GitHub repo named in 'url'; the per-state version numbers are tracked in usa/upstream/dra_versions.json because a rebuild cannot reproduce the checksums without them. The server rejects HEAD, so probing for new versions needs a ranged GET.",
       "upstream": [
         "Voting and Election Science Team, 2025, \"2016 Precinct-Level Election Results\", Harvard Dataverse, V97.0, doi:10.7910/DVN/NH5S2I",
         "Voting and Election Science Team, 2025, \"2018 Precinct-Level Election Results\", Harvard Dataverse, V72.0, doi:10.7910/DVN/UBKYRU",
@@ -134,7 +134,9 @@
         "Ryne Rohla / Decision Desk HQ (2012 precinct returns)",
         "Steve Gerontakis with John Mifflin (2008 precinct returns)",
         "Redistricting Data Hub (2024 precinct returns)"
-      ]
+      ],
+      "download_url_template": "https://data.dra2020.net/file/dra-block-data/Election_Data_Block_{state}.v{version:02d}.zip",
+      "version_map": "usa/upstream/dra_versions.json"
     },
     {
       "id": "us-cd113-bef",
@@ -194,6 +196,30 @@
       ],
       "licence": "CC-BY-SA-4.0",
       "note": "Share-alike, inherited from the election data -- not the CC-BY the cut trees carry. A map showing election results and a map showing only districts are under different licences, and each says so in its own credit line."
+    },
+    {
+      "id": "vote-scorings",
+      "path": "usa/results/*.json",
+      "derived_from": [
+        "districting-plans",
+        "dra-block-elections",
+        "us-cd113-bef",
+        "medsl-county-president"
+      ],
+      "licence": "CC-BY-SA-4.0",
+      "note": "Per-district two-party margins for each (plan, contest) pair, plus national summaries. Share-alike, inherited from the election data."
+    },
+    {
+      "id": "district-demographics",
+      "path": "usa/results/demographics/*.json",
+      "derived_from": [
+        "us-census-2010-pl94171",
+        "us-census-2020-pl94171",
+        "districting-plans",
+        "us-cd113-bef"
+      ],
+      "licence": "CC-BY-4.0",
+      "note": "Voting-age population by race and Hispanic origin per district, PL 94-171 table P4. Every input is public domain, so this is CC-BY rather than the CC-BY-SA the vote scorings carry -- no election data is involved."
     }
   ]
 }
