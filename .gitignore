@@ -18,19 +18,17 @@ usa/upstream/*
 !usa/upstream/MANIFEST.sha256
 !usa/upstream/apportionment/
 
-# The cut trees ARE the content: every district is exact and resolution-free,
-# and the pictures are a pure function of them. So the JSON is tracked and
-# everything derived from it -- renders, animations -- is not.
-usa/cache/*
-!usa/cache/*.json
-usa/cache_point/*
-!usa/cache_point/*.json
-usa/cache_anim
+# The plans ARE the content: every district is exact and resolution-free, and
+# the pictures are a pure function of them. So plans/ is tracked whole -- it is
+# 12 MB of JSON -- and everything derived from it is not.
+usa/renders
+usa/build
 
-# Symlink views over the cache, one tree per population model. They carry no
-# content of their own -- run_all.py rebuilds them with --link-only.
-usa/maps_uniform
-usa/maps_point
+# Browsable views over plans/ and renders/. They hold no content of their own;
+# tools/make_views.py rebuilds them. The index is worth keeping, since it says
+# what exists without needing the tree.
+usa/maps/*
+!usa/maps/index.json
 
 __pycache__/
 *.pyc

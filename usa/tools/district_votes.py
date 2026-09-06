@@ -192,7 +192,7 @@ def main():
     ap.add_argument("--out", default=str(ROOT / "work" / "district_votes.json"))
     a = ap.parse_args()
 
-    cache = ROOT / ("cache" if a.model == "uniform" else "cache_point")
+    plans = ROOT / "plans"
     votes, placeless = county_votes(a.returns, a.election)
     svotes = state_votes(a.returns, a.election)
     total_in = sum(v["democrat"] + v["republican"] for v in votes.values())
@@ -215,7 +215,7 @@ def main():
                 print(f"  {st}: no equivalency file"); continue
             dist = np.array([int(cd.get(b, "-1") or -1) for b in ids], np.int32)
         else:
-            tree = cache / f"{a.census}_{st.lower()}_{n}_{a.metric}.json"
+            tree = plans / f"{a.census}_{st.lower()}_{n}_{a.model}_{a.metric}.json"
             if not tree.exists():
                 print(f"  {st}: no tree"); continue
             d = json.load(open(tree))

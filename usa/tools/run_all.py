@@ -55,8 +55,9 @@ ROOT = Path(__file__).resolve().parent.parent
 # GENZ2010 calls it STATE, cb_20xx calls it STATEFP.
 STATE_FIELDS = ("STATEFP", "STATE", "STATE_FIPS")
 ENGINE = ROOT.parent / "shared" / "splitline" / "bin" / "splitline"
-CACHE = ROOT / "cache"
-OUT = ROOT / "maps_uniform"
+PLANS = ROOT / "plans"
+RENDERS = ROOT / "renders"
+OUT = ROOT / "maps"
 
 # The two population models. Uniform spreads each block over an equal-area
 # disc and is the better model of where people actually are; point mass keeps
@@ -67,11 +68,11 @@ OUT = ROOT / "maps_uniform"
 # year, state, seats and metric but not the model, so sharing one directory
 # would have a point-mass run silently overwrite the uniform trees.
 MODELS = {
-    "uniform": (["--uniform", "--subdiv", "10000"], "cache", "maps_uniform"),
-    "point": ([], "cache_point", "maps_point"),
+    "uniform": ["--uniform", "--subdiv", "10000"],
+    "point": [],
 }
 MODEL = "uniform"
-MODEL_ARGS = MODELS[MODEL][0]
+MODEL_ARGS = MODELS[MODEL]
 
 # How cut length is measured. These give visibly different maps wherever there
 # is water to hop, so both are generated side by side rather than one
@@ -180,7 +181,7 @@ def national_inputs(year, with_dc):
 
 def run(bnd, pop, seats, stem, timings, label, metric="span", want_png=True):
     """One engine invocation, cached by output stem."""
-    js, png = CACHE / f"{stem}.json", CACHE / f"{stem}.png"
+    js, png = PLANS / f"{stem}.json", RENDERS / f"{stem}.png"
     if js.exists() and (png.exists() or not want_png):
         log(f"    cached  {label}")
         return js, (png if png.exists() else None)
@@ -227,13 +228,13 @@ def main():
                          "much faster when only the JSON is wanted.")
     args = ap.parse_args()
 
-    global MODEL, MODEL_ARGS, CACHE, OUT
+    global MODEL, MODEL_ARGS
     MODEL = args.population_model
-    MODEL_ARGS, cache_dir, out_dir = MODELS[MODEL]
-    CACHE, OUT = ROOT / cache_dir, ROOT / out_dir
+    MODEL_ARGS = MODELS[MODEL]
 
     M = args.cut_metric
-    CACHE.mkdir(exist_ok=True)
+    PLANS.mkdir(exist_ok=True)
+    RENDERS.mkdir(exist_ok=True)
     OUT.mkdir(exist_ok=True)
     timings = []
     started = time.time()

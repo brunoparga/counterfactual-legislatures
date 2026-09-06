@@ -135,7 +135,7 @@ def main():
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
 
-    cache = ROOT / ("cache" if a.model == "uniform" else "cache_point")
+    plans = ROOT / "plans"
     seats = huntington_hill(build(a.census, 0, 0), house_size(a.rule, build(a.census, 0, 0)))
     colours = build_colours(a.votes)
     missing = set()
@@ -146,7 +146,7 @@ def main():
             n = seats.get(st, 0)
             if n <= 0:
                 continue
-            t = cache / f"{a.census}_{st.lower()}_{n}_{a.metric}.json"
+            t = plans / f"{a.census}_{st.lower()}_{n}_{a.model}_{a.metric}.json"
             b = boundary_file(a.census, st)
             if not (t.exists() and b and b.exists()):
                 continue

@@ -171,8 +171,8 @@
   ],
   "outputs": [
     {
-      "id": "cut-trees",
-      "path": "usa/cache/*.json, usa/cache_point/*.json",
+      "id": "districting-plans",
+      "path": "usa/plans/*.json",
       "derived_from": [
         "us-census-2000-sf1",
         "us-census-2010-pl94171",
@@ -181,15 +181,16 @@
         "us-apportionment-tables"
       ],
       "licence": "CC-BY-4.0",
-      "note": "Every input is public domain, so the licence is a choice rather than an inheritance. CC-BY rather than CC0 to keep reuse citable."
+      "note": "One plan per (year, state, seats, model, metric); the model is in the filename so a file is identifiable outside its directory. Browsable views over these live in usa/maps/ and are rebuilt by tools/make_views.py rather than stored. Every input is public domain, so the licence is a choice rather than an inheritance. CC-BY rather than CC0 to keep reuse citable."
     },
     {
       "id": "vote-scored-maps",
       "path": "usa/work/block_votes_*.json, usa/work/diagnostics/splitline_*_insets.png",
       "derived_from": [
-        "cut-trees",
+        "districting-plans",
         "dra-block-elections",
-        "us-cd113-bef"
+        "us-cd113-bef",
+        "medsl-county-president"
       ],
       "licence": "CC-BY-SA-4.0",
       "note": "Share-alike, inherited from the election data -- not the CC-BY the cut trees carry. A map showing election results and a map showing only districts are under different licences, and each says so in its own credit line."

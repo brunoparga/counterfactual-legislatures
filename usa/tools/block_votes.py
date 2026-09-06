@@ -209,7 +209,7 @@ def main():
     ap.add_argument("--out", default=str(ROOT/"work"/"block_votes.json"))
     a = ap.parse_args()
 
-    cache = ROOT / ("cache" if a.model == "uniform" else "cache_point")
+    plans = ROOT / "plans"
     pops = build(a.census, 0, 0)
     seats = huntington_hill(pops, house_size(a.rule, pops))
     rows, nomatch, far = [], 0, []
@@ -258,7 +258,7 @@ def main():
             dist = rdist[idx]
             far.append((st, d*M_PER_DEG, dv+rv))
         else:
-            t = cache / f"{a.census}_{st.lower()}_{n}_{a.metric}.json"
+            t = plans / f"{a.census}_{st.lower()}_{n}_{a.model}_{a.metric}.json"
             if not t.exists():
                 print(f"  {st}: no tree"); continue
             tj = json.load(open(t)); pr = tj["projection"]

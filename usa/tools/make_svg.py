@@ -30,8 +30,8 @@ from svg_map import render_animated, render_static  # noqa: E402
 def load(state, census, rule, metric, model):
     pops = build(census, 0, 0)
     n = huntington_hill(pops, house_size(rule, pops))[state]
-    cache = ROOT / ("cache" if model == "uniform" else "cache_point")
-    tree = cache / f"{census}_{state.lower()}_{n}_{metric}.json"
+    plans = ROOT / "plans"
+    tree = plans / f"{census}_{state.lower()}_{n}_{model}_{metric}.json"
     d = json.load(open(tree))
     pr = d["projection"]
     rings = []
