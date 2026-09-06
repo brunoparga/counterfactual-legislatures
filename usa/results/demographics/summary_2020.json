@@ -1,0 +1,29 @@
+{
+ "splitline_2020": {
+  "districts": 435,
+  "hispanic": {
+   "majority": 25,
+   "opportunity_40_50": 16,
+   "influence_30_40": 34,
+   "national_vap_pct": 16.78
+  },
+  "nh_white": {
+   "majority": 312,
+   "opportunity_40_50": 46,
+   "influence_30_40": 38,
+   "national_vap_pct": 60.86
+  },
+  "nh_black": {
+   "majority": 6,
+   "opportunity_40_50": 8,
+   "influence_30_40": 21,
+   "national_vap_pct": 11.65
+  },
+  "nh_asian": {
+   "majority": 0,
+   "opportunity_40_50": 4,
+   "influence_30_40": 7,
+   "national_vap_pct": 6.08
+  }
+ }
+}

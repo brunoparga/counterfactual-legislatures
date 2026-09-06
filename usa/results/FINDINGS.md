@@ -126,6 +126,13 @@ unpacking the Democratic Party's most loyal constituency is not obviously a
 reform, and the trade-off should be stated in exactly those terms rather than
 resolved by picking whichever metric flatters the conclusion.
 
+The 2020-census splitline map reproduces the pattern: 6 Black-majority and 25
+Hispanic-majority districts out of 435, against a national Black VAP of 11.65%.
+There is no enacted comparator for that census -- we hold the block
+equivalency file for the 113th Congress only -- so the difference cannot be
+measured, but the level matches 2010's splitline figure rather than 2010's
+enacted one.
+
 The metric follows Haas, Miller & Kimbrough (*Electoral Studies* 79, 2022),
 who use the same majority/opportunity thresholds to evaluate a different
 change to the apportionment basis, so these numbers are comparable to
