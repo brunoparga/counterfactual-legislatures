@@ -12,7 +12,11 @@
     "clients: snapshots are found with the CDX index at",
     "http://web.archive.org/cdx/search/cdx and replayed unmodified through",
     "https://web.archive.org/web/{timestamp}id_/{url}, where the 'id_' suffix",
-    "suppresses the Archive's own rewriting. See usa/tools/fetch_census.py."
+    "suppresses the Archive's own rewriting. See usa/tools/fetch_census.py.",
+    "",
+    "'share_alike' true means a dataset built from this one must carry the same licence. It is the field that decides an output's terms, so it is recorded explicitly rather than inferred from the licence string.",
+    "",
+    "Datasets from a Dataverse repository are cited to the standard that project defines: author, title, year, repository, version, persistent identifier, and UNF. The last two are machine-readable, and the UNF is the point -- it is a cryptographic fingerprint of the data's content, not its file format, so it identifies exactly which version was used and changes if any of it does. Citing the DOI alone names the dataset but not the version, which for a dataset revised twenty times is not enough to reproduce anything."
   ],
   "sources": [
     {
@@ -108,6 +112,61 @@
       "included_here": false,
       "note": "Comparison baseline for reproducing the 2000 maps. The publisher grants reuse provided the citation above is carried; see NOTICE for their exact wording. Held locally under usa/upstream/reference/ and not currently committed, which is a size and scope choice rather than a licensing one.",
       "attribution": "Shortest Splitline algorithm invented by Warren D. Smith; original implementation by Ivan Ryan; published maps and method: Center for Range Voting, https://www.rangevoting.org/SplitLR.html; underlying data: US Census Bureau"
+    },
+    {
+      "id": "dra-block-elections",
+      "title": "Block-level election results, 2008-2024",
+      "url": "https://github.com/dra2020/block_data",
+      "publisher": "Dave's Redistricting / Social Good Fund",
+      "country": "US",
+      "retrieved": "2026-09-03",
+      "licence": "CC BY-SA 4.0, with an added clause forbidding sale of the data",
+      "share_alike": true,
+      "attribution_required": true,
+      "attribution": "Election data: Dave's Redistricting (CC BY-SA 4.0), from the Voting and Election Science Team (2016, 2018, 2020), Ryne Rohla / Decision Desk HQ (2012), Steve Gerontakis with John Mifflin (2008), and the Redistricting Data Hub (2024)",
+      "redistributable": true,
+      "included_here": false,
+      "note": "Votes already disaggregated to 2020 census blocks, which is why it is used: allocating county totals by population erases the sorting inside a county and put 239 districts in Democratic hands on the enacted 2012 map where the true answer is 209. At block level that error disappears. 52 states, 614 MB. Share-alike, so any map carrying these results is CC BY-SA rather than the CC-BY the cut trees carry. DRA's own licence file names its upstreams; those are recorded in 'upstream' with full Dataverse citations, because crediting the packager alone would hide who actually collected the returns.",
+      "upstream": [
+        "Voting and Election Science Team, 2025, \"2016 Precinct-Level Election Results\", Harvard Dataverse, V97.0, doi:10.7910/DVN/NH5S2I",
+        "Voting and Election Science Team, 2025, \"2018 Precinct-Level Election Results\", Harvard Dataverse, V72.0, doi:10.7910/DVN/UBKYRU",
+        "Voting and Election Science Team, 2025, \"2020 Precinct-Level Election Results\", Harvard Dataverse, V48.0, doi:10.7910/DVN/K7760H",
+        "Ryne Rohla / Decision Desk HQ (2012 precinct returns)",
+        "Steve Gerontakis with John Mifflin (2008 precinct returns)",
+        "Redistricting Data Hub (2024 precinct returns)"
+      ]
+    },
+    {
+      "id": "us-cd113-bef",
+      "title": "113th Congress Block Equivalency Files",
+      "url": "https://www2.census.gov/programs-surveys/decennial/rdo/mapping-files/2013/113-congressional-district-bef/cd113.zip",
+      "publisher": "US Census Bureau",
+      "country": "US",
+      "retrieved": "2026-08-31",
+      "via": "Wayback Machine (census.gov blocks automated access)",
+      "licence": "public domain (17 USC 105)",
+      "share_alike": false,
+      "attribution_required": false,
+      "redistributable": true,
+      "included_here": false,
+      "note": "The enacted 2012 districts expressed on 2010 census blocks, so no geometry is needed to score them. This is what let the vote pipeline be validated against a known answer rather than trusted."
+    },
+    {
+      "id": "medsl-county-president",
+      "title": "County Presidential Election Returns 2000-2024",
+      "url": "https://doi.org/10.7910/DVN/VOQCHQ",
+      "publisher": "MIT Election Data and Science Lab",
+      "country": "US",
+      "retrieved": "2026-08-30",
+      "licence": "CC0 1.0 (public domain dedication), per the dataset's Dataverse record",
+      "share_alike": false,
+      "attribution_required": false,
+      "attribution": "MIT Election Data and Science Lab, 2018, \"County Presidential Election Returns 2000-2024\", https://doi.org/10.7910/DVN/VOQCHQ, Harvard Dataverse, V20, UNF:6:xvsJJxrfXMIvzAuDYlfvVw==",
+      "redistributable": true,
+      "included_here": false,
+      "note": "Used for the seven at-large states, whose single district is the whole state, and as a cross-check on the block data. CAVEAT: the local copy is countypres_2000-2016.csv, covering 2000-2016, so it predates V20.0 and the UNF above does not describe it. The 2012 returns we use are unaffected. Their Dataset Terms dialog confirms CC0 1.0 and asks, as a community norm rather than a condition, that the data citation above be used; maps drawing on it carry that credit. The current version cannot be fetched automatically -- Harvard Dataverse gates that file behind a mandatory guestbook form (guestbookID 458) that no API parameter bypasses, so updating it needs a human download.",
+      "version_used": "unknown",
+      "version_current": "V20.0 (2026-02-25), UNF:6:xvsJJxrfXMIvzAuDYlfvVw=="
     }
   ],
   "outputs": [
@@ -123,6 +182,17 @@
       ],
       "licence": "CC-BY-4.0",
       "note": "Every input is public domain, so the licence is a choice rather than an inheritance. CC-BY rather than CC0 to keep reuse citable."
+    },
+    {
+      "id": "vote-scored-maps",
+      "path": "usa/work/block_votes_*.json, usa/work/diagnostics/splitline_*_insets.png",
+      "derived_from": [
+        "cut-trees",
+        "dra-block-elections",
+        "us-cd113-bef"
+      ],
+      "licence": "CC-BY-SA-4.0",
+      "note": "Share-alike, inherited from the election data -- not the CC-BY the cut trees carry. A map showing election results and a map showing only districts are under different licences, and each says so in its own credit line."
     }
   ]
 }

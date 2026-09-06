@@ -44,6 +44,14 @@ ROOT = Path(__file__).resolve().parent.parent
 # Which SOURCES.json entry each download belongs to, by where it sits.
 def source_id(rel):
     parts = rel.parts
+    if parts[0] == "elections":
+        if parts[1].startswith("cd113"):
+            return "us-cd113-bef"
+        if parts[1] == "dra_block":
+            return "dra-block-elections"
+        if parts[1].startswith("countypres"):
+            return "medsl-county-president"
+        return "unknown"
     if parts[0] == "apportionment":
         return "us-apportionment-tables"
     if len(parts) > 1 and parts[1] == "boundary":
@@ -55,6 +63,16 @@ def source_id(rel):
                 else "us-census-2000-sf1")
     return {"2010": "us-census-2010-pl94171",
             "2020": "us-census-2020-pl94171"}.get(year, "unknown")
+
+
+# Census files came through the Wayback Machine and need a snapshot to be
+# re-fetchable. These sources are served directly and stably, so their own URL
+# is the coverage -- demanding a snapshot for them would flag as a gap
+# something that is not one.
+DIRECT_SOURCES = {"dra-block-elections", "medsl-county-president"}
+
+# Fetched through the Archive before the snapshot logging covered it.
+KNOWN_SNAPSHOTS = {"cd113.zip": "20260822110009"}
 
 
 def snapshots_from_logs(logdir):
@@ -95,6 +113,7 @@ def main():
         sys.exit(f"no such directory: {root}")
 
     snaps = snapshots_from_logs(args.logs)
+    snaps.update(KNOWN_SNAPSHOTS)
 
     # Snapshots recovered by backfill_snapshots.py were found by hashing
     # candidate captures, not by reading a log, so regenerating from logs alone
@@ -111,17 +130,25 @@ def main():
         if kept:
             print(f"carried {kept} snapshot(s) forward from the existing manifest")
 
-    downloads = sorted(p for p in root.rglob("*.zip"))
+    # Everything that came off the network. The extracted contents are not
+    # listed: they unzip from these, and recording them would be manifesting
+    # our own output as if it were provenance.
+    downloads = sorted(p for p in root.rglob("*.zip")
+                       if "dra_block/x" not in p.as_posix())
     downloads += sorted(p for p in (root / "apportionment").glob("*")
                         if p.is_file() and p.suffix != ".zip")
+    downloads += sorted(p for p in (root / "elections").glob("countypres*")
+                        if p.is_file())
 
     entries, total, uncovered = [], 0, 0
     t0 = time.time()
     for i, p in enumerate(downloads, 1):
         rel = p.relative_to(root)
         size = p.stat().st_size
+        src = source_id(rel)
         snap = snaps.get(p.name)
-        if snap is None and rel.parts[0] != "apportionment":
+        direct = src in DIRECT_SOURCES
+        if (snap is None and rel.parts[0] != "apportionment" and not direct):
             uncovered += 1
         # Two ways an input can be covered: a snapshot that re-fetches it, or
         # the bytes themselves. The apportionment tables take the second route
@@ -131,9 +158,11 @@ def main():
             "path": str(rel),
             "bytes": size,
             "sha256": sha256(p),
-            "source_id": source_id(rel),
+            "source_id": src,
             "wayback_snapshot": snap,
             "tracked_here": rel.parts[0] == "apportionment",
+            "share_alike": src == "dra-block-elections",
+            "direct_url": direct,
         })
         total += size
         if i % 50 == 0:
