@@ -8,10 +8,10 @@
   "means the file predates the fetcher's logging; still verifiable,",
   "not exactly re-fetchable."
  ],
- "generated": "2026-09-05",
+ "generated": "2026-09-06",
  "root": "upstream",
- "files": 324,
- "bytes": 3142881046,
+ "files": 325,
+ "bytes": 3153103254,
  "entries": [
   {
    "path": "2000/ak/ak00001_uf1.zip",
@@ -3244,9 +3244,19 @@
    "direct_url": true
   },
   {
-   "path": "elections/countypres_README.md",
+   "path": "elections/countypres_2000-2016_README.md",
    "bytes": 1301,
    "sha256": "426639cbfc90fbc5f5f78cf40907906769538e1ff347dd938f4fde76b77873a0",
+   "source_id": "medsl-county-president",
+   "wayback_snapshot": null,
+   "tracked_here": false,
+   "share_alike": false,
+   "direct_url": true
+  },
+  {
+   "path": "elections/countypres_2000-2024.csv",
+   "bytes": 10222208,
+   "sha256": "9299583148f5f8264baf50b5d929c260699c46d915909b13ea3c3850918946f8",
    "source_id": "medsl-county-president",
    "wayback_snapshot": null,
    "tracked_here": false,

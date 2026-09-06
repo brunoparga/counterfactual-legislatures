@@ -164,8 +164,8 @@
       "attribution": "MIT Election Data and Science Lab, 2018, \"County Presidential Election Returns 2000-2024\", https://doi.org/10.7910/DVN/VOQCHQ, Harvard Dataverse, V20, UNF:6:xvsJJxrfXMIvzAuDYlfvVw==",
       "redistributable": true,
       "included_here": false,
-      "note": "Used for the seven at-large states, whose single district is the whole state, and as a cross-check on the block data. CAVEAT: the local copy is countypres_2000-2016.csv, covering 2000-2016, so it predates V20.0 and the UNF above does not describe it. The 2012 returns we use are unaffected. Their Dataset Terms dialog confirms CC0 1.0 and asks, as a community norm rather than a condition, that the data citation above be used; maps drawing on it carry that credit. The current version cannot be fetched automatically -- Harvard Dataverse gates that file behind a mandatory guestbook form (guestbookID 458) that no API parameter bypasses, so updating it needs a human download.",
-      "version_used": "unknown",
+      "note": "Used for the seven at-large states, whose single district is the whole state, so only the state total matters and no allocation is involved. Also a cross-check on the block data. Their Dataset Terms dialog confirms CC0 1.0 and asks, as a community norm rather than a condition, that the data citation above be used; maps drawing on it carry that credit. The file is guestbook-gated (guestbookID 458) and no API parameter bypasses it, so updating it needs a person. countypres_2000-2016.csv is the superseded copy, kept only because its codebook documents the older column names that the 2024 revision changed.",
+      "version_used": "V20 (countypres_2000-2024.csv, original CSV format)",
       "version_current": "V20.0 (2026-02-25), UNF:6:xvsJJxrfXMIvzAuDYlfvVw=="
     }
   ],

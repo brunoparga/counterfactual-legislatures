@@ -60,42 +60,6 @@ the Center for Range Voting, whose page grants reuse on one condition:
 generated here, not only to theirs: the method is theirs whoever runs it. Any
 reuse of images from this repository should carry it too.
 
-## Keeping this record honest
-
-Every gap so far came from the same thing: a dataset arrived, got used, and
-the provenance record was updated later or not at all. Three habits, in the
-order they failed us.
-
-**Record a source when you download it, not when you remember.** 740 MB of
-election data sat outside `SOURCES.json` and outside `MANIFEST.json` for days.
-The maps carried the right credit only because it was hardcoded in the map
-tool -- nothing derived it from the record, so nothing could have caught a
-mistake. The credit line is now built from `SOURCES.json`, which means an
-unrecorded source is a visibly wrong credit rather than a silent one.
-
-**Cite a version, not just a DOI.** A DOI names a dataset; a dataset can be
-revised. The MEDSL county returns are on V20, and our local copy was several
-versions and eight years behind, titled for a range it did not cover. Nothing
-noticed, because a DOI still resolved and still looked right.
-`shared/tools/dataverse_cite.py` asks the repository's API for the current
-version and UNF; `--check SOURCES.json` re-queries every Dataverse DOI we
-record and reports which have moved on. Run it before publishing anything.
-
-**Ask what a licence obliges, not just what it is.** "CC BY-SA" is not a
-label, it is an instruction that propagates: any output built from
-share-alike input is share-alike too. That is why `share_alike` is a field of
-its own rather than something to be read out of a licence string, and why the
-credit line computes a map's licence from the sources it actually used. The
-basemaps are CC BY and the vote maps are CC BY-SA, and neither is a choice
-anyone types.
-
-Two things the API cannot do, recorded so they are not rediscovered:
-`dataverse.org` and the Dataverse dataset pages sit behind a CDN that refuses
-automated clients, so metadata must come from
-`/api/datasets/export?exporter=dataverse_json`, which answers plainly. And
-some files are gated behind a mandatory guestbook form -- no API parameter
-bypasses it, `gbrecs=true` included -- so updating those needs a person.
-
 ## The site
 
 `docs/` is published at polisci.brunoparga.net and mixes three kinds of thing,
