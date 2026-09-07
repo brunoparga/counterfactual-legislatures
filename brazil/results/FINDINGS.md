@@ -16,6 +16,14 @@ how apportionment normally works and keeps an interpolated population series
 out of the comparison. The Chamber had **503 seats in 1990** and 513 from 1994,
 after LC 78/1993.
 
+The 1990 and 1994 seat tables come from pt.wikipedia and are verified twice
+over: every row sums to its published state total, and the states sum to 503
+and 513. They differ in **exactly one state**. Sao Paulo had **60** seats in
+1990 and 70 in 1994; every other state is unchanged. So the entire ten-seat
+expansion of LC 78/1993 went to Sao Paulo, lifting it to the constitutional
+ceiling. The 1994 table also reproduces the LC 78/1993 numbers used throughout
+this analysis, which is independent confirmation of them.
+
 ## 1. There are two distortions, not one
 
 A scenario was added that was not in the original design and turned out to
@@ -25,6 +33,7 @@ fourteen states differ in every census:
 
 | Census | States differing from the real table | Examples |
 |---|---|---|
+| 1991 (503 seats, 1990) | 12 | GO has 17, rule gives 14; ES has 10, rule gives 9; PB has 12, rule gives 11 |
 | 1991 | 11 | BA has 39, rule gives 42; ES has 10, rule gives 9; GO has 17, rule gives 14 |
 | 2000 | 14 | AM has 8, rule gives 9; BA has 39, rule gives 40; CE has 22, rule gives 23 |
 | 2010 | 13 | AM has 8, rule gives 10; CE has 22, rule gives 23; GO has 17, rule gives 16 |
@@ -48,15 +57,24 @@ Worst-to-best ratio of people per seat:
 
 | Census | Real (frozen) table | Rule recomputed | Floor 1, no ceiling |
 |---|---|---|---|
+| 1991, 503 seats (1990) | **19.36x** | 16.59x | 1.92x |
 | 1991 | 16.59x | 16.59x | 1.47x |
 | 2000 | 13.05x | 13.05x | 1.71x |
 | 2010 | 10.47x | 10.47x | 1.35x |
 | 2022 | 7.97x | 7.97x | 1.30x |
 
-The first two columns are identical because the ratio is set entirely by the
-two binding constraints -- Roraima at the floor, Sao Paulo at the ceiling --
-and both are pinned in both scenarios. **The freeze redistributes unfairness
-among the middle states; the limits create it at the extremes.**
+For 1994 onwards the first two columns are identical, because the ratio is set
+entirely by the two binding constraints -- Roraima at the floor, Sao Paulo at
+the ceiling -- and both are pinned in both scenarios. **The freeze
+redistributes unfairness among the middle states; the limits create it at the
+extremes.**
+
+1990 is the exception, and the worst year in the series at **19.36x**: Sao
+Paulo was held to 60 rather than the constitutional 70, so the ceiling bit
+harder still. A Roraima vote was worth nineteen Sao Paulo votes. Under a floor
+of 1 that falls to 1.92x, with Sao Paulo going from 60 seats to **108** and
+Roraima, Acre and Amapa from 8 to 1 -- 1990 is also the only year where the
+floor of 1 actually binds.
 
 2022 census, seats per state:
 
@@ -226,8 +244,8 @@ PDT (17), PSB (14), PSOL (12) and REPUBLICANOS (41) exact; PT gives 75 against
 seats by candidate ranking regardless of party -- the documented approximation,
 not a parsing error.
 
-**1990 party seats** under the recomputed constitutional rule, against the real
-503-seat Chamber: 28.5 of 503 seats misallocated, **5.7%**. The direction is
+**1990 party seats** under the real 503-seat table, against the real Chamber:
+31 of 503 seats misallocated, **6.2%**. The direction is
 diagnostic -- PFL +11 and PMDB +6, with every small party short -- which is
 exactly what dropping coalitions does: small parties fall under the electoral
 quotient alone and their votes flow to the largest party by largest averages.
@@ -236,10 +254,13 @@ numbers do not depend on any of it.
 
 ## What is still missing
 
-- **The historical 503-seat table for 1990.** Not published anywhere reachable,
-  so 1990 has no `actual` column and its baseline is the constitutional rule
-  recomputed on 503 seats. Since the rule provably does not reproduce the real
-  table for any later year, this is a real gap, not a formality.
+- **Three party columns in the transcribed 1990 table and five in 1994.** The
+  seats-per-state columns are verified and are what the analysis uses; the
+  per-state *party* cells are transcribed from a screenshot and three 1990
+  columns (PTB -4, PT +2, PDC +2) and five 1994 columns (PMDB -1, PSDB +1,
+  PP -2, PDT +1, PTB +1) do not reconcile with the published column totals.
+  Each set nets to zero, so these are column-alignment errors in adjacent
+  columns of the transcription, not missing data. Nothing depends on them yet.
 - **Coalition membership before 2018 in the Passport series**, and candidate
   votes generally. `votacao_candidato_munzona` would fix both the 1990
   coalition problem and the federation approximation; it is 106 MB for 1998

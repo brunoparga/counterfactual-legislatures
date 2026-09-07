@@ -219,6 +219,22 @@
       "included_here": true,
       "path": "brazil/upstream/electionpassport/",
       "note": "The only reachable source for the 1990 election, which predates TSE's machine-readable repository, and the only usable source for 1994, whose TSE file records no legenda votes. Party totals per state, not coalition totals, so it supports a party-level series rather than Brazil's actual pre-2020 rule. Carries a BRASIL row of national totals used as a checksum: the 27 states sum to it exactly in every year but 2006, which is off by 763 votes in the source. 88 KB, committed because it is small and because its upstream is a personal academic site with no archival guarantee. Election Passport is merging into the Constituency-Level Elections Archive (CLEA), which is the better long-term citation. Documentation in BR.pdf."
+    },
+    {
+      "id": "ptwiki-chamber-seat-tables",
+      "title": "Camara dos Deputados em 1990 / em 1994: seats by state and party",
+      "url": "https://pt.wikipedia.org/wiki/C\u00e2mara_dos_Deputados_em_1990",
+      "publisher": "Wikipedia (Portuguese)",
+      "country": "BR",
+      "retrieved": "2026-09-07",
+      "licence": "CC BY-SA 4.0",
+      "share_alike": true,
+      "attribution_required": true,
+      "attribution": "Seat tables: Portuguese Wikipedia, 'Camara dos Deputados em 1990' and 'em 1994' (CC BY-SA 4.0)",
+      "redistributable": true,
+      "included_here": true,
+      "path": "brazil/upstream/wikipedia/",
+      "note": "The historical apportionment tables, unavailable from TSE. Verified twice: every row sums to its published state total, and the states sum to 503 and 513. The 1990 and 1994 tables differ in exactly one state -- Sao Paulo, 60 against 70 -- so the whole ten-seat expansion of LC 78/1993 went to Sao Paulo. The 1994 table reproduces the LC 78/1993 distribution used throughout, which independently confirms it. Only the seats-per-state column is used; the per-state party cells are a transcription from a screenshot and three 1990 columns and five 1994 columns do not reconcile with the published column totals, each set netting to zero, so they are flagged rather than relied on. Share-alike, but it feeds only the choice of seat counts -- a set of integers that are facts, not expression -- so the outputs stay CC-BY."
     }
   ],
   "outputs": [

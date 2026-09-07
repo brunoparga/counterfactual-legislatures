@@ -1,0 +1,287 @@
+{
+ "source": "pt.wikipedia.org, 'Camara dos Deputados em 1994'",
+ "chamber": 513,
+ "seats_by_uf": {
+  "AC": 8,
+  "AL": 9,
+  "AM": 8,
+  "AP": 8,
+  "BA": 39,
+  "CE": 22,
+  "DF": 8,
+  "ES": 10,
+  "GO": 17,
+  "MA": 18,
+  "MG": 53,
+  "MS": 8,
+  "MT": 8,
+  "PA": 17,
+  "PB": 12,
+  "PR": 30,
+  "PE": 25,
+  "PI": 10,
+  "RJ": 46,
+  "RN": 8,
+  "RS": 31,
+  "RO": 8,
+  "RR": 8,
+  "SC": 16,
+  "SE": 8,
+  "SP": 70,
+  "TO": 8
+ },
+ "published_party_totals": {
+  "PMDB": 107,
+  "PFL": 89,
+  "PSDB": 63,
+  "PPR": 51,
+  "PT": 50,
+  "PP": 34,
+  "PDT": 34,
+  "PTB": 32,
+  "PSB": 15,
+  "PL": 13,
+  "PCdoB": 10,
+  "PMN": 4,
+  "PSC": 3,
+  "PSD": 3,
+  "PPS": 2,
+  "PRN": 1,
+  "PV": 1,
+  "PRP": 1
+ },
+ "by_uf_party": {
+  "AC": {
+   "PMDB": 4,
+   "PPR": 3,
+   "PP": 1
+  },
+  "AL": {
+   "PMDB": 1,
+   "PFL": 1,
+   "PSDB": 2,
+   "PPR": 1,
+   "PP": 1,
+   "PTB": 1,
+   "PSC": 1,
+   "PSD": 1
+  },
+  "AM": {
+   "PMDB": 3,
+   "PFL": 1,
+   "PSDB": 1,
+   "PPR": 3
+  },
+  "AP": {
+   "PFL": 3,
+   "PPR": 1,
+   "PP": 1,
+   "PTB": 1,
+   "PSB": 2
+  },
+  "BA": {
+   "PMDB": 6,
+   "PFL": 16,
+   "PSDB": 4,
+   "PPR": 1,
+   "PT": 2,
+   "PP": 1,
+   "PDT": 3,
+   "PTB": 1,
+   "PSB": 2,
+   "PL": 2,
+   "PCdoB": 1
+  },
+  "CE": {
+   "PMDB": 5,
+   "PFL": 2,
+   "PSDB": 11,
+   "PT": 1,
+   "PP": 2,
+   "PCdoB": 1
+  },
+  "DF": {
+   "PFL": 1,
+   "PT": 2,
+   "PP": 3,
+   "PCdoB": 1,
+   "PPS": 1
+  },
+  "ES": {
+   "PMDB": 3,
+   "PSDB": 2,
+   "PT": 1,
+   "PDT": 2,
+   "PTB": 1,
+   "PSB": 1
+  },
+  "GO": {
+   "PMDB": 7,
+   "PFL": 1,
+   "PSDB": 1,
+   "PPR": 2,
+   "PT": 1,
+   "PP": 2,
+   "PTB": 1,
+   "PCdoB": 1,
+   "PRN": 1
+  },
+  "MA": {
+   "PMDB": 5,
+   "PFL": 7,
+   "PSDB": 2,
+   "PT": 2,
+   "PDT": 1,
+   "PSC": 1
+  },
+  "MG": {
+   "PMDB": 11,
+   "PFL": 10,
+   "PSDB": 8,
+   "PPR": 1,
+   "PT": 6,
+   "PP": 6,
+   "PDT": 1,
+   "PTB": 7,
+   "PL": 1,
+   "PCdoB": 1,
+   "PMN": 1
+  },
+  "MS": {
+   "PMDB": 3,
+   "PFL": 1,
+   "PSDB": 1,
+   "PP": 1,
+   "PDT": 1,
+   "PTB": 1
+  },
+  "MT": {
+   "PMDB": 1,
+   "PSDB": 1,
+   "PPR": 1,
+   "PT": 1,
+   "PDT": 1,
+   "PTB": 2,
+   "PL": 1
+  },
+  "PA": {
+   "PMDB": 7,
+   "PFL": 1,
+   "PPR": 4,
+   "PT": 2,
+   "PDT": 1,
+   "PTB": 1,
+   "PCdoB": 1
+  },
+  "PB": {
+   "PMDB": 7,
+   "PFL": 3,
+   "PPR": 1,
+   "PDT": 1
+  },
+  "PR": {
+   "PMDB": 4,
+   "PFL": 6,
+   "PSDB": 1,
+   "PPR": 2,
+   "PT": 3,
+   "PP": 6,
+   "PDT": 3,
+   "PTB": 4,
+   "PCdoB": 1
+  },
+  "PE": {
+   "PFL": 11,
+   "PSDB": 1,
+   "PT": 2,
+   "PP": 1,
+   "PDT": 2,
+   "PSB": 7,
+   "PMN": 1
+  },
+  "PI": {
+   "PMDB": 2,
+   "PFL": 5,
+   "PPR": 2,
+   "PP": 1
+  },
+  "RJ": {
+   "PMDB": 4,
+   "PFL": 4,
+   "PSDB": 6,
+   "PPR": 6,
+   "PT": 3,
+   "PP": 3,
+   "PDT": 8,
+   "PTB": 3,
+   "PSB": 2,
+   "PL": 3,
+   "PCdoB": 2,
+   "PPS": 1,
+   "PV": 1
+  },
+  "RN": {
+   "PMDB": 1,
+   "PFL": 5,
+   "PSDB": 2
+  },
+  "RS": {
+   "PMDB": 8,
+   "PFL": 1,
+   "PSDB": 2,
+   "PPR": 6,
+   "PT": 7,
+   "PDT": 5,
+   "PTB": 2
+  },
+  "RO": {
+   "PMDB": 1,
+   "PSDB": 3,
+   "PDT": 2,
+   "PTB": 1,
+   "PL": 1
+  },
+  "RR": {
+   "PFL": 1,
+   "PSDB": 1,
+   "PPR": 1,
+   "PTB": 4,
+   "PSC": 1
+  },
+  "SC": {
+   "PMDB": 5,
+   "PFL": 3,
+   "PPR": 4,
+   "PT": 2,
+   "PDT": 2
+  },
+  "SE": {
+   "PMDB": 2,
+   "PFL": 1,
+   "PPR": 2,
+   "PT": 1,
+   "PMN": 2
+  },
+  "SP": {
+   "PMDB": 14,
+   "PFL": 3,
+   "PSDB": 15,
+   "PPR": 8,
+   "PT": 14,
+   "PP": 1,
+   "PDT": 2,
+   "PTB": 3,
+   "PSB": 1,
+   "PL": 5,
+   "PCdoB": 1,
+   "PSD": 2,
+   "PRP": 1
+  },
+  "TO": {
+   "PMDB": 2,
+   "PFL": 2,
+   "PPR": 2,
+   "PP": 2
+  }
+ }
+}

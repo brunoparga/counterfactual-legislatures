@@ -1,0 +1,281 @@
+{
+ "source": "pt.wikipedia.org, 'Camara dos Deputados em 1990'",
+ "chamber": 503,
+ "seats_by_uf": {
+  "AC": 8,
+  "AL": 9,
+  "AP": 8,
+  "AM": 8,
+  "BA": 39,
+  "CE": 22,
+  "DF": 8,
+  "ES": 10,
+  "GO": 17,
+  "MA": 18,
+  "MT": 8,
+  "MS": 8,
+  "MG": 53,
+  "PA": 17,
+  "PB": 12,
+  "PR": 30,
+  "PE": 25,
+  "PI": 10,
+  "RJ": 46,
+  "RN": 8,
+  "RS": 31,
+  "RO": 8,
+  "RR": 8,
+  "SC": 16,
+  "SP": 60,
+  "SE": 8,
+  "TO": 8
+ },
+ "published_party_totals": {
+  "PMDB": 108,
+  "PFL": 83,
+  "PDT": 45,
+  "PDS": 42,
+  "PRN": 40,
+  "PSDB": 38,
+  "PTB": 38,
+  "PT": 35,
+  "PDC": 22,
+  "PL": 17,
+  "PSB": 11,
+  "PSC": 6,
+  "PCdoB": 5,
+  "PRS": 4,
+  "PCB": 3,
+  "PTR": 2,
+  "PST": 2,
+  "PSD": 1,
+  "PMN": 1
+ },
+ "by_uf_party": {
+  "AC": {
+   "PMDB": 5,
+   "PDS": 3
+  },
+  "AL": {
+   "PFL": 1,
+   "PDT": 1,
+   "PRN": 2,
+   "PTB": 1,
+   "PSC": 4
+  },
+  "AP": {
+   "PFL": 4,
+   "PDT": 1,
+   "PTB": 1,
+   "PT": 1,
+   "PSC": 1
+  },
+  "AM": {
+   "PMDB": 2,
+   "PFL": 2,
+   "PDT": 1,
+   "PT": 1,
+   "PDC": 2
+  },
+  "BA": {
+   "PMDB": 8,
+   "PFL": 11,
+   "PDT": 4,
+   "PDS": 1,
+   "PRN": 3,
+   "PSDB": 2,
+   "PTB": 2,
+   "PT": 2,
+   "PDC": 3,
+   "PL": 1,
+   "PSB": 1,
+   "PCdoB": 1
+  },
+  "CE": {
+   "PMDB": 4,
+   "PFL": 4,
+   "PDT": 2,
+   "PDS": 2,
+   "PSDB": 7,
+   "PDC": 1,
+   "PSB": 2
+  },
+  "DF": {
+   "PFL": 2,
+   "PRN": 1,
+   "PSDB": 1,
+   "PT": 2,
+   "PCB": 1,
+   "PTR": 1
+  },
+  "ES": {
+   "PMDB": 6,
+   "PSDB": 3,
+   "PL": 1
+  },
+  "GO": {
+   "PMDB": 10,
+   "PDS": 1,
+   "PRN": 1,
+   "PDC": 4,
+   "PSD": 1
+  },
+  "MA": {
+   "PMDB": 1,
+   "PFL": 7,
+   "PDT": 1,
+   "PDS": 1,
+   "PRN": 2,
+   "PSDB": 1,
+   "PDC": 3,
+   "PSB": 1,
+   "PSC": 1
+  },
+  "MT": {
+   "PFL": 3,
+   "PDS": 1,
+   "PTB": 2,
+   "PL": 2
+  },
+  "MS": {
+   "PMDB": 1,
+   "PFL": 1,
+   "PRN": 1,
+   "PTB": 3,
+   "PST": 2
+  },
+  "MG": {
+   "PMDB": 14,
+   "PFL": 6,
+   "PDS": 2,
+   "PRN": 6,
+   "PSDB": 6,
+   "PTB": 3,
+   "PT": 6,
+   "PDC": 1,
+   "PL": 4,
+   "PSB": 1,
+   "PRS": 4
+  },
+  "PA": {
+   "PMDB": 6,
+   "PFL": 1,
+   "PDT": 1,
+   "PDS": 2,
+   "PT": 4,
+   "PDC": 2,
+   "PCdoB": 1
+  },
+  "PB": {
+   "PMDB": 4,
+   "PFL": 3,
+   "PDT": 3,
+   "PRN": 2
+  },
+  "PR": {
+   "PMDB": 7,
+   "PFL": 4,
+   "PDT": 2,
+   "PRN": 8,
+   "PSDB": 4,
+   "PTB": 2,
+   "PT": 3
+  },
+  "PE": {
+   "PMDB": 4,
+   "PFL": 11,
+   "PRN": 3,
+   "PSB": 5,
+   "PCdoB": 1,
+   "PCB": 1
+  },
+  "PI": {
+   "PMDB": 2,
+   "PFL": 5,
+   "PDS": 2,
+   "PSDB": 1
+  },
+  "RJ": {
+   "PMDB": 2,
+   "PFL": 5,
+   "PDT": 18,
+   "PDS": 2,
+   "PRN": 2,
+   "PSDB": 1,
+   "PTB": 4,
+   "PT": 3,
+   "PDC": 2,
+   "PL": 3,
+   "PSB": 1,
+   "PCdoB": 1,
+   "PCB": 1,
+   "PTR": 1
+  },
+  "RN": {
+   "PMDB": 3,
+   "PFL": 3,
+   "PRN": 1,
+   "PSDB": 1
+  },
+  "RS": {
+   "PMDB": 9,
+   "PFL": 1,
+   "PDT": 7,
+   "PDS": 9,
+   "PSDB": 1,
+   "PT": 4
+  },
+  "RO": {
+   "PDT": 1,
+   "PTB": 7
+  },
+  "RR": {
+   "PMDB": 1,
+   "PFL": 1,
+   "PDS": 2,
+   "PTB": 3,
+   "PDC": 1
+  },
+  "SC": {
+   "PMDB": 5,
+   "PFL": 3,
+   "PDT": 1,
+   "PDS": 5,
+   "PT": 1,
+   "PL": 1
+  },
+  "SP": {
+   "PMDB": 12,
+   "PFL": 1,
+   "PDT": 2,
+   "PDS": 7,
+   "PRN": 6,
+   "PSDB": 9,
+   "PTB": 6,
+   "PT": 10,
+   "PDC": 1,
+   "PL": 5,
+   "PCdoB": 1
+  },
+  "SE": {
+   "PFL": 4,
+   "PDS": 2,
+   "PRN": 1,
+   "PMN": 1
+  },
+  "TO": {
+   "PMDB": 2,
+   "PRN": 1,
+   "PSDB": 1,
+   "PDC": 4
+  }
+ },
+ "reconciliation": {
+  "row_sums": "all match",
+  "party_columns_unreconciled": {
+   "PTB": -4,
+   "PT": 2,
+   "PDC": 2
+  }
+ }
+}

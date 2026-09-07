@@ -63,6 +63,14 @@ ACTUAL_SEATS = {
     "PR": 30, "PE": 25, "PI": 10, "RJ": 46, "RN": 8, "RS": 31, "RO": 8,
     "RR": 8, "SC": 16, "SP": 70, "SE": 8, "TO": 8}
 
+# The 1990 table, transcribed from pt.wikipedia and verified two ways: every
+# row sums to its published state total and the states sum to 503. It differs
+# from the 1994 table in exactly one state -- Sao Paulo, 60 against 70 -- so
+# the whole ten-seat expansion of LC 78/1993 went to Sao Paulo, lifting it to
+# the constitutional ceiling. The 1994 table reproduces ACTUAL_SEATS exactly,
+# which is independent confirmation of the LC 78/1993 numbers above.
+SEATS_1990 = dict(ACTUAL_SEATS, SP=60)
+
 CENSUS_FOR = {1990: 1991, 1994: 1991, 1998: 1991, 2002: 2000, 2006: 2000,
               2010: 2010, 2014: 2010, 2018: 2010, 2022: 2022}
 # The Chamber grew from 503 to 513 with LC 78/1993, so 1990 is the one
@@ -265,12 +273,7 @@ def main():
                                  f"votacao_partido_munzona_{year}.zip")
         M = CHAMBER[year]
         pops = pop[str(CENSUS_FOR[year])]["population"]
-        # The historical 503-seat table for 1990 is not published anywhere we
-        # can reach, so that year has no "actual" column; its baseline is the
-        # constitutional rule recomputed on 503 seats.
-        plans = {} if year == 1990 else {
-            "actual": ACTUAL_SEATS,
-        }
+        plans = {"actual": SEATS_1990 if year == 1990 else ACTUAL_SEATS}
         plans["no_limits"] = largest_remainder(pops, M, floor=1)
         plans["recomputed_with_limits"] = largest_remainder(pops, M, floor=8,
                                                             cap=70)
