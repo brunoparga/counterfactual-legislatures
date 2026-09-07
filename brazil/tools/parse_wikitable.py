@@ -22,6 +22,29 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 
+# Corrections to the source, applied by the parser so that re-running it does
+# not silently undo them. Each one must be justified by evidence outside the
+# table itself, and must leave every row sum unchanged -- a correction that
+# alters a state's seat count would be rewriting the apportionment, not fixing
+# a typo.
+CORRECTIONS = {
+    1994: {"RN": {"PMDB": 2, "PSDB": 1}},
+}
+CORRECTION_NOTES = {
+    (1994, "RN"): (
+        "The source's cells summed to PMDB 106 and PSDB 64 against its own published "
+        "totals of 107 and 63. A row sum cannot detect a seat moved between two parties "
+        "within one row, so the fault had to be either a within-row swap or a typo in the "
+        "totals row; pt.wikipedia's main 1994 election article independently gives 107 and "
+        "63, which points at the cells. The deputies actually elected in Rio Grande do Norte "
+        "were Henrique Eduardo Alves (PMDB, 108,322) and Laire Rosado (PMDB, 46,884), "
+        "Cipriano Correia (PSDB, 56,786), and five PFL -- two PMDB and one PSDB, not the "
+        "reverse. The vote arithmetic agrees: PMDB held 1.80 electoral quotients in RN and "
+        "takes the second seat on largest averages. Alagoas, the other candidate the vote "
+        "arithmetic threw up, matches the table as published and is left alone."),
+}
+
+
 def cells(block):
     """Cell values of one wikitable row, stripped of markup."""
     out = []
@@ -73,6 +96,18 @@ def main():
     a = ap.parse_args()
 
     parties, data, soma, totals, grand = parse(Path(a.wikitext).read_text())
+    applied = {}
+    for uf, fix in CORRECTIONS.get(a.year, {}).items():
+        before = dict(data[uf])
+        data[uf].update(fix)
+        data[uf] = {k: v for k, v in data[uf].items() if v}
+        if sum(data[uf].values()) != soma[uf]:
+            print(f"REFUSED correction to {uf}: it would change the seat count")
+            return 1
+        applied[uf] = {"was": {k: before.get(k, 0) for k in fix}, "now": fix,
+                       "why": CORRECTION_NOTES.get((a.year, uf), "")}
+        print(f"  applied correction to {uf}: "
+              f"{ {k: before.get(k, 0) for k in fix} } -> {fix}")
     bad_rows = {u: (sum(data[u].values()), soma[u])
                 for u in data if sum(data[u].values()) != soma[u]}
     bad_cols = {}
@@ -106,7 +141,7 @@ def main():
         {"source": f"pt.wikipedia.org, 'Camara dos Deputados em {a.year}'",
          "licence": "CC BY-SA 4.0", "chamber": grand,
          "seats_by_uf": soma, "published_party_totals": totals,
-         "by_uf_party": data,
+         "by_uf_party": data, "corrections": applied,
          "verified": "every row sums to its published Soma; states sum to the "
                      "chamber size",
          "source_column_discrepancies": {k: {"cells": v[0], "published": v[1]}

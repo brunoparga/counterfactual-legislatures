@@ -230,6 +230,39 @@ cross-checks the TSE parsing rather than merely extending it.
 Sao Paulo's total is 8.66M against a true 10.65M. The file is unusable for
 seat allocation and is excluded rather than silently used.
 
+## A one-seat error found in the source, and pinned down
+
+The 1994 table's own cells summed to PMDB 106 and PSDB 64 against its own
+published totals of 107 and 63. Worth walking through, because the way it was
+localised generalises.
+
+A row sum is invariant to moving a seat **between two cells in the same row**,
+so no row check can see a misattribution -- and every row did check. That rules
+out the whole class of "a number is simply wrong", but leaves two candidates:
+a within-row swap, or a typo in the totals line with the cells correct.
+pt.wikipedia's main 1994 election article independently gives 107 and 63,
+which points at the cells.
+
+The vote arithmetic then narrowed it to two states. Only in **AL** and **RN**
+was PMDB under-credited *and* PSDB over-credited by more than half an electoral
+quotient, and in both PMDB's average for a second seat beat PSDB's -- so
+largest averages should have handed PMDB the extra seat. Coalitions can
+legitimately invert that, so votes alone could not close it.
+
+The deputies actually elected settle it. Alagoas returned PMDB 1 and PSDB 2,
+exactly as the table says. **Rio Grande do Norte returned two PMDB deputies and
+one PSDB** -- Henrique Eduardo Alves (108,322) and Laire Rosado (46,884)
+against Cipriano Correia (56,786), plus the five PFL the table already has. One
+seat sits on the wrong party in Rio Grande do Norte; correcting it fixes both
+columns at once and leaves the row at 8.
+
+The correction lives in `parse_wikitable.py` rather than in the stored JSON, so
+re-parsing cannot silently undo it, and the parser refuses any correction that
+would change a state's seat count -- that would be rewriting the apportionment
+rather than fixing a typo. Both tables now reconcile completely: every row
+against its Soma, every party column against its Total, the states against 503
+and 513.
+
 ## Validation
 
 **Cross-source agreement** on total valid votes, after fixing two parsing bugs
@@ -274,14 +307,6 @@ numbers do not depend on any of it.
 
 ## What is still missing
 
-- **One seat in the 1994 seat table, in the source itself.** The tables are now
-  parsed from wikitext rather than read off a screenshot, and 1990 reconciles
-  completely -- every row against its published Soma, every party column
-  against its published Total, the states against 503. 1994 reconciles on rows
-  and on the chamber total but *not* on two columns: its own cells give PMDB
-  106 against a published 107 and PSDB 64 against 63. One seat is attributed to
-  the wrong party somewhere in the source. The apportionment is unaffected and
-  the party cells feed nothing, so it is recorded rather than guessed at.
 - **Coalition membership before 2018 in the Passport series**, and candidate
   votes generally. `votacao_candidato_munzona` would fix both the 1990
   coalition problem and the federation approximation; it is 106 MB for 1998
