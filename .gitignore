@@ -44,6 +44,10 @@ brazil/upstream/tse/*
 # no archival guarantee, so unlike the TSE bulk files these bytes are kept.
 !brazil/upstream/electionpassport/
 !brazil/upstream/wikipedia/
+# Camara roll-call summaries: 173 MB. Bytes out, manifest in.
+!brazil/upstream/camara/
+brazil/upstream/camara/*
+!brazil/upstream/camara/manifest.json
 
 __pycache__/
 *.pyc

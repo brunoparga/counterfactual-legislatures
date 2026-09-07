@@ -235,6 +235,21 @@
       "included_here": true,
       "path": "brazil/upstream/wikipedia/ (wikitext and parsed JSON)",
       "note": "The historical apportionment tables, unavailable from TSE. Stored as the original wikitext and parsed by brazil/tools/parse_wikitable.py, which enforces the checks rather than reporting them: every row must sum to its published Soma and the states to the chamber size, or the table is rejected. 1990 reconciles completely, columns included. 1994's cells originally gave PMDB 106 against a published 107 and PSDB 64 against 63; the error was localised to Rio Grande do Norte, which elected two PMDB deputies and one PSDB rather than the reverse, and is corrected in the parser so re-parsing cannot undo it. Both tables now reconcile on rows, on columns and on the chamber size. The two tables differ in exactly one state: Sao Paulo, 60 against 70, so the whole ten-seat expansion of LC 78/1993 went there. The 1994 table reproduces the LC 78/1993 distribution used throughout, independently confirming it. Share-alike, but it feeds only a set of seat counts -- integers that are facts, not expression -- so the outputs stay CC-BY."
+    },
+    {
+      "id": "camara-rollcalls",
+      "title": "Camara dos Deputados: plenary roll-call summaries, 2003-2024",
+      "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-{year}.json",
+      "publisher": "Camara dos Deputados (Brazil)",
+      "country": "BR",
+      "retrieved": "2026-09-07",
+      "licence": "open government data, Camara dos Deputados Dados Abertos",
+      "share_alike": false,
+      "attribution_required": true,
+      "attribution": "Roll-call data: Camara dos Deputados, Dados Abertos",
+      "redistributable": true,
+      "included_here": false,
+      "note": "One record per division with the tallies, 173 MB for 2003-2024; checksums in brazil/upstream/camara/manifest.json. Used to screen for votes close enough that the apportionment could have decided them, before spending the per-deputy layer (votacoesVotos-YYYY.json, 7-79 MB per year) on the shortlist. Coverage begins in 2003, so the 1990, 1994 and 1998 seat counterfactuals cannot be tested against actual votes. Two years arrived truncated on the first pass and needed re-fetching, so file sizes are worth checking against the manifest rather than trusting the download."
     }
   ],
   "outputs": [
@@ -297,6 +312,15 @@
       ],
       "licence": "CC-BY-4.0",
       "note": "Seats per state and per party under the actual apportionment, under the constitutional rule recomputed on current population, under a floor of 1 with no ceiling, and under a single national district, for nine Chamber elections 1990-2022. Two series because seats were won by coalitions until 2018: TSE is coalition-level (1998-2022), Election Passport party-level (1990-2014). All inputs are freely reusable with attribution and none is share-alike, so CC-BY as with the US plans."
+    },
+    {
+      "id": "brazil-near-miss",
+      "path": "brazil/results/near_miss.json",
+      "derived_from": [
+        "camara-rollcalls"
+      ],
+      "licence": "CC-BY-4.0",
+      "note": "Plenary divisions within a chosen distance of the bar that actually applied to them -- a simple majority for ordinary matters, 308 of 513 for constitutional text. Mentioning a PEC is not the same as being subject to its three-fifths bar: motions on preference, urgency and waivers of interval pass on a simple majority, and scoring those against 308 invents near-misses that never existed."
     }
   ]
 }

@@ -1,0 +1,112 @@
+{
+ "2003": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2003.json",
+  "bytes": 10013770,
+  "sha256": "fa5043ef2215aa8dda6356ea8b9698c31c10e022d02abb468d31eb4d6a4aaf32"
+ },
+ "2005": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2005.json",
+  "bytes": 7464932,
+  "sha256": "8757b272f12e80a3989f02b1b53dc74a7eda2992160ecaf28313f1a26a3ef120"
+ },
+ "2006": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2006.json",
+  "bytes": 5195684,
+  "sha256": "5d79cdd1b75598a6eb0111a682c20a4f486a9f104ede80b2162ec5a17a50946e"
+ },
+ "2007": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2007.json",
+  "bytes": 8834133,
+  "sha256": "20a64d7cadb42bcb5cde7c128319d05f2b525883a7260d4053ba099d9fb55883"
+ },
+ "2008": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2008.json",
+  "bytes": 7873947,
+  "sha256": "64f3d52a4ea34b118f6309c21a012f5d7f8f0227f2227bbab3f5034f0e8eb3f4"
+ },
+ "2010": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2010.json",
+  "bytes": 5955522,
+  "sha256": "b6571394e11ff7f43359582fac66556842fd6579a722abffe1310138fc732a18"
+ },
+ "2011": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2011.json",
+  "bytes": 7099959,
+  "sha256": "8a156bc69788ba3b0cdc642add4ed9b55f4f51b8c384cab6d5535f9731454455"
+ },
+ "2012": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2012.json",
+  "bytes": 6192820,
+  "sha256": "3d79abcdc9e8abc2a67508035cd9206bcc41be10ce0ba933533801d21bdcec3e"
+ },
+ "2013": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2013.json",
+  "bytes": 8263055,
+  "sha256": "18b4c41e7e0b10c77b75067bf60462e297568700078940a3b303d1a09efb4f7f"
+ },
+ "2014": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2014.json",
+  "bytes": 4089436,
+  "sha256": "545d5bc8fac5ceb2990d52d63ad23fc21b5b6401eca28b96f32ec825fe645d88"
+ },
+ "2015": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2015.json",
+  "bytes": 11731237,
+  "sha256": "30bd02e81f09efa5a59b5a9ad1e34af9f6d6621687b3cb951474b861dd08b4d4"
+ },
+ "2016": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2016.json",
+  "bytes": 6585817,
+  "sha256": "7f6a58415172562d581f632dea1a36e0a075590b07420b93ded052909d82538e"
+ },
+ "2017": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2017.json",
+  "bytes": 8642488,
+  "sha256": "15f55ea04d7387d2e7a02c4600365ff8595956fc7dd90a52380360465247cf07"
+ },
+ "2018": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2018.json",
+  "bytes": 4518275,
+  "sha256": "65ba3d3c1b06014d246b608bd40a2ca889c0b3a18aab21cb680d5bbe24cb8454"
+ },
+ "2019": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2019.json",
+  "bytes": 10241466,
+  "sha256": "aefa6ed9dabfe192e6cea3957536981fc0329c8f17c5e6cffd34704aa027d3b3"
+ },
+ "2020": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2020.json",
+  "bytes": 2003516,
+  "sha256": "424555ee9bd10f23732105527be16865259f580a2fc472b4ab043c961eb57e4f"
+ },
+ "2021": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2021.json",
+  "bytes": 11497577,
+  "sha256": "7c8425d2a180b2044c95f00c73f123fbc20287bebcdb1cc7b8b4dfb5c439a425"
+ },
+ "2022": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2022.json",
+  "bytes": 6479569,
+  "sha256": "68d4ee84a3a293d4472962d96a6aae7ee979f333ae609302cd3b2d9bea0908d5"
+ },
+ "2023": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2023.json",
+  "bytes": 12176174,
+  "sha256": "a8856af9d05620e5fc409574ea9d108a39f4b57619a9daf56dbc96a9f9e89833"
+ },
+ "2024": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2024.json",
+  "bytes": 11520717,
+  "sha256": "701981e8bdb800349a35d88014ecd61f027b6f53228fda37a3df156271062c18"
+ },
+ "2004": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2004.json",
+  "bytes": 6972748,
+  "sha256": "db87f8db93789e0359a1f4c28b945908ff9dc54f387835a6609c2e00a4e0b4a8"
+ },
+ "2009": {
+  "url": "https://dadosabertos.camara.leg.br/arquivos/votacoes/json/votacoes-2009.json",
+  "bytes": 9784544,
+  "sha256": "1a58f2ddf32b258ec65c7951737000badf6e71ec9c2b9ae255ee3c2be2bdfaf7"
+ }
+}
