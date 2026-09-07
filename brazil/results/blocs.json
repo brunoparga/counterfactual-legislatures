@@ -31,27 +31,7 @@
   },
   "centrao_dependence_change": 2,
   "centrao_size_change": -8,
-  "amendment_discipline_change": 0.0371,
-  "bloc_shares": {
-   "SP": {
-    "seats": 60,
-    "gov_pct": 28.3,
-    "centrao_pct": 35.0,
-    "opp_pct": 36.7
-   },
-   "BRASIL": {
-    "seats": 503,
-    "gov_pct": 34.0,
-    "centrao_pct": 40.2,
-    "opp_pct": 25.8
-   },
-   "8-seat": {
-    "seats": 88,
-    "gov_pct": 36.4,
-    "centrao_pct": 55.7,
-    "opp_pct": 8.0
-   }
-  }
+  "amendment_discipline_change": 0.0371
  },
  "1994": {
   "president": "Cardoso (PSDB)",
@@ -85,27 +65,7 @@
   },
   "centrao_dependence_change": 4,
   "centrao_size_change": -8,
-  "amendment_discipline_change": 0.0367,
-  "bloc_shares": {
-   "SP": {
-    "seats": 70,
-    "gov_pct": 31.4,
-    "centrao_pct": 44.3,
-    "opp_pct": 24.3
-   },
-   "BRASIL": {
-    "seats": 513,
-    "gov_pct": 34.7,
-    "centrao_pct": 46.2,
-    "opp_pct": 19.1
-   },
-   "8-seat": {
-    "seats": 88,
-    "gov_pct": 38.6,
-    "centrao_pct": 56.8,
-    "opp_pct": 4.5
-   }
-  }
+  "amendment_discipline_change": 0.0367
  },
  "1998": {
   "president": "Cardoso (PSDB), 2nd term",
@@ -139,27 +99,7 @@
   },
   "centrao_dependence_change": 0,
   "centrao_size_change": -8,
-  "amendment_discipline_change": 0.0221,
-  "bloc_shares": {
-   "SP": {
-    "seats": 70,
-    "gov_pct": 61.4,
-    "centrao_pct": 12.9,
-    "opp_pct": 25.7
-   },
-   "BRASIL": {
-    "seats": 513,
-    "gov_pct": 58.7,
-    "centrao_pct": 23.4,
-    "opp_pct": 17.9
-   },
-   "8-seat": {
-    "seats": 88,
-    "gov_pct": 62.5,
-    "centrao_pct": 25.0,
-    "opp_pct": 12.5
-   }
-  }
+  "amendment_discipline_change": 0.0221
  },
  "2002": {
   "president": "Lula (PT)",
@@ -193,27 +133,7 @@
   },
   "centrao_dependence_change": -6,
   "centrao_size_change": -4,
-  "amendment_discipline_change": -0.0152,
-  "bloc_shares": {
-   "SP": {
-    "seats": 70,
-    "gov_pct": 42.9,
-    "centrao_pct": 31.4,
-    "opp_pct": 25.7
-   },
-   "BRASIL": {
-    "seats": 513,
-    "gov_pct": 30.6,
-    "centrao_pct": 37.2,
-    "opp_pct": 32.2
-   },
-   "8-seat": {
-    "seats": 88,
-    "gov_pct": 29.5,
-    "centrao_pct": 34.1,
-    "opp_pct": 36.4
-   }
-  }
+  "amendment_discipline_change": -0.0152
  },
  "2006": {
   "president": "Lula (PT), 2nd term",
@@ -247,27 +167,7 @@
   },
   "centrao_dependence_change": 2,
   "centrao_size_change": 0,
-  "amendment_discipline_change": 0.0097,
-  "bloc_shares": {
-   "SP": {
-    "seats": 70,
-    "gov_pct": 30.0,
-    "centrao_pct": 34.3,
-    "opp_pct": 35.7
-   },
-   "BRASIL": {
-    "seats": 513,
-    "gov_pct": 29.4,
-    "centrao_pct": 40.0,
-    "opp_pct": 30.6
-   },
-   "8-seat": {
-    "seats": 88,
-    "gov_pct": 30.7,
-    "centrao_pct": 42.0,
-    "opp_pct": 27.3
-   }
-  }
+  "amendment_discipline_change": 0.0097
  },
  "2010": {
   "president": "Dilma (PT)",
@@ -301,27 +201,7 @@
   },
   "centrao_dependence_change": 0,
   "centrao_size_change": -6,
-  "amendment_discipline_change": 0.0198,
-  "bloc_shares": {
-   "SP": {
-    "seats": 70,
-    "gov_pct": 47.1,
-    "centrao_pct": 12.9,
-    "opp_pct": 40.0
-   },
-   "BRASIL": {
-    "seats": 513,
-    "gov_pct": 41.7,
-    "centrao_pct": 33.5,
-    "opp_pct": 24.8
-   },
-   "8-seat": {
-    "seats": 88,
-    "gov_pct": 46.6,
-    "centrao_pct": 36.4,
-    "opp_pct": 17.0
-   }
-  }
+  "amendment_discipline_change": 0.0198
  },
  "2014": {
   "president": "Dilma (PT), 2nd term",
@@ -355,27 +235,7 @@
   },
   "centrao_dependence_change": 5,
   "centrao_size_change": 1,
-  "amendment_discipline_change": 0.0221,
-  "bloc_shares": {
-   "SP": {
-    "seats": 70,
-    "gov_pct": 37.1,
-    "centrao_pct": 21.4,
-    "opp_pct": 41.4
-   },
-   "BRASIL": {
-    "seats": 513,
-    "gov_pct": 32.4,
-    "centrao_pct": 37.4,
-    "opp_pct": 30.2
-   },
-   "8-seat": {
-    "seats": 88,
-    "gov_pct": 35.2,
-    "centrao_pct": 37.5,
-    "opp_pct": 27.3
-   }
-  }
+  "amendment_discipline_change": 0.0221
  },
  "2018": {
   "president": "Bolsonaro (PSL)",
@@ -409,27 +269,7 @@
   },
   "centrao_dependence_change": -2,
   "centrao_size_change": -2,
-  "amendment_discipline_change": -0.0009,
-  "bloc_shares": {
-   "SP": {
-    "seats": 70,
-    "gov_pct": 28.6,
-    "centrao_pct": 38.6,
-    "opp_pct": 32.9
-   },
-   "BRASIL": {
-    "seats": 513,
-    "gov_pct": 16.2,
-    "centrao_pct": 49.9,
-    "opp_pct": 33.9
-   },
-   "8-seat": {
-    "seats": 88,
-    "gov_pct": 11.4,
-    "centrao_pct": 61.4,
-    "opp_pct": 27.3
-   }
-  }
+  "amendment_discipline_change": -0.0009
  },
  "2022": {
   "president": "Lula (PT), 3rd term",
@@ -463,26 +303,6 @@
   },
   "centrao_dependence_change": -4,
   "centrao_size_change": -3,
-  "amendment_discipline_change": -0.0076,
-  "bloc_shares": {
-   "SP": {
-    "seats": 70,
-    "gov_pct": 28.6,
-    "centrao_pct": 44.3,
-    "opp_pct": 27.1
-   },
-   "BRASIL": {
-    "seats": 513,
-    "gov_pct": 25.5,
-    "centrao_pct": 54.0,
-    "opp_pct": 20.5
-   },
-   "8-seat": {
-    "seats": 88,
-    "gov_pct": 13.6,
-    "centrao_pct": 63.6,
-    "opp_pct": 22.7
-   }
-  }
+  "amendment_discipline_change": -0.0076
  }
 }

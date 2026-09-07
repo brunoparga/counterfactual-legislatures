@@ -10,9 +10,12 @@ presidency, in exchange for offices and budget.
 
 Two thresholds matter, and the second is where Brazilian agendas actually die:
 
-  257  simple majority of 513
-  308  three fifths, required for a constitutional amendment, which is what
-       pension, tax and administrative reform all need
+  a simple majority
+  three fifths, required for a constitutional amendment, which is what pension,
+  tax and administrative reform all need
+
+Both are computed from the chamber size of that year: 257 and 308 out of 513,
+but 252 and 302 out of the 503 seats the 1990 Chamber had.
 
 So the question is not only whether the president's coalition crosses those
 lines, but **how much of it has to be bought**. If the over-represented small
@@ -82,7 +85,9 @@ BLOCS = {
 }
 SERIES = {1990: "passport", 1994: "passport", 1998: "tse", 2002: "tse",
           2006: "tse", 2010: "tse", 2014: "tse", 2018: "tse", 2022: "tse"}
-MAJORITY, AMENDMENT = 257, 308
+# Thresholds are derived per year from the chamber size, never hard-coded: the
+# 1990 Chamber had 503 seats, so its majority is 252 and its three-fifths bar
+# 302, not the 257 and 308 that hold from 1994 on.
 
 
 def split(seats, year):
@@ -128,7 +133,7 @@ def main():
 
     out = {}
     print(f"{'year':6}{'president':26}{'scenario':11}"
-          f"{'gov':>5}{'centrao':>9}{'opp':>5}{'  gov+cen':>10}{'  257':>6}{'  308':>6}")
+          f"{'gov':>5}{'centrao':>9}{'opp':>5}{'  gov+cen':>10}{'  maj':>6}{'  3/5':>6}")
     for year in sorted(BLOCS):
         src = data[SERIES[year]].get(str(year))
         if not src:
@@ -137,6 +142,7 @@ def main():
         maj, amd = round(M / 2 + 0.5), round(M * 3 / 5)
         row = {"president": BLOCS[year]["pres"], "chamber": M,
                "majority": maj, "amendment": amd, "series": SERIES[year]}
+
         for scen in ("actual", "no_limits"):
             g, c, o = split(src[scen]["seats_by_party"], year)
             row[scen] = {"gov": g, "centrao": c, "opp": o, "gov_plus_centrao": g + c,
@@ -148,7 +154,8 @@ def main():
                   f"{BLOCS[year]['pres'] if scen=='actual' else '':26}{scen:11}"
                   f"{g:5}{c:9}{o:5}{g+c:10}"
                   f"{'  yes' if g+c>=maj else '   NO':>6}"
-                  f"{'  yes' if g+c>=amd else '   NO':>6}")
+                  f"{'  yes' if g+c>=amd else '   NO':>6}"
+                  + (f"   ({M} seats: {maj}/{amd})" if scen == "actual" else ""))
         for scen in ("actual", "no_limits"):
             g, c = row[scen]["gov"], row[scen]["centrao"]
             row[scen]["centrao_discipline_for_majority"] = round(
