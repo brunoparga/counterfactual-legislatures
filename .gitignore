@@ -40,6 +40,9 @@ brazil/upstream/*
 !brazil/upstream/tse/
 brazil/upstream/tse/*
 !brazil/upstream/tse/snapshots.json
+# Election Passport is 88 KB and its upstream is a personal academic site with
+# no archival guarantee, so unlike the TSE bulk files these bytes are kept.
+!brazil/upstream/electionpassport/
 
 __pycache__/
 *.pyc
