@@ -211,6 +211,123 @@ largest parties substantially** and lets several more in. Low-magnitude
 districts over-reward whoever is locally largest, and that outweighs the
 apportionment.
 
+## 5. Would anything different have happened? Almost nothing.
+
+Proportionality is not the only thing seats buy. Brazilian government is
+coalition presidentialism: a president wins with an ideological bloc that is
+never a majority, then assembles a working majority from the *centrao*, the
+pragmatic bloc that joins whoever holds the presidency. Two thresholds
+matter, and the second is where Brazilian agendas actually die -- **257** for
+a simple majority and **308** for a constitutional amendment, which pension,
+tax and administrative reform all require.
+
+Assigning each party to the president's bloc, the opposition, or the centrao
+for that term, and assuming the centrao votes with the president:
+
+| Year | President | Gov | Centrao | Opp | Gov+Centrao | 257 | 308 |
+|---|---|---|---|---|---|---|---|
+| 1990 | Collor (PRN) | 171 | 202 | 130 | 373 | yes | yes |
+|  | no limits | 169 | 194 | 140 | 363 | yes | yes |
+| 1994 | Cardoso (PSDB) | 178 | 237 | 98 | 415 | yes | yes |
+|  | no limits | 174 | 229 | 110 | 403 | yes | yes |
+| 1998 | Cardoso (PSDB), 2nd term | 301 | 120 | 92 | 421 | yes | yes |
+|  | no limits | 299 | 112 | 102 | 411 | yes | yes |
+| 2002 | Lula (PT) | 157 | 191 | 165 | 348 | yes | yes |
+|  | no limits | 163 | 187 | 163 | 350 | yes | yes |
+| 2006 | Lula (PT), 2nd term | 151 | 205 | 157 | 356 | yes | yes |
+|  | no limits | 149 | 205 | 159 | 354 | yes | yes |
+| 2010 | Dilma (PT) | 214 | 172 | 127 | 386 | yes | yes |
+|  | no limits | 214 | 166 | 133 | 380 | yes | yes |
+| 2014 | Dilma (PT), 2nd term | 166 | 192 | 155 | 358 | yes | yes |
+|  | no limits | 161 | 193 | 159 | 354 | yes | yes |
+| 2018 | Bolsonaro (PSL) | 83 | 256 | 174 | 339 | yes | yes |
+|  | no limits | 85 | 254 | 174 | 339 | yes | yes |
+| 2022 | Lula (PT), 3rd term | 131 | 277 | 105 | 408 | yes | yes |
+|  | no limits | 135 | 274 | 104 | 409 | yes | yes |
+
+**Every president clears both thresholds under both apportionments, in all
+nine elections.** On this model, removing the floor and ceiling changes
+nothing about who can govern.
+
+### The model saturates, which is itself the finding
+
+A model that says every Brazilian president since 1990 could amend the
+constitution at will is wrong about the world -- Dilma could not, and
+Bolsonaro spent his term discovering it. So the binding constraint was never
+*seats*. It is the price and reliability of centrao support, which no
+seat-counting exercise can see.
+
+The measure that does not saturate is **how much of the centrao a president
+must actually command** to reach 308:
+
+| Year | President | Actual | No limits | Change |
+|---|---|---|---|---|
+| 1990 | Collor (PRN) | 64.8% | 68.6% | +3.7 pp |
+| 1994 | Cardoso (PSDB) | 54.9% | 58.5% | +3.7 pp |
+| 1998 | Cardoso (PSDB), 2nd term | 5.8% | 8.0% | +2.2 pp |
+| 2002 | Lula (PT) | 79.1% | 77.5% | -1.5 pp |
+| 2006 | Lula (PT), 2nd term | 76.6% | 77.6% | +1.0 pp |
+| 2010 | Dilma (PT) | 54.6% | 56.6% | +2.0 pp |
+| 2014 | Dilma (PT), 2nd term | 74.0% | 76.2% | +2.2 pp |
+| 2018 | Bolsonaro (PSL) | 87.9% | 87.8% | -0.1 pp |
+| 2022 | Lula (PT), 3rd term | 63.9% | 63.1% | -0.8 pp |
+
+Mean change **+1.38 percentage points** -- and the sign is
+positive, so correcting the apportionment would have made governing
+marginally *harder*, not easier. The effect is small enough to be noise
+against everything the model omits.
+
+### What does change: the centrao shrinks, by about four seats
+
+It is a standard claim in Brazilian political science that malapportionment
+inflates the centrao. It is testable, and it holds: the centrao is
+**4.2 seats smaller** on average without the limits, shrinking in
+7 of 9 elections.
+
+The mechanism is visible directly. Centrao share of each delegation:
+
+| Year | Sao Paulo | Brazil | The 8-seat floor states |
+|---|---|---|---|
+| 1990 | 35.0% | 40.2% | 55.7% |
+| 1994 | 44.3% | 46.2% | 56.8% |
+| 1998 | 12.9% | 23.4% | 25.0% |
+| 2002 | 31.4% | 37.2% | 34.1% |
+| 2006 | 34.3% | 40.0% | 42.0% |
+| 2010 | 12.9% | 33.5% | 36.4% |
+| 2014 | 21.4% | 37.4% | 37.5% |
+| 2018 | 38.6% | 49.9% | 61.4% |
+| 2022 | 44.3% | 54.0% | 63.6% |
+
+**Sao Paulo elects a smaller share of centrao deputies than the country does
+in all nine elections**, by between 2 and 21 points; the eight-seat floor
+states elect a larger share in eight of nine, by up to 13 points. So the
+claim is confirmed and quantified.
+
+### Why Sao Paulo's 42 extra seats cancel out
+
+Because Sao Paulo is not a bloc. It is *less* centrao than the country but
+*more* polarised, running above the national share for both government and
+opposition in most years -- in 2014, 37% government and 41% opposition
+against 32% and 30% nationally. Its extra seats therefore split between the
+two sides and largely cancel, which is exactly why a 42-seat swing in the
+largest state moves a governing coalition by four.
+
+That is the same reason the Gallagher index barely moved. The over- and
+under-represented states differ from each other in *composition*, not in
+*direction*, so correcting the weights redistributes seats without
+redistributing power.
+
+### The honest limits of this
+
+The bloc assignment is a judgement per presidential term and the
+centrao-follows-the-president rule is deliberately crude: it ignores the
+price, the vote-by-vote bargaining, and every party that split. It is
+defensible only for the comparative question asked here, since the same
+classification is applied to both apportionments and only the *difference*
+is read. Party attribution inside pre-2018 coalitions carries the
+approximation described above. Change the classification in
+`brazil/tools/blocs.py` and the whole table recomputes.
+
 ## Sources, and why there are two series
 
 | | |

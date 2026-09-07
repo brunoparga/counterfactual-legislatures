@@ -1,0 +1,488 @@
+{
+ "1990": {
+  "president": "Collor (PRN)",
+  "chamber": 503,
+  "majority": 252,
+  "amendment": 302,
+  "series": "passport",
+  "actual": {
+   "gov": 171,
+   "centrao": 202,
+   "opp": 130,
+   "gov_plus_centrao": 373,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": false,
+   "centrao_seats_needed": 81,
+   "centrao_discipline_for_majority": 0.401,
+   "centrao_discipline_for_amendment": 0.6485
+  },
+  "no_limits": {
+   "gov": 169,
+   "centrao": 194,
+   "opp": 140,
+   "gov_plus_centrao": 363,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": false,
+   "centrao_seats_needed": 83,
+   "centrao_discipline_for_majority": 0.4278,
+   "centrao_discipline_for_amendment": 0.6856
+  },
+  "centrao_dependence_change": 2,
+  "centrao_size_change": -8,
+  "amendment_discipline_change": 0.0371,
+  "bloc_shares": {
+   "SP": {
+    "seats": 60,
+    "gov_pct": 28.3,
+    "centrao_pct": 35.0,
+    "opp_pct": 36.7
+   },
+   "BRASIL": {
+    "seats": 503,
+    "gov_pct": 34.0,
+    "centrao_pct": 40.2,
+    "opp_pct": 25.8
+   },
+   "8-seat": {
+    "seats": 88,
+    "gov_pct": 36.4,
+    "centrao_pct": 55.7,
+    "opp_pct": 8.0
+   }
+  }
+ },
+ "1994": {
+  "president": "Cardoso (PSDB)",
+  "chamber": 513,
+  "majority": 257,
+  "amendment": 308,
+  "series": "passport",
+  "actual": {
+   "gov": 178,
+   "centrao": 237,
+   "opp": 98,
+   "gov_plus_centrao": 415,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": false,
+   "centrao_seats_needed": 79,
+   "centrao_discipline_for_majority": 0.3333,
+   "centrao_discipline_for_amendment": 0.5485
+  },
+  "no_limits": {
+   "gov": 174,
+   "centrao": 229,
+   "opp": 110,
+   "gov_plus_centrao": 403,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": false,
+   "centrao_seats_needed": 83,
+   "centrao_discipline_for_majority": 0.3624,
+   "centrao_discipline_for_amendment": 0.5852
+  },
+  "centrao_dependence_change": 4,
+  "centrao_size_change": -8,
+  "amendment_discipline_change": 0.0367,
+  "bloc_shares": {
+   "SP": {
+    "seats": 70,
+    "gov_pct": 31.4,
+    "centrao_pct": 44.3,
+    "opp_pct": 24.3
+   },
+   "BRASIL": {
+    "seats": 513,
+    "gov_pct": 34.7,
+    "centrao_pct": 46.2,
+    "opp_pct": 19.1
+   },
+   "8-seat": {
+    "seats": 88,
+    "gov_pct": 38.6,
+    "centrao_pct": 56.8,
+    "opp_pct": 4.5
+   }
+  }
+ },
+ "1998": {
+  "president": "Cardoso (PSDB), 2nd term",
+  "chamber": 513,
+  "majority": 257,
+  "amendment": 308,
+  "series": "tse",
+  "actual": {
+   "gov": 301,
+   "centrao": 120,
+   "opp": 92,
+   "gov_plus_centrao": 421,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": true,
+   "centrao_seats_needed": 0,
+   "centrao_discipline_for_majority": -0.3667,
+   "centrao_discipline_for_amendment": 0.0583
+  },
+  "no_limits": {
+   "gov": 299,
+   "centrao": 112,
+   "opp": 102,
+   "gov_plus_centrao": 411,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": true,
+   "centrao_seats_needed": 0,
+   "centrao_discipline_for_majority": -0.375,
+   "centrao_discipline_for_amendment": 0.0804
+  },
+  "centrao_dependence_change": 0,
+  "centrao_size_change": -8,
+  "amendment_discipline_change": 0.0221,
+  "bloc_shares": {
+   "SP": {
+    "seats": 70,
+    "gov_pct": 61.4,
+    "centrao_pct": 12.9,
+    "opp_pct": 25.7
+   },
+   "BRASIL": {
+    "seats": 513,
+    "gov_pct": 58.7,
+    "centrao_pct": 23.4,
+    "opp_pct": 17.9
+   },
+   "8-seat": {
+    "seats": 88,
+    "gov_pct": 62.5,
+    "centrao_pct": 25.0,
+    "opp_pct": 12.5
+   }
+  }
+ },
+ "2002": {
+  "president": "Lula (PT)",
+  "chamber": 513,
+  "majority": 257,
+  "amendment": 308,
+  "series": "tse",
+  "actual": {
+   "gov": 157,
+   "centrao": 191,
+   "opp": 165,
+   "gov_plus_centrao": 348,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": false,
+   "centrao_seats_needed": 100,
+   "centrao_discipline_for_majority": 0.5236,
+   "centrao_discipline_for_amendment": 0.7906
+  },
+  "no_limits": {
+   "gov": 163,
+   "centrao": 187,
+   "opp": 163,
+   "gov_plus_centrao": 350,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": false,
+   "centrao_seats_needed": 94,
+   "centrao_discipline_for_majority": 0.5027,
+   "centrao_discipline_for_amendment": 0.7754
+  },
+  "centrao_dependence_change": -6,
+  "centrao_size_change": -4,
+  "amendment_discipline_change": -0.0152,
+  "bloc_shares": {
+   "SP": {
+    "seats": 70,
+    "gov_pct": 42.9,
+    "centrao_pct": 31.4,
+    "opp_pct": 25.7
+   },
+   "BRASIL": {
+    "seats": 513,
+    "gov_pct": 30.6,
+    "centrao_pct": 37.2,
+    "opp_pct": 32.2
+   },
+   "8-seat": {
+    "seats": 88,
+    "gov_pct": 29.5,
+    "centrao_pct": 34.1,
+    "opp_pct": 36.4
+   }
+  }
+ },
+ "2006": {
+  "president": "Lula (PT), 2nd term",
+  "chamber": 513,
+  "majority": 257,
+  "amendment": 308,
+  "series": "tse",
+  "actual": {
+   "gov": 151,
+   "centrao": 205,
+   "opp": 157,
+   "gov_plus_centrao": 356,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": false,
+   "centrao_seats_needed": 106,
+   "centrao_discipline_for_majority": 0.5171,
+   "centrao_discipline_for_amendment": 0.7659
+  },
+  "no_limits": {
+   "gov": 149,
+   "centrao": 205,
+   "opp": 159,
+   "gov_plus_centrao": 354,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": false,
+   "centrao_seats_needed": 108,
+   "centrao_discipline_for_majority": 0.5268,
+   "centrao_discipline_for_amendment": 0.7756
+  },
+  "centrao_dependence_change": 2,
+  "centrao_size_change": 0,
+  "amendment_discipline_change": 0.0097,
+  "bloc_shares": {
+   "SP": {
+    "seats": 70,
+    "gov_pct": 30.0,
+    "centrao_pct": 34.3,
+    "opp_pct": 35.7
+   },
+   "BRASIL": {
+    "seats": 513,
+    "gov_pct": 29.4,
+    "centrao_pct": 40.0,
+    "opp_pct": 30.6
+   },
+   "8-seat": {
+    "seats": 88,
+    "gov_pct": 30.7,
+    "centrao_pct": 42.0,
+    "opp_pct": 27.3
+   }
+  }
+ },
+ "2010": {
+  "president": "Dilma (PT)",
+  "chamber": 513,
+  "majority": 257,
+  "amendment": 308,
+  "series": "tse",
+  "actual": {
+   "gov": 214,
+   "centrao": 172,
+   "opp": 127,
+   "gov_plus_centrao": 386,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": false,
+   "centrao_seats_needed": 43,
+   "centrao_discipline_for_majority": 0.25,
+   "centrao_discipline_for_amendment": 0.5465
+  },
+  "no_limits": {
+   "gov": 214,
+   "centrao": 166,
+   "opp": 133,
+   "gov_plus_centrao": 380,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": false,
+   "centrao_seats_needed": 43,
+   "centrao_discipline_for_majority": 0.259,
+   "centrao_discipline_for_amendment": 0.5663
+  },
+  "centrao_dependence_change": 0,
+  "centrao_size_change": -6,
+  "amendment_discipline_change": 0.0198,
+  "bloc_shares": {
+   "SP": {
+    "seats": 70,
+    "gov_pct": 47.1,
+    "centrao_pct": 12.9,
+    "opp_pct": 40.0
+   },
+   "BRASIL": {
+    "seats": 513,
+    "gov_pct": 41.7,
+    "centrao_pct": 33.5,
+    "opp_pct": 24.8
+   },
+   "8-seat": {
+    "seats": 88,
+    "gov_pct": 46.6,
+    "centrao_pct": 36.4,
+    "opp_pct": 17.0
+   }
+  }
+ },
+ "2014": {
+  "president": "Dilma (PT), 2nd term",
+  "chamber": 513,
+  "majority": 257,
+  "amendment": 308,
+  "series": "tse",
+  "actual": {
+   "gov": 166,
+   "centrao": 192,
+   "opp": 155,
+   "gov_plus_centrao": 358,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": false,
+   "centrao_seats_needed": 91,
+   "centrao_discipline_for_majority": 0.474,
+   "centrao_discipline_for_amendment": 0.7396
+  },
+  "no_limits": {
+   "gov": 161,
+   "centrao": 193,
+   "opp": 159,
+   "gov_plus_centrao": 354,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": false,
+   "centrao_seats_needed": 96,
+   "centrao_discipline_for_majority": 0.4974,
+   "centrao_discipline_for_amendment": 0.7617
+  },
+  "centrao_dependence_change": 5,
+  "centrao_size_change": 1,
+  "amendment_discipline_change": 0.0221,
+  "bloc_shares": {
+   "SP": {
+    "seats": 70,
+    "gov_pct": 37.1,
+    "centrao_pct": 21.4,
+    "opp_pct": 41.4
+   },
+   "BRASIL": {
+    "seats": 513,
+    "gov_pct": 32.4,
+    "centrao_pct": 37.4,
+    "opp_pct": 30.2
+   },
+   "8-seat": {
+    "seats": 88,
+    "gov_pct": 35.2,
+    "centrao_pct": 37.5,
+    "opp_pct": 27.3
+   }
+  }
+ },
+ "2018": {
+  "president": "Bolsonaro (PSL)",
+  "chamber": 513,
+  "majority": 257,
+  "amendment": 308,
+  "series": "tse",
+  "actual": {
+   "gov": 83,
+   "centrao": 256,
+   "opp": 174,
+   "gov_plus_centrao": 339,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": false,
+   "centrao_seats_needed": 174,
+   "centrao_discipline_for_majority": 0.6797,
+   "centrao_discipline_for_amendment": 0.8789
+  },
+  "no_limits": {
+   "gov": 85,
+   "centrao": 254,
+   "opp": 174,
+   "gov_plus_centrao": 339,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": false,
+   "centrao_seats_needed": 172,
+   "centrao_discipline_for_majority": 0.6772,
+   "centrao_discipline_for_amendment": 0.878
+  },
+  "centrao_dependence_change": -2,
+  "centrao_size_change": -2,
+  "amendment_discipline_change": -0.0009,
+  "bloc_shares": {
+   "SP": {
+    "seats": 70,
+    "gov_pct": 28.6,
+    "centrao_pct": 38.6,
+    "opp_pct": 32.9
+   },
+   "BRASIL": {
+    "seats": 513,
+    "gov_pct": 16.2,
+    "centrao_pct": 49.9,
+    "opp_pct": 33.9
+   },
+   "8-seat": {
+    "seats": 88,
+    "gov_pct": 11.4,
+    "centrao_pct": 61.4,
+    "opp_pct": 27.3
+   }
+  }
+ },
+ "2022": {
+  "president": "Lula (PT), 3rd term",
+  "chamber": 513,
+  "majority": 257,
+  "amendment": 308,
+  "series": "tse",
+  "actual": {
+   "gov": 131,
+   "centrao": 277,
+   "opp": 105,
+   "gov_plus_centrao": 408,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": false,
+   "centrao_seats_needed": 126,
+   "centrao_discipline_for_majority": 0.4549,
+   "centrao_discipline_for_amendment": 0.639
+  },
+  "no_limits": {
+   "gov": 135,
+   "centrao": 274,
+   "opp": 104,
+   "gov_plus_centrao": 409,
+   "has_majority": true,
+   "has_amendment": true,
+   "gov_alone_majority": false,
+   "centrao_seats_needed": 122,
+   "centrao_discipline_for_majority": 0.4453,
+   "centrao_discipline_for_amendment": 0.6314
+  },
+  "centrao_dependence_change": -4,
+  "centrao_size_change": -3,
+  "amendment_discipline_change": -0.0076,
+  "bloc_shares": {
+   "SP": {
+    "seats": 70,
+    "gov_pct": 28.6,
+    "centrao_pct": 44.3,
+    "opp_pct": 27.1
+   },
+   "BRASIL": {
+    "seats": 513,
+    "gov_pct": 25.5,
+    "centrao_pct": 54.0,
+    "opp_pct": 20.5
+   },
+   "8-seat": {
+    "seats": 88,
+    "gov_pct": 13.6,
+    "centrao_pct": 63.6,
+    "opp_pct": 22.7
+   }
+  }
+ }
+}
