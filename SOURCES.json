@@ -249,7 +249,7 @@
       "attribution": "Roll-call data: Camara dos Deputados, Dados Abertos",
       "redistributable": true,
       "included_here": false,
-      "note": "One record per division with the tallies, 173 MB for 2003-2024; checksums in brazil/upstream/camara/manifest.json. Used to screen for votes close enough that the apportionment could have decided them, before spending the per-deputy layer (votacoesVotos-YYYY.json, 7-79 MB per year) on the shortlist. Coverage begins in 2003, so the 1990, 1994 and 1998 seat counterfactuals cannot be tested against actual votes. Two years arrived truncated on the first pass and needed re-fetching, so file sizes are worth checking against the manifest rather than trusting the download."
+      "note": "One record per division with the tallies, 173 MB for 2003-2024; checksums in brazil/upstream/camara/manifest.json. Used to screen for votes close enough that the apportionment could have decided them, before spending the per-deputy layer (votacoesVotos-YYYY.json, 7-79 MB per year) on the shortlist. Coverage begins in 2003, so the 1990, 1994 and 1998 seat counterfactuals cannot be tested against actual votes. Two years arrived truncated on the first pass and needed re-fetching, so file sizes are worth checking against the manifest rather than trusting the download. Per-deputy positions for the 56 shortlisted divisions come from the API at /api/v2/votacoes/{id}/votos, which carries each deputy's party and state and returns a whole division in one page; that costs a few hundred kilobytes against roughly 700 MB for the bulk per-deputy files."
     }
   ],
   "outputs": [
@@ -321,6 +321,17 @@
       ],
       "licence": "CC-BY-4.0",
       "note": "Plenary divisions within a chosen distance of the bar that actually applied to them -- a simple majority for ordinary matters, 308 of 513 for constitutional text. Mentioning a PEC is not the same as being subject to its three-fifths bar: motions on preference, urgency and waivers of interval pass on a simple majority, and scoring those against 308 invents near-misses that never existed."
+    },
+    {
+      "id": "brazil-reweighted-votes",
+      "path": "brazil/results/reweighted.json",
+      "derived_from": [
+        "camara-rollcalls",
+        "tse-chamber-results",
+        "ibge-population-uf"
+      ],
+      "licence": "CC-BY-4.0",
+      "note": "Probability that each shortlisted division would have gone the other way under an apportionment without the constitutional floor and ceiling. Delegations are resampled by state -- not by party, because 20-30% of deputies switch party mid-term and cannot be matched to the cell they were elected in -- with both sides resampled together and absences included in the draw. Exact by construction when the apportionment is unchanged."
     }
   ]
 }

@@ -30,6 +30,187 @@
     "SE": 8,
     "TO": 8
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PFL": 4,
+     "PT": 2,
+     "PPB": 1,
+     "PMDB": 1
+    },
+    "AL": {
+     "PSDB": 4,
+     "PMDB": 3,
+     "PSB": 2
+    },
+    "AP": {
+     "PFL": 3,
+     "PSDB": 3,
+     "PMDB": 2
+    },
+    "AM": {
+     "PFL": 8
+    },
+    "BA": {
+     "PFL": 23,
+     "PT": 5,
+     "PSDB": 4,
+     "PMDB": 4,
+     "PDT": 1,
+     "PPB": 1,
+     "PTB": 1
+    },
+    "CE": {
+     "PSDB": 12,
+     "PMDB": 7,
+     "PC do B": 1,
+     "PT": 1,
+     "PPS": 1
+    },
+    "DF": {
+     "PT": 3,
+     "PPB": 2,
+     "PMDB": 2,
+     "PFL": 1
+    },
+    "ES": {
+     "PMDB": 3,
+     "PSDB": 3,
+     "PTB": 2,
+     "PFL": 2
+    },
+    "GO": {
+     "PMDB": 11,
+     "PFL": 2,
+     "PSDB": 2,
+     "PL": 2
+    },
+    "MA": {
+     "PFL": 7,
+     "PSDB": 4,
+     "PMDB": 3,
+     "PL": 2,
+     "PDT": 1,
+     "PSD": 1
+    },
+    "MT": {
+     "PSDB": 4,
+     "PFL": 2,
+     "PTB": 1,
+     "PMDB": 1
+    },
+    "MS": {
+     "PMDB": 3,
+     "PT": 2,
+     "PFL": 2,
+     "PSDB": 1
+    },
+    "MG": {
+     "PSDB": 14,
+     "PMDB": 10,
+     "PFL": 9,
+     "PT": 6,
+     "PPB": 5,
+     "PTB": 4,
+     "PL": 3,
+     "PDT": 2
+    },
+    "PA": {
+     "PMDB": 5,
+     "PFL": 4,
+     "PSDB": 4,
+     "PT": 2,
+     "PPB": 1,
+     "PDT": 1
+    },
+    "PB": {
+     "PMDB": 8,
+     "PFL": 4
+    },
+    "PR": {
+     "PFL": 8,
+     "PPB": 6,
+     "PSDB": 5,
+     "PMDB": 4,
+     "PTB": 4,
+     "PT": 2,
+     "PDT": 1
+    },
+    "PE": {
+     "PFL": 9,
+     "PSB": 8,
+     "PMDB": 4,
+     "PPB": 2,
+     "PSDB": 1,
+     "PT": 1
+    },
+    "PI": {
+     "PFL": 5,
+     "PMDB": 4,
+     "PT": 1
+    },
+    "RJ": {
+     "PFL": 11,
+     "PSDB": 9,
+     "PDT": 8,
+     "PPB": 8,
+     "PT": 3,
+     "PTB": 2,
+     "PMDB": 2,
+     "PSB": 2,
+     "PT do B": 1
+    },
+    "RN": {
+     "PMDB": 5,
+     "PFL": 3
+    },
+    "RS": {
+     "PMDB": 8,
+     "PT": 7,
+     "PPB": 6,
+     "PDT": 4,
+     "PTB": 4,
+     "PSDB": 2
+    },
+    "RO": {
+     "PMDB": 3,
+     "PFL": 2,
+     "PSDB": 2,
+     "PDT": 1
+    },
+    "RR": {
+     "PPB": 6,
+     "PSDB": 2
+    },
+    "SC": {
+     "PPB": 4,
+     "PFL": 4,
+     "PMDB": 4,
+     "PT": 2,
+     "PDT": 1,
+     "PSDB": 1
+    },
+    "SP": {
+     "PSDB": 14,
+     "PPB": 13,
+     "PT": 12,
+     "PFL": 10,
+     "PMDB": 7,
+     "PTB": 6,
+     "PDT": 3,
+     "PSB": 3,
+     "PL": 2
+    },
+    "SE": {
+     "PT": 3,
+     "PMDB": 3,
+     "PSDB": 2
+    },
+    "TO": {
+     "PFL": 5,
+     "PMDB": 2,
+     "PPB": 1
+    }
+   },
    "seats_by_party": {
     "PFL": 128,
     "PMDB": 109,
@@ -40,10 +221,10 @@
     "PDT": 23,
     "PSB": 15,
     "PL": 9,
-    "PC do B": 1,
-    "PPS": 1,
+    "PT do B": 1,
     "PSD": 1,
-    "PT do B": 1
+    "PC do B": 1,
+    "PPS": 1
    }
   },
   "no_limits": {
@@ -76,6 +257,180 @@
     "SP": 110,
     "TO": 3
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PT": 1,
+     "PFL": 1
+    },
+    "AL": {
+     "PSDB": 4,
+     "PMDB": 3,
+     "PSB": 2
+    },
+    "AM": {
+     "PFL": 7
+    },
+    "AP": {
+     "PFL": 1
+    },
+    "BA": {
+     "PFL": 24,
+     "PT": 6,
+     "PSDB": 5,
+     "PMDB": 4,
+     "PDT": 1,
+     "PPB": 1,
+     "PTB": 1
+    },
+    "CE": {
+     "PSDB": 12,
+     "PMDB": 7,
+     "PC do B": 1,
+     "PT": 1,
+     "PPS": 1
+    },
+    "DF": {
+     "PPB": 3,
+     "PT": 3
+    },
+    "ES": {
+     "PMDB": 3,
+     "PSDB": 3,
+     "PTB": 2,
+     "PFL": 1
+    },
+    "GO": {
+     "PMDB": 9,
+     "PSDB": 2,
+     "PL": 2,
+     "PFL": 1
+    },
+    "MA": {
+     "PFL": 7,
+     "PSDB": 3,
+     "PMDB": 3,
+     "PL": 2,
+     "PDT": 1,
+     "PSD": 1
+    },
+    "MG": {
+     "PSDB": 15,
+     "PFL": 10,
+     "PMDB": 10,
+     "PT": 6,
+     "PPB": 5,
+     "PTB": 4,
+     "PL": 3,
+     "PDT": 2
+    },
+    "MS": {
+     "PMDB": 3,
+     "PT": 2,
+     "PFL": 1
+    },
+    "MT": {
+     "PSDB": 4,
+     "PFL": 2,
+     "PMDB": 1
+    },
+    "PA": {
+     "PMDB": 5,
+     "PFL": 4,
+     "PSDB": 4,
+     "PT": 2,
+     "PPB": 1,
+     "PDT": 1
+    },
+    "PB": {
+     "PMDB": 7,
+     "PFL": 4
+    },
+    "PE": {
+     "PFL": 9,
+     "PSB": 8,
+     "PMDB": 4,
+     "PPB": 2,
+     "PSDB": 1,
+     "PT": 1
+    },
+    "PI": {
+     "PFL": 5,
+     "PMDB": 4
+    },
+    "PR": {
+     "PFL": 8,
+     "PPB": 6,
+     "PSDB": 5,
+     "PMDB": 4,
+     "PTB": 4,
+     "PT": 2,
+     "PDT": 1
+    },
+    "RJ": {
+     "PFL": 11,
+     "PSDB": 9,
+     "PPB": 8,
+     "PDT": 7,
+     "PT": 3,
+     "PTB": 2,
+     "PMDB": 2,
+     "PSB": 2,
+     "PT do B": 1
+    },
+    "RN": {
+     "PMDB": 5,
+     "PFL": 3
+    },
+    "RO": {
+     "PFL": 1,
+     "PDT": 1,
+     "PSDB": 1,
+     "PMDB": 1
+    },
+    "RR": {
+     "PPB": 1
+    },
+    "RS": {
+     "PT": 8,
+     "PMDB": 8,
+     "PPB": 6,
+     "PDT": 4,
+     "PTB": 4,
+     "PSDB": 2
+    },
+    "SC": {
+     "PPB": 4,
+     "PFL": 4,
+     "PMDB": 4,
+     "PT": 2,
+     "PDT": 1,
+     "PSDB": 1
+    },
+    "SE": {
+     "PSB": 1,
+     "PT": 1,
+     "PPS": 1,
+     "PSDB": 1,
+     "PMDB": 1
+    },
+    "SP": {
+     "PSDB": 21,
+     "PPB": 20,
+     "PT": 19,
+     "PFL": 16,
+     "PMDB": 10,
+     "PTB": 9,
+     "PDT": 5,
+     "PSB": 4,
+     "PL": 3,
+     "PRP": 1,
+     "PPS": 1,
+     "PRONA": 1
+    },
+    "TO": {
+     "PFL": 3
+    }
+   },
    "seats_by_party": {
     "PFL": 123,
     "PMDB": 98,
@@ -87,11 +442,11 @@
     "PSB": 17,
     "PL": 10,
     "PPS": 3,
-    "PC do B": 1,
-    "PSD": 1,
-    "PT do B": 1,
+    "PRONA": 1,
     "PRP": 1,
-    "PRONA": 1
+    "PT do B": 1,
+    "PSD": 1,
+    "PC do B": 1
    }
   },
   "recomputed_with_limits": {
@@ -124,6 +479,187 @@
     "RS": 32,
     "SC": 16
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PFL": 4,
+     "PT": 2,
+     "PPB": 1,
+     "PMDB": 1
+    },
+    "AM": {
+     "PFL": 8
+    },
+    "AP": {
+     "PFL": 3,
+     "PSDB": 3,
+     "PMDB": 2
+    },
+    "DF": {
+     "PT": 3,
+     "PPB": 2,
+     "PMDB": 2,
+     "PFL": 1
+    },
+    "MS": {
+     "PMDB": 3,
+     "PT": 2,
+     "PFL": 2,
+     "PSDB": 1
+    },
+    "MT": {
+     "PSDB": 4,
+     "PFL": 2,
+     "PTB": 1,
+     "PMDB": 1
+    },
+    "RO": {
+     "PMDB": 3,
+     "PFL": 2,
+     "PSDB": 2,
+     "PDT": 1
+    },
+    "RR": {
+     "PPB": 6,
+     "PSDB": 2
+    },
+    "SE": {
+     "PT": 3,
+     "PMDB": 3,
+     "PSDB": 2
+    },
+    "SP": {
+     "PSDB": 14,
+     "PPB": 13,
+     "PT": 12,
+     "PFL": 10,
+     "PMDB": 7,
+     "PTB": 6,
+     "PDT": 3,
+     "PSB": 3,
+     "PL": 2
+    },
+    "TO": {
+     "PFL": 5,
+     "PMDB": 2,
+     "PPB": 1
+    },
+    "AL": {
+     "PSDB": 4,
+     "PMDB": 3,
+     "PSB": 2
+    },
+    "BA": {
+     "PFL": 24,
+     "PT": 6,
+     "PSDB": 5,
+     "PMDB": 4,
+     "PDT": 1,
+     "PPB": 1,
+     "PTB": 1
+    },
+    "CE": {
+     "PSDB": 12,
+     "PMDB": 7,
+     "PC do B": 1,
+     "PT": 1,
+     "PPS": 1
+    },
+    "ES": {
+     "PMDB": 3,
+     "PSDB": 3,
+     "PTB": 2,
+     "PFL": 1
+    },
+    "GO": {
+     "PMDB": 9,
+     "PSDB": 2,
+     "PL": 2,
+     "PFL": 1
+    },
+    "MA": {
+     "PFL": 7,
+     "PSDB": 3,
+     "PMDB": 3,
+     "PL": 2,
+     "PDT": 1,
+     "PSD": 1
+    },
+    "MG": {
+     "PSDB": 15,
+     "PFL": 10,
+     "PMDB": 10,
+     "PT": 6,
+     "PPB": 5,
+     "PTB": 4,
+     "PL": 3,
+     "PDT": 2
+    },
+    "PA": {
+     "PSDB": 5,
+     "PMDB": 5,
+     "PFL": 4,
+     "PT": 2,
+     "PPB": 1,
+     "PDT": 1
+    },
+    "PB": {
+     "PMDB": 7,
+     "PFL": 4
+    },
+    "PE": {
+     "PFL": 9,
+     "PSB": 8,
+     "PMDB": 4,
+     "PPB": 2,
+     "PSDB": 1,
+     "PT": 1
+    },
+    "PI": {
+     "PFL": 5,
+     "PMDB": 4
+    },
+    "PR": {
+     "PFL": 8,
+     "PPB": 6,
+     "PSDB": 5,
+     "PMDB": 4,
+     "PTB": 4,
+     "PT": 2,
+     "PDT": 1
+    },
+    "RJ": {
+     "PFL": 11,
+     "PSDB": 9,
+     "PPB": 8,
+     "PDT": 7,
+     "PT": 3,
+     "PTB": 2,
+     "PMDB": 2,
+     "PSB": 2,
+     "PT do B": 1
+    },
+    "RN": {
+     "PMDB": 5,
+     "PFL": 3,
+     "PPB": 1
+    },
+    "RS": {
+     "PT": 8,
+     "PMDB": 8,
+     "PPB": 6,
+     "PDT": 4,
+     "PTB": 4,
+     "PSDB": 2
+    },
+    "SC": {
+     "PPB": 4,
+     "PFL": 4,
+     "PMDB": 4,
+     "PT": 2,
+     "PDT": 1,
+     "PSDB": 1
+    }
+   },
    "seats_by_party": {
     "PFL": 128,
     "PMDB": 106,
@@ -134,10 +670,10 @@
     "PDT": 22,
     "PSB": 15,
     "PL": 9,
-    "PC do B": 1,
-    "PPS": 1,
+    "PT do B": 1,
     "PSD": 1,
-    "PT do B": 1
+    "PC do B": 1,
+    "PPS": 1
    }
   },
   "national_single_district": {
@@ -232,6 +768,226 @@
     "SE": 8,
     "TO": 8
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PT": 4,
+     "PMDB": 3,
+     "PPS": 1
+    },
+    "AL": {
+     "PTB": 3,
+     "PSB": 2,
+     "PMDB": 2,
+     "PFL": 1,
+     "PL": 1
+    },
+    "AP": {
+     "PDT": 3,
+     "PT": 2,
+     "PSB": 1,
+     "PPB": 1,
+     "PSDB": 1
+    },
+    "AM": {
+     "PFL": 4,
+     "PC do B": 2,
+     "PL": 2
+    },
+    "BA": {
+     "PFL": 20,
+     "PT": 8,
+     "PMDB": 3,
+     "PC do B": 2,
+     "PSDB": 2,
+     "PPB": 1,
+     "PTB": 1,
+     "PDT": 1,
+     "PPS": 1
+    },
+    "CE": {
+     "PSDB": 9,
+     "PMDB": 4,
+     "PC do B": 3,
+     "PFL": 3,
+     "PT": 2,
+     "PPS": 1
+    },
+    "DF": {
+     "PFL": 3,
+     "PT": 3,
+     "PMDB": 2
+    },
+    "ES": {
+     "PSDB": 2,
+     "PMDB": 2,
+     "PT": 2,
+     "PDT": 2,
+     "PPB": 1,
+     "PSB": 1
+    },
+    "GO": {
+     "PSDB": 6,
+     "PMDB": 4,
+     "PPB": 3,
+     "PT": 2,
+     "PFL": 2
+    },
+    "MA": {
+     "PFL": 6,
+     "PDT": 3,
+     "PMDB": 3,
+     "PT": 2,
+     "PSDB": 2,
+     "PPB": 1,
+     "PSB": 1
+    },
+    "MT": {
+     "PSDB": 3,
+     "PMDB": 1,
+     "PPB": 1,
+     "PFL": 1,
+     "PL": 1,
+     "PT": 1
+    },
+    "MS": {
+     "PT": 3,
+     "PMDB": 2,
+     "PTB": 1,
+     "PFL": 1,
+     "PDT": 1
+    },
+    "MG": {
+     "PT": 13,
+     "PSDB": 9,
+     "PFL": 7,
+     "PMDB": 6,
+     "PPB": 4,
+     "PPS": 3,
+     "PL": 3,
+     "PST": 2,
+     "PDT": 2,
+     "PTB": 2,
+     "PV": 1,
+     "PSB": 1
+    },
+    "PA": {
+     "PMDB": 5,
+     "PT": 4,
+     "PSDB": 4,
+     "PPB": 2,
+     "PDT": 1,
+     "PTB": 1
+    },
+    "PB": {
+     "PSDB": 3,
+     "PMDB": 3,
+     "PTB": 2,
+     "PFL": 2,
+     "PT": 2
+    },
+    "PR": {
+     "PT": 6,
+     "PMDB": 6,
+     "PSDB": 5,
+     "PDT": 3,
+     "PPB": 3,
+     "PTB": 3,
+     "PFL": 2,
+     "PPS": 2
+    },
+    "PE": {
+     "PFL": 5,
+     "PT": 4,
+     "PSB": 4,
+     "PSDB": 4,
+     "PMDB": 4,
+     "PPB": 2,
+     "PL": 1,
+     "PPS": 1
+    },
+    "PI": {
+     "PFL": 4,
+     "PT": 2,
+     "PSDB": 2,
+     "PMDB": 2
+    },
+    "RJ": {
+     "PPB": 6,
+     "PSB": 6,
+     "PSDB": 6,
+     "PT": 6,
+     "PFL": 5,
+     "PL": 4,
+     "PDT": 4,
+     "PMDB": 4,
+     "PSC": 2,
+     "PC do B": 2,
+     "PV": 1
+    },
+    "RN": {
+     "PMDB": 4,
+     "PFL": 2,
+     "PT": 1,
+     "PTB": 1
+    },
+    "RS": {
+     "PT": 8,
+     "PMDB": 6,
+     "PPB": 6,
+     "PDT": 3,
+     "PTB": 3,
+     "PPS": 2,
+     "PL": 1,
+     "PSB": 1,
+     "PSDB": 1
+    },
+    "RO": {
+     "PT": 2,
+     "PMDB": 2,
+     "PSDB": 1,
+     "PPB": 1,
+     "PTB": 1,
+     "PFL": 1
+    },
+    "RR": {
+     "PPB": 3,
+     "PFL": 3,
+     "PST": 1,
+     "PL": 1
+    },
+    "SC": {
+     "PT": 5,
+     "PMDB": 4,
+     "PPB": 3,
+     "PFL": 3,
+     "PDT": 1
+    },
+    "SP": {
+     "PT": 19,
+     "PSDB": 13,
+     "PRONA": 6,
+     "PFL": 5,
+     "PSB": 5,
+     "PMDB": 4,
+     "PDT": 3,
+     "PPS": 3,
+     "PTB": 3,
+     "PL": 3,
+     "PPB": 3,
+     "PV": 2,
+     "PC do B": 1
+    },
+    "SE": {
+     "PFL": 3,
+     "PT": 3,
+     "PSDB": 2
+    },
+    "TO": {
+     "PFL": 4,
+     "PSDB": 3,
+     "PMDB": 1
+    }
+   },
    "seats_by_party": {
     "PT": 104,
     "PFL": 87,
@@ -280,6 +1036,218 @@
     "SP": 112,
     "TO": 4
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PT": 1,
+     "PMDB": 1
+    },
+    "AL": {
+     "PTB": 3,
+     "PSB": 2,
+     "PMDB": 2,
+     "PFL": 1,
+     "PL": 1
+    },
+    "AM": {
+     "PFL": 4,
+     "PC do B": 2,
+     "PL": 2,
+     "PTB": 1
+    },
+    "AP": {
+     "PDT": 1
+    },
+    "BA": {
+     "PFL": 20,
+     "PT": 8,
+     "PMDB": 3,
+     "PC do B": 2,
+     "PSDB": 2,
+     "PPB": 1,
+     "PTB": 1,
+     "PDT": 1,
+     "PPS": 1,
+     "PL": 1
+    },
+    "CE": {
+     "PSDB": 9,
+     "PMDB": 4,
+     "PC do B": 3,
+     "PFL": 3,
+     "PT": 2,
+     "PPS": 1
+    },
+    "DF": {
+     "PFL": 2,
+     "PMDB": 2,
+     "PT": 2
+    },
+    "ES": {
+     "PSDB": 2,
+     "PT": 2,
+     "PDT": 2,
+     "PPB": 1,
+     "PMDB": 1,
+     "PSB": 1
+    },
+    "GO": {
+     "PSDB": 5,
+     "PPB": 3,
+     "PMDB": 3,
+     "PT": 2,
+     "PFL": 2
+    },
+    "MA": {
+     "PFL": 6,
+     "PDT": 3,
+     "PT": 2,
+     "PMDB": 2,
+     "PSDB": 2,
+     "PPB": 1,
+     "PSB": 1
+    },
+    "MG": {
+     "PT": 14,
+     "PSDB": 9,
+     "PFL": 7,
+     "PMDB": 6,
+     "PPB": 4,
+     "PPS": 3,
+     "PL": 3,
+     "PST": 2,
+     "PDT": 2,
+     "PTB": 2,
+     "PV": 1,
+     "PSB": 1
+    },
+    "MS": {
+     "PT": 2,
+     "PMDB": 2,
+     "PTB": 1,
+     "PFL": 1
+    },
+    "MT": {
+     "PSDB": 3,
+     "PMDB": 1,
+     "PPB": 1,
+     "PFL": 1,
+     "PL": 1,
+     "PT": 1
+    },
+    "PA": {
+     "PMDB": 6,
+     "PT": 4,
+     "PSDB": 4,
+     "PTB": 2,
+     "PPB": 2,
+     "PDT": 1
+    },
+    "PB": {
+     "PSDB": 3,
+     "PMDB": 3,
+     "PTB": 2,
+     "PFL": 1,
+     "PT": 1
+    },
+    "PE": {
+     "PFL": 5,
+     "PT": 4,
+     "PSB": 4,
+     "PSDB": 4,
+     "PMDB": 4,
+     "PL": 1,
+     "PPS": 1,
+     "PPB": 1
+    },
+    "PI": {
+     "PFL": 3,
+     "PT": 2,
+     "PSDB": 2,
+     "PMDB": 2
+    },
+    "PR": {
+     "PT": 6,
+     "PMDB": 6,
+     "PSDB": 5,
+     "PDT": 3,
+     "PPB": 3,
+     "PFL": 2,
+     "PTB": 2,
+     "PPS": 2
+    },
+    "RJ": {
+     "PSB": 6,
+     "PSDB": 6,
+     "PPB": 5,
+     "PFL": 5,
+     "PT": 5,
+     "PL": 4,
+     "PDT": 4,
+     "PMDB": 4,
+     "PC do B": 2,
+     "PSC": 1,
+     "PV": 1
+    },
+    "RN": {
+     "PMDB": 4,
+     "PFL": 2,
+     "PT": 1,
+     "PTB": 1
+    },
+    "RO": {
+     "PPB": 1,
+     "PFL": 1,
+     "PT": 1,
+     "PMDB": 1
+    },
+    "RR": {
+     "PFL": 1
+    },
+    "RS": {
+     "PT": 8,
+     "PMDB": 6,
+     "PPB": 6,
+     "PDT": 3,
+     "PTB": 3,
+     "PPS": 2,
+     "PL": 1,
+     "PSB": 1,
+     "PSDB": 1
+    },
+    "SC": {
+     "PT": 5,
+     "PMDB": 4,
+     "PPB": 3,
+     "PFL": 3,
+     "PDT": 1
+    },
+    "SE": {
+     "PFL": 2,
+     "PMN": 1,
+     "PT": 1,
+     "PSDB": 1
+    },
+    "SP": {
+     "PT": 30,
+     "PSDB": 21,
+     "PRONA": 9,
+     "PFL": 8,
+     "PSB": 8,
+     "PMDB": 7,
+     "PTB": 6,
+     "PL": 5,
+     "PPB": 5,
+     "PDT": 4,
+     "PPS": 4,
+     "PV": 3,
+     "PGT": 1,
+     "PC do B": 1
+    },
+    "TO": {
+     "PFL": 2,
+     "PSDB": 2
+    }
+   },
    "seats_by_party": {
     "PT": 104,
     "PFL": 82,
@@ -287,17 +1255,17 @@
     "PMDB": 74,
     "PPB": 37,
     "PDT": 25,
-    "PSB": 24,
     "PTB": 24,
+    "PSB": 24,
     "PL": 19,
     "PPS": 14,
     "PC do B": 10,
     "PRONA": 9,
     "PV": 5,
     "PST": 2,
+    "PGT": 1,
     "PSC": 1,
-    "PMN": 1,
-    "PGT": 1
+    "PMN": 1
    }
   },
   "recomputed_with_limits": {
@@ -329,6 +1297,228 @@
     "RN": 9,
     "RS": 31,
     "SC": 17
+   },
+   "seats_by_uf_party": {
+    "AC": {
+     "PT": 4,
+     "PMDB": 3,
+     "PPS": 1
+    },
+    "AP": {
+     "PDT": 3,
+     "PT": 2,
+     "PSB": 1,
+     "PPB": 1,
+     "PSDB": 1
+    },
+    "DF": {
+     "PFL": 3,
+     "PT": 3,
+     "PMDB": 2
+    },
+    "MS": {
+     "PT": 3,
+     "PMDB": 2,
+     "PTB": 1,
+     "PFL": 1,
+     "PDT": 1
+    },
+    "RO": {
+     "PT": 2,
+     "PMDB": 2,
+     "PSDB": 1,
+     "PPB": 1,
+     "PTB": 1,
+     "PFL": 1
+    },
+    "RR": {
+     "PPB": 3,
+     "PFL": 3,
+     "PST": 1,
+     "PL": 1
+    },
+    "SE": {
+     "PFL": 3,
+     "PT": 3,
+     "PSDB": 2
+    },
+    "SP": {
+     "PT": 19,
+     "PSDB": 13,
+     "PRONA": 6,
+     "PFL": 5,
+     "PSB": 5,
+     "PMDB": 4,
+     "PDT": 3,
+     "PPS": 3,
+     "PTB": 3,
+     "PL": 3,
+     "PPB": 3,
+     "PV": 2,
+     "PC do B": 1
+    },
+    "TO": {
+     "PFL": 4,
+     "PSDB": 3,
+     "PMDB": 1
+    },
+    "AL": {
+     "PTB": 3,
+     "PSB": 2,
+     "PMDB": 2,
+     "PFL": 1,
+     "PL": 1
+    },
+    "AM": {
+     "PFL": 4,
+     "PC do B": 2,
+     "PL": 2,
+     "PTB": 1
+    },
+    "BA": {
+     "PFL": 20,
+     "PT": 8,
+     "PMDB": 3,
+     "PC do B": 2,
+     "PSDB": 2,
+     "PPB": 1,
+     "PTB": 1,
+     "PDT": 1,
+     "PPS": 1,
+     "PL": 1
+    },
+    "CE": {
+     "PSDB": 9,
+     "PMDB": 5,
+     "PC do B": 3,
+     "PFL": 3,
+     "PT": 2,
+     "PPS": 1
+    },
+    "ES": {
+     "PSDB": 2,
+     "PMDB": 2,
+     "PT": 2,
+     "PDT": 2,
+     "PPB": 1,
+     "PSB": 1
+    },
+    "GO": {
+     "PSDB": 5,
+     "PPB": 3,
+     "PMDB": 3,
+     "PT": 2,
+     "PFL": 2
+    },
+    "MA": {
+     "PFL": 6,
+     "PDT": 3,
+     "PT": 2,
+     "PMDB": 2,
+     "PSDB": 2,
+     "PPB": 1,
+     "PSB": 1
+    },
+    "MG": {
+     "PT": 14,
+     "PSDB": 9,
+     "PFL": 7,
+     "PMDB": 6,
+     "PPB": 4,
+     "PPS": 3,
+     "PL": 3,
+     "PST": 2,
+     "PDT": 2,
+     "PSB": 2,
+     "PTB": 2,
+     "PV": 1
+    },
+    "MT": {
+     "PSDB": 3,
+     "PMDB": 1,
+     "PPB": 1,
+     "PFL": 1,
+     "PL": 1,
+     "PT": 1
+    },
+    "PA": {
+     "PMDB": 6,
+     "PT": 4,
+     "PSDB": 4,
+     "PTB": 2,
+     "PPB": 2,
+     "PDT": 1
+    },
+    "PB": {
+     "PSDB": 3,
+     "PMDB": 3,
+     "PTB": 2,
+     "PFL": 2,
+     "PT": 1
+    },
+    "PE": {
+     "PFL": 5,
+     "PT": 4,
+     "PSB": 4,
+     "PSDB": 4,
+     "PMDB": 4,
+     "PL": 1,
+     "PPS": 1,
+     "PPB": 1
+    },
+    "PI": {
+     "PFL": 3,
+     "PT": 2,
+     "PSDB": 2,
+     "PMDB": 2
+    },
+    "PR": {
+     "PT": 6,
+     "PMDB": 6,
+     "PSDB": 5,
+     "PDT": 3,
+     "PPB": 3,
+     "PFL": 2,
+     "PTB": 2,
+     "PPS": 2
+    },
+    "RJ": {
+     "PSB": 6,
+     "PSDB": 6,
+     "PPB": 5,
+     "PFL": 5,
+     "PT": 5,
+     "PL": 4,
+     "PDT": 4,
+     "PMDB": 4,
+     "PSC": 2,
+     "PC do B": 2,
+     "PV": 1
+    },
+    "RN": {
+     "PMDB": 4,
+     "PT": 2,
+     "PFL": 2,
+     "PTB": 1
+    },
+    "RS": {
+     "PT": 8,
+     "PMDB": 6,
+     "PPB": 6,
+     "PDT": 3,
+     "PTB": 3,
+     "PPS": 2,
+     "PL": 1,
+     "PSB": 1,
+     "PSDB": 1
+    },
+    "SC": {
+     "PT": 5,
+     "PMDB": 5,
+     "PPB": 3,
+     "PFL": 3,
+     "PDT": 1
+    }
    },
    "seats_by_party": {
     "PT": 104,
@@ -442,6 +1632,243 @@
     "SE": 8,
     "TO": 8
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PP": 3,
+     "PT": 3,
+     "PPS": 1,
+     "PMDB": 1
+    },
+    "AL": {
+     "PFL": 4,
+     "PMDB": 3,
+     "PSB": 2
+    },
+    "AP": {
+     "PT": 2,
+     "PMDB": 2,
+     "PDT": 1,
+     "PPS": 1,
+     "PFL": 1,
+     "PSB": 1
+    },
+    "AM": {
+     "PP": 2,
+     "PMDB": 2,
+     "PFL": 1,
+     "PC do B": 1,
+     "PSB": 1,
+     "PT": 1
+    },
+    "BA": {
+     "PFL": 15,
+     "PT": 9,
+     "PDT": 3,
+     "PMDB": 3,
+     "PSB": 2,
+     "PL": 2,
+     "PP": 2,
+     "PSDB": 2,
+     "PC do B": 1
+    },
+    "CE": {
+     "PSDB": 6,
+     "PSB": 6,
+     "PMDB": 6,
+     "PT": 2,
+     "PC do B": 1,
+     "PL": 1
+    },
+    "DF": {
+     "PMDB": 3,
+     "PFL": 3,
+     "PT": 2
+    },
+    "ES": {
+     "PMDB": 4,
+     "PDT": 3,
+     "PSDB": 1,
+     "PSB": 1,
+     "PT": 1
+    },
+    "GO": {
+     "PMDB": 5,
+     "PSDB": 4,
+     "PL": 2,
+     "PP": 2,
+     "PT": 2,
+     "PTB": 1,
+     "PFL": 1
+    },
+    "MA": {
+     "PMDB": 4,
+     "PSDB": 4,
+     "PDT": 3,
+     "PFL": 2,
+     "PSB": 2,
+     "PT": 2,
+     "PV": 1
+    },
+    "MT": {
+     "PP": 2,
+     "PMDB": 2,
+     "PPS": 2,
+     "PT": 1,
+     "PSDB": 1
+    },
+    "MS": {
+     "PMDB": 4,
+     "PT": 3,
+     "PDT": 1
+    },
+    "MG": {
+     "PT": 9,
+     "PMDB": 8,
+     "PSDB": 8,
+     "PFL": 6,
+     "PL": 5,
+     "PPS": 4,
+     "PV": 4,
+     "PSB": 3,
+     "PP": 2,
+     "PDT": 2,
+     "PTC": 1,
+     "PTB": 1
+    },
+    "PA": {
+     "PMDB": 6,
+     "PSDB": 4,
+     "PFL": 3,
+     "PT": 3,
+     "PDT": 1
+    },
+    "PB": {
+     "PMDB": 4,
+     "PSDB": 3,
+     "PSB": 2,
+     "PL": 2,
+     "PFL": 1
+    },
+    "PR": {
+     "PMDB": 8,
+     "PT": 5,
+     "PPS": 4,
+     "PSDB": 4,
+     "PP": 3,
+     "PFL": 3,
+     "PDT": 1,
+     "PTB": 1,
+     "PL": 1
+    },
+    "PE": {
+     "PT": 5,
+     "PFL": 5,
+     "PSB": 4,
+     "PTB": 4,
+     "PMDB": 3,
+     "PL": 2,
+     "PP": 1,
+     "PSDB": 1
+    },
+    "PI": {
+     "PT": 4,
+     "PMDB": 3,
+     "PFL": 2,
+     "PSDB": 1
+    },
+    "RJ": {
+     "PMDB": 10,
+     "PT": 5,
+     "PFL": 5,
+     "PSC": 3,
+     "PSB": 3,
+     "PDT": 3,
+     "PSDB": 3,
+     "PPS": 2,
+     "PV": 2,
+     "PTB": 2,
+     "PP": 2,
+     "PSDC": 1,
+     "PRB": 1,
+     "PSOL": 1,
+     "PT do B": 1,
+     "PL": 1,
+     "PRONA": 1
+    },
+    "RN": {
+     "PSB": 3,
+     "PMDB": 2,
+     "PL": 1,
+     "PMN": 1,
+     "PFL": 1
+    },
+    "RS": {
+     "PT": 7,
+     "PP": 5,
+     "PMDB": 5,
+     "PTB": 3,
+     "PSDB": 3,
+     "PDT": 3,
+     "PFL": 2,
+     "PSOL": 1,
+     "PC do B": 1,
+     "PSB": 1
+    },
+    "RO": {
+     "PPS": 2,
+     "PMDB": 2,
+     "PT": 2,
+     "PSB": 1,
+     "PTB": 1
+    },
+    "RR": {
+     "PL": 2,
+     "PFL": 2,
+     "PSDB": 1,
+     "PSB": 1,
+     "PTC": 1,
+     "PMDB": 1
+    },
+    "SC": {
+     "PMDB": 5,
+     "PT": 3,
+     "PFL": 3,
+     "PP": 3,
+     "PSDB": 2
+    },
+    "SP": {
+     "PSDB": 17,
+     "PT": 14,
+     "PFL": 6,
+     "PP": 5,
+     "PV": 5,
+     "PSB": 4,
+     "PTB": 4,
+     "PDT": 3,
+     "PMDB": 3,
+     "PL": 2,
+     "PPS": 2,
+     "PSOL": 1,
+     "PC do B": 1,
+     "PSC": 1,
+     "PTC": 1,
+     "PRONA": 1
+    },
+    "SE": {
+     "PFL": 3,
+     "PSC": 1,
+     "PSDB": 1,
+     "PSB": 1,
+     "PTB": 1,
+     "PT": 1
+    },
+    "TO": {
+     "PMDB": 3,
+     "PFL": 2,
+     "PSDB": 2,
+     "PP": 1
+    }
+   },
    "seats_by_party": {
     "PMDB": 102,
     "PT": 86,
@@ -451,18 +1878,18 @@
     "PP": 33,
     "PDT": 24,
     "PL": 21,
-    "PPS": 18,
     "PTB": 18,
+    "PPS": 18,
     "PV": 12,
-    "PC do B": 5,
     "PSC": 5,
+    "PC do B": 5,
     "PTC": 3,
     "PSOL": 3,
     "PRONA": 2,
-    "PSDC": 1,
-    "PRB": 1,
     "PT do B": 1,
-    "PMN": 1
+    "PMN": 1,
+    "PSDC": 1,
+    "PRB": 1
    }
   },
   "no_limits": {
@@ -495,6 +1922,219 @@
     "SP": 112,
     "TO": 4
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PP": 1,
+     "PT": 1
+    },
+    "AL": {
+     "PFL": 4,
+     "PMDB": 3,
+     "PSB": 2
+    },
+    "AM": {
+     "PSB": 2,
+     "PT": 2,
+     "PP": 2,
+     "PMDB": 2,
+     "PFL": 1
+    },
+    "AP": {
+     "PPS": 1
+    },
+    "BA": {
+     "PFL": 15,
+     "PT": 10,
+     "PDT": 3,
+     "PMDB": 3,
+     "PSB": 2,
+     "PL": 2,
+     "PP": 2,
+     "PSDB": 2,
+     "PC do B": 1
+    },
+    "CE": {
+     "PSDB": 6,
+     "PSB": 6,
+     "PMDB": 6,
+     "PT": 2,
+     "PC do B": 1,
+     "PL": 1
+    },
+    "DF": {
+     "PFL": 3,
+     "PMDB": 2,
+     "PT": 1
+    },
+    "ES": {
+     "PMDB": 4,
+     "PDT": 2,
+     "PSDB": 1,
+     "PSB": 1,
+     "PT": 1
+    },
+    "GO": {
+     "PMDB": 5,
+     "PSDB": 4,
+     "PP": 2,
+     "PL": 1,
+     "PTB": 1,
+     "PT": 1,
+     "PFL": 1
+    },
+    "MA": {
+     "PMDB": 4,
+     "PSDB": 4,
+     "PDT": 2,
+     "PFL": 2,
+     "PSB": 2,
+     "PT": 2,
+     "PV": 1
+    },
+    "MG": {
+     "PT": 10,
+     "PMDB": 8,
+     "PSDB": 8,
+     "PFL": 6,
+     "PL": 5,
+     "PPS": 4,
+     "PV": 4,
+     "PSB": 3,
+     "PP": 2,
+     "PDT": 2,
+     "PTC": 1,
+     "PTB": 1
+    },
+    "MS": {
+     "PMDB": 4,
+     "PT": 2
+    },
+    "MT": {
+     "PP": 2,
+     "PMDB": 2,
+     "PPS": 2,
+     "PT": 1,
+     "PSDB": 1
+    },
+    "PA": {
+     "PMDB": 6,
+     "PSDB": 5,
+     "PT": 4,
+     "PFL": 3,
+     "PDT": 1
+    },
+    "PB": {
+     "PMDB": 4,
+     "PSDB": 3,
+     "PL": 2,
+     "PSB": 1
+    },
+    "PE": {
+     "PFL": 5,
+     "PSB": 4,
+     "PTB": 4,
+     "PT": 4,
+     "PMDB": 3,
+     "PL": 2,
+     "PP": 1,
+     "PSDB": 1
+    },
+    "PI": {
+     "PT": 4,
+     "PFL": 2,
+     "PMDB": 2,
+     "PSDB": 1
+    },
+    "PR": {
+     "PMDB": 7,
+     "PT": 5,
+     "PPS": 4,
+     "PSDB": 4,
+     "PP": 3,
+     "PFL": 3,
+     "PDT": 1,
+     "PTB": 1,
+     "PL": 1
+    },
+    "RJ": {
+     "PMDB": 10,
+     "PT": 5,
+     "PFL": 4,
+     "PSB": 3,
+     "PDT": 3,
+     "PSDB": 3,
+     "PSC": 2,
+     "PPS": 2,
+     "PV": 2,
+     "PTB": 2,
+     "PP": 2,
+     "PSDC": 1,
+     "PRB": 1,
+     "PSOL": 1,
+     "PT do B": 1,
+     "PL": 1
+    },
+    "RN": {
+     "PSB": 3,
+     "PMDB": 2,
+     "PL": 1,
+     "PMN": 1,
+     "PFL": 1
+    },
+    "RO": {
+     "PMDB": 4
+    },
+    "RR": {
+     "PFL": 1
+    },
+    "RS": {
+     "PT": 7,
+     "PP": 5,
+     "PMDB": 5,
+     "PTB": 3,
+     "PSDB": 3,
+     "PDT": 3,
+     "PFL": 2,
+     "PSOL": 1,
+     "PC do B": 1,
+     "PSB": 1
+    },
+    "SC": {
+     "PMDB": 5,
+     "PT": 3,
+     "PFL": 3,
+     "PP": 3,
+     "PSDB": 2
+    },
+    "SE": {
+     "PFL": 3,
+     "PTB": 1,
+     "PT": 1
+    },
+    "SP": {
+     "PSDB": 25,
+     "PT": 22,
+     "PFL": 10,
+     "PP": 9,
+     "PV": 8,
+     "PSB": 7,
+     "PDT": 6,
+     "PTB": 6,
+     "PMDB": 4,
+     "PL": 3,
+     "PPS": 3,
+     "PTC": 3,
+     "PSC": 2,
+     "PRONA": 2,
+     "PSOL": 1,
+     "PC do B": 1
+    },
+    "TO": {
+     "PMDB": 2,
+     "PP": 1,
+     "PSDB": 1
+    }
+   },
    "seats_by_party": {
     "PMDB": 97,
     "PT": 88,
@@ -507,14 +2147,14 @@
     "PTB": 19,
     "PPS": 16,
     "PV": 15,
-    "PC do B": 4,
-    "PTC": 4,
     "PSC": 4,
+    "PTC": 4,
+    "PC do B": 4,
     "PSOL": 3,
     "PRONA": 2,
+    "PT do B": 1,
     "PSDC": 1,
     "PRB": 1,
-    "PT do B": 1,
     "PMN": 1
    }
   },
@@ -548,6 +2188,241 @@
     "RS": 31,
     "SC": 17
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PP": 3,
+     "PT": 3,
+     "PPS": 1,
+     "PMDB": 1
+    },
+    "AP": {
+     "PT": 2,
+     "PMDB": 2,
+     "PDT": 1,
+     "PPS": 1,
+     "PFL": 1,
+     "PSB": 1
+    },
+    "DF": {
+     "PMDB": 3,
+     "PFL": 3,
+     "PT": 2
+    },
+    "MS": {
+     "PMDB": 4,
+     "PT": 3,
+     "PDT": 1
+    },
+    "RO": {
+     "PPS": 2,
+     "PMDB": 2,
+     "PT": 2,
+     "PSB": 1,
+     "PTB": 1
+    },
+    "RR": {
+     "PL": 2,
+     "PFL": 2,
+     "PSDB": 1,
+     "PSB": 1,
+     "PTC": 1,
+     "PMDB": 1
+    },
+    "SE": {
+     "PFL": 3,
+     "PSC": 1,
+     "PSDB": 1,
+     "PSB": 1,
+     "PTB": 1,
+     "PT": 1
+    },
+    "SP": {
+     "PSDB": 17,
+     "PT": 14,
+     "PFL": 6,
+     "PP": 5,
+     "PV": 5,
+     "PSB": 4,
+     "PTB": 4,
+     "PDT": 3,
+     "PMDB": 3,
+     "PL": 2,
+     "PPS": 2,
+     "PSOL": 1,
+     "PC do B": 1,
+     "PSC": 1,
+     "PTC": 1,
+     "PRONA": 1
+    },
+    "TO": {
+     "PMDB": 3,
+     "PFL": 2,
+     "PSDB": 2,
+     "PP": 1
+    },
+    "AL": {
+     "PFL": 4,
+     "PMDB": 3,
+     "PSB": 2
+    },
+    "AM": {
+     "PSB": 2,
+     "PT": 2,
+     "PP": 2,
+     "PMDB": 2,
+     "PFL": 1
+    },
+    "BA": {
+     "PFL": 15,
+     "PT": 10,
+     "PDT": 3,
+     "PMDB": 3,
+     "PSB": 2,
+     "PL": 2,
+     "PP": 2,
+     "PSDB": 2,
+     "PC do B": 1
+    },
+    "CE": {
+     "PSDB": 7,
+     "PSB": 6,
+     "PMDB": 6,
+     "PT": 2,
+     "PC do B": 1,
+     "PL": 1
+    },
+    "ES": {
+     "PMDB": 4,
+     "PDT": 3,
+     "PSDB": 1,
+     "PSB": 1,
+     "PT": 1
+    },
+    "GO": {
+     "PMDB": 5,
+     "PSDB": 4,
+     "PP": 2,
+     "PL": 1,
+     "PTB": 1,
+     "PT": 1,
+     "PFL": 1
+    },
+    "MA": {
+     "PMDB": 4,
+     "PSDB": 4,
+     "PDT": 2,
+     "PFL": 2,
+     "PSB": 2,
+     "PT": 2,
+     "PV": 1
+    },
+    "MG": {
+     "PT": 10,
+     "PSDB": 9,
+     "PMDB": 8,
+     "PFL": 6,
+     "PL": 5,
+     "PPS": 4,
+     "PV": 4,
+     "PSB": 3,
+     "PP": 2,
+     "PDT": 2,
+     "PTC": 1,
+     "PTB": 1
+    },
+    "MT": {
+     "PP": 2,
+     "PMDB": 2,
+     "PPS": 2,
+     "PT": 1,
+     "PSDB": 1
+    },
+    "PA": {
+     "PMDB": 6,
+     "PSDB": 5,
+     "PT": 4,
+     "PFL": 3,
+     "PDT": 1
+    },
+    "PB": {
+     "PMDB": 4,
+     "PSDB": 3,
+     "PSB": 2,
+     "PL": 2
+    },
+    "PE": {
+     "PFL": 5,
+     "PSB": 4,
+     "PTB": 4,
+     "PT": 4,
+     "PMDB": 3,
+     "PL": 2,
+     "PP": 1,
+     "PSDB": 1
+    },
+    "PI": {
+     "PT": 4,
+     "PFL": 2,
+     "PMDB": 2,
+     "PSDB": 1
+    },
+    "PR": {
+     "PMDB": 7,
+     "PT": 5,
+     "PPS": 4,
+     "PSDB": 4,
+     "PP": 3,
+     "PFL": 3,
+     "PDT": 1,
+     "PTB": 1,
+     "PL": 1
+    },
+    "RJ": {
+     "PMDB": 10,
+     "PT": 5,
+     "PFL": 4,
+     "PSB": 3,
+     "PDT": 3,
+     "PSDB": 3,
+     "PSC": 2,
+     "PPS": 2,
+     "PV": 2,
+     "PTB": 2,
+     "PP": 2,
+     "PSDC": 1,
+     "PRB": 1,
+     "PSOL": 1,
+     "PT do B": 1,
+     "PL": 1,
+     "PRONA": 1
+    },
+    "RN": {
+     "PSB": 3,
+     "PMN": 2,
+     "PMDB": 2,
+     "PL": 1,
+     "PFL": 1
+    },
+    "RS": {
+     "PT": 7,
+     "PP": 5,
+     "PMDB": 5,
+     "PTB": 3,
+     "PSDB": 3,
+     "PDT": 3,
+     "PFL": 2,
+     "PSOL": 1,
+     "PC do B": 1,
+     "PSB": 1
+    },
+    "SC": {
+     "PMDB": 5,
+     "PT": 4,
+     "PFL": 3,
+     "PP": 3,
+     "PSDB": 2
+    }
+   },
    "seats_by_party": {
     "PMDB": 100,
     "PT": 89,
@@ -557,8 +2432,8 @@
     "PP": 33,
     "PDT": 23,
     "PL": 20,
-    "PPS": 18,
     "PTB": 18,
+    "PPS": 18,
     "PV": 12,
     "PSC": 4,
     "PC do B": 4,
@@ -566,9 +2441,9 @@
     "PSOL": 3,
     "PRONA": 2,
     "PMN": 2,
+    "PT do B": 1,
     "PSDC": 1,
-    "PRB": 1,
-    "PT do B": 1
+    "PRB": 1
    }
   },
   "national_single_district": {
@@ -664,6 +2539,238 @@
     "SE": 8,
     "TO": 8
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PT": 5,
+     "PSDB": 3
+    },
+    "AL": {
+     "PMDB": 4,
+     "PSDB": 3,
+     "PTB": 2
+    },
+    "AP": {
+     "PDT": 3,
+     "PT": 2,
+     "PSDB": 1,
+     "PMDB": 1,
+     "PRTB": 1
+    },
+    "AM": {
+     "DEM": 2,
+     "PMDB": 2,
+     "PP": 2,
+     "PR": 1,
+     "PT": 1
+    },
+    "BA": {
+     "PT": 11,
+     "DEM": 6,
+     "PMDB": 4,
+     "PP": 4,
+     "PDT": 3,
+     "PR": 2,
+     "PC do B": 2,
+     "PRB": 2,
+     "PSDB": 2,
+     "PSC": 1,
+     "PTB": 1,
+     "PRP": 1
+    },
+    "CE": {
+     "PMDB": 7,
+     "PT": 4,
+     "PSB": 4,
+     "PSDB": 2,
+     "PR": 2,
+     "PHS": 1,
+     "PP": 1,
+     "PC do B": 1
+    },
+    "DF": {
+     "PR": 3,
+     "PDT": 2,
+     "PT": 2,
+     "PMDB": 1
+    },
+    "ES": {
+     "PDT": 4,
+     "PSB": 3,
+     "PMDB": 2,
+     "PTB": 1
+    },
+    "GO": {
+     "PSDB": 4,
+     "DEM": 3,
+     "PMDB": 3,
+     "PT": 2,
+     "PDT": 2,
+     "PP": 2,
+     "PTB": 1
+    },
+    "MA": {
+     "PMDB": 7,
+     "PSDB": 3,
+     "PT": 2,
+     "PV": 2,
+     "PSB": 1,
+     "PT do B": 1,
+     "PR": 1,
+     "PDT": 1
+    },
+    "MT": {
+     "PR": 3,
+     "PP": 2,
+     "PSDB": 2,
+     "PSB": 1
+    },
+    "MS": {
+     "PMDB": 4,
+     "PT": 2,
+     "PR": 1,
+     "PSDB": 1
+    },
+    "MG": {
+     "PT": 10,
+     "PSDB": 8,
+     "PMDB": 6,
+     "DEM": 5,
+     "PR": 5,
+     "PP": 5,
+     "PTB": 2,
+     "PPS": 2,
+     "PDT": 2,
+     "PV": 2,
+     "PT do B": 1,
+     "PTC": 1,
+     "PC do B": 1,
+     "PMN": 1,
+     "PSL": 1,
+     "PSC": 1
+    },
+    "PA": {
+     "PT": 7,
+     "PSDB": 4,
+     "PMDB": 4,
+     "PDT": 1,
+     "PPS": 1
+    },
+    "PB": {
+     "PMDB": 6,
+     "PT": 2,
+     "DEM": 2,
+     "PSDB": 2
+    },
+    "PR": {
+     "PMDB": 7,
+     "PSDB": 4,
+     "PT": 4,
+     "PSC": 4,
+     "PP": 3,
+     "DEM": 2,
+     "PPS": 2,
+     "PTB": 1,
+     "PR": 1,
+     "PSB": 1,
+     "PV": 1
+    },
+    "PE": {
+     "PSB": 8,
+     "PT": 4,
+     "PP": 3,
+     "PSDB": 3,
+     "PR": 2,
+     "PTB": 2,
+     "DEM": 2,
+     "PDT": 1
+    },
+    "PI": {
+     "PMDB": 3,
+     "DEM": 2,
+     "PT": 2,
+     "PTB": 2,
+     "PSB": 1
+    },
+    "RJ": {
+     "PMDB": 9,
+     "PR": 8,
+     "PT": 5,
+     "PSB": 3,
+     "DEM": 3,
+     "PDT": 3,
+     "PSDB": 2,
+     "PP": 2,
+     "PSC": 2,
+     "PSOL": 2,
+     "PV": 2,
+     "PRTB": 1,
+     "PHS": 1,
+     "PTB": 1,
+     "PC do B": 1,
+     "PRB": 1
+    },
+    "RN": {
+     "DEM": 3,
+     "PR": 2,
+     "PT": 2,
+     "PMDB": 1
+    },
+    "RS": {
+     "PT": 8,
+     "PP": 5,
+     "PMDB": 4,
+     "PTB": 3,
+     "PDT": 3,
+     "PC do B": 3,
+     "PSDB": 2,
+     "PSB": 2,
+     "DEM": 1
+    },
+    "RO": {
+     "PMDB": 3,
+     "PP": 3,
+     "PT": 2
+    },
+    "RR": {
+     "PMDB": 3,
+     "PRB": 2,
+     "DEM": 2,
+     "PP": 1
+    },
+    "SC": {
+     "PMDB": 5,
+     "PT": 4,
+     "DEM": 3,
+     "PP": 2,
+     "PSDB": 2
+    },
+    "SP": {
+     "PT": 14,
+     "PSDB": 14,
+     "PR": 7,
+     "PSB": 7,
+     "DEM": 6,
+     "PV": 5,
+     "PP": 4,
+     "PDT": 3,
+     "PSC": 2,
+     "PPS": 2,
+     "PTB": 2,
+     "PC do B": 1,
+     "PRB": 1,
+     "PMDB": 1,
+     "PSOL": 1
+    },
+    "SE": {
+     "PT": 4,
+     "PMDB": 3,
+     "DEM": 1
+    },
+    "TO": {
+     "PMDB": 5,
+     "PR": 3
+    }
+   },
    "seats_by_party": {
     "PT": 99,
     "PMDB": 95,
@@ -680,11 +2787,11 @@
     "PPS": 7,
     "PRB": 6,
     "PSOL": 3,
-    "PRTB": 2,
-    "PHS": 2,
     "PT do B": 2,
-    "PRP": 1,
+    "PHS": 2,
+    "PRTB": 2,
     "PTC": 1,
+    "PRP": 1,
     "PMN": 1,
     "PSL": 1
    }
@@ -719,6 +2826,229 @@
     "SP": 111,
     "TO": 4
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PT": 2
+    },
+    "AL": {
+     "PSDB": 3,
+     "PMDB": 3,
+     "PTB": 2
+    },
+    "AM": {
+     "DEM": 2,
+     "PMDB": 2,
+     "PP": 2,
+     "PSC": 1,
+     "PR": 1,
+     "PT": 1
+    },
+    "AP": {
+     "PT": 1,
+     "PDT": 1
+    },
+    "BA": {
+     "PT": 11,
+     "DEM": 6,
+     "PMDB": 4,
+     "PP": 4,
+     "PDT": 3,
+     "PR": 2,
+     "PC do B": 2,
+     "PSDB": 2,
+     "PSC": 1,
+     "PTB": 1,
+     "PRB": 1,
+     "PRP": 1
+    },
+    "CE": {
+     "PMDB": 7,
+     "PT": 5,
+     "PSB": 4,
+     "PSDB": 2,
+     "PR": 2,
+     "PHS": 1,
+     "PP": 1,
+     "PC do B": 1
+    },
+    "DF": {
+     "PR": 3,
+     "PDT": 2,
+     "PT": 2
+    },
+    "ES": {
+     "PDT": 4,
+     "PMDB": 2,
+     "PSB": 2,
+     "PTB": 1
+    },
+    "GO": {
+     "PSDB": 4,
+     "PMDB": 3,
+     "DEM": 2,
+     "PT": 2,
+     "PDT": 2,
+     "PP": 2,
+     "PTB": 1
+    },
+    "MA": {
+     "PMDB": 7,
+     "PSDB": 3,
+     "PT": 2,
+     "PV": 2,
+     "PSB": 1,
+     "PT do B": 1,
+     "PR": 1,
+     "PDT": 1
+    },
+    "MG": {
+     "PT": 10,
+     "PSDB": 8,
+     "PMDB": 6,
+     "DEM": 5,
+     "PR": 5,
+     "PP": 5,
+     "PTB": 2,
+     "PPS": 2,
+     "PDT": 2,
+     "PV": 2,
+     "PT do B": 1,
+     "PTC": 1,
+     "PC do B": 1,
+     "PMN": 1,
+     "PSL": 1,
+     "PSC": 1
+    },
+    "MS": {
+     "PMDB": 5,
+     "PT": 2
+    },
+    "MT": {
+     "PR": 3,
+     "PP": 2,
+     "PSDB": 2,
+     "PSB": 1
+    },
+    "PA": {
+     "PT": 6,
+     "PMDB": 5,
+     "PSDB": 4,
+     "PDT": 2,
+     "PSC": 1,
+     "PTB": 1,
+     "PPS": 1
+    },
+    "PB": {
+     "PMDB": 5,
+     "PSDB": 3,
+     "PT": 2
+    },
+    "PE": {
+     "PSB": 8,
+     "PT": 4,
+     "PSDB": 3,
+     "PR": 2,
+     "PP": 2,
+     "PTB": 2,
+     "DEM": 2,
+     "PDT": 1
+    },
+    "PI": {
+     "PMDB": 3,
+     "DEM": 2,
+     "PT": 2,
+     "PTB": 1
+    },
+    "PR": {
+     "PMDB": 7,
+     "PSDB": 4,
+     "PT": 4,
+     "PSC": 3,
+     "DEM": 2,
+     "PPS": 2,
+     "PP": 2,
+     "PTB": 1,
+     "PR": 1,
+     "PSB": 1,
+     "PV": 1
+    },
+    "RJ": {
+     "PMDB": 9,
+     "PR": 7,
+     "PT": 5,
+     "PSB": 3,
+     "DEM": 3,
+     "PSDB": 2,
+     "PP": 2,
+     "PSC": 2,
+     "PDT": 2,
+     "PV": 2,
+     "PRTB": 1,
+     "PHS": 1,
+     "PTB": 1,
+     "PC do B": 1,
+     "PRB": 1,
+     "PSOL": 1
+    },
+    "RN": {
+     "DEM": 3,
+     "PR": 2,
+     "PT": 2,
+     "PMDB": 1
+    },
+    "RO": {
+     "PMDB": 2,
+     "PP": 1,
+     "PTB": 1
+    },
+    "RR": {
+     "PMDB": 1
+    },
+    "RS": {
+     "PT": 8,
+     "PP": 5,
+     "PMDB": 4,
+     "PTB": 3,
+     "PC do B": 3,
+     "PDT": 2,
+     "PSDB": 2,
+     "DEM": 1,
+     "PSB": 1
+    },
+    "SC": {
+     "PMDB": 5,
+     "PT": 4,
+     "PP": 3,
+     "DEM": 3,
+     "PSDB": 2
+    },
+    "SE": {
+     "PT": 4,
+     "PMDB": 2
+    },
+    "SP": {
+     "PT": 22,
+     "PSDB": 21,
+     "PR": 12,
+     "PSB": 11,
+     "DEM": 9,
+     "PV": 9,
+     "PP": 7,
+     "PPS": 4,
+     "PDT": 4,
+     "PSC": 3,
+     "PTB": 3,
+     "PC do B": 2,
+     "PMDB": 2,
+     "PRB": 1,
+     "PSOL": 1
+    },
+    "TO": {
+     "PMDB": 2,
+     "DEM": 1,
+     "PR": 1
+    }
+   },
    "seats_by_party": {
     "PT": 101,
     "PMDB": 87,
@@ -734,14 +3064,14 @@
     "PC do B": 10,
     "PPS": 9,
     "PRB": 3,
-    "PHS": 2,
     "PT do B": 2,
     "PSOL": 2,
-    "PRP": 1,
+    "PHS": 2,
     "PTC": 1,
+    "PRP": 1,
+    "PRTB": 1,
     "PMN": 1,
-    "PSL": 1,
-    "PRTB": 1
+    "PSL": 1
    }
   },
   "recomputed_with_limits": {
@@ -774,27 +3104,261 @@
     "RS": 29,
     "SC": 17
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PT": 5,
+     "PSDB": 3
+    },
+    "AP": {
+     "PDT": 3,
+     "PT": 2,
+     "PSDB": 1,
+     "PMDB": 1,
+     "PRTB": 1
+    },
+    "DF": {
+     "PR": 3,
+     "PDT": 2,
+     "PT": 2,
+     "PMDB": 1
+    },
+    "MS": {
+     "PMDB": 4,
+     "PT": 2,
+     "PR": 1,
+     "PSDB": 1
+    },
+    "RO": {
+     "PMDB": 3,
+     "PP": 3,
+     "PT": 2
+    },
+    "RR": {
+     "PMDB": 3,
+     "PRB": 2,
+     "DEM": 2,
+     "PP": 1
+    },
+    "SE": {
+     "PT": 4,
+     "PMDB": 3,
+     "DEM": 1
+    },
+    "SP": {
+     "PT": 14,
+     "PSDB": 14,
+     "PR": 7,
+     "PSB": 7,
+     "DEM": 6,
+     "PV": 5,
+     "PP": 4,
+     "PDT": 3,
+     "PSC": 2,
+     "PPS": 2,
+     "PTB": 2,
+     "PC do B": 1,
+     "PRB": 1,
+     "PMDB": 1,
+     "PSOL": 1
+    },
+    "TO": {
+     "PMDB": 5,
+     "PR": 3
+    },
+    "AL": {
+     "PMDB": 4,
+     "PSDB": 3,
+     "PTB": 2
+    },
+    "AM": {
+     "DEM": 2,
+     "PMDB": 2,
+     "PP": 2,
+     "PT": 2,
+     "PSC": 1,
+     "PR": 1
+    },
+    "BA": {
+     "PT": 11,
+     "DEM": 6,
+     "PMDB": 4,
+     "PP": 4,
+     "PDT": 3,
+     "PR": 2,
+     "PC do B": 2,
+     "PRB": 2,
+     "PSDB": 2,
+     "PSC": 1,
+     "PTB": 1,
+     "PRP": 1
+    },
+    "CE": {
+     "PMDB": 7,
+     "PT": 5,
+     "PSB": 4,
+     "PSDB": 2,
+     "PR": 2,
+     "PHS": 1,
+     "PP": 1,
+     "PC do B": 1
+    },
+    "ES": {
+     "PDT": 4,
+     "PSB": 3,
+     "PMDB": 2,
+     "PTB": 1
+    },
+    "GO": {
+     "PSDB": 4,
+     "PMDB": 3,
+     "DEM": 2,
+     "PT": 2,
+     "PDT": 2,
+     "PP": 2,
+     "PTB": 1
+    },
+    "MA": {
+     "PMDB": 7,
+     "PSDB": 3,
+     "PT": 2,
+     "PV": 2,
+     "PSB": 1,
+     "PT do B": 1,
+     "PR": 1,
+     "PDT": 1
+    },
+    "MG": {
+     "PT": 11,
+     "PSDB": 8,
+     "PMDB": 6,
+     "DEM": 5,
+     "PR": 5,
+     "PP": 5,
+     "PTB": 2,
+     "PPS": 2,
+     "PDT": 2,
+     "PV": 2,
+     "PT do B": 1,
+     "PTC": 1,
+     "PC do B": 1,
+     "PMN": 1,
+     "PSL": 1,
+     "PSC": 1
+    },
+    "MT": {
+     "PR": 3,
+     "PP": 2,
+     "PSDB": 2,
+     "PSB": 1
+    },
+    "PA": {
+     "PT": 6,
+     "PMDB": 5,
+     "PSDB": 4,
+     "PDT": 2,
+     "PPS": 2,
+     "PSC": 1,
+     "PTB": 1
+    },
+    "PB": {
+     "PMDB": 5,
+     "PSDB": 3,
+     "PT": 2
+    },
+    "PE": {
+     "PSB": 8,
+     "PT": 4,
+     "PSDB": 3,
+     "PR": 2,
+     "PP": 2,
+     "PTB": 2,
+     "DEM": 2,
+     "PDT": 1
+    },
+    "PI": {
+     "PMDB": 3,
+     "DEM": 2,
+     "PT": 2,
+     "PTB": 2
+    },
+    "PR": {
+     "PMDB": 7,
+     "PSDB": 4,
+     "PT": 4,
+     "PSC": 4,
+     "DEM": 2,
+     "PPS": 2,
+     "PP": 2,
+     "PTB": 1,
+     "PR": 1,
+     "PSB": 1,
+     "PV": 1
+    },
+    "RJ": {
+     "PMDB": 9,
+     "PR": 7,
+     "PT": 5,
+     "PSB": 3,
+     "DEM": 3,
+     "PSDB": 2,
+     "PP": 2,
+     "PSC": 2,
+     "PDT": 2,
+     "PSOL": 2,
+     "PV": 2,
+     "PRTB": 1,
+     "PHS": 1,
+     "PTB": 1,
+     "PC do B": 1,
+     "PRB": 1
+    },
+    "RN": {
+     "DEM": 3,
+     "PR": 2,
+     "PT": 2,
+     "PMDB": 1,
+     "PSB": 1
+    },
+    "RS": {
+     "PT": 8,
+     "PP": 5,
+     "PMDB": 4,
+     "PTB": 3,
+     "PC do B": 3,
+     "PDT": 2,
+     "PSDB": 2,
+     "DEM": 1,
+     "PSB": 1
+    },
+    "SC": {
+     "PMDB": 5,
+     "PT": 4,
+     "PP": 3,
+     "DEM": 3,
+     "PSDB": 2
+    }
+   },
    "seats_by_party": {
     "PT": 101,
     "PMDB": 95,
     "PSDB": 63,
-    "PR": 40,
     "DEM": 40,
+    "PR": 40,
     "PP": 38,
     "PSB": 30,
     "PDT": 27,
     "PTB": 19,
-    "PSC": 12,
     "PV": 12,
+    "PSC": 12,
     "PC do B": 9,
     "PPS": 8,
     "PRB": 6,
     "PSOL": 3,
-    "PRTB": 2,
-    "PHS": 2,
     "PT do B": 2,
-    "PRP": 1,
+    "PHS": 2,
+    "PRTB": 2,
     "PTC": 1,
+    "PRP": 1,
     "PMN": 1,
     "PSL": 1
    }
@@ -890,6 +3454,264 @@
     "SE": 8,
     "TO": 8
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PT": 5,
+     "PP": 1,
+     "PSDB": 1,
+     "PMDB": 1
+    },
+    "AL": {
+     "PMDB": 4,
+     "PRTB": 1,
+     "PP": 1,
+     "PR": 1,
+     "SD": 1,
+     "PSDB": 1
+    },
+    "AP": {
+     "PDT": 1,
+     "PMDB": 1,
+     "PROS": 1,
+     "PR": 1,
+     "PSB": 1,
+     "PT": 1,
+     "PSC": 1,
+     "PTB": 1
+    },
+    "AM": {
+     "PSD": 3,
+     "PSDB": 2,
+     "PMDB": 2,
+     "PPS": 1
+    },
+    "BA": {
+     "PT": 10,
+     "PP": 4,
+     "PSD": 4,
+     "DEM": 4,
+     "PSDB": 3,
+     "PC do B": 2,
+     "PRB": 2,
+     "PSC": 2,
+     "PMDB": 2,
+     "PTC": 1,
+     "PDT": 1,
+     "PTB": 1,
+     "PR": 1,
+     "PSB": 1,
+     "SD": 1
+    },
+    "CE": {
+     "PROS": 6,
+     "PT": 6,
+     "PMDB": 4,
+     "DEM": 2,
+     "PR": 2,
+     "SD": 2
+    },
+    "DF": {
+     "PT": 2,
+     "DEM": 2,
+     "PSDB": 1,
+     "PMDB": 1,
+     "PSD": 1,
+     "PSB": 1
+    },
+    "ES": {
+     "PSDB": 4,
+     "PDT": 2,
+     "PT": 1,
+     "PSB": 1,
+     "PRB": 1,
+     "PV": 1
+    },
+    "GO": {
+     "PSDB": 9,
+     "PMDB": 3,
+     "PSD": 2,
+     "PDT": 1,
+     "PP": 1,
+     "PT": 1
+    },
+    "MA": {
+     "PMDB": 4,
+     "PV": 2,
+     "PDT": 2,
+     "PC do B": 2,
+     "PPS": 2,
+     "PSDC": 1,
+     "PSL": 1,
+     "PEN": 1,
+     "PT do B": 1,
+     "PT": 1,
+     "PSB": 1
+    },
+    "MT": {
+     "PSB": 3,
+     "PSDB": 2,
+     "PROS": 1,
+     "PMDB": 1,
+     "PT": 1
+    },
+    "MS": {
+     "PT": 3,
+     "PMDB": 3,
+     "DEM": 1,
+     "PSDB": 1
+    },
+    "MG": {
+     "PT": 12,
+     "PSDB": 7,
+     "PP": 5,
+     "PMDB": 5,
+     "PT do B": 3,
+     "DEM": 3,
+     "PSD": 3,
+     "PSB": 3,
+     "PDT": 3,
+     "PR": 2,
+     "PSC": 2,
+     "PTB": 2,
+     "SD": 1,
+     "PRB": 1,
+     "PTN": 1
+    },
+    "PA": {
+     "PSDB": 4,
+     "DEM": 3,
+     "PT": 3,
+     "PSD": 3,
+     "PMDB": 2,
+     "SD": 1,
+     "PSOL": 1
+    },
+    "PB": {
+     "PP": 3,
+     "PSDB": 3,
+     "PMDB": 3,
+     "DEM": 1,
+     "PSB": 1,
+     "PT": 1
+    },
+    "PR": {
+     "PT": 5,
+     "PMDB": 4,
+     "PP": 3,
+     "PSC": 3,
+     "PSDB": 3,
+     "PTB": 2,
+     "PPS": 2,
+     "PR": 2,
+     "PSB": 2,
+     "PV": 1,
+     "PTN": 1,
+     "PSD": 1,
+     "SD": 1
+    },
+    "PE": {
+     "PSB": 9,
+     "PTB": 4,
+     "PP": 3,
+     "PSDB": 3,
+     "PR": 2,
+     "PT": 2,
+     "PMDB": 1,
+     "PSL": 1
+    },
+    "PI": {
+     "PT": 3,
+     "PSB": 3,
+     "PTB": 2,
+     "PMDB": 2
+    },
+    "RJ": {
+     "PMDB": 9,
+     "PR": 7,
+     "PT": 6,
+     "PP": 5,
+     "PSD": 4,
+     "PSOL": 3,
+     "PSDB": 2,
+     "SD": 2,
+     "PRB": 2,
+     "PSB": 1,
+     "PTB": 1,
+     "PSDC": 1,
+     "PROS": 1,
+     "PRTB": 1,
+     "PDT": 1
+    },
+    "RN": {
+     "PROS": 3,
+     "PMDB": 3,
+     "PSD": 1,
+     "PT": 1
+    },
+    "RS": {
+     "PT": 7,
+     "PP": 6,
+     "PMDB": 5,
+     "PDT": 4,
+     "PTB": 3,
+     "PSB": 3,
+     "PSDB": 2,
+     "PC do B": 1
+    },
+    "RO": {
+     "PMDB": 3,
+     "PSDB": 2,
+     "PDT": 1,
+     "PTB": 1,
+     "PR": 1
+    },
+    "RR": {
+     "PSDB": 3,
+     "PRB": 2,
+     "PSC": 1,
+     "PMN": 1,
+     "PDT": 1
+    },
+    "SC": {
+     "PMDB": 5,
+     "PSD": 4,
+     "PP": 3,
+     "PSDB": 2,
+     "PT": 2
+    },
+    "SP": {
+     "PSDB": 14,
+     "PT": 11,
+     "PRB": 8,
+     "PR": 6,
+     "DEM": 4,
+     "PSB": 4,
+     "PP": 3,
+     "PSD": 3,
+     "PMDB": 3,
+     "PSC": 3,
+     "PV": 3,
+     "PPS": 2,
+     "PTB": 2,
+     "PSOL": 1,
+     "PTN": 1,
+     "PDT": 1,
+     "SD": 1
+    },
+    "SE": {
+     "PT": 5,
+     "PSC": 1,
+     "PTB": 1,
+     "SD": 1
+    },
+    "TO": {
+     "PMDB": 4,
+     "DEM": 1,
+     "PP": 1,
+     "PRB": 1,
+     "PSB": 1
+    }
+   },
    "seats_by_party": {
     "PT": 89,
     "PMDB": 75,
@@ -905,14 +3727,14 @@
     "PSC": 13,
     "PROS": 12,
     "SD": 11,
-    "PPS": 7,
     "PV": 7,
+    "PPS": 7,
     "PC do B": 5,
     "PSOL": 5,
     "PT do B": 4,
     "PTN": 3,
-    "PRTB": 2,
     "PSDC": 2,
+    "PRTB": 2,
     "PSL": 2,
     "PTC": 1,
     "PEN": 1,
@@ -949,6 +3771,241 @@
     "SP": 111,
     "TO": 4
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PT": 2
+    },
+    "AL": {
+     "PMDB": 3,
+     "PRTB": 1,
+     "PP": 1,
+     "PR": 1,
+     "SD": 1,
+     "PSDB": 1
+    },
+    "AM": {
+     "PMDB": 4,
+     "PSD": 3,
+     "PSDB": 2
+    },
+    "AP": {
+     "PMDB": 1,
+     "PROS": 1
+    },
+    "BA": {
+     "PT": 9,
+     "PP": 4,
+     "PSD": 4,
+     "DEM": 4,
+     "PSDB": 3,
+     "PC do B": 2,
+     "PRB": 2,
+     "PSC": 2,
+     "PMDB": 2,
+     "PTC": 1,
+     "PDT": 1,
+     "PTB": 1,
+     "PR": 1,
+     "PSB": 1,
+     "SD": 1
+    },
+    "CE": {
+     "PROS": 6,
+     "PT": 6,
+     "PMDB": 5,
+     "DEM": 2,
+     "PR": 2,
+     "SD": 2
+    },
+    "DF": {
+     "PT": 2,
+     "PSDB": 1,
+     "PMDB": 1,
+     "PSD": 1,
+     "PSB": 1,
+     "DEM": 1
+    },
+    "ES": {
+     "PSDB": 4,
+     "PDT": 2,
+     "PSB": 1,
+     "PRB": 1,
+     "PV": 1
+    },
+    "GO": {
+     "PSDB": 8,
+     "PMDB": 3,
+     "PSD": 2,
+     "PDT": 1,
+     "PP": 1,
+     "PT": 1
+    },
+    "MA": {
+     "PMDB": 4,
+     "PV": 2,
+     "PDT": 2,
+     "PC do B": 2,
+     "PPS": 2,
+     "PSDC": 1,
+     "PSL": 1,
+     "PEN": 1,
+     "PT do B": 1,
+     "PT": 1,
+     "PSB": 1
+    },
+    "MG": {
+     "PT": 12,
+     "PSDB": 7,
+     "PP": 5,
+     "PMDB": 5,
+     "PT do B": 3,
+     "DEM": 3,
+     "PSD": 3,
+     "PSB": 3,
+     "PDT": 3,
+     "PR": 2,
+     "PSC": 2,
+     "PTB": 2,
+     "SD": 1,
+     "PRB": 1,
+     "PTN": 1
+    },
+    "MS": {
+     "PT": 3,
+     "PMDB": 3,
+     "PSDB": 1
+    },
+    "MT": {
+     "PSB": 3,
+     "PSDB": 2,
+     "PROS": 1,
+     "PMDB": 1,
+     "PT": 1
+    },
+    "PA": {
+     "PSD": 4,
+     "PSDB": 4,
+     "DEM": 3,
+     "PMDB": 3,
+     "PT": 3,
+     "SD": 2,
+     "PSOL": 1
+    },
+    "PB": {
+     "PP": 3,
+     "PSDB": 3,
+     "PMDB": 2,
+     "DEM": 1,
+     "PT": 1
+    },
+    "PE": {
+     "PSB": 9,
+     "PTB": 4,
+     "PSDB": 3,
+     "PP": 2,
+     "PR": 2,
+     "PT": 2,
+     "PMDB": 1,
+     "PSL": 1
+    },
+    "PI": {
+     "PSB": 4,
+     "PT": 3,
+     "PTB": 1
+    },
+    "PR": {
+     "PT": 5,
+     "PMDB": 4,
+     "PP": 3,
+     "PSC": 3,
+     "PSDB": 3,
+     "PTB": 2,
+     "PPS": 2,
+     "PR": 2,
+     "PV": 1,
+     "PTN": 1,
+     "PSD": 1,
+     "PSB": 1
+    },
+    "RJ": {
+     "PMDB": 9,
+     "PR": 7,
+     "PT": 5,
+     "PP": 4,
+     "PSD": 4,
+     "PSOL": 3,
+     "PSDB": 2,
+     "SD": 2,
+     "PRB": 2,
+     "PSB": 1,
+     "PTB": 1,
+     "PSDC": 1,
+     "PROS": 1,
+     "PDT": 1
+    },
+    "RN": {
+     "PROS": 3,
+     "PMDB": 3,
+     "PSD": 1,
+     "PT": 1
+    },
+    "RO": {
+     "PMDB": 4
+    },
+    "RR": {
+     "PSDB": 1
+    },
+    "RS": {
+     "PT": 7,
+     "PP": 6,
+     "PMDB": 5,
+     "PDT": 4,
+     "PTB": 3,
+     "PSB": 3,
+     "PSDB": 1
+    },
+    "SC": {
+     "PMDB": 6,
+     "PSD": 4,
+     "PP": 3,
+     "PSDB": 2,
+     "PT": 2
+    },
+    "SE": {
+     "PSD": 1,
+     "PMDB": 1,
+     "PT": 1,
+     "PSC": 1,
+     "PTB": 1,
+     "SD": 1
+    },
+    "SP": {
+     "PSDB": 22,
+     "PT": 17,
+     "PRB": 12,
+     "PR": 9,
+     "PSD": 6,
+     "DEM": 6,
+     "PSB": 6,
+     "PP": 5,
+     "PV": 5,
+     "PMDB": 4,
+     "PSC": 4,
+     "PPS": 3,
+     "PTB": 3,
+     "PSOL": 2,
+     "PDT": 2,
+     "SD": 2,
+     "PTN": 1,
+     "PC do B": 1,
+     "PHS": 1
+    },
+    "TO": {
+     "PMDB": 2,
+     "DEM": 1,
+     "PP": 1
+    }
+   },
    "seats_by_party": {
     "PT": 84,
     "PMDB": 76,
@@ -961,9 +4018,9 @@
     "PTB": 18,
     "PRB": 18,
     "PDT": 16,
-    "SD": 12,
-    "PROS": 12,
     "PSC": 12,
+    "PROS": 12,
+    "SD": 12,
     "PV": 9,
     "PPS": 7,
     "PSOL": 6,
@@ -972,10 +4029,10 @@
     "PTN": 3,
     "PSDC": 2,
     "PSL": 2,
-    "PRTB": 1,
     "PTC": 1,
     "PEN": 1,
-    "PHS": 1
+    "PHS": 1,
+    "PRTB": 1
    }
   },
   "recomputed_with_limits": {
@@ -1008,6 +4065,259 @@
     "RS": 29,
     "SC": 17
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PT": 5,
+     "PP": 1,
+     "PSDB": 1,
+     "PMDB": 1
+    },
+    "AP": {
+     "PDT": 1,
+     "PMDB": 1,
+     "PROS": 1,
+     "PR": 1,
+     "PSB": 1,
+     "PT": 1,
+     "PSC": 1,
+     "PTB": 1
+    },
+    "DF": {
+     "PT": 2,
+     "DEM": 2,
+     "PSDB": 1,
+     "PMDB": 1,
+     "PSD": 1,
+     "PSB": 1
+    },
+    "MS": {
+     "PT": 3,
+     "PMDB": 3,
+     "DEM": 1,
+     "PSDB": 1
+    },
+    "RO": {
+     "PMDB": 3,
+     "PSDB": 2,
+     "PDT": 1,
+     "PTB": 1,
+     "PR": 1
+    },
+    "RR": {
+     "PSDB": 3,
+     "PRB": 2,
+     "PSC": 1,
+     "PMN": 1,
+     "PDT": 1
+    },
+    "SE": {
+     "PT": 5,
+     "PSC": 1,
+     "PTB": 1,
+     "SD": 1
+    },
+    "SP": {
+     "PSDB": 14,
+     "PT": 11,
+     "PRB": 8,
+     "PR": 6,
+     "DEM": 4,
+     "PSB": 4,
+     "PP": 3,
+     "PSD": 3,
+     "PMDB": 3,
+     "PSC": 3,
+     "PV": 3,
+     "PPS": 2,
+     "PTB": 2,
+     "PSOL": 1,
+     "PTN": 1,
+     "PDT": 1,
+     "SD": 1
+    },
+    "TO": {
+     "PMDB": 4,
+     "DEM": 1,
+     "PP": 1,
+     "PRB": 1,
+     "PSB": 1
+    },
+    "AL": {
+     "PMDB": 4,
+     "PRTB": 1,
+     "PP": 1,
+     "PR": 1,
+     "SD": 1,
+     "PSDB": 1
+    },
+    "AM": {
+     "PMDB": 4,
+     "PSD": 3,
+     "PSDB": 3
+    },
+    "BA": {
+     "PT": 10,
+     "PP": 4,
+     "PSD": 4,
+     "DEM": 4,
+     "PSDB": 3,
+     "PC do B": 2,
+     "PRB": 2,
+     "PSC": 2,
+     "PMDB": 2,
+     "PTC": 1,
+     "PDT": 1,
+     "PTB": 1,
+     "PR": 1,
+     "PSB": 1,
+     "SD": 1
+    },
+    "CE": {
+     "PROS": 6,
+     "PT": 6,
+     "PMDB": 5,
+     "DEM": 2,
+     "PR": 2,
+     "SD": 2
+    },
+    "ES": {
+     "PSDB": 4,
+     "PDT": 2,
+     "PT": 1,
+     "PSB": 1,
+     "PRB": 1,
+     "PV": 1
+    },
+    "GO": {
+     "PSDB": 8,
+     "PMDB": 3,
+     "PSD": 2,
+     "PDT": 1,
+     "PP": 1,
+     "PT": 1
+    },
+    "MA": {
+     "PMDB": 4,
+     "PV": 2,
+     "PDT": 2,
+     "PC do B": 2,
+     "PPS": 2,
+     "PSDC": 1,
+     "PSL": 1,
+     "PEN": 1,
+     "PT do B": 1,
+     "PT": 1,
+     "PSB": 1
+    },
+    "MG": {
+     "PT": 12,
+     "PSDB": 7,
+     "PP": 5,
+     "PMDB": 5,
+     "PSD": 4,
+     "PT do B": 3,
+     "DEM": 3,
+     "PSB": 3,
+     "PDT": 3,
+     "PR": 2,
+     "PSC": 2,
+     "PTB": 2,
+     "SD": 1,
+     "PRB": 1,
+     "PTN": 1
+    },
+    "MT": {
+     "PSB": 3,
+     "PSDB": 2,
+     "PROS": 1,
+     "PMDB": 1,
+     "PT": 1
+    },
+    "PA": {
+     "DEM": 4,
+     "PSD": 4,
+     "PSDB": 4,
+     "PMDB": 3,
+     "PT": 3,
+     "SD": 2,
+     "PSOL": 1
+    },
+    "PB": {
+     "PP": 3,
+     "PSDB": 3,
+     "PMDB": 2,
+     "DEM": 1,
+     "PT": 1
+    },
+    "PE": {
+     "PSB": 9,
+     "PTB": 4,
+     "PSDB": 3,
+     "PP": 2,
+     "PR": 2,
+     "PT": 2,
+     "PMDB": 1,
+     "PSL": 1
+    },
+    "PI": {
+     "PT": 3,
+     "PSB": 3,
+     "PMDB": 2,
+     "PTB": 1
+    },
+    "PR": {
+     "PT": 5,
+     "PMDB": 4,
+     "PP": 3,
+     "PSC": 3,
+     "PSDB": 3,
+     "PTB": 2,
+     "PPS": 2,
+     "PR": 2,
+     "PSB": 2,
+     "PV": 1,
+     "PTN": 1,
+     "PSD": 1
+    },
+    "RJ": {
+     "PMDB": 9,
+     "PR": 7,
+     "PT": 5,
+     "PP": 5,
+     "PSD": 4,
+     "PSOL": 3,
+     "PSDB": 2,
+     "SD": 2,
+     "PRB": 2,
+     "PSB": 1,
+     "PTB": 1,
+     "PSDC": 1,
+     "PROS": 1,
+     "PDT": 1
+    },
+    "RN": {
+     "PMDB": 4,
+     "PROS": 3,
+     "PSD": 1,
+     "PT": 1
+    },
+    "RS": {
+     "PT": 7,
+     "PP": 6,
+     "PMDB": 5,
+     "PDT": 4,
+     "PTB": 3,
+     "PSB": 3,
+     "PSDB": 1
+    },
+    "SC": {
+     "PMDB": 6,
+     "PSD": 4,
+     "PP": 3,
+     "PSDB": 2,
+     "PT": 2
+    }
+   },
    "seats_by_party": {
     "PT": 88,
     "PMDB": 80,
@@ -1026,15 +4336,15 @@
     "PV": 7,
     "PPS": 6,
     "PSOL": 5,
-    "PC do B": 4,
     "PT do B": 4,
+    "PC do B": 4,
     "PTN": 3,
     "PSDC": 2,
     "PSL": 2,
-    "PMN": 1,
-    "PRTB": 1,
     "PTC": 1,
-    "PEN": 1
+    "PEN": 1,
+    "PRTB": 1,
+    "PMN": 1
    }
   },
   "national_single_district": {
@@ -1138,6 +4448,306 @@
     "SE": 8,
     "TO": 8
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "MDB": 3,
+     "PSDB": 2,
+     "PT": 2,
+     "PDT": 1
+    },
+    "AL": {
+     "PSD": 5,
+     "PP": 2,
+     "PSB": 2
+    },
+    "AP": {
+     "PDT": 2,
+     "PR": 2,
+     "DEM": 1,
+     "PSDB": 1,
+     "PTB": 1,
+     "REDE": 1
+    },
+    "AM": {
+     "PRB": 2,
+     "PSL": 2,
+     "PT": 1,
+     "PSD": 1,
+     "PR": 1,
+     "PP": 1
+    },
+    "BA": {
+     "PT": 8,
+     "PSD": 6,
+     "PP": 4,
+     "DEM": 4,
+     "PSB": 2,
+     "PHS": 2,
+     "PRB": 2,
+     "AVANTE": 2,
+     "PDT": 2,
+     "PR": 1,
+     "PODE": 1,
+     "PC do B": 1,
+     "PRP": 1,
+     "PPL": 1,
+     "PSL": 1,
+     "PSDB": 1
+    },
+    "CE": {
+     "PDT": 7,
+     "PT": 4,
+     "PROS": 2,
+     "PSB": 1,
+     "MDB": 1,
+     "SOLIDARIEDADE": 1,
+     "PSD": 1,
+     "PV": 1,
+     "PP": 1,
+     "PSDB": 1,
+     "PSL": 1,
+     "PATRI": 1
+    },
+    "DF": {
+     "PR": 2,
+     "PP": 1,
+     "PV": 1,
+     "PSB": 1,
+     "DEM": 1,
+     "PPS": 1,
+     "PRB": 1
+    },
+    "ES": {
+     "PRB": 3,
+     "PSB": 2,
+     "PP": 2,
+     "DEM": 1,
+     "PDT": 1,
+     "PSL": 1
+    },
+    "GO": {
+     "PSDB": 5,
+     "DEM": 3,
+     "PSL": 2,
+     "PP": 2,
+     "MDB": 1,
+     "PT": 1,
+     "PDT": 1,
+     "PSC": 1,
+     "PODE": 1
+    },
+    "MA": {
+     "PC do B": 6,
+     "MDB": 3,
+     "PR": 3,
+     "PMN": 2,
+     "PODE": 1,
+     "PP": 1,
+     "PDT": 1,
+     "PT": 1
+    },
+    "MT": {
+     "PP": 4,
+     "MDB": 2,
+     "PSB": 1,
+     "PSL": 1
+    },
+    "MS": {
+     "PSL": 2,
+     "PSDB": 2,
+     "PDT": 1,
+     "PT": 1,
+     "DEM": 1,
+     "PSD": 1
+    },
+    "MG": {
+     "PT": 8,
+     "PSL": 6,
+     "PSDB": 5,
+     "MDB": 4,
+     "PSD": 3,
+     "AVANTE": 3,
+     "PROS": 2,
+     "PDT": 2,
+     "PRB": 2,
+     "PSC": 2,
+     "PR": 2,
+     "PSB": 2,
+     "PP": 2,
+     "DEM": 2,
+     "NOVO": 2,
+     "PHS": 2,
+     "PATRI": 2,
+     "PSOL": 1,
+     "PODE": 1
+    },
+    "PA": {
+     "PSD": 3,
+     "MDB": 3,
+     "PSDB": 3,
+     "DEM": 2,
+     "PT": 2,
+     "PSOL": 1,
+     "PRB": 1,
+     "PR": 1,
+     "PTB": 1
+    },
+    "PB": {
+     "PSDB": 3,
+     "PRB": 2,
+     "PSB": 2,
+     "PP": 1,
+     "PSL": 1,
+     "PDT": 1,
+     "PT": 1,
+     "PR": 1
+    },
+    "PR": {
+     "PSD": 6,
+     "PP": 3,
+     "PSL": 3,
+     "PT": 3,
+     "PR": 2,
+     "PSB": 2,
+     "PRB": 2,
+     "MDB": 2,
+     "PSC": 1,
+     "PODE": 1,
+     "PROS": 1,
+     "DEM": 1,
+     "PSDB": 1,
+     "PDT": 1,
+     "PV": 1
+    },
+    "PE": {
+     "PSB": 7,
+     "PDT": 2,
+     "PSL": 2,
+     "PSC": 2,
+     "PRB": 2,
+     "PP": 2,
+     "PT": 2,
+     "PSD": 1,
+     "DEM": 1,
+     "PPS": 1,
+     "PATRI": 1,
+     "PR": 1,
+     "SOLIDARIEDADE": 1
+    },
+    "PI": {
+     "PT": 4,
+     "PP": 3,
+     "PR": 1,
+     "PTC": 1,
+     "PSB": 1
+    },
+    "RJ": {
+     "PSL": 12,
+     "PSOL": 4,
+     "DEM": 4,
+     "PSD": 3,
+     "MDB": 3,
+     "PR": 2,
+     "PRB": 2,
+     "PSB": 2,
+     "SOLIDARIEDADE": 2,
+     "PT": 2,
+     "PSC": 2,
+     "PP": 2,
+     "NOVO": 1,
+     "PDT": 1,
+     "PRP": 1,
+     "AVANTE": 1,
+     "DC": 1,
+     "PHS": 1
+    },
+    "RN": {
+     "PSB": 1,
+     "PR": 1,
+     "PTC": 1,
+     "PSD": 1,
+     "PP": 1,
+     "MDB": 1,
+     "PT": 1,
+     "SOLIDARIEDADE": 1
+    },
+    "RS": {
+     "PT": 5,
+     "MDB": 4,
+     "PP": 3,
+     "PDT": 3,
+     "PSL": 3,
+     "PSB": 2,
+     "PSDB": 2,
+     "PTB": 2,
+     "NOVO": 2,
+     "PR": 1,
+     "PRB": 1,
+     "PSD": 1,
+     "DEM": 1,
+     "PSOL": 1
+    },
+    "RO": {
+     "PP": 3,
+     "MDB": 1,
+     "PODE": 1,
+     "PSL": 1,
+     "PSD": 1,
+     "DEM": 1
+    },
+    "RR": {
+     "PSDB": 2,
+     "PRB": 2,
+     "PSL": 1,
+     "PSD": 1,
+     "SOLIDARIEDADE": 1,
+     "MDB": 1
+    },
+    "SC": {
+     "PSL": 4,
+     "MDB": 3,
+     "PSDB": 2,
+     "PP": 2,
+     "PRB": 1,
+     "PSB": 1,
+     "PT": 1,
+     "PSD": 1,
+     "NOVO": 1
+    },
+    "SP": {
+     "PSL": 17,
+     "PT": 8,
+     "PSDB": 6,
+     "PR": 6,
+     "PRB": 6,
+     "PSB": 5,
+     "DEM": 4,
+     "PSOL": 3,
+     "PSD": 3,
+     "NOVO": 3,
+     "PODE": 2,
+     "PP": 2,
+     "MDB": 2,
+     "PPS": 1,
+     "PV": 1,
+     "PDT": 1
+    },
+    "SE": {
+     "PT": 2,
+     "PR": 1,
+     "SOLIDARIEDADE": 1,
+     "PP": 1,
+     "PSD": 1,
+     "MDB": 1,
+     "PSB": 1
+    },
+    "TO": {
+     "PSC": 3,
+     "DEM": 2,
+     "SOLIDARIEDADE": 2,
+     "PT": 1
+    }
+   },
    "seats_by_party": {
     "PSL": 60,
     "PT": 58,
@@ -1157,18 +4767,18 @@
     "PODE": 8,
     "PC do B": 7,
     "AVANTE": 6,
-    "PHS": 5,
     "PROS": 5,
-    "PTB": 4,
+    "PHS": 5,
     "PV": 4,
+    "PTB": 4,
     "PATRI": 4,
     "PPS": 3,
+    "PTC": 2,
     "PRP": 2,
     "PMN": 2,
-    "PTC": 2,
+    "DC": 1,
     "REDE": 1,
-    "PPL": 1,
-    "DC": 1
+    "PPL": 1
    }
   },
   "no_limits": {
@@ -1201,37 +4811,316 @@
     "SP": 111,
     "TO": 4
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "MDB": 1,
+     "PSDB": 1
+    },
+    "AL": {
+     "PSD": 4,
+     "PP": 2,
+     "PSB": 2
+    },
+    "AM": {
+     "PRB": 2,
+     "PSD": 2,
+     "PSL": 2,
+     "PT": 1,
+     "PR": 1,
+     "PP": 1
+    },
+    "AP": {
+     "DEM": 1,
+     "PDT": 1
+    },
+    "BA": {
+     "PT": 8,
+     "PSD": 6,
+     "PP": 4,
+     "DEM": 4,
+     "PSB": 2,
+     "PHS": 2,
+     "AVANTE": 2,
+     "PDT": 2,
+     "PR": 1,
+     "PODE": 1,
+     "PC do B": 1,
+     "PRP": 1,
+     "PPL": 1,
+     "PSL": 1,
+     "PSDB": 1,
+     "PRB": 1
+    },
+    "CE": {
+     "PDT": 7,
+     "PT": 4,
+     "PSD": 2,
+     "PROS": 2,
+     "PSB": 1,
+     "MDB": 1,
+     "SOLIDARIEDADE": 1,
+     "PV": 1,
+     "PP": 1,
+     "PSDB": 1,
+     "PSL": 1,
+     "PATRI": 1
+    },
+    "DF": {
+     "PR": 2,
+     "PV": 1,
+     "PSB": 1,
+     "DEM": 1,
+     "PPS": 1,
+     "PRB": 1
+    },
+    "ES": {
+     "PSB": 2,
+     "PP": 2,
+     "PRB": 2,
+     "DEM": 1,
+     "PDT": 1,
+     "PSL": 1
+    },
+    "GO": {
+     "PSDB": 5,
+     "DEM": 3,
+     "PSL": 2,
+     "PP": 2,
+     "PDT": 2,
+     "MDB": 1,
+     "PT": 1
+    },
+    "MA": {
+     "PC do B": 6,
+     "MDB": 3,
+     "PR": 3,
+     "PMN": 2,
+     "PODE": 1,
+     "PP": 1,
+     "PDT": 1,
+     "PT": 1
+    },
+    "MG": {
+     "PT": 8,
+     "PSL": 6,
+     "PSDB": 5,
+     "MDB": 4,
+     "PSD": 3,
+     "AVANTE": 3,
+     "PROS": 2,
+     "PDT": 2,
+     "PRB": 2,
+     "PSC": 2,
+     "PR": 2,
+     "PSB": 2,
+     "PP": 2,
+     "DEM": 2,
+     "NOVO": 2,
+     "PHS": 2,
+     "PATRI": 2,
+     "PSOL": 1,
+     "PODE": 1
+    },
+    "MS": {
+     "PSDB": 3,
+     "PSL": 2,
+     "DEM": 1,
+     "PSD": 1
+    },
+    "MT": {
+     "PP": 4,
+     "MDB": 2,
+     "PSB": 1,
+     "PSL": 1
+    },
+    "PA": {
+     "PSD": 4,
+     "MDB": 4,
+     "PSDB": 4,
+     "DEM": 2,
+     "PT": 2,
+     "PSOL": 1,
+     "PRB": 1,
+     "PR": 1,
+     "PTB": 1
+    },
+    "PB": {
+     "PSB": 3,
+     "PRB": 2,
+     "PSDB": 2,
+     "PP": 1,
+     "PSL": 1,
+     "PR": 1
+    },
+    "PE": {
+     "PSB": 7,
+     "PDT": 2,
+     "PSL": 2,
+     "PSC": 2,
+     "PP": 2,
+     "PT": 2,
+     "PSD": 1,
+     "PRB": 1,
+     "DEM": 1,
+     "PPS": 1,
+     "PATRI": 1,
+     "PR": 1,
+     "SOLIDARIEDADE": 1
+    },
+    "PI": {
+     "PT": 4,
+     "PP": 3,
+     "PR": 1
+    },
+    "PR": {
+     "PSD": 6,
+     "PP": 3,
+     "PSL": 3,
+     "PR": 2,
+     "PSB": 2,
+     "PRB": 2,
+     "MDB": 2,
+     "PT": 2,
+     "PSC": 1,
+     "PODE": 1,
+     "PROS": 1,
+     "PSDB": 1,
+     "PDT": 1,
+     "PV": 1
+    },
+    "RJ": {
+     "PSL": 11,
+     "PSOL": 4,
+     "DEM": 4,
+     "PSD": 3,
+     "MDB": 3,
+     "PR": 2,
+     "PRB": 2,
+     "PSB": 2,
+     "SOLIDARIEDADE": 2,
+     "PT": 2,
+     "PP": 2,
+     "NOVO": 1,
+     "PDT": 1,
+     "PRP": 1,
+     "AVANTE": 1,
+     "DC": 1,
+     "PSC": 1
+    },
+    "RN": {
+     "PSB": 1,
+     "PR": 1,
+     "PTC": 1,
+     "PSD": 1,
+     "PP": 1,
+     "MDB": 1,
+     "PT": 1,
+     "SOLIDARIEDADE": 1
+    },
+    "RO": {
+     "MDB": 1,
+     "DEM": 1,
+     "PDT": 1,
+     "PP": 1
+    },
+    "RR": {
+     "SOLIDARIEDADE": 1
+    },
+    "RS": {
+     "PT": 4,
+     "PP": 3,
+     "PDT": 3,
+     "PSL": 3,
+     "MDB": 3,
+     "PSB": 2,
+     "PSDB": 2,
+     "PTB": 2,
+     "NOVO": 2,
+     "PR": 1,
+     "PRB": 1,
+     "PSD": 1,
+     "DEM": 1,
+     "PSOL": 1
+    },
+    "SC": {
+     "PSL": 4,
+     "MDB": 3,
+     "PT": 2,
+     "PSDB": 2,
+     "PP": 2,
+     "PRB": 1,
+     "PSB": 1,
+     "PSD": 1,
+     "NOVO": 1
+    },
+    "SE": {
+     "PT": 2,
+     "PR": 1,
+     "SOLIDARIEDADE": 1,
+     "PSD": 1,
+     "MDB": 1
+    },
+    "SP": {
+     "PSL": 24,
+     "PT": 12,
+     "PSDB": 9,
+     "PR": 9,
+     "PRB": 9,
+     "PSB": 7,
+     "DEM": 7,
+     "PSOL": 5,
+     "NOVO": 5,
+     "PODE": 4,
+     "PSD": 4,
+     "PP": 3,
+     "PPS": 2,
+     "PV": 2,
+     "PDT": 2,
+     "MDB": 2,
+     "PTB": 1,
+     "REDE": 1,
+     "SOLIDARIEDADE": 1,
+     "PROS": 1,
+     "PATRI": 1
+    },
+    "TO": {
+     "PSC": 1,
+     "PR": 1,
+     "DEM": 1,
+     "SOLIDARIEDADE": 1
+    }
+   },
    "seats_by_party": {
     "PSL": 64,
     "PT": 56,
-    "PSD": 40,
     "PP": 40,
+    "PSD": 40,
     "PSDB": 36,
     "PSB": 36,
     "MDB": 32,
-    "PR": 30,
     "DEM": 30,
+    "PR": 30,
     "PRB": 27,
     "PDT": 26,
     "PSOL": 12,
     "NOVO": 11,
     "SOLIDARIEDADE": 9,
     "PODE": 8,
-    "PC do B": 7,
     "PSC": 7,
+    "PC do B": 7,
     "AVANTE": 6,
     "PROS": 6,
     "PV": 5,
     "PATRI": 5,
+    "PTB": 4,
     "PHS": 4,
     "PPS": 4,
-    "PTB": 4,
     "PRP": 2,
     "PMN": 2,
-    "PPL": 1,
-    "DC": 1,
     "PTC": 1,
-    "REDE": 1
+    "DC": 1,
+    "REDE": 1,
+    "PPL": 1
    }
   },
   "recomputed_with_limits": {
@@ -1264,6 +5153,300 @@
     "RS": 29,
     "SC": 17
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "MDB": 3,
+     "PSDB": 2,
+     "PT": 2,
+     "PDT": 1
+    },
+    "AP": {
+     "PDT": 2,
+     "PR": 2,
+     "DEM": 1,
+     "PSDB": 1,
+     "PTB": 1,
+     "REDE": 1
+    },
+    "DF": {
+     "PR": 2,
+     "PP": 1,
+     "PV": 1,
+     "PSB": 1,
+     "DEM": 1,
+     "PPS": 1,
+     "PRB": 1
+    },
+    "MS": {
+     "PSL": 2,
+     "PSDB": 2,
+     "PDT": 1,
+     "PT": 1,
+     "DEM": 1,
+     "PSD": 1
+    },
+    "RO": {
+     "PP": 3,
+     "MDB": 1,
+     "PODE": 1,
+     "PSL": 1,
+     "PSD": 1,
+     "DEM": 1
+    },
+    "RR": {
+     "PSDB": 2,
+     "PRB": 2,
+     "PSL": 1,
+     "PSD": 1,
+     "SOLIDARIEDADE": 1,
+     "MDB": 1
+    },
+    "SE": {
+     "PT": 2,
+     "PR": 1,
+     "SOLIDARIEDADE": 1,
+     "PP": 1,
+     "PSD": 1,
+     "MDB": 1,
+     "PSB": 1
+    },
+    "SP": {
+     "PSL": 17,
+     "PT": 8,
+     "PSDB": 6,
+     "PR": 6,
+     "PRB": 6,
+     "PSB": 5,
+     "DEM": 4,
+     "PSOL": 3,
+     "PSD": 3,
+     "NOVO": 3,
+     "PODE": 2,
+     "PP": 2,
+     "MDB": 2,
+     "PPS": 1,
+     "PV": 1,
+     "PDT": 1
+    },
+    "TO": {
+     "PSC": 3,
+     "DEM": 2,
+     "SOLIDARIEDADE": 2,
+     "PT": 1
+    },
+    "AL": {
+     "PSD": 5,
+     "PP": 2,
+     "PSB": 2
+    },
+    "AM": {
+     "PT": 2,
+     "PRB": 2,
+     "PSD": 2,
+     "PSL": 2,
+     "PR": 1,
+     "PP": 1
+    },
+    "BA": {
+     "PT": 8,
+     "PSD": 6,
+     "PP": 4,
+     "DEM": 4,
+     "PSB": 2,
+     "PHS": 2,
+     "PRB": 2,
+     "AVANTE": 2,
+     "PDT": 2,
+     "PR": 1,
+     "PODE": 1,
+     "PC do B": 1,
+     "PRP": 1,
+     "PPL": 1,
+     "PSL": 1,
+     "PSDB": 1
+    },
+    "CE": {
+     "PDT": 7,
+     "PT": 4,
+     "PSD": 2,
+     "PROS": 2,
+     "PSB": 1,
+     "MDB": 1,
+     "SOLIDARIEDADE": 1,
+     "PV": 1,
+     "PP": 1,
+     "PSDB": 1,
+     "PSL": 1,
+     "PATRI": 1
+    },
+    "ES": {
+     "PRB": 3,
+     "PSB": 2,
+     "PP": 2,
+     "DEM": 1,
+     "PDT": 1,
+     "PSL": 1
+    },
+    "GO": {
+     "PSDB": 5,
+     "DEM": 3,
+     "PSL": 2,
+     "PP": 2,
+     "PDT": 2,
+     "MDB": 1,
+     "PT": 1
+    },
+    "MA": {
+     "PC do B": 6,
+     "MDB": 3,
+     "PR": 3,
+     "PMN": 2,
+     "PODE": 1,
+     "PP": 1,
+     "PDT": 1,
+     "PT": 1
+    },
+    "MG": {
+     "PT": 9,
+     "PSL": 6,
+     "PSDB": 5,
+     "MDB": 4,
+     "PSD": 3,
+     "AVANTE": 3,
+     "PROS": 2,
+     "PDT": 2,
+     "PRB": 2,
+     "PSC": 2,
+     "PR": 2,
+     "PSB": 2,
+     "PP": 2,
+     "DEM": 2,
+     "NOVO": 2,
+     "PHS": 2,
+     "PATRI": 2,
+     "PSOL": 1,
+     "PODE": 1
+    },
+    "MT": {
+     "PP": 4,
+     "MDB": 2,
+     "PSB": 1,
+     "PSL": 1
+    },
+    "PA": {
+     "PSD": 4,
+     "MDB": 4,
+     "PSDB": 4,
+     "DEM": 2,
+     "PT": 2,
+     "PSOL": 1,
+     "PRB": 1,
+     "PR": 1,
+     "PTB": 1,
+     "PSB": 1
+    },
+    "PB": {
+     "PSB": 3,
+     "PRB": 2,
+     "PSDB": 2,
+     "PP": 1,
+     "PSL": 1,
+     "PR": 1
+    },
+    "PE": {
+     "PSB": 7,
+     "PDT": 2,
+     "PSL": 2,
+     "PSC": 2,
+     "PP": 2,
+     "PT": 2,
+     "PSD": 1,
+     "PRB": 1,
+     "DEM": 1,
+     "PPS": 1,
+     "PATRI": 1,
+     "PR": 1,
+     "SOLIDARIEDADE": 1
+    },
+    "PI": {
+     "PT": 4,
+     "PP": 3,
+     "PR": 1,
+     "PTC": 1
+    },
+    "PR": {
+     "PSD": 6,
+     "PP": 3,
+     "PSL": 3,
+     "PT": 3,
+     "PR": 2,
+     "PSB": 2,
+     "PRB": 2,
+     "MDB": 2,
+     "PSC": 1,
+     "PODE": 1,
+     "PROS": 1,
+     "PSDB": 1,
+     "PDT": 1,
+     "PV": 1
+    },
+    "RJ": {
+     "PSL": 12,
+     "PSOL": 4,
+     "DEM": 4,
+     "PSD": 3,
+     "MDB": 3,
+     "PR": 2,
+     "PRB": 2,
+     "PSB": 2,
+     "SOLIDARIEDADE": 2,
+     "PT": 2,
+     "PP": 2,
+     "NOVO": 1,
+     "PDT": 1,
+     "PRP": 1,
+     "AVANTE": 1,
+     "DC": 1,
+     "PSC": 1
+    },
+    "RN": {
+     "PT": 2,
+     "PSB": 1,
+     "PR": 1,
+     "PTC": 1,
+     "PSD": 1,
+     "PP": 1,
+     "MDB": 1,
+     "SOLIDARIEDADE": 1
+    },
+    "RS": {
+     "PT": 4,
+     "PP": 3,
+     "PDT": 3,
+     "PSL": 3,
+     "MDB": 3,
+     "PSB": 2,
+     "PSDB": 2,
+     "PTB": 2,
+     "NOVO": 2,
+     "PR": 1,
+     "PRB": 1,
+     "PSD": 1,
+     "DEM": 1,
+     "PSOL": 1
+    },
+    "SC": {
+     "PSL": 4,
+     "MDB": 3,
+     "PT": 2,
+     "PSDB": 2,
+     "PP": 2,
+     "PRB": 1,
+     "PSB": 1,
+     "PSD": 1,
+     "NOVO": 1
+    }
+   },
    "seats_by_party": {
     "PT": 60,
     "PSL": 60,
@@ -1277,24 +5460,24 @@
     "PRB": 28,
     "PDT": 27,
     "PSOL": 10,
+    "PSC": 9,
     "SOLIDARIEDADE": 9,
     "NOVO": 9,
-    "PSC": 9,
     "PODE": 7,
     "PC do B": 7,
     "AVANTE": 6,
     "PROS": 5,
-    "PTB": 4,
     "PV": 4,
+    "PTB": 4,
     "PHS": 4,
     "PATRI": 4,
     "PPS": 3,
+    "PTC": 2,
     "PRP": 2,
     "PMN": 2,
-    "PTC": 2,
+    "DC": 1,
     "REDE": 1,
-    "PPL": 1,
-    "DC": 1
+    "PPL": 1
    }
   },
   "national_single_district": {
@@ -1405,27 +5588,284 @@
     "SE": 8,
     "TO": 8
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PP": 3,
+     "UNI\u00c3O": 3,
+     "REPUBLICANOS": 2
+    },
+    "AL": {
+     "PP": 4,
+     "PV": 2,
+     "MDB": 2,
+     "UNI\u00c3O": 1
+    },
+    "AP": {
+     "PDT": 3,
+     "PL": 3,
+     "MDB": 2
+    },
+    "AM": {
+     "CIDADANIA": 2,
+     "UNI\u00c3O": 2,
+     "PSD": 2,
+     "REPUBLICANOS": 1,
+     "PL": 1
+    },
+    "BA": {
+     "PT": 9,
+     "PSD": 6,
+     "UNI\u00c3O": 6,
+     "PP": 4,
+     "PL": 3,
+     "REPUBLICANOS": 3,
+     "PDT": 2,
+     "PC do B": 1,
+     "AVANTE": 1,
+     "MDB": 1,
+     "PSB": 1,
+     "PODE": 1,
+     "PSDB": 1
+    },
+    "CE": {
+     "PL": 5,
+     "PDT": 5,
+     "UNI\u00c3O": 4,
+     "PT": 3,
+     "PSD": 3,
+     "MDB": 1,
+     "PP": 1
+    },
+    "DF": {
+     "REPUBLICANOS": 3,
+     "PT": 2,
+     "PL": 2,
+     "MDB": 1
+    },
+    "ES": {
+     "REPUBLICANOS": 2,
+     "PL": 2,
+     "PP": 2,
+     "PT": 2,
+     "PODE": 1,
+     "PSB": 1
+    },
+    "GO": {
+     "PL": 4,
+     "PP": 2,
+     "PT": 2,
+     "MDB": 2,
+     "UNI\u00c3O": 2,
+     "REPUBLICANOS": 1,
+     "PSD": 1,
+     "PSDB": 1,
+     "PSC": 1,
+     "PDT": 1
+    },
+    "MA": {
+     "PL": 4,
+     "PP": 2,
+     "UNI\u00c3O": 2,
+     "PSB": 1,
+     "MDB": 1,
+     "PODE": 1,
+     "PSD": 1,
+     "PT": 1,
+     "PC do B": 1,
+     "PDT": 1,
+     "PATRIOTA": 1,
+     "PSC": 1,
+     "REPUBLICANOS": 1
+    },
+    "MT": {
+     "PL": 4,
+     "MDB": 2,
+     "UNI\u00c3O": 2
+    },
+    "MS": {
+     "PSDB": 3,
+     "PT": 2,
+     "PL": 2,
+     "PP": 1
+    },
+    "MG": {
+     "PL": 13,
+     "PT": 9,
+     "AVANTE": 5,
+     "PSD": 4,
+     "PP": 3,
+     "UNI\u00c3O": 3,
+     "PATRIOTA": 2,
+     "PSDB": 2,
+     "REPUBLICANOS": 2,
+     "MDB": 2,
+     "PDT": 2,
+     "PSOL": 1,
+     "PODE": 1,
+     "SOLIDARIEDADE": 1,
+     "PSC": 1,
+     "PROS": 1,
+     "NOVO": 1
+    },
+    "PA": {
+     "MDB": 9,
+     "PL": 3,
+     "PT": 2,
+     "PSD": 2,
+     "UNI\u00c3O": 1
+    },
+    "PB": {
+     "REPUBLICANOS": 3,
+     "PSC": 2,
+     "PL": 2,
+     "PP": 2,
+     "PT": 1,
+     "PSB": 1,
+     "UNI\u00c3O": 1
+    },
+    "PR": {
+     "PSD": 6,
+     "PT": 6,
+     "PP": 4,
+     "UNI\u00c3O": 4,
+     "PL": 3,
+     "PODE": 2,
+     "MDB": 1,
+     "PROS": 1,
+     "REPUBLICANOS": 1,
+     "CIDADANIA": 1,
+     "PSB": 1
+    },
+    "PE": {
+     "PSB": 5,
+     "PP": 4,
+     "PL": 4,
+     "PT": 3,
+     "UNI\u00c3O": 3,
+     "REPUBLICANOS": 2,
+     "REDE": 1,
+     "SOLIDARIEDADE": 1,
+     "MDB": 1,
+     "AVANTE": 1
+    },
+    "PI": {
+     "PT": 5,
+     "PSD": 3,
+     "PP": 2
+    },
+    "RJ": {
+     "PL": 11,
+     "UNI\u00c3O": 6,
+     "PT": 5,
+     "PSOL": 4,
+     "PSD": 4,
+     "PP": 3,
+     "REPUBLICANOS": 3,
+     "MDB": 2,
+     "PTB": 1,
+     "PSB": 1,
+     "CIDADANIA": 1,
+     "PODE": 1,
+     "PROS": 1,
+     "SOLIDARIEDADE": 1,
+     "PC do B": 1,
+     "PDT": 1
+    },
+    "RN": {
+     "PT": 3,
+     "PL": 3,
+     "UNI\u00c3O": 2
+    },
+    "RS": {
+     "PT": 7,
+     "PL": 4,
+     "REPUBLICANOS": 3,
+     "PP": 3,
+     "MDB": 3,
+     "PSDB": 2,
+     "PDT": 2,
+     "CIDADANIA": 1,
+     "NOVO": 1,
+     "PSB": 1,
+     "PSOL": 1,
+     "UNI\u00c3O": 1,
+     "PSD": 1,
+     "PODE": 1
+    },
+    "RO": {
+     "UNI\u00c3O": 4,
+     "PL": 3,
+     "MDB": 1
+    },
+    "RR": {
+     "REPUBLICANOS": 3,
+     "UNI\u00c3O": 2,
+     "MDB": 2,
+     "PSD": 1
+    },
+    "SC": {
+     "PL": 5,
+     "PT": 3,
+     "PSD": 2,
+     "MDB": 2,
+     "PSDB": 1,
+     "UNI\u00c3O": 1,
+     "PP": 1,
+     "NOVO": 1
+    },
+    "SP": {
+     "PL": 18,
+     "PT": 10,
+     "PSOL": 6,
+     "UNI\u00c3O": 6,
+     "MDB": 5,
+     "REPUBLICANOS": 5,
+     "PSDB": 4,
+     "PODE": 3,
+     "PP": 3,
+     "PSD": 3,
+     "PSB": 2,
+     "REDE": 1,
+     "PROS": 1,
+     "SOLIDARIEDADE": 1,
+     "CIDADANIA": 1,
+     "NOVO": 1
+    },
+    "SE": {
+     "PSD": 2,
+     "REPUBLICANOS": 2,
+     "UNI\u00c3O": 2,
+     "PL": 1,
+     "PP": 1
+    },
+    "TO": {
+     "REPUBLICANOS": 4,
+     "UNI\u00c3O": 2,
+     "PP": 1,
+     "PL": 1
+    }
+   },
    "seats_by_party": {
     "PL": 101,
     "PT": 75,
     "UNI\u00c3O": 60,
     "PP": 46,
-    "REPUBLICANOS": 41,
     "PSD": 41,
+    "REPUBLICANOS": 41,
     "MDB": 40,
     "PDT": 17,
-    "PSB": 14,
     "PSDB": 14,
+    "PSB": 14,
     "PSOL": 12,
     "PODE": 11,
     "AVANTE": 7,
     "CIDADANIA": 6,
     "PSC": 5,
     "SOLIDARIEDADE": 4,
-    "PROS": 4,
     "NOVO": 4,
-    "PC do B": 3,
+    "PROS": 4,
     "PATRIOTA": 3,
+    "PC do B": 3,
     "PV": 2,
     "REDE": 2,
     "PTB": 1
@@ -1461,27 +5901,278 @@
     "SP": 112,
     "TO": 4
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PP": 1,
+     "UNI\u00c3O": 1
+    },
+    "AL": {
+     "PP": 4,
+     "MDB": 2,
+     "PV": 1,
+     "UNI\u00c3O": 1
+    },
+    "AM": {
+     "UNI\u00c3O": 3,
+     "CIDADANIA": 2,
+     "REPUBLICANOS": 2,
+     "PSD": 2,
+     "PL": 1
+    },
+    "AP": {
+     "PDT": 1,
+     "PL": 1
+    },
+    "BA": {
+     "PT": 8,
+     "PSD": 6,
+     "UNI\u00c3O": 6,
+     "PP": 4,
+     "PL": 3,
+     "PDT": 2,
+     "REPUBLICANOS": 2,
+     "PC do B": 1,
+     "AVANTE": 1,
+     "MDB": 1,
+     "PSB": 1,
+     "PSDB": 1
+    },
+    "CE": {
+     "PL": 5,
+     "PDT": 5,
+     "UNI\u00c3O": 4,
+     "PT": 3,
+     "PSD": 3,
+     "MDB": 1,
+     "PP": 1
+    },
+    "DF": {
+     "REPUBLICANOS": 3,
+     "PT": 2,
+     "PL": 2
+    },
+    "ES": {
+     "REPUBLICANOS": 2,
+     "PL": 2,
+     "PP": 2,
+     "PT": 2,
+     "PODE": 1,
+     "PSB": 1
+    },
+    "GO": {
+     "PL": 4,
+     "REPUBLICANOS": 2,
+     "PP": 2,
+     "PT": 2,
+     "MDB": 2,
+     "UNI\u00c3O": 2,
+     "PSD": 1,
+     "PSDB": 1,
+     "PSC": 1,
+     "PDT": 1
+    },
+    "MA": {
+     "PL": 4,
+     "UNI\u00c3O": 2,
+     "PSB": 1,
+     "PP": 1,
+     "MDB": 1,
+     "PODE": 1,
+     "PSD": 1,
+     "PT": 1,
+     "PC do B": 1,
+     "PDT": 1,
+     "PATRIOTA": 1,
+     "PSC": 1,
+     "REPUBLICANOS": 1
+    },
+    "MG": {
+     "PL": 13,
+     "PT": 9,
+     "AVANTE": 5,
+     "PSD": 4,
+     "PP": 3,
+     "UNI\u00c3O": 3,
+     "PATRIOTA": 2,
+     "PSDB": 2,
+     "REPUBLICANOS": 2,
+     "MDB": 2,
+     "PDT": 2,
+     "PSOL": 1,
+     "PODE": 1,
+     "PSC": 1,
+     "PROS": 1,
+     "NOVO": 1
+    },
+    "MS": {
+     "PSDB": 3,
+     "PT": 2,
+     "PL": 2
+    },
+    "MT": {
+     "PL": 3,
+     "MDB": 2,
+     "UNI\u00c3O": 2,
+     "REPUBLICANOS": 1,
+     "PT": 1
+    },
+    "PA": {
+     "MDB": 8,
+     "PL": 3,
+     "PT": 2,
+     "PSD": 2,
+     "UNI\u00c3O": 1,
+     "PP": 1,
+     "PTB": 1,
+     "PSDB": 1,
+     "PSB": 1
+    },
+    "PB": {
+     "REPUBLICANOS": 3,
+     "PP": 2,
+     "PSC": 1,
+     "PT": 1,
+     "PL": 1,
+     "PSB": 1,
+     "UNI\u00c3O": 1
+    },
+    "PE": {
+     "PP": 4,
+     "PSB": 4,
+     "PL": 4,
+     "PT": 3,
+     "UNI\u00c3O": 2,
+     "REPUBLICANOS": 2,
+     "REDE": 1,
+     "SOLIDARIEDADE": 1,
+     "MDB": 1,
+     "AVANTE": 1
+    },
+    "PI": {
+     "PT": 4,
+     "PP": 2,
+     "PSD": 2
+    },
+    "PR": {
+     "PSD": 6,
+     "PT": 6,
+     "PP": 4,
+     "PL": 3,
+     "UNI\u00c3O": 3,
+     "PODE": 2,
+     "MDB": 1,
+     "PROS": 1,
+     "REPUBLICANOS": 1,
+     "CIDADANIA": 1,
+     "PSB": 1
+    },
+    "RJ": {
+     "PL": 10,
+     "UNI\u00c3O": 5,
+     "PT": 5,
+     "PSOL": 4,
+     "PSD": 4,
+     "PP": 3,
+     "MDB": 2,
+     "REPUBLICANOS": 2,
+     "PTB": 1,
+     "PSB": 1,
+     "PODE": 1,
+     "PROS": 1,
+     "SOLIDARIEDADE": 1,
+     "PDT": 1
+    },
+    "RN": {
+     "PT": 3,
+     "PL": 3,
+     "UNI\u00c3O": 2
+    },
+    "RO": {
+     "UNI\u00c3O": 4
+    },
+    "RR": {
+     "REPUBLICANOS": 1,
+     "MDB": 1
+    },
+    "RS": {
+     "PT": 6,
+     "REPUBLICANOS": 3,
+     "PP": 3,
+     "MDB": 3,
+     "PL": 3,
+     "PSDB": 2,
+     "NOVO": 1,
+     "PSB": 1,
+     "PSOL": 1,
+     "PDT": 1,
+     "UNI\u00c3O": 1,
+     "PSD": 1,
+     "PODE": 1
+    },
+    "SC": {
+     "PL": 6,
+     "PT": 3,
+     "UNI\u00c3O": 2,
+     "PSD": 2,
+     "MDB": 2,
+     "PSDB": 1,
+     "PP": 1,
+     "NOVO": 1,
+     "PODE": 1
+    },
+    "SE": {
+     "PSD": 2,
+     "REPUBLICANOS": 2,
+     "UNI\u00c3O": 2
+    },
+    "SP": {
+     "PL": 27,
+     "PT": 16,
+     "PSOL": 10,
+     "UNI\u00c3O": 9,
+     "MDB": 8,
+     "REPUBLICANOS": 8,
+     "PP": 6,
+     "PSDB": 5,
+     "PSD": 5,
+     "PODE": 4,
+     "PSB": 3,
+     "CIDADANIA": 2,
+     "REDE": 1,
+     "PDT": 1,
+     "PROS": 1,
+     "SOLIDARIEDADE": 1,
+     "NOVO": 1,
+     "AVANTE": 1,
+     "PSC": 1,
+     "PATRIOTA": 1,
+     "PTB": 1
+    },
+    "TO": {
+     "REPUBLICANOS": 4
+    }
+   },
    "seats_by_party": {
     "PL": 100,
     "PT": 79,
     "UNI\u00c3O": 56,
     "PP": 44,
-    "REPUBLICANOS": 41,
     "PSD": 41,
+    "REPUBLICANOS": 41,
     "MDB": 37,
     "PSDB": 16,
     "PSOL": 16,
-    "PDT": 15,
     "PSB": 15,
+    "PDT": 15,
     "PODE": 12,
     "AVANTE": 8,
-    "CIDADANIA": 5,
     "PSC": 5,
+    "CIDADANIA": 5,
     "PATRIOTA": 4,
-    "PROS": 4,
     "NOVO": 4,
-    "PTB": 3,
+    "PROS": 4,
     "SOLIDARIEDADE": 3,
+    "PTB": 3,
     "PC do B": 2,
     "REDE": 2,
     "PV": 1
@@ -1517,6 +6208,271 @@
     "RS": 28,
     "SC": 20
    },
+   "seats_by_uf_party": {
+    "AC": {
+     "PP": 3,
+     "UNI\u00c3O": 3,
+     "REPUBLICANOS": 2
+    },
+    "AP": {
+     "PDT": 3,
+     "PL": 3,
+     "MDB": 2
+    },
+    "DF": {
+     "REPUBLICANOS": 3,
+     "PT": 2,
+     "PL": 2,
+     "MDB": 1
+    },
+    "MS": {
+     "PSDB": 3,
+     "PT": 2,
+     "PL": 2,
+     "PP": 1
+    },
+    "RO": {
+     "UNI\u00c3O": 4,
+     "PL": 3,
+     "MDB": 1
+    },
+    "RR": {
+     "REPUBLICANOS": 3,
+     "UNI\u00c3O": 2,
+     "MDB": 2,
+     "PSD": 1
+    },
+    "SE": {
+     "PSD": 2,
+     "REPUBLICANOS": 2,
+     "UNI\u00c3O": 2,
+     "PL": 1,
+     "PP": 1
+    },
+    "SP": {
+     "PL": 18,
+     "PT": 10,
+     "PSOL": 6,
+     "UNI\u00c3O": 6,
+     "MDB": 5,
+     "REPUBLICANOS": 5,
+     "PSDB": 4,
+     "PODE": 3,
+     "PP": 3,
+     "PSD": 3,
+     "PSB": 2,
+     "REDE": 1,
+     "PROS": 1,
+     "SOLIDARIEDADE": 1,
+     "CIDADANIA": 1,
+     "NOVO": 1
+    },
+    "TO": {
+     "REPUBLICANOS": 4,
+     "UNI\u00c3O": 2,
+     "PP": 1,
+     "PL": 1
+    },
+    "AL": {
+     "PP": 4,
+     "MDB": 2,
+     "PV": 1,
+     "UNI\u00c3O": 1
+    },
+    "AM": {
+     "UNI\u00c3O": 3,
+     "CIDADANIA": 2,
+     "REPUBLICANOS": 2,
+     "PSD": 2,
+     "PL": 1
+    },
+    "BA": {
+     "PT": 8,
+     "PSD": 6,
+     "UNI\u00c3O": 6,
+     "PP": 4,
+     "PL": 3,
+     "REPUBLICANOS": 3,
+     "PDT": 2,
+     "PC do B": 1,
+     "AVANTE": 1,
+     "MDB": 1,
+     "PSB": 1,
+     "PSDB": 1
+    },
+    "CE": {
+     "PL": 5,
+     "PDT": 5,
+     "UNI\u00c3O": 4,
+     "PT": 3,
+     "PSD": 3,
+     "REPUBLICANOS": 1,
+     "MDB": 1,
+     "PP": 1
+    },
+    "ES": {
+     "REPUBLICANOS": 2,
+     "PL": 2,
+     "PP": 2,
+     "PT": 2,
+     "PODE": 1,
+     "PSB": 1
+    },
+    "GO": {
+     "PL": 4,
+     "REPUBLICANOS": 2,
+     "PP": 2,
+     "PT": 2,
+     "MDB": 2,
+     "UNI\u00c3O": 2,
+     "PSD": 1,
+     "PSDB": 1,
+     "PSC": 1,
+     "PDT": 1
+    },
+    "MA": {
+     "PL": 4,
+     "PP": 2,
+     "UNI\u00c3O": 2,
+     "PSB": 1,
+     "MDB": 1,
+     "PODE": 1,
+     "PSD": 1,
+     "PT": 1,
+     "PC do B": 1,
+     "PDT": 1,
+     "PATRIOTA": 1,
+     "PSC": 1,
+     "REPUBLICANOS": 1
+    },
+    "MG": {
+     "PL": 13,
+     "PT": 9,
+     "AVANTE": 5,
+     "PSD": 4,
+     "PP": 3,
+     "UNI\u00c3O": 3,
+     "PATRIOTA": 2,
+     "PSDB": 2,
+     "REPUBLICANOS": 2,
+     "MDB": 2,
+     "PDT": 2,
+     "PSOL": 1,
+     "PODE": 1,
+     "SOLIDARIEDADE": 1,
+     "PSC": 1,
+     "PROS": 1,
+     "NOVO": 1
+    },
+    "MT": {
+     "PL": 3,
+     "MDB": 2,
+     "UNI\u00c3O": 2,
+     "PSB": 1,
+     "REPUBLICANOS": 1,
+     "PT": 1
+    },
+    "PA": {
+     "MDB": 9,
+     "PL": 3,
+     "PT": 2,
+     "PSD": 2,
+     "UNI\u00c3O": 1,
+     "PP": 1,
+     "PTB": 1,
+     "PSDB": 1,
+     "PSB": 1
+    },
+    "PB": {
+     "REPUBLICANOS": 3,
+     "PP": 2,
+     "PSC": 1,
+     "PT": 1,
+     "PL": 1,
+     "PSB": 1,
+     "UNI\u00c3O": 1
+    },
+    "PE": {
+     "PP": 4,
+     "PSB": 4,
+     "PL": 4,
+     "PT": 3,
+     "UNI\u00c3O": 3,
+     "REPUBLICANOS": 2,
+     "REDE": 1,
+     "SOLIDARIEDADE": 1,
+     "MDB": 1,
+     "AVANTE": 1
+    },
+    "PI": {
+     "PT": 4,
+     "PP": 2,
+     "PSD": 2
+    },
+    "PR": {
+     "PSD": 6,
+     "PT": 6,
+     "PP": 4,
+     "UNI\u00c3O": 4,
+     "PL": 3,
+     "PODE": 2,
+     "MDB": 1,
+     "PROS": 1,
+     "REPUBLICANOS": 1,
+     "CIDADANIA": 1,
+     "PSB": 1
+    },
+    "RJ": {
+     "PL": 10,
+     "UNI\u00c3O": 5,
+     "PT": 5,
+     "PSOL": 4,
+     "PSD": 4,
+     "PP": 3,
+     "MDB": 2,
+     "REPUBLICANOS": 2,
+     "PTB": 1,
+     "PSB": 1,
+     "CIDADANIA": 1,
+     "PODE": 1,
+     "PROS": 1,
+     "SOLIDARIEDADE": 1,
+     "PDT": 1
+    },
+    "RN": {
+     "PL": 3,
+     "PT": 2,
+     "UNI\u00c3O": 2,
+     "SOLIDARIEDADE": 1,
+     "MDB": 1
+    },
+    "RS": {
+     "PT": 6,
+     "PL": 4,
+     "REPUBLICANOS": 3,
+     "PP": 3,
+     "MDB": 3,
+     "PSDB": 2,
+     "NOVO": 1,
+     "PSB": 1,
+     "PSOL": 1,
+     "PDT": 1,
+     "UNI\u00c3O": 1,
+     "PSD": 1,
+     "PODE": 1
+    },
+    "SC": {
+     "PL": 6,
+     "PT": 3,
+     "MDB": 3,
+     "UNI\u00c3O": 2,
+     "PSD": 2,
+     "PSDB": 1,
+     "PP": 1,
+     "NOVO": 1,
+     "PODE": 1
+    }
+   },
    "seats_by_party": {
     "PL": 99,
     "PT": 72,
@@ -1533,13 +6489,13 @@
     "AVANTE": 7,
     "SOLIDARIEDADE": 5,
     "CIDADANIA": 5,
-    "PROS": 4,
-    "NOVO": 4,
     "PSC": 4,
+    "NOVO": 4,
+    "PROS": 4,
     "PATRIOTA": 3,
-    "REDE": 2,
-    "PC do B": 2,
     "PTB": 2,
+    "PC do B": 2,
+    "REDE": 2,
     "PV": 1
    }
   },

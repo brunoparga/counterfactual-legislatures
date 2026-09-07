@@ -223,19 +223,37 @@ def allocate(votes, magnitude, year):
     return {k: v for k, v in seats.items() if v}
 
 
-def by_party(ent, pv, seats_by_uf, year):
-    """Run every state, then attribute coalition seats to member parties."""
-    out = defaultdict(int)
+def by_uf_party(ent, pv, seats_by_uf, year):
+    """{state: {party: seats}} -- the per-state result, kept rather than summed.
+
+    Reweighting a roll call needs the cell, not the national total: a state's
+    seat count sets its district magnitude, and magnitude decides which parties
+    win there. Sao Paulo at 112 seats has an electoral quotient of 0.89% of the
+    state vote against 1.43% at 70, so its extra seats do not simply scale the
+    delegation it already had.
+    """
+    out = {}
     for uf, m in seats_by_uf.items():
+        cell = defaultdict(int)
         won = allocate({k[1]: n for k, n in ent.items() if k[0] == uf}, m, year)
         for key, s in won.items():
             members = {k[2]: n for k, n in pv.items()
                        if k[0] == uf and k[1] == key and n > 0}
             if len(members) <= 1:
-                out[next(iter(members)) if members else key] += s
+                cell[next(iter(members)) if members else key] += s
             else:
                 for p, ps in allocate(members, s, year).items():
-                    out[p] += ps
+                    cell[p] += ps
+        out[uf] = dict(sorted(cell.items(), key=lambda x: -x[1]))
+    return out
+
+
+def by_party(ent, pv, seats_by_uf, year):
+    """Run every state, then attribute coalition seats to member parties."""
+    out = defaultdict(int)
+    for cell in by_uf_party(ent, pv, seats_by_uf, year).values():
+        for p, s in cell.items():
+            out[p] += s
     return dict(sorted(out.items(), key=lambda x: -x[1]))
 
 
@@ -277,8 +295,14 @@ def main():
         plans["no_limits"] = largest_remainder(pops, M, floor=1)
         plans["recomputed_with_limits"] = largest_remainder(pops, M, floor=8,
                                                             cap=70)
-        res = {p: {"seats_by_uf": s, "seats_by_party": by_party(ent, pv, s, year)}
-               for p, s in plans.items()}
+        res = {}
+        for p, s in plans.items():
+            cells = by_uf_party(ent, pv, s, year)
+            res[p] = {"seats_by_uf": s, "seats_by_uf_party": cells,
+                      "seats_by_party": dict(sorted(
+                          ((k, sum(c.get(k, 0) for c in cells.values()))
+                           for k in {k for c in cells.values() for k in c}),
+                          key=lambda x: -x[1]))}
 
         # Single national district. Coalitions are state-specific, so this runs
         # on parties directly and needs no coalition assumption at all.

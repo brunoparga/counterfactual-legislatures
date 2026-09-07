@@ -331,6 +331,112 @@ is read. Party attribution inside pre-2018 coalitions carries the
 approximation described above. Change the classification in
 `brazil/tools/blocs.py` and the whole table recomputes.
 
+## 6. Votes that could have gone the other way
+
+Section 5 found that the apportionment barely moves party composition. That
+is not the same as finding it barely moves outcomes, because **individual
+votes split regionally even when parties do not**. A bloc spread across every
+state is insensitive to reweighting the states; a single roll call where the
+Southeast votes one way and the North the other is not.
+
+### The screen
+
+4,318 plenary divisions with 100+ votes, 2003-2024, scored against the bar
+that actually applied -- a simple majority for ordinary matters, 308 of 513
+for constitutional text. **56 fall within 10 of their bar**, and those are the
+only ones worth the per-deputy data.
+
+Mentioning a PEC is not the same as being subject to its three-fifths bar:
+motions on preference, urgency and waivers of interval pass on a simple
+majority. 136 of 608 PEC-mentioning divisions are procedural, and scoring
+them against 308 would have invented twenty near-misses that never existed.
+
+### The model
+
+Each state's delegation is resampled to its counterfactual size: a state
+gaining seats keeps every observed deputy and draws the extra ones from its
+own distribution of positions; a state losing seats drops deputies at random.
+Both sides are resampled together, since a state that gains seats gains No
+votes as well as Yes ones and the majority line moves with the chamber.
+
+The distribution drawn from **includes absences**. A state with 8 seats and 6
+recorded votes had two deputies who did not vote, and a ninth seat can be
+empty like any other; ignoring that would inflate every enlarged delegation by
+the turnout rate, which against a fixed 308 bar is precisely the wrong
+direction to be wrong in.
+
+**Weighting is by state, not by party.** The finer cell would be better in
+principle -- a state's seat count sets its district magnitude and magnitude
+decides which parties win there -- but it is unusable here: between mid-term
+party switching and renaming, 20-30% of the deputies recorded on a division
+sit in a (state, party) cell that did not exist when the house was elected. A
+deputy's state never changes. The cost is that the within-state party effect
+of magnitude goes unmodelled, which is a real limitation and simply a smaller
+one than mismatching a quarter of the chamber.
+
+**Calibration.** Run with the actual apportionment, the model reproduces every
+tally exactly and with zero variance -- nothing moves, so nothing is
+resampled. All the spread below comes from seats that actually moved rather
+than from the machinery.
+
+### Results
+
+Of 56 divisions, **16 are more likely than not to have gone the other way**
+under an apportionment without the floor and ceiling; 7 exceed 75%
+probability and 3 exceed 90%.
+
+| Date | Vote | Actual | Bar | Counterfactual mean | 90% band | P(flip) |
+|---|---|---|---|---|---|---|
+| 2017-03-29 | Rejeitada a Proposta de Emenda à Constituição n° 395, de 2014 | 304-139 (failed) | Sim >= 308 | 314.1 | 308-321 | **0.95** |
+| 2024-07-10 | Rejeitada a Emenda de Plenário nº 747 | 229-233 (failed) | Sim > Nao | 236.2 | 229-243 | **0.94** |
+| 2021-09-02 | Mantido o texto | 211-209 (passed) | Sim > Nao | 203.8 | 197-211 | **0.93** |
+| 2020-04-29 | Mantido o texto | 235-232 (passed) | Sim > Nao | 227.7 | 221-235 | **0.88** |
+| 2015-03-17 | Mantido o texto | 204-207 (failed) | Sim > Nao | 211.2 | 204-218 | **0.88** |
+| 2012-11-06 | Aprovado o destaque de preferência para votação do PL 2 | 220-211 (passed) | Sim > Nao | 214.6 | 208-221 | **0.87** |
+| 2014-04-09 | Rejeitado o destaque (mantido o texto do Projeto de Lei de Conve | 166-168 (failed) | Sim > Nao | 175.4 | 169-182 | **0.81** |
+| 2022-12-14 | Aprovada a Emenda de Plenário n° 13 | 195-190 (passed) | Sim > Nao | 189.7 | 183-197 | **0.72** |
+
+### The clearest case: PEC 395/2014
+
+A constitutional amendment on charging for courses at public universities,
+**rejected 304 to 139 on 29 March 2017** -- it needed 308 and fell four short.
+
+Reweighted, its expected Yes count is **314**, with a 90% band of 308 to 321
+and a **95% probability of clearing the bar**. The mechanism is regional and
+visible directly: Sao Paulo gains 41 seats and voted Yes at 0.70 per seat,
+while the states that lose seats voted Yes at 0.12 (Acre), 0.25 (Amapa) and
+0.25 (Rondonia). Weighted Yes rate is 0.624 in the gaining states against
+0.563 in the losing ones, and the crude arithmetic that implies -- +10.1 votes
+-- matches the simulated mean to a decimal place. This is a real regional
+split, not an artifact of resampling.
+
+### And the one everyone will ask about
+
+**PEC 171/1993, lowering the age of criminal responsibility to 16**, whose
+substitute was rejected 303 to 184 on 30 June 2015, five short of 308.
+Reweighted it sits at a mean of 308.2 with a 90% band of 301 to 315 --
+**P(flip) 0.57**, a genuine coin flip. The honest statement is that a chamber
+apportioned by population would have been on a knife edge, not that it would
+have passed.
+
+### What this does not say
+
+It answers: with the same electorate voting the same way, how often does a
+chamber apportioned by population reach the bar? It does not predict how named
+individuals would have voted, and cannot -- the deputies holding the
+counterfactual seats do not exist. Probabilities near 50% mean the vote was on
+a knife edge, not that the answer has been pinned down.
+
+Coverage begins in 2003, so the 1990, 1994 and 1998 seat counterfactuals
+cannot be tested against actual votes at all.
+
+**This does not contradict section 5, it completes it.** Governing majorities
+are built from blocs spread across every state, and those are insensitive to
+reweighting states -- which is why no president's majority moves. Individual
+roll calls are frequently regional, and those are exactly what the
+apportionment decides. The floor and ceiling do not change who governs Brazil;
+they change what that government can pass.
+
 ## Sources, and why there are two series
 
 | | |
