@@ -1,5 +1,6 @@
 {
  "source": "pt.wikipedia.org, 'Camara dos Deputados em 1990'",
+ "licence": "CC BY-SA 4.0",
  "chamber": 503,
  "seats_by_uf": {
   "AC": 8,
@@ -162,8 +163,8 @@
    "PFL": 1,
    "PDT": 1,
    "PDS": 2,
-   "PT": 4,
-   "PDC": 2,
+   "PTB": 4,
+   "PT": 2,
    "PCdoB": 1
   },
   "PB": {
@@ -270,12 +271,6 @@
    "PDC": 4
   }
  },
- "reconciliation": {
-  "row_sums": "all match",
-  "party_columns_unreconciled": {
-   "PTB": -4,
-   "PT": 2,
-   "PDC": 2
-  }
- }
+ "verified": "every row sums to its published Soma; states sum to the chamber size",
+ "source_column_discrepancies": {}
 }

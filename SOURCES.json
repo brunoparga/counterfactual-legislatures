@@ -233,8 +233,8 @@
       "attribution": "Seat tables: Portuguese Wikipedia, 'Camara dos Deputados em 1990' and 'em 1994' (CC BY-SA 4.0)",
       "redistributable": true,
       "included_here": true,
-      "path": "brazil/upstream/wikipedia/",
-      "note": "The historical apportionment tables, unavailable from TSE. Verified twice: every row sums to its published state total, and the states sum to 503 and 513. The 1990 and 1994 tables differ in exactly one state -- Sao Paulo, 60 against 70 -- so the whole ten-seat expansion of LC 78/1993 went to Sao Paulo. The 1994 table reproduces the LC 78/1993 distribution used throughout, which independently confirms it. Only the seats-per-state column is used; the per-state party cells are a transcription from a screenshot and three 1990 columns and five 1994 columns do not reconcile with the published column totals, each set netting to zero, so they are flagged rather than relied on. Share-alike, but it feeds only the choice of seat counts -- a set of integers that are facts, not expression -- so the outputs stay CC-BY."
+      "path": "brazil/upstream/wikipedia/ (wikitext and parsed JSON)",
+      "note": "The historical apportionment tables, unavailable from TSE. Stored as the original wikitext and parsed by brazil/tools/parse_wikitable.py, which enforces the checks rather than reporting them: every row must sum to its published Soma and the states to the chamber size, or the table is rejected. 1990 reconciles completely, columns included. 1994 reconciles on rows and on 513 but its own party cells give PMDB 106 against a published 107 and PSDB 64 against 63 -- a one-seat error in the source, recorded and carried because the party cells feed nothing. The two tables differ in exactly one state: Sao Paulo, 60 against 70, so the whole ten-seat expansion of LC 78/1993 went there. The 1994 table reproduces the LC 78/1993 distribution used throughout, independently confirming it. Share-alike, but it feeds only a set of seat counts -- integers that are facts, not expression -- so the outputs stay CC-BY."
     }
   ],
   "outputs": [

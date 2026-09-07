@@ -71,10 +71,30 @@ extremes.**
 
 1990 is the exception, and the worst year in the series at **19.36x**: Sao
 Paulo was held to 60 rather than the constitutional 70, so the ceiling bit
-harder still. A Roraima vote was worth nineteen Sao Paulo votes. Under a floor
-of 1 that falls to 1.92x, with Sao Paulo going from 60 seats to **108** and
-Roraima, Acre and Amapa from 8 to 1 -- 1990 is also the only year where the
-floor of 1 actually binds.
+harder still. A Roraima vote was worth nineteen Sao Paulo votes. Removing the
+limits brings that to 1.92x, with Sao Paulo going from 60 seats to **108** and
+Roraima, Acre and Amapa from 8 to 1.
+
+### The floor of 1 never binds
+
+Worth stating because it is easy to assume otherwise from the seat counts: a
+state dropping to 1 seat does not show that the floor caught it. Running the
+apportionment with **no floor at all** settles it, and in all nine elections
+**no state ever reaches zero** -- Roraima earns its single seat on population
+in every year, and two in 2022:
+
+| Year | Seats | Smallest four, no floor and no ceiling |
+|---|---|---|
+| 1990 | 503 | RR 1, AP 1, AC 1, TO 3 |
+| 1994-1998 | 513 | RR 1, AP 1, AC 2, TO 3 |
+| 2002-2006 | 513 | RR 1, AP 1, AC 2, TO 4 |
+| 2010-2018 | 513 | RR 1, AP 2, AC 2, TO 4 |
+| 2022 | 513 | RR 2, AP 2, AC 2, TO 4 |
+
+So the "floor 1" in the counterfactual is decorative: it is the *ceiling of 70*
+and the *floor of 8* that do all the work, and the scenario is equivalent to
+removing both limits outright. A floor of 1 would only start to bite if the
+chamber were much smaller or a unit much tinier -- neither is the case here.
 
 2022 census, seats per state:
 
@@ -254,13 +274,14 @@ numbers do not depend on any of it.
 
 ## What is still missing
 
-- **Three party columns in the transcribed 1990 table and five in 1994.** The
-  seats-per-state columns are verified and are what the analysis uses; the
-  per-state *party* cells are transcribed from a screenshot and three 1990
-  columns (PTB -4, PT +2, PDC +2) and five 1994 columns (PMDB -1, PSDB +1,
-  PP -2, PDT +1, PTB +1) do not reconcile with the published column totals.
-  Each set nets to zero, so these are column-alignment errors in adjacent
-  columns of the transcription, not missing data. Nothing depends on them yet.
+- **One seat in the 1994 seat table, in the source itself.** The tables are now
+  parsed from wikitext rather than read off a screenshot, and 1990 reconciles
+  completely -- every row against its published Soma, every party column
+  against its published Total, the states against 503. 1994 reconciles on rows
+  and on the chamber total but *not* on two columns: its own cells give PMDB
+  106 against a published 107 and PSDB 64 against 63. One seat is attributed to
+  the wrong party somewhere in the source. The apportionment is unaffected and
+  the party cells feed nothing, so it is recorded rather than guessed at.
 - **Coalition membership before 2018 in the Passport series**, and candidate
   votes generally. `votacao_candidato_munzona` would fix both the 1990
   coalition problem and the federation approximation; it is 106 MB for 1998

@@ -1,5 +1,6 @@
 {
  "source": "pt.wikipedia.org, 'Camara dos Deputados em 1994'",
+ "licence": "CC BY-SA 4.0",
  "chamber": 513,
  "seats_by_uf": {
   "AC": 8,
@@ -237,8 +238,8 @@
   "RO": {
    "PMDB": 1,
    "PSDB": 3,
-   "PDT": 2,
-   "PTB": 1,
+   "PP": 2,
+   "PDT": 1,
    "PL": 1
   },
   "RR": {
@@ -282,6 +283,17 @@
    "PFL": 2,
    "PPR": 2,
    "PP": 2
+  }
+ },
+ "verified": "every row sums to its published Soma; states sum to the chamber size",
+ "source_column_discrepancies": {
+  "PMDB": {
+   "cells": 106,
+   "published": 107
+  },
+  "PSDB": {
+   "cells": 64,
+   "published": 63
   }
  }
 }
