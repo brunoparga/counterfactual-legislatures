@@ -28,9 +28,12 @@ credibility than adding three more single-answer ones.
 
 - Repo: `github.com/brianolson/redistricter` — C++/Java/Python/Go
 - Site: `bdistricting.com`
-- **Licence: none declared.** GitHub reports no licence file. Without one,
-  default copyright applies and we may not redistribute or build on the code.
-  This must be resolved before any use beyond reading it.
+- **Licence: GPL-2.0**, stated on `bdistricting.com/about.html#open` ("Open
+  Source Redistricting (GPLv2)"). The GitHub repository carries no `LICENSE`
+  file, so the API reports none; the project's own site is authoritative.
+  Copyleft, so the same caution applies as to `redist` below: reimplementing
+  the published *method* is fine, linking the *code* into an Apache-2.0 engine
+  is not.
 
 The closest sibling to splitline, and the natural first comparison. Instead of
 recursive bisection it runs a single-objective optimisation: minimise the
@@ -48,8 +51,8 @@ single-answer methods, and we currently have no answer to it.
 
 Effort: moderate. The objective is simple enough to reimplement in our own
 engine (we already have block populations and a projection), which also
-sidesteps the licence problem entirely. Reimplementing a published *method* is
-not a derivative work of someone's *code*.
+sidesteps the GPL entirely. Reimplementing a published *method* is not a
+derivative work of someone's *code*.
 
 ## 2. ReCom / GerryChain — MGGG Redistricting Lab
 
@@ -190,6 +193,29 @@ In order:
    the expensive one, and the adjacency graph is most of the cost.
 
 Licence position, in short: reimplement methods from papers, use published
-data, and do not link GPL code into an Apache-2.0 engine. Two of the four
-repos here have no usable licence declared at all, which settles the question
-in the same direction.
+data, and do not link GPL code into an Apache-2.0 engine. Both `redistricter`
+and `redist` are GPL, so this is the binding constraint rather than an edge
+case.
+
+## Further leads
+
+`bdistricting.com/about.html` links a set of related projects, several of
+which are live and none of which we have evaluated:
+
+| Project | URL | What it is |
+|---|---|---|
+| MGGG Redistricting Lab | `mggg.org` | the ReCom group; analysis and expert-witness work |
+| Auto-Redistrict | `autoredistrict.org` | automated solver with selectable optimisation priorities |
+| Antimander | `antimander.org` | genetic-algorithm solver |
+| BARD | `elections.gmu.edu/Redistricting.html` | Altman & McDonald's R package for automated districting and plan analysis |
+| Justin Levitt's guide | `redistricting.lls.edu` | the standard legal reference on redistricting law |
+| Hands Off Redistricting | `handsoffredistricting.net` | advocacy for an "Optimal Proximity Redistricting Algorithm" |
+| George L. Clark | `stealingourvotes.com` | perimeter-based compactness method |
+| David Burton | `burtonsys.com/redist.html` | equalises *voters* rather than population -- a different apportionment basis, and so relevant to the Haas et al. question |
+
+Two are worth a closer look for reasons beyond another map: **BARD**, because
+Altman and McDonald also wrote the standard critique of automated redistricting
+claims and the package includes plan-evaluation measures we could adopt; and
+**Burton**, because equalising voters rather than residents is the same lever
+Haas, Miller & Kimbrough pull, and we can compute it directly from data we
+already hold.

@@ -31,5 +31,15 @@ usa/build
 usa/maps/*
 !usa/maps/index.json
 
+# Brazil upstream: TSE vote files, 100 MB, replayed from the Wayback Machine.
+# Same rule as usa/upstream -- the bytes stay out, the records that make them
+# re-fetchable stay in. snapshots.json carries the exact Wayback timestamp per
+# election; the IBGE population vector is 27 KB and is committed outright.
+brazil/upstream/*
+!brazil/upstream/ibge/
+!brazil/upstream/tse/
+brazil/upstream/tse/*
+!brazil/upstream/tse/snapshots.json
+
 __pycache__/
 *.pyc

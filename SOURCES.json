@@ -169,6 +169,39 @@
       "note": "Used for the seven at-large states, whose single district is the whole state, so only the state total matters and no allocation is involved. Also a cross-check on the block data. Their Dataset Terms dialog confirms CC0 1.0 and asks, as a community norm rather than a condition, that the data citation above be used; maps drawing on it carry that credit. The file is guestbook-gated (guestbookID 458) and no API parameter bypasses it, so updating it needs a person. countypres_2000-2016.csv is the superseded copy, kept only because its codebook documents the older column names that the 2024 revision changed.",
       "version_used": "V20 (countypres_2000-2024.csv, original CSV format)",
       "version_current": "V20.0 (2026-02-25), UNF:6:xvsJJxrfXMIvzAuDYlfvVw=="
+    },
+    {
+      "id": "tse-chamber-results",
+      "title": "Votacao por partido, municipio e zona (Deputado Federal), 1994-2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_partido_munzona/votacao_partido_munzona_{year}.zip",
+      "publisher": "Tribunal Superior Eleitoral (Brazil)",
+      "country": "BR",
+      "retrieved": "2026-09-07",
+      "via": "Wayback Machine (TSE's CDN returns 403 to automated clients, and to HEAD from anything)",
+      "licence": "open government data; TSE Portal de Dados Abertos publishes these for free reuse",
+      "share_alike": false,
+      "attribution_required": true,
+      "attribution": "Election data: Tribunal Superior Eleitoral, Portal de Dados Abertos",
+      "redistributable": true,
+      "included_here": false,
+      "note": "Votes by party per municipality and electoral zone, aggregated to the state, which is the district. Both nominal and legenda votes count toward a party's total under Brazilian law, so both are summed. 1990 predates TSE's electronic repository and 1998 is absent from both the live path and the Archive, checked by prefix search across the whole odsele tree. Snapshots recorded in brazil/upstream/tse/snapshots.json.",
+      "snapshots": "brazil/upstream/tse/snapshots.json"
+    },
+    {
+      "id": "ibge-population-uf",
+      "title": "Populacao residente por Unidade da Federacao, censuses 1991/2000/2010/2022",
+      "url": "https://apisidra.ibge.gov.br/values/t/136/n3/all/v/93/p/{year}",
+      "publisher": "Instituto Brasileiro de Geografia e Estatistica",
+      "country": "BR",
+      "retrieved": "2026-09-07",
+      "licence": "open, IBGE/SIDRA; free reuse with attribution",
+      "share_alike": false,
+      "attribution_required": true,
+      "attribution": "Population: IBGE, Censo Demografico (via SIDRA)",
+      "redistributable": true,
+      "included_here": true,
+      "path": "brazil/upstream/ibge/population_by_uf.json",
+      "note": "SIDRA table 136 for 1991-2010 and table 4709 for 2022; IBGE renumbers tables between censuses rather than extending one. Joined to TSE by UF numeric code, never by name. Totals match the published census figures exactly. 27 KB, so the bytes are committed."
     }
   ],
   "outputs": [
@@ -220,6 +253,16 @@
       ],
       "licence": "CC-BY-4.0",
       "note": "Voting-age population by race and Hispanic origin per district, PL 94-171 table P4. Every input is public domain, so this is CC-BY rather than the CC-BY-SA the vote scorings carry -- no election data is involved."
+    },
+    {
+      "id": "brazil-chamber-counterfactuals",
+      "path": "brazil/results/chamber.json",
+      "derived_from": [
+        "tse-chamber-results",
+        "ibge-population-uf"
+      ],
+      "licence": "CC-BY-4.0",
+      "note": "Seats per state and per party under the actual apportionment, under a floor of 1 with no ceiling, and under a single national district, for seven Chamber elections. Both inputs are open government data with no share-alike condition, so CC-BY as with the US plans."
     }
   ]
 }
