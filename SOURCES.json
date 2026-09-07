@@ -177,14 +177,14 @@
       "publisher": "Tribunal Superior Eleitoral (Brazil)",
       "country": "BR",
       "retrieved": "2026-09-07",
-      "via": "Wayback Machine (TSE's CDN returns 403 to automated clients, and to HEAD from anything)",
+      "via": "direct from cdn.tse.jus.br with a browser's Sec-Fetch-* headers; Wayback Machine as fallback",
       "licence": "open government data; TSE Portal de Dados Abertos publishes these for free reuse",
       "share_alike": false,
       "attribution_required": true,
       "attribution": "Election data: Tribunal Superior Eleitoral, Portal de Dados Abertos",
       "redistributable": true,
       "included_here": false,
-      "note": "Votes by party per municipality and electoral zone, aggregated to the state, which is the district. Both nominal and legenda votes count toward a party's total under Brazilian law, so both are summed. 1990 predates TSE's electronic repository and 1998 is absent from both the live path and the Archive, checked by prefix search across the whole odsele tree. Snapshots recorded in brazil/upstream/tse/snapshots.json.",
+      "note": "Votes by party per municipality and electoral zone, aggregated to the state, which is the district. Both nominal and legenda votes count toward a party's total under Brazilian law, so both are summed. TSE's CDN is behind Akamai: it refuses HEAD from anything and refuses GET unless the request carries a browser's full navigation header set, the Sec-Fetch-* trio in particular. 1990 is a genuine 404 under every odsele dataset name -- TSE's machine-readable repository begins in 1994. Each archive also contains _BRASIL.csv and _BR.csv aggregates that repeat every state's rows, so reading the whole archive double-counts the country; and the 1998 archive ships no DF file, that state existing only inside the aggregate. The 1994 file records zero legenda votes in every state and is therefore unusable for seat allocation. Snapshots and checksums in brazil/upstream/tse/snapshots.json.",
       "snapshots": "brazil/upstream/tse/snapshots.json"
     },
     {
@@ -202,6 +202,23 @@
       "included_here": true,
       "path": "brazil/upstream/ibge/population_by_uf.json",
       "note": "SIDRA table 136 for 1991-2010 and table 4709 for 2022; IBGE renumbers tables between censuses rather than extending one. Joined to TSE by UF numeric code, never by name. Totals match the published census figures exactly. 27 KB, so the bytes are committed."
+    },
+    {
+      "id": "election-passport-brazil",
+      "title": "Election Passport, Brazil: Chamber of Deputies votes by party and state, 1982-2014",
+      "url": "https://www.electionpassport.com/files/BR/BR.xlsx",
+      "author": "David Lublin",
+      "publisher": "Election Passport, American University",
+      "country": "BR",
+      "retrieved": "2026-09-07",
+      "licence": "free public access for research; terms stated on electionpassport.com",
+      "share_alike": false,
+      "attribution_required": true,
+      "attribution": "Brazil constituency results: David Lublin, Election Passport (electionpassport.com)",
+      "redistributable": false,
+      "included_here": true,
+      "path": "brazil/upstream/electionpassport/",
+      "note": "The only reachable source for the 1990 election, which predates TSE's machine-readable repository, and the only usable source for 1994, whose TSE file records no legenda votes. Party totals per state, not coalition totals, so it supports a party-level series rather than Brazil's actual pre-2020 rule. Carries a BRASIL row of national totals used as a checksum: the 27 states sum to it exactly in every year but 2006, which is off by 763 votes in the source. 88 KB, committed because it is small and because its upstream is a personal academic site with no archival guarantee. Election Passport is merging into the Constituency-Level Elections Archive (CLEA), which is the better long-term citation. Documentation in BR.pdf."
     }
   ],
   "outputs": [
@@ -256,13 +273,14 @@
     },
     {
       "id": "brazil-chamber-counterfactuals",
-      "path": "brazil/results/chamber.json",
+      "path": "brazil/results/chamber_tse.json, brazil/results/chamber_passport.json",
       "derived_from": [
         "tse-chamber-results",
+        "election-passport-brazil",
         "ibge-population-uf"
       ],
       "licence": "CC-BY-4.0",
-      "note": "Seats per state and per party under the actual apportionment, under a floor of 1 with no ceiling, and under a single national district, for seven Chamber elections. Both inputs are open government data with no share-alike condition, so CC-BY as with the US plans."
+      "note": "Seats per state and per party under the actual apportionment, under the constitutional rule recomputed on current population, under a floor of 1 with no ceiling, and under a single national district, for nine Chamber elections 1990-2022. Two series because seats were won by coalitions until 2018: TSE is coalition-level (1998-2022), Election Passport party-level (1990-2014). All inputs are freely reusable with attribution and none is share-alike, so CC-BY as with the US plans."
     }
   ]
 }

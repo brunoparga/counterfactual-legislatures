@@ -63,9 +63,11 @@ ACTUAL_SEATS = {
     "PR": 30, "PE": 25, "PI": 10, "RJ": 46, "RN": 8, "RS": 31, "RO": 8,
     "RR": 8, "SC": 16, "SP": 70, "SE": 8, "TO": 8}
 
-CENSUS_FOR = {1994: 1991, 1998: 1991, 2002: 2000, 2006: 2000,
+CENSUS_FOR = {1990: 1991, 1994: 1991, 1998: 1991, 2002: 2000, 2006: 2000,
               2010: 2010, 2014: 2010, 2018: 2010, 2022: 2022}
-CHAMBER = {y: 513 for y in CENSUS_FOR}
+# The Chamber grew from 503 to 513 with LC 78/1993, so 1990 is the one
+# election here with a different denominator.
+CHAMBER = {y: (503 if y == 1990 else 513) for y in CENSUS_FOR}
 
 # TSE renamed the vote columns between vintages; both spellings appear in
 # files downloaded on the same day, so they are matched by name not position.
@@ -85,8 +87,24 @@ def read_votes(path):
     ent = defaultdict(int)                 # (uf, entity) -> nominal + legenda
     pv = defaultdict(int)                  # (uf, entity, party) -> nominal
     with zipfile.ZipFile(path) as z:
+        have = {n.rsplit("/", 1)[-1][:-4].rsplit("_", 1)[-1]
+                for n in z.namelist() if n.lower().endswith(".csv")}
+        missing = set(ACTUAL_SEATS) - have
         for name in z.namelist():
-            if not name.lower().endswith(".csv"):
+            # The archive carries per-state files AND aggregates named
+            # _BRASIL.csv and _BR.csv that repeat every state's rows with the
+            # real SG_UF on them. Reading the whole archive therefore counts
+            # the country twice over, silently and proportionally -- so only
+            # files whose suffix is one of the 27 state codes are read.
+            stem = name.rsplit("/", 1)[-1]
+            if not stem.lower().endswith(".csv"):
+                continue
+            uf_of_file = stem[:-4].rsplit("_", 1)[-1]
+            # 1998 ships no DF file; its rows exist only inside the BRASIL
+            # aggregate, so that one archive needs the aggregate read for the
+            # states it omits -- and only for those.
+            if uf_of_file not in ACTUAL_SEATS and not (
+                    uf_of_file == "BRASIL" and missing):
                 continue
             with z.open(name) as fh:
                 rd = csv.reader(io.TextIOWrapper(fh, encoding="latin-1"),
@@ -101,6 +119,8 @@ def read_votes(path):
                     uf = r[iu].strip('"')
                     if uf not in ACTUAL_SEATS:
                         continue           # ZZ = votes cast abroad, no seats
+                    if uf_of_file == "BRASIL" and uf not in missing:
+                        continue           # already read from its own file
                     p = r[ip].strip('"')
                     n = int(r[inom] or 0) if inom is not None else 0
                     lg = int(r[ileg] or 0) if ileg is not None else 0
@@ -110,6 +130,27 @@ def read_votes(path):
                     key = f"C{sq}" if sq and sq not in ("-1", "0", "") else p
                     ent[(uf, key)] += n + lg
                     pv[(uf, key, p)] += n
+    return ent, pv
+
+
+def read_passport(year):
+    """Election Passport's party votes per state, in read_votes' shape.
+
+    No coalitions: the file is party totals, so each party is its own entity.
+    That is not the rule Brazil used before 2020, which is why the two sources
+    are reported as separate series rather than spliced into one.
+    """
+    src = (ROOT / "upstream" / "electionpassport" / "br_party_votes.json")
+    d = json.loads(src.read_text()).get(str(year))
+    if not d:
+        return None, None
+    ent, pv = defaultdict(int), defaultdict(int)
+    for uf, rec in d.items():
+        if uf not in ACTUAL_SEATS:
+            continue
+        for party, v in rec["votes"].items():
+            ent[(uf, party)] += v
+            pv[(uf, party, party)] += v
     return ent, pv
 
 
@@ -194,27 +235,45 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--years", nargs="*", type=int, default=None)
+    ap.add_argument("--source", choices=("tse", "passport"), default="tse",
+                    help="tse: coalition-level, 1998-2022 (1994 unusable -- its "
+                         "file records zero legenda votes). passport: "
+                         "party-level, 1990-2014, the only source for 1990.")
     ap.add_argument("--tse", default=str(ROOT / "upstream" / "tse"))
     ap.add_argument("--out", default=str(ROOT / "results"))
     a = ap.parse_args()
 
     pop = json.loads((ROOT / "upstream" / "ibge" /
                       "population_by_uf.json").read_text())
-    years = a.years or sorted(
-        y for y in CENSUS_FOR
-        if (Path(a.tse) / f"votacao_partido_munzona_{y}.zip").exists())
+    if a.source == "passport":
+        avail = set(json.loads((ROOT / "upstream" / "electionpassport" /
+                                "br_party_votes.json").read_text()))
+        years = a.years or sorted(y for y in CENSUS_FOR if str(y) in avail)
+    else:
+        years = a.years or sorted(
+            y for y in CENSUS_FOR if y != 1994 and
+            (Path(a.tse) / f"votacao_partido_munzona_{y}.zip").exists())
 
     out = {}
     for year in years:
-        z = Path(a.tse) / f"votacao_partido_munzona_{year}.zip"
-        ent, pv = read_votes(z)
+        if a.source == "passport":
+            ent, pv = read_passport(year)
+            if ent is None:
+                print(f"{year}: not in Election Passport"); continue
+        else:
+            ent, pv = read_votes(Path(a.tse) /
+                                 f"votacao_partido_munzona_{year}.zip")
         M = CHAMBER[year]
         pops = pop[str(CENSUS_FOR[year])]["population"]
-        plans = {
+        # The historical 503-seat table for 1990 is not published anywhere we
+        # can reach, so that year has no "actual" column; its baseline is the
+        # constitutional rule recomputed on 503 seats.
+        plans = {} if year == 1990 else {
             "actual": ACTUAL_SEATS,
-            "no_limits": largest_remainder(pops, M, floor=1),
-            "recomputed_with_limits": largest_remainder(pops, M, floor=8, cap=70),
         }
+        plans["no_limits"] = largest_remainder(pops, M, floor=1)
+        plans["recomputed_with_limits"] = largest_remainder(pops, M, floor=8,
+                                                            cap=70)
         res = {p: {"seats_by_uf": s, "seats_by_party": by_party(ent, pv, s, year)}
                for p, s in plans.items()}
 
@@ -254,8 +313,8 @@ def main():
         print(f"{year}: {chk}", flush=True)
 
     o = Path(a.out); o.mkdir(parents=True, exist_ok=True)
-    (o / "chamber.json").write_text(json.dumps(out, indent=1))
-    print(f"wrote {o/'chamber.json'}")
+    (o / f"chamber_{a.source}.json").write_text(json.dumps(out, indent=1))
+    print(f"wrote {o / f'chamber_{a.source}.json'}")
     return 0
 
 

@@ -33,5 +33,12 @@
   "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_partido_munzona/votacao_partido_munzona_2022.zip",
   "wayback_snapshot": "20221105111914",
   "bytes": 31820500
+ },
+ "1998": {
+  "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_partido_munzona/votacao_partido_munzona_1998.zip",
+  "via": "tse-direct",
+  "wayback_snapshot": null,
+  "bytes": 7525027,
+  "sha256": "bc1d945681ce02eda7b0d04d4638a554c011b48fac4263d394529e0b628c808c"
  }
 }
