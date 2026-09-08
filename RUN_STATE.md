@@ -7,7 +7,8 @@ should read this first and resume at the first phase not marked done.** Each
 phase commits on its own, so partial completion is still useful and nothing is
 lost by stopping between phases.
 
-Nothing is pushed. Six commits were already waiting before this run began.
+Nothing is pushed. `origin/main` is at the commit that added `RUN_PLAN.md`,
+so every unpushed commit below is from this run.
 
 ## Decisions taken (user approved the plan "as-is", so the stated defaults hold)
 
