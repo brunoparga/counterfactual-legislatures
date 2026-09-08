@@ -1,0 +1,816 @@
+{
+ "metric": "population-weighted mean km from a resident to the population-weighted centroid of their district",
+ "census": 2010,
+ "model": "uniform",
+ "cut_metric": "span",
+ "house_size_rule": "fixed",
+ "gate": "block populations sum to the published state total",
+ "gate_failures": [],
+ "national": {
+  "splitline_mean_km": 39.128,
+  "enacted_mean_km": 43.5,
+  "change_pct": -10.05
+ },
+ "states": [
+  {
+   "state": "AL",
+   "seats": 7,
+   "population": 4779736,
+   "blocks": 252266,
+   "splitline": {
+    "mean_km": 49.274,
+    "districts": 7
+   },
+   "enacted": {
+    "mean_km": 53.696,
+    "districts": 7,
+    "population_in_no_district": 0
+   },
+   "change_pct": -8.24
+  },
+  {
+   "state": "AK",
+   "seats": 1,
+   "population": 710231,
+   "blocks": 45292,
+   "splitline": {
+    "mean_km": 295.985,
+    "districts": 1
+   },
+   "enacted": {
+    "mean_km": 295.985,
+    "districts": 1,
+    "population_in_no_district": 0
+   },
+   "change_pct": 0.0
+  },
+  {
+   "state": "AZ",
+   "seats": 9,
+   "population": 6392017,
+   "blocks": 241666,
+   "splitline": {
+    "mean_km": 44.829,
+    "districts": 9
+   },
+   "enacted": {
+    "mean_km": 58.075,
+    "districts": 9,
+    "population_in_no_district": 0
+   },
+   "change_pct": -22.81
+  },
+  {
+   "state": "AR",
+   "seats": 4,
+   "population": 2915918,
+   "blocks": 186211,
+   "splitline": {
+    "mean_km": 70.443,
+    "districts": 4
+   },
+   "enacted": {
+    "mean_km": 68.579,
+    "districts": 4,
+    "population_in_no_district": 0
+   },
+   "change_pct": 2.72
+  },
+  {
+   "state": "CA",
+   "seats": 53,
+   "population": 37253956,
+   "blocks": 710145,
+   "splitline": {
+    "mean_km": 21.002,
+    "districts": 53
+   },
+   "enacted": {
+    "mean_km": 22.223,
+    "districts": 53,
+    "population_in_no_district": 0
+   },
+   "change_pct": -5.49
+  },
+  {
+   "state": "CO",
+   "seats": 7,
+   "population": 5029196,
+   "blocks": 201062,
+   "splitline": {
+    "mean_km": 43.366,
+    "districts": 7
+   },
+   "enacted": {
+    "mean_km": 46.551,
+    "districts": 7,
+    "population_in_no_district": 0
+   },
+   "change_pct": -6.84
+  },
+  {
+   "state": "CT",
+   "seats": 5,
+   "population": 3574097,
+   "blocks": 67578,
+   "splitline": {
+    "mean_km": 18.26,
+    "districts": 5
+   },
+   "enacted": {
+    "mean_km": 19.117,
+    "districts": 5,
+    "population_in_no_district": 0
+   },
+   "change_pct": -4.48
+  },
+  {
+   "state": "DE",
+   "seats": 1,
+   "population": 897934,
+   "blocks": 24115,
+   "splitline": {
+    "mean_km": 45.465,
+    "districts": 1
+   },
+   "enacted": {
+    "mean_km": 45.465,
+    "districts": 1,
+    "population_in_no_district": 0
+   },
+   "change_pct": 0.0
+  },
+  {
+   "state": "FL",
+   "seats": 27,
+   "population": 18801310,
+   "blocks": 484481,
+   "splitline": {
+    "mean_km": 25.546,
+    "districts": 27
+   },
+   "enacted": {
+    "mean_km": 29.191,
+    "districts": 27,
+    "population_in_no_district": 0
+   },
+   "change_pct": -12.49
+  },
+  {
+   "state": "GA",
+   "seats": 14,
+   "population": 9687653,
+   "blocks": 291086,
+   "splitline": {
+    "mean_km": 36.929,
+    "districts": 14
+   },
+   "enacted": {
+    "mean_km": 40.125,
+    "districts": 14,
+    "population_in_no_district": 0
+   },
+   "change_pct": -7.97
+  },
+  {
+   "state": "HI",
+   "seats": 2,
+   "population": 1360301,
+   "blocks": 25016,
+   "splitline": {
+    "mean_km": 76.107,
+    "districts": 2
+   },
+   "enacted": {
+    "mean_km": 77.893,
+    "districts": 2,
+    "population_in_no_district": 0
+   },
+   "change_pct": -2.29
+  },
+  {
+   "state": "ID",
+   "seats": 2,
+   "population": 1567582,
+   "blocks": 149842,
+   "splitline": {
+    "mean_km": 172.922,
+    "districts": 2
+   },
+   "enacted": {
+    "mean_km": 173.245,
+    "districts": 2,
+    "population_in_no_district": 0
+   },
+   "change_pct": -0.19
+  },
+  {
+   "state": "IL",
+   "seats": 18,
+   "population": 12830632,
+   "blocks": 451554,
+   "splitline": {
+    "mean_km": 26.602,
+    "districts": 18
+   },
+   "enacted": {
+    "mean_km": 33.195,
+    "districts": 18,
+    "population_in_no_district": 0
+   },
+   "change_pct": -19.86
+  },
+  {
+   "state": "IN",
+   "seats": 9,
+   "population": 6483802,
+   "blocks": 267071,
+   "splitline": {
+    "mean_km": 42.349,
+    "districts": 9
+   },
+   "enacted": {
+    "mean_km": 38.322,
+    "districts": 9,
+    "population_in_no_district": 0
+   },
+   "change_pct": 10.51
+  },
+  {
+   "state": "IA",
+   "seats": 4,
+   "population": 3046355,
+   "blocks": 216007,
+   "splitline": {
+    "mean_km": 74.527,
+    "districts": 4
+   },
+   "enacted": {
+    "mean_km": 77.139,
+    "districts": 4,
+    "population_in_no_district": 0
+   },
+   "change_pct": -3.39
+  },
+  {
+   "state": "KS",
+   "seats": 4,
+   "population": 2853118,
+   "blocks": 238600,
+   "splitline": {
+    "mean_km": 69.624,
+    "districts": 4
+   },
+   "enacted": {
+    "mean_km": 65.551,
+    "districts": 4,
+    "population_in_no_district": 0
+   },
+   "change_pct": 6.21
+  },
+  {
+   "state": "KY",
+   "seats": 6,
+   "population": 4339367,
+   "blocks": 161672,
+   "splitline": {
+    "mean_km": 51.671,
+    "districts": 6
+   },
+   "enacted": {
+    "mean_km": 55.717,
+    "districts": 6,
+    "population_in_no_district": 0
+   },
+   "change_pct": -7.26
+  },
+  {
+   "state": "LA",
+   "seats": 6,
+   "population": 4533372,
+   "blocks": 204447,
+   "splitline": {
+    "mean_km": 51.384,
+    "districts": 6
+   },
+   "enacted": {
+    "mean_km": 58.276,
+    "districts": 6,
+    "population_in_no_district": 0
+   },
+   "change_pct": -11.83
+  },
+  {
+   "state": "ME",
+   "seats": 2,
+   "population": 1328361,
+   "blocks": 69518,
+   "splitline": {
+    "mean_km": 57.841,
+    "districts": 2
+   },
+   "enacted": {
+    "mean_km": 67.777,
+    "districts": 2,
+    "population_in_no_district": 0
+   },
+   "change_pct": -14.66
+  },
+  {
+   "state": "MD",
+   "seats": 8,
+   "population": 5773552,
+   "blocks": 145247,
+   "splitline": {
+    "mean_km": 23.504,
+    "districts": 8
+   },
+   "enacted": {
+    "mean_km": 28.166,
+    "districts": 8,
+    "population_in_no_district": 0
+   },
+   "change_pct": -16.55
+  },
+  {
+   "state": "MA",
+   "seats": 9,
+   "population": 6547629,
+   "blocks": 157508,
+   "splitline": {
+    "mean_km": 16.862,
+    "districts": 9
+   },
+   "enacted": {
+    "mean_km": 19.019,
+    "districts": 9,
+    "population_in_no_district": 0
+   },
+   "change_pct": -11.34
+  },
+  {
+   "state": "MI",
+   "seats": 14,
+   "population": 9883640,
+   "blocks": 329885,
+   "splitline": {
+    "mean_km": 36.314,
+    "districts": 14
+   },
+   "enacted": {
+    "mean_km": 37.986,
+    "districts": 14,
+    "population_in_no_district": 0
+   },
+   "change_pct": -4.4
+  },
+  {
+   "state": "MN",
+   "seats": 8,
+   "population": 5303925,
+   "blocks": 259777,
+   "splitline": {
+    "mean_km": 48.015,
+    "districts": 8
+   },
+   "enacted": {
+    "mean_km": 50.105,
+    "districts": 8,
+    "population_in_no_district": 0
+   },
+   "change_pct": -4.17
+  },
+  {
+   "state": "MS",
+   "seats": 4,
+   "population": 2967297,
+   "blocks": 171778,
+   "splitline": {
+    "mean_km": 70.882,
+    "districts": 4
+   },
+   "enacted": {
+    "mean_km": 75.244,
+    "districts": 4,
+    "population_in_no_district": 0
+   },
+   "change_pct": -5.8
+  },
+  {
+   "state": "MO",
+   "seats": 8,
+   "population": 5988927,
+   "blocks": 343565,
+   "splitline": {
+    "mean_km": 50.255,
+    "districts": 8
+   },
+   "enacted": {
+    "mean_km": 53.508,
+    "districts": 8,
+    "population_in_no_district": 0
+   },
+   "change_pct": -6.08
+  },
+  {
+   "state": "MT",
+   "seats": 1,
+   "population": 989415,
+   "blocks": 132288,
+   "splitline": {
+    "mean_km": 208.86,
+    "districts": 1
+   },
+   "enacted": {
+    "mean_km": 208.86,
+    "districts": 1,
+    "population_in_no_district": 0
+   },
+   "change_pct": 0.0
+  },
+  {
+   "state": "NE",
+   "seats": 3,
+   "population": 1826341,
+   "blocks": 193352,
+   "splitline": {
+    "mean_km": 73.626,
+    "districts": 3
+   },
+   "enacted": {
+    "mean_km": 76.642,
+    "districts": 3,
+    "population_in_no_district": 0
+   },
+   "change_pct": -3.94
+  },
+  {
+   "state": "NV",
+   "seats": 4,
+   "population": 2700551,
+   "blocks": 84538,
+   "splitline": {
+    "mean_km": 34.689,
+    "districts": 4
+   },
+   "enacted": {
+    "mean_km": 34.368,
+    "districts": 4,
+    "population_in_no_district": 0
+   },
+   "change_pct": 0.93
+  },
+  {
+   "state": "NH",
+   "seats": 2,
+   "population": 1316470,
+   "blocks": 48837,
+   "splitline": {
+    "mean_km": 37.871,
+    "districts": 2
+   },
+   "enacted": {
+    "mean_km": 42.901,
+    "districts": 2,
+    "population_in_no_district": 0
+   },
+   "change_pct": -11.72
+  },
+  {
+   "state": "NJ",
+   "seats": 12,
+   "population": 8791894,
+   "blocks": 169588,
+   "splitline": {
+    "mean_km": 14.628,
+    "districts": 12
+   },
+   "enacted": {
+    "mean_km": 16.811,
+    "districts": 12,
+    "population_in_no_district": 0
+   },
+   "change_pct": -12.99
+  },
+  {
+   "state": "NM",
+   "seats": 3,
+   "population": 2059179,
+   "blocks": 168609,
+   "splitline": {
+    "mean_km": 96.062,
+    "districts": 3
+   },
+   "enacted": {
+    "mean_km": 99.083,
+    "districts": 3,
+    "population_in_no_district": 0
+   },
+   "change_pct": -3.05
+  },
+  {
+   "state": "NY",
+   "seats": 27,
+   "population": 19378102,
+   "blocks": 350169,
+   "splitline": {
+    "mean_km": 18.823,
+    "districts": 27
+   },
+   "enacted": {
+    "mean_km": 19.951,
+    "districts": 27,
+    "population_in_no_district": 0
+   },
+   "change_pct": -5.65
+  },
+  {
+   "state": "NC",
+   "seats": 13,
+   "population": 9535483,
+   "blocks": 288987,
+   "splitline": {
+    "mean_km": 35.74,
+    "districts": 13
+   },
+   "enacted": {
+    "mean_km": 50.031,
+    "districts": 13,
+    "population_in_no_district": 0
+   },
+   "change_pct": -28.56
+  },
+  {
+   "state": "ND",
+   "seats": 1,
+   "population": 672591,
+   "blocks": 133769,
+   "splitline": {
+    "mean_km": 175.73,
+    "districts": 1
+   },
+   "enacted": {
+    "mean_km": 175.73,
+    "districts": 1,
+    "population_in_no_district": 0
+   },
+   "change_pct": 0.0
+  },
+  {
+   "state": "OH",
+   "seats": 16,
+   "population": 11536504,
+   "blocks": 365344,
+   "splitline": {
+    "mean_km": 32.838,
+    "districts": 16
+   },
+   "enacted": {
+    "mean_km": 38.999,
+    "districts": 16,
+    "population_in_no_district": 0
+   },
+   "change_pct": -15.8
+  },
+  {
+   "state": "OK",
+   "seats": 5,
+   "population": 3751351,
+   "blocks": 269118,
+   "splitline": {
+    "mean_km": 66.352,
+    "districts": 5
+   },
+   "enacted": {
+    "mean_km": 60.228,
+    "districts": 5,
+    "population_in_no_district": 0
+   },
+   "change_pct": 10.17
+  },
+  {
+   "state": "OR",
+   "seats": 5,
+   "population": 3831074,
+   "blocks": 196621,
+   "splitline": {
+    "mean_km": 61.479,
+    "districts": 5
+   },
+   "enacted": {
+    "mean_km": 62.691,
+    "districts": 5,
+    "population_in_no_district": 0
+   },
+   "change_pct": -1.93
+  },
+  {
+   "state": "PA",
+   "seats": 18,
+   "population": 12702379,
+   "blocks": 421545,
+   "splitline": {
+    "mean_km": 25.671,
+    "districts": 18
+   },
+   "enacted": {
+    "mean_km": 35.719,
+    "districts": 18,
+    "population_in_no_district": 0
+   },
+   "change_pct": -28.13
+  },
+  {
+   "state": "RI",
+   "seats": 2,
+   "population": 1052567,
+   "blocks": 25181,
+   "splitline": {
+    "mean_km": 12.371,
+    "districts": 2
+   },
+   "enacted": {
+    "mean_km": 14.624,
+    "districts": 2,
+    "population_in_no_district": 0
+   },
+   "change_pct": -15.41
+  },
+  {
+   "state": "SC",
+   "seats": 7,
+   "population": 4625364,
+   "blocks": 181908,
+   "splitline": {
+    "mean_km": 43.707,
+    "districts": 7
+   },
+   "enacted": {
+    "mean_km": 44.262,
+    "districts": 7,
+    "population_in_no_district": 0
+   },
+   "change_pct": -1.25
+  },
+  {
+   "state": "SD",
+   "seats": 1,
+   "population": 814180,
+   "blocks": 88360,
+   "splitline": {
+    "mean_km": 210.391,
+    "districts": 1
+   },
+   "enacted": {
+    "mean_km": 210.391,
+    "districts": 1,
+    "population_in_no_district": 0
+   },
+   "change_pct": 0.0
+  },
+  {
+   "state": "TN",
+   "seats": 9,
+   "population": 6346105,
+   "blocks": 240116,
+   "splitline": {
+    "mean_km": 38.546,
+    "districts": 9
+   },
+   "enacted": {
+    "mean_km": 45.398,
+    "districts": 9,
+    "population_in_no_district": 0
+   },
+   "change_pct": -15.09
+  },
+  {
+   "state": "TX",
+   "seats": 36,
+   "population": 25145561,
+   "blocks": 914231,
+   "splitline": {
+    "mean_km": 41.479,
+    "districts": 36
+   },
+   "enacted": {
+    "mean_km": 57.267,
+    "districts": 36,
+    "population_in_no_district": 0
+   },
+   "change_pct": -27.57
+  },
+  {
+   "state": "UT",
+   "seats": 4,
+   "population": 2763885,
+   "blocks": 115406,
+   "splitline": {
+    "mean_km": 61.718,
+    "districts": 4
+   },
+   "enacted": {
+    "mean_km": 66.658,
+    "districts": 4,
+    "population_in_no_district": 0
+   },
+   "change_pct": -7.41
+  },
+  {
+   "state": "VT",
+   "seats": 1,
+   "population": 625741,
+   "blocks": 32580,
+   "splitline": {
+    "mean_km": 66.145,
+    "districts": 1
+   },
+   "enacted": {
+    "mean_km": 66.145,
+    "districts": 1,
+    "population_in_no_district": 0
+   },
+   "change_pct": 0.0
+  },
+  {
+   "state": "VA",
+   "seats": 11,
+   "population": 8001024,
+   "blocks": 285762,
+   "splitline": {
+    "mean_km": 39.716,
+    "districts": 11
+   },
+   "enacted": {
+    "mean_km": 47.574,
+    "districts": 11,
+    "population_in_no_district": 0
+   },
+   "change_pct": -16.52
+  },
+  {
+   "state": "WA",
+   "seats": 10,
+   "population": 6724540,
+   "blocks": 195574,
+   "splitline": {
+    "mean_km": 47.661,
+    "districts": 10
+   },
+   "enacted": {
+    "mean_km": 36.745,
+    "districts": 10,
+    "population_in_no_district": 0
+   },
+   "change_pct": 29.71
+  },
+  {
+   "state": "WV",
+   "seats": 3,
+   "population": 1852994,
+   "blocks": 135218,
+   "splitline": {
+    "mean_km": 73.43,
+    "districts": 3
+   },
+   "enacted": {
+    "mean_km": 89.855,
+    "districts": 3,
+    "population_in_no_district": 0
+   },
+   "change_pct": -18.28
+  },
+  {
+   "state": "WI",
+   "seats": 8,
+   "population": 5686986,
+   "blocks": 253096,
+   "splitline": {
+    "mean_km": 44.577,
+    "districts": 8
+   },
+   "enacted": {
+    "mean_km": 45.976,
+    "districts": 8,
+    "population_in_no_district": 0
+   },
+   "change_pct": -3.04
+  },
+  {
+   "state": "WY",
+   "seats": 1,
+   "population": 563626,
+   "blocks": 86204,
+   "splitline": {
+    "mean_km": 204.753,
+    "districts": 1
+   },
+   "enacted": {
+    "mean_km": 204.753,
+    "districts": 1,
+    "population_in_no_district": 0
+   },
+   "change_pct": 0.0
+  }
+ ]
+}
