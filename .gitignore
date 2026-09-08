@@ -49,5 +49,10 @@ brazil/upstream/tse/*
 brazil/upstream/camara/*
 !brazil/upstream/camara/manifest.json
 
+# Spain upstream is 49 KB in total -- INE's padron vector by province and the
+# seven convoking decrees' seat tables -- so the bytes are kept outright, as
+# brazil/upstream/ibge is. There is no bulk input on this side: Infoelectoral's
+# vote files are deliberately not fetched.
+
 __pycache__/
 *.pyc
