@@ -29,7 +29,7 @@ Nothing is pushed. Six commits were already waiting before this run began.
 | 2 | Compactness metrics | 1.5h | **DONE** | PASSED -- blocks sum to the published state total in all 50 states |
 | 3 | Voteview near-miss screen | 2.5h | **DONE** | PASSED -- composition matches for all five congresses; tallies match on all 5,679 roll calls |
 | 4 | Spain apportionment | 1.5h | **DONE** | PASSED -- all seven decrees reproduced 52/52 provinces |
-| 5 | Write-ups and commits | 1.0h | NOT STARTED | working tree clean, nothing pushed |
+| 5 | Write-ups and commits | 1.0h | **DONE** | PASSED -- working tree clean, nothing pushed |
 
 ## The rule that makes this safe to run unwatched
 
@@ -74,3 +74,67 @@ that stops costs only itself; the others still run.
   province, and the padron revision each decree used is identified empirically
   rather than assumed, since no decree states one. Infoelectoral was not
   touched, as agreed.
+- 2026-09-08 09:50 — **Phase 5 done.** `SOURCES.json` gains three sources and
+  five outputs; `REPRODUCING.md` gains steps 8-11; `README.md`'s "varying
+  magnitude" placeholder is filled in now that both countries under it exist.
+
+---
+
+## What this run did, and what every gate returned
+
+Six commits, none pushed. Every phase had a validation gate with a known right
+answer, and one of them failed and stopped that phase, which is the outcome
+the rule exists to produce.
+
+| phase | gate | result |
+|---|---|---|
+| 1 | enacted 2012 returns 209 D / 226 R | **PASSED** for the 3 model x metric sets; **FAILED** for both house-size rules |
+| 2 | block populations sum to the published state total | **PASSED**, all 50 states |
+| 3a | recomputed yea/nay equal Voteview's published counts | **PASSED**, 5,679 of 5,679 roll calls |
+| 3b | seats by party equal the published House composition | **PASSED**, all five congresses |
+| 3c | resampling is exact at zero delta | **PASSED**, zero variance on every roll call |
+| 4 | LOREG art. 162 reproduces each convoking decree's annex | **PASSED**, 52 of 52 provinces in all 7 elections |
+
+### What was found
+
+- **The headline holds.** Splitline removes 63-65% of the measured
+  pro-Republican bias across all three available model x metric combinations,
+  against the 65% figure that had been computed at one point in that space.
+- **The house-size axis cannot be measured** with the election data we hold,
+  and the gate caught it rather than letting plausible numbers through. The
+  seven states DRA publishes no block file for are exactly the one-district
+  states; raise the house and they need two districts, the statewide shortcut
+  stops applying, and they fall out of every plan in the run including the
+  enacted baseline. Recorded as a failure in `usa/results/sens/SENSITIVITY.md`,
+  and the remaining four combinations were not attempted.
+- **Splitline is 10% more compact** than the enacted map on distance to
+  centroid, and more compact in 37 of 43 multi-district states — concentrated
+  in North Carolina, Pennsylvania, Texas, Maryland and Virginia at 16-29%.
+  Washington runs 30% the other way, where a commission drew the map.
+- **507 of 2,183 close, party-divided House roll calls reverse**, 371 of them
+  in the 113th Congress, where +22 seats is exactly what turns 201-234 into
+  223-212.
+- **Spain's provincial floor**, not its allocation method, is where its
+  malapportionment lives. Cutting the floor from two seats to one halves the
+  disproportionality index; Sainte-Lague in place of quota-and-remainders moves
+  one seat in two elections of seven and none in the other five.
+
+### What stopped, and why
+
+- **The two house-size runs**, on their gate, as above.
+- **Infoelectoral's vote files** were not touched, as agreed at the outset:
+  fixed-width records with no independent total to check a column offset
+  against, which makes a wrong offset produce plausible numbers rather than an
+  error. That is a supervised task and it is still open.
+- **`point_land` plans** were not generated, as agreed: hours of engine time
+  for a fourth corner of a space whose axes are already varied independently.
+
+### Left open
+
+- The within-province D'Hondt to Sainte-Lague swap for Spain, which needs the
+  Infoelectoral files and is the larger of the two effects.
+- Enacted comparators for the 2000 and 2020 censuses, which need the block
+  equivalency files for the 108th-112th and 118th Congresses.
+- The roll-call model has no behavioural uncertainty: it resamples which
+  members sit, not how a different member would have voted. Stated in
+  `FINDINGS.md` rather than left for a reader to infer.
