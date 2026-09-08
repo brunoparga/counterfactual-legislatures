@@ -250,6 +250,53 @@
       "redistributable": true,
       "included_here": false,
       "note": "One record per division with the tallies, 173 MB for 2003-2024; checksums in brazil/upstream/camara/manifest.json. Used to screen for votes close enough that the apportionment could have decided them, before spending the per-deputy layer (votacoesVotos-YYYY.json, 7-79 MB per year) on the shortlist. Coverage begins in 2003, so the 1990, 1994 and 1998 seat counterfactuals cannot be tested against actual votes. Two years arrived truncated on the first pass and needed re-fetching, so file sizes are worth checking against the manifest rather than trusting the download. Per-deputy positions for the 56 shortlisted divisions come from the API at /api/v2/votacoes/{id}/votos, which carries each deputy's party and state and returns a whole division in one page; that costs a few hundred kilobytes against roughly 700 MB for the bulk per-deputy files."
+    },
+    {
+      "id": "voteview-rollcalls",
+      "title": "Voteview: Congressional Roll-Call Votes Database (HSall votes, rollcalls and members)",
+      "url": "https://voteview.com/static/data/out/votes/HSall_votes.csv ; https://voteview.com/static/data/out/rollcalls/HSall_rollcalls.csv ; https://voteview.com/static/data/out/members/HSall_members.csv",
+      "publisher": "Voteview, University of California Los Angeles",
+      "country": "US",
+      "retrieved": "2026-09-08",
+      "licence": "no licence statement published; the project asks that the dataset be cited",
+      "share_alike": false,
+      "attribution_required": true,
+      "attribution": "Lewis, Jeffrey B., Keith Poole, Howard Rosenthal, Adam Boche, Aaron Rudkin and Luke Sonnet (2026). Voteview: Congressional Roll-Call Votes Database. https://voteview.com/",
+      "redistributable": false,
+      "included_here": false,
+      "note": "737 MB across the three files, of which the House for congresses 113-117 is 5,679 roll calls and 2.4 million cast votes. 'redistributable' is false because no licence is stated, not because reuse is refused -- the data page gives only a citation request, so republishing the bytes from here would be asserting a permission nobody granted. Two traps in the files. Voteview records presidential position-taking as cast votes on House roll calls (574 of these), so counting every row overstates a tally by one; and several integer columns are written as floats ('10713.0'), which int() rejects. Excluding the President while keeping delegates and independents reproduces the published yea/nay counts on all 5,679 roll calls, which is the check that the join is right."
+    },
+    {
+      "id": "ine-padron-provinces",
+      "title": "Cifras Oficiales de Poblacion de los Municipios Espanoles: Revision del Padron Municipal, by province, 1996-2025",
+      "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/2852 ; https://servicios.ine.es/wstempus/js/ES/TABLAS_OPERACION/22",
+      "publisher": "Instituto Nacional de Estadistica (Spain)",
+      "country": "ES",
+      "retrieved": "2026-09-08",
+      "licence": "reuse authorised by INE for commercial and non-commercial purposes, on condition that the source is cited, the last-update date is given, the sense of the data is not distorted, and no INE endorsement is implied",
+      "share_alike": false,
+      "attribution_required": true,
+      "attribution": "Elaboracion propia con datos extraidos del sitio web del INE: www.ine.es",
+      "redistributable": true,
+      "included_here": true,
+      "path": "spain/upstream/ine/population_by_province.json",
+      "note": "The padron is the population LOREG art. 162 apportions on, and it is not the resident-population series INE has published since 2021 under the Estadistica Continua de Poblacion -- a different concept with different numbers that would move seats. Two tables are needed because INE froze the province-level one: table 2852 covers 1996-2021 and stops, so later years are read off the 52 per-province municipal tables, where INE marks the province aggregate by giving it a two-digit code where a municipality has five. Code '00' in the same table is the national total and passes that filter too, so it is dropped by name. The overlap between the two sources is checked for exact agreement on every province-year before anything is written. 30 KB, so the bytes are committed."
+    },
+    {
+      "id": "boe-electoral-decrees",
+      "title": "LOREG art. 162 and the seven royal decrees convoking general elections, 2008-2023",
+      "url": "https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-1985-11672 ; https://www.boe.es/diario_boe/txt.php?id={boe_id}",
+      "publisher": "Agencia Estatal Boletin Oficial del Estado",
+      "country": "ES",
+      "retrieved": "2026-09-08",
+      "licence": "public domain as legal text (Spanish LPI art. 13 excludes legal and regulatory provisions from copyright); BOE additionally authorises reuse of its electronic-office documents under Ley 37/2007 and the licence approved by its Resolution of 27 June 2024",
+      "share_alike": false,
+      "attribution_required": true,
+      "attribution": "Agencia Estatal Boletin Oficial del Estado",
+      "redistributable": true,
+      "included_here": true,
+      "path": "spain/upstream/boe/convoking_decrees.json, spain/upstream/boe/loreg_art162.txt",
+      "note": "Art. 162.4 requires each convoking decree to state the number of Diputados per constituency, and its annex is the only published form of the official apportionment -- nobody else publishes the seat vector. The decree ids are read out of the relevant day's BOE sumario rather than typed in, so how each was found survives with it. The annex is anchored on its two-line header 'Circunscripcion' / 'Diputados' rather than on the word ANEXO, because the 2008 decree puts the table inline in article 3 and has no annex at all; and every decree before 2023 writes the seat counts as Spanish number words. What no decree states is which padron revision it used, which is why that is found empirically rather than assumed."
     }
   ],
   "outputs": [
@@ -332,6 +379,58 @@
       ],
       "licence": "CC-BY-4.0",
       "note": "Probability that each shortlisted division would have gone the other way under an apportionment without the constitutional floor and ceiling. Delegations are resampled by state -- not by party, because 20-30% of deputies switch party mid-term and cannot be matched to the cell they were elected in -- with both sides resampled together and absences included in the draw. Exact by construction when the apportionment is unchanged."
+    },
+    {
+      "id": "parameter-sensitivity",
+      "path": "usa/results/sens/*",
+      "derived_from": [
+        "districting-plans",
+        "dra-block-elections",
+        "us-cd113-bef",
+        "medsl-county-president"
+      ],
+      "licence": "CC-BY-SA-4.0",
+      "note": "The same scoring repeated across the model, cut-metric and house-size axes, to say how much of the headline is the finding and how much is the parameter choice. Two of the five runs are recorded as gate failures rather than results: under a larger house the seven states with no block-level election data need two districts each, the statewide shortcut that covers them stops applying, and they fall out of every plan in the run including the enacted baseline. Share-alike, inherited from the election data."
+    },
+    {
+      "id": "compactness",
+      "path": "usa/results/compactness.json",
+      "derived_from": [
+        "districting-plans",
+        "us-census-2010-pl94171",
+        "us-cd113-bef"
+      ],
+      "licence": "CC-BY-4.0",
+      "note": "Population-weighted mean distance from a resident to their district's population-weighted centroid, per state and nationally, for the splitline and enacted 2010 plans. Olson's BDistricting objective, chosen because it is defined on block assignments rather than on shapes -- the enacted plan reaches us with no polygons, so a perimeter score cannot be computed for it. Both plans are scored on 2010 blocks, so there is no crosswalk in this path. No election data is involved, so CC-BY rather than the CC-BY-SA the vote scorings carry."
+    },
+    {
+      "id": "us-near-miss",
+      "path": "usa/results/near_miss.json",
+      "derived_from": [
+        "voteview-rollcalls"
+      ],
+      "licence": "CC-BY-4.0",
+      "note": "House roll calls, congresses 113-117, that are both within 25 votes of the bar that actually applied and divided by more than 50 points between the parties. The bar is not always a simple majority: suspension of the rules and veto overrides need two thirds, and a suspension motion carried 290-140 fails, so measuring those against the other side's total would fill the candidate set with comfortable losses."
+    },
+    {
+      "id": "us-reweighted-votes",
+      "path": "usa/results/reweighted.json",
+      "derived_from": [
+        "voteview-rollcalls",
+        "vote-scorings"
+      ],
+      "licence": "CC-BY-SA-4.0",
+      "note": "Probability that each shortlisted roll call would have gone the other way under splitline districts. Unlike Brazil, the delegation is resampled at constant size: US apportionment fixes how many seats a state has, so the counterfactual converts members between parties rather than adding or removing them, drawing the arrivals from that state's observed members of the receiving party with absences included. The seat difference is applied, not the level, because 231 and 209 are districts carried by a presidential candidate while the House that sat was 201 D. Exact by construction when no seat moves. Share-alike, because the per-state deltas come from the DRA-derived scorings."
+    },
+    {
+      "id": "spain-apportionment",
+      "path": "spain/results/apportionment.json",
+      "derived_from": [
+        "ine-padron-provinces",
+        "boe-electoral-decrees"
+      ],
+      "licence": "CC-BY-4.0",
+      "note": "Seats per province for seven general elections 2008-2023 under LOREG art. 162 and under three counterfactuals -- the provincial floor cut from two seats to one, no floor at all, and Sainte-Lague in place of quota-and-remainders -- with the malapportionment statistics for each. Every official column reproduces the convoking decree's annex province by province, which is the gate. Neither input is share-alike, so CC-BY as with the Brazilian counterfactuals."
     }
   ]
 }

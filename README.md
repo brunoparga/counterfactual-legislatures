@@ -36,7 +36,21 @@ The virtual inexistence of parties besides the Republicans and the Democrats mak
 
 ### varying magnitude
 
-Brazil, Spain
+Brazil and Spain are the two cases where no districting algorithm is needed
+and no disaggregation is involved: the constituency is a state or a province,
+those are not going to move, and the seat vector is published. Everything
+interesting is in the allocation arithmetic, so the counterfactual carries no
+modelling error in the part that matters. Both are written up in their own
+directories — `brazil/README.md` and `spain/README.md`.
+
+Both constrain proportionality with a floor, and the two floors behave quite
+differently. Brazil's constitutional floor of 8 seats per state, with a
+ceiling of 70, is a **huge** violation of one-person-one-vote — an 8x weight
+ratio in 2022 — and only a minor source of party disproportionality; district
+magnitude does far more damage than the apportionment does. Spain's floor of
+2 seats per province produces a 4.13x weight ratio in 2023, widening at every
+election since 2008 without a single change to the rule, as the interior
+depopulates and the provinces sitting on the floor keep losing people.
 
 ## United States
 

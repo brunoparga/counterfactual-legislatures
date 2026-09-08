@@ -29,6 +29,8 @@ Companion files, split by audience:
       maps/       browsable symlink views over the above, rebuilt not stored
       results/    vote scorings and demographics, committed
       work/       scratch and logs, not committed
+    brazil/     the Chamber of Deputies: no districting, all allocation
+    spain/      the Congress of Deputies: same shape as brazil/
     research/   literature and data surveys
     docs/       the published site (polisci.brunoparga.net)
 
@@ -195,6 +197,98 @@ districts at the >50% (majority), 40-50% (opportunity) and 30-40% (influence)
 thresholds. The metric follows Haas, Miller & Kimbrough (*Electoral Studies*
 79, 2022), so the numbers are comparable to published work.
 
+## 8. Parameter sensitivity
+
+    python3 usa/tools/score_matrix.py --enacted --model <m> --metric <k> \
+        --rule <r> --out usa/results/sens/<m>_<k>_<r>
+    python3 usa/tools/sensitivity_table.py
+
+One scoring per parameter set, then a table built from the scorings rather
+than by hand. The gate is the same 209 D / 226 R: the enacted plan is a real
+map and does not depend on our parameters, so a run that returns anything else
+is broken.
+
+**The house-size axis cannot be measured with the election data we hold**, and
+this is where the gate earns its place. DRA publishes no block file for AK,
+DE, MT, ND, SD, VT or WY, which is normally harmless because those are exactly
+the one-district states and a one-district state is settled by its statewide
+total. Raise the house size and they need two districts, the statewide
+shortcut stops applying, and they drop out of every plan in the run --
+including the enacted one, whose baseline then moves although nothing about
+the enacted map has changed. `cuberoot` and `wyoming` are therefore recorded
+as gate failures, not as findings.
+
+## 9. Compactness
+
+    python3 usa/tools/compactness.py
+
+Population-weighted mean distance from a resident to their district's
+population-weighted centroid, which is Olson's BDistricting objective. Chosen
+because it is defined on block assignments rather than on shapes: the enacted
+plan reaches us as a list of block assignments with no polygons, so
+Polsby-Popper and its relatives cannot be computed for the map the comparison
+needs. Centroids are normalised population-weighted means of 3-D unit vectors
+and distances are great circles, because a district can be 800 km across and
+Alaska is worse.
+
+Both plans are scored on 2010 blocks, so unlike the vote scoring there is no
+crosswalk anywhere in this path. The gate is `pl_to_pop.py`'s: block
+populations must sum to the state's own published total, both numbers coming
+out of the same geographic header.
+
+## 10. Roll calls
+
+    python3 usa/tools/near_miss_us.py
+    python3 usa/tools/reweight_us.py --gate
+
+Voteview's `HSall_votes.csv`, `HSall_rollcalls.csv` and `HSall_members.csv`,
+House only, congresses 113-117. The screen keeps roll calls that are both
+close to the bar that actually applied -- two thirds for suspensions and veto
+overrides, a simple majority otherwise -- and divided by more than 50 points
+between the parties, since a vote both parties split evenly does not respond
+to a change in composition however close it was.
+
+Three things this step gets right that a naive version gets wrong:
+
+- **Voteview records presidential position-taking as cast votes**, on 574 of
+  these 5,679 House roll calls. Counting them shifts a tally by one and looks
+  exactly like a member.
+- **Territorial delegates and independents do count** in Voteview's published
+  totals. Dropping them, as a filter on "the fifty states, D or R" naturally
+  does, leaves the tally short on hundreds of roll calls. The tally is over
+  every House member; only the *delegation arithmetic* is over the fifty
+  states' Democrats and Republicans, who are the only members a change of
+  lines can convert.
+- **Several integer columns are written as floats** (`10713.0`), which `int()`
+  rejects rather than silently truncating.
+
+Getting all three right is what makes the recomputed yea and nay counts equal
+the published ones on all 5,679 roll calls, which is the first gate. The
+second is that seats by party reproduce the published composition of each
+congress. The third, `--gate`, runs the resampling with an all-zero delta,
+where it must return every recorded tally exactly and with zero variance.
+
+The reweighting iterates states in **sorted** order, not set order: the draws
+have to land on the same states in the same sequence every run or the seed
+guarantees nothing.
+
+## 11. Spain
+
+    python3 spain/tools/fetch_ine.py
+    python3 spain/tools/fetch_boe.py
+    python3 spain/tools/apportion_es.py
+
+LOREG art. 162 over the padron, checked against the seat table every convoking
+decree is required to publish. The law names its basis as the *poblacion de
+derecho* but neither it nor any decree says which padron revision, so the rule
+is run against every revision INE publishes and the ones that reproduce the
+annex exactly are recorded -- an empirical answer where an assumed one could
+not be told apart from an error.
+
+Infoelectoral's fixed-width vote files are deliberately not parsed. There is
+no independent total to check a column offset against, so a wrong offset would
+produce plausible numbers rather than an error.
+
 ---
 
 ## What each committed artifact was made from
@@ -205,6 +299,11 @@ thresholds. The metric follows Haas, Miller & Kimbrough (*Electoral Studies*
 | `usa/maps/index.json` | `make_views.py` | `plans/`, `renders/` |
 | `usa/results/*.json` | `score_matrix.py` | `plans/`, DRA block data, cd113 BEF, MEDSL |
 | `usa/results/demographics/*` | `demographics.py` | `plans/`, PL 94-171, cd113 BEF |
+| `usa/results/sens/*` | `score_matrix.py` + `sensitivity_table.py` | `plans/`, DRA, cd113 BEF, MEDSL |
+| `usa/results/compactness.json` | `compactness.py` | `plans/`, PL 94-171 (2010), cd113 BEF |
+| `usa/results/near_miss.json` | `near_miss_us.py` | Voteview HSall |
+| `usa/results/reweighted.json` | `reweight_us.py` | Voteview HSall, `usa/results/*.json` |
+| `spain/results/apportionment.json` | `apportion_es.py` | INE padron, BOE decrees |
 | `usa/upstream/MANIFEST.*` | `make_manifest.py` | the fetched tree |
 | `docs/*` | hand-written | — |
 
