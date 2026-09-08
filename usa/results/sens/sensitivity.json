@@ -1,0 +1,150 @@
+{
+ "gate": {
+  "plan": "enacted_cd113",
+  "contest": "E_12_PRES",
+  "expected": "209 D / 226 R",
+  "passed": [
+   "point_span_fixed",
+   "uniform_land_fixed",
+   "uniform_span_fixed"
+  ],
+  "failed": [
+   "uniform_span_cuberoot",
+   "uniform_span_wyoming"
+  ]
+ },
+ "runs": [
+  {
+   "run": "uniform_span_fixed",
+   "model": "uniform",
+   "metric": "span",
+   "rule": "fixed",
+   "enacted_mean_abs_bias": 3.005,
+   "splitline_mean_abs_bias": 1.042,
+   "reduction_pct": 65.3,
+   "districts": 435,
+   "per_contest": {
+    "E_12_PRES": {
+     "enacted_bias": -3.814,
+     "splitline_bias": 1.243,
+     "enacted_D": 209,
+     "splitline_D": 231,
+     "splitline_seat_share_D": 53.103,
+     "vote_share_D": 51.86
+    },
+    "E_16_PRES": {
+     "enacted_bias": -4.571,
+     "splitline_bias": -1.583,
+     "enacted_D": 202,
+     "splitline_D": 215,
+     "splitline_seat_share_D": 49.425,
+     "vote_share_D": 51.008
+    },
+    "E_20_PRES": {
+     "enacted_bias": -1.374,
+     "splitline_bias": 0.465,
+     "enacted_D": 221,
+     "splitline_D": 229,
+     "splitline_seat_share_D": 52.644,
+     "vote_share_D": 52.179
+    },
+    "E_16-20_COMP": {
+     "enacted_bias": -2.259,
+     "splitline_bias": -0.879,
+     "enacted_D": 215,
+     "splitline_D": 221,
+     "splitline_seat_share_D": 50.805,
+     "vote_share_D": 51.684
+    }
+   }
+  },
+  {
+   "run": "uniform_land_fixed",
+   "model": "uniform",
+   "metric": "land",
+   "rule": "fixed",
+   "enacted_mean_abs_bias": 3.005,
+   "splitline_mean_abs_bias": 1.1,
+   "reduction_pct": 63.4,
+   "districts": 435,
+   "per_contest": {
+    "E_12_PRES": {
+     "enacted_bias": -3.814,
+     "splitline_bias": 1.243,
+     "enacted_D": 209,
+     "splitline_D": 231,
+     "splitline_seat_share_D": 53.103,
+     "vote_share_D": 51.86
+    },
+    "E_16_PRES": {
+     "enacted_bias": -4.571,
+     "splitline_bias": -1.813,
+     "enacted_D": 202,
+     "splitline_D": 214,
+     "splitline_seat_share_D": 49.195,
+     "vote_share_D": 51.008
+    },
+    "E_20_PRES": {
+     "enacted_bias": -1.374,
+     "splitline_bias": 0.465,
+     "enacted_D": 221,
+     "splitline_D": 229,
+     "splitline_seat_share_D": 52.644,
+     "vote_share_D": 52.179
+    },
+    "E_16-20_COMP": {
+     "enacted_bias": -2.259,
+     "splitline_bias": -0.879,
+     "enacted_D": 215,
+     "splitline_D": 221,
+     "splitline_seat_share_D": 50.805,
+     "vote_share_D": 51.684
+    }
+   }
+  },
+  {
+   "run": "point_span_fixed",
+   "model": "point",
+   "metric": "span",
+   "rule": "fixed",
+   "enacted_mean_abs_bias": 3.005,
+   "splitline_mean_abs_bias": 1.042,
+   "reduction_pct": 65.3,
+   "districts": 435,
+   "per_contest": {
+    "E_12_PRES": {
+     "enacted_bias": -3.814,
+     "splitline_bias": 1.243,
+     "enacted_D": 209,
+     "splitline_D": 231,
+     "splitline_seat_share_D": 53.103,
+     "vote_share_D": 51.86
+    },
+    "E_16_PRES": {
+     "enacted_bias": -4.571,
+     "splitline_bias": -1.583,
+     "enacted_D": 202,
+     "splitline_D": 215,
+     "splitline_seat_share_D": 49.425,
+     "vote_share_D": 51.008
+    },
+    "E_20_PRES": {
+     "enacted_bias": -1.374,
+     "splitline_bias": 0.465,
+     "enacted_D": 221,
+     "splitline_D": 229,
+     "splitline_seat_share_D": 52.644,
+     "vote_share_D": 52.179
+    },
+    "E_16-20_COMP": {
+     "enacted_bias": -2.259,
+     "splitline_bias": -0.879,
+     "enacted_D": 215,
+     "splitline_D": 221,
+     "splitline_seat_share_D": 50.805,
+     "vote_share_D": 51.684
+    }
+   }
+  }
+ ]
+}

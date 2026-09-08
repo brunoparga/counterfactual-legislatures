@@ -25,7 +25,7 @@ Nothing is pushed. Six commits were already waiting before this run began.
 
 | # | Phase | Est. | Status | Gate |
 |---|---|---|---|---|
-| 1 | US parameter sensitivity | 2.5h | NOT STARTED | 12 scorings complete; enacted-2012 still returns 209/226 |
+| 1 | US parameter sensitivity | 2.5h | **DONE** | PASSED for the 3 model/metric sets; FAILED for the 2 house-size rules, cause diagnosed |
 | 2 | Compactness metrics | 1.5h | NOT STARTED | district areas sum to state area, as in the Illinois SVG check |
 | 3 | Voteview near-miss screen | 2.5h | NOT STARTED | recomputed party totals match the published House composition per congress |
 | 4 | Spain apportionment | 1.5h | NOT STARTED | reproduces the official province-by-province distribution from the convoking decree |
@@ -49,3 +49,14 @@ that stops costs only itself; the others still run.
 ## Log
 
 - 2026-09-08 — run state created, no phase started yet.
+- 2026-09-08 09:14 — **Phase 1 done.** Five scorings run under
+  `usa/results/sens/`. The three model x metric sets at `fixed` house size all
+  pass the 209 D / 226 R gate and put the headline bias reduction at **63-65%**,
+  so it does not depend on the model or the metric. The `cuberoot` and
+  `wyoming` house-size rules **fail the gate** and were stopped: the seven
+  states with no DRA block file are exactly the one-district states, and a
+  larger house needs two districts in them, so they drop out of every plan in
+  the run including the enacted baseline. The house-size axis is not
+  measurable with the election data we hold. Written up in
+  `usa/results/sens/SENSITIVITY.md`; the remaining four house-size runs were
+  not attempted, since they fail identically.

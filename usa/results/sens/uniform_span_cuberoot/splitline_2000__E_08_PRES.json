@@ -1,0 +1,5915 @@
+{
+ "meta": {
+  "plan": "splitline_2000",
+  "contest": "E_08_PRES",
+  "rule": "cuberoot",
+  "metric": "span",
+  "model": "uniform",
+  "districts": 655,
+  "seats_D": 387,
+  "seats_R": 268,
+  "votes_D": 69005687,
+  "votes_R": 59822464,
+  "vote_share_D": 53.564,
+  "seat_share_D": 59.084,
+  "missing_states": [],
+  "bias": 5.52
+ },
+ "districts": [
+  {
+   "state": "AL",
+   "district": 1,
+   "dem": 63009,
+   "rep": 136094,
+   "total": 202288,
+   "winner": "R",
+   "margin": -36.71
+  },
+  {
+   "state": "AL",
+   "district": 2,
+   "dem": 72485,
+   "rep": 140682,
+   "total": 216564,
+   "winner": "R",
+   "margin": -31.99
+  },
+  {
+   "state": "AL",
+   "district": 3,
+   "dem": 121058,
+   "rep": 87483,
+   "total": 210668,
+   "winner": "D",
+   "margin": 16.1
+  },
+  {
+   "state": "AL",
+   "district": 4,
+   "dem": 67839,
+   "rep": 128573,
+   "total": 199477,
+   "winner": "R",
+   "margin": -30.92
+  },
+  {
+   "state": "AL",
+   "district": 5,
+   "dem": 56809,
+   "rep": 151319,
+   "total": 211330,
+   "winner": "R",
+   "margin": -45.41
+  },
+  {
+   "state": "AL",
+   "district": 6,
+   "dem": 95719,
+   "rep": 113739,
+   "total": 211651,
+   "winner": "R",
+   "margin": -8.6
+  },
+  {
+   "state": "AL",
+   "district": 7,
+   "dem": 88568,
+   "rep": 127947,
+   "total": 218544,
+   "winner": "R",
+   "margin": -18.19
+  },
+  {
+   "state": "AL",
+   "district": 8,
+   "dem": 65708,
+   "rep": 155727,
+   "total": 224252,
+   "winner": "R",
+   "margin": -40.65
+  },
+  {
+   "state": "AL",
+   "district": 9,
+   "dem": 105015,
+   "rep": 103461,
+   "total": 210399,
+   "winner": "D",
+   "margin": 0.75
+  },
+  {
+   "state": "AL",
+   "district": 10,
+   "dem": 77269,
+   "rep": 121521,
+   "total": 201211,
+   "winner": "R",
+   "margin": -22.26
+  },
+  {
+   "state": "AK",
+   "district": 1,
+   "dem": 63304,
+   "rep": 87729,
+   "total": 154181,
+   "winner": "R",
+   "margin": -16.17
+  },
+  {
+   "state": "AK",
+   "district": 2,
+   "dem": 60290,
+   "rep": 106112,
+   "total": 170096,
+   "winner": "R",
+   "margin": -27.54
+  },
+  {
+   "state": "AZ",
+   "district": 1,
+   "dem": 94658,
+   "rep": 95956,
+   "total": 193277,
+   "winner": "R",
+   "margin": -0.68
+  },
+  {
+   "state": "AZ",
+   "district": 2,
+   "dem": 89535,
+   "rep": 78123,
+   "total": 169886,
+   "winner": "D",
+   "margin": 6.81
+  },
+  {
+   "state": "AZ",
+   "district": 3,
+   "dem": 64722,
+   "rep": 93330,
+   "total": 160342,
+   "winner": "R",
+   "margin": -18.1
+  },
+  {
+   "state": "AZ",
+   "district": 4,
+   "dem": 111708,
+   "rep": 151869,
+   "total": 267384,
+   "winner": "R",
+   "margin": -15.24
+  },
+  {
+   "state": "AZ",
+   "district": 5,
+   "dem": 96459,
+   "rep": 55773,
+   "total": 154517,
+   "winner": "D",
+   "margin": 26.73
+  },
+  {
+   "state": "AZ",
+   "district": 6,
+   "dem": 93616,
+   "rep": 116493,
+   "total": 213147,
+   "winner": "R",
+   "margin": -10.89
+  },
+  {
+   "state": "AZ",
+   "district": 7,
+   "dem": 90441,
+   "rep": 123861,
+   "total": 217201,
+   "winner": "R",
+   "margin": -15.59
+  },
+  {
+   "state": "AZ",
+   "district": 8,
+   "dem": 48182,
+   "rep": 44970,
+   "total": 94599,
+   "winner": "D",
+   "margin": 3.45
+  },
+  {
+   "state": "AZ",
+   "district": 9,
+   "dem": 80381,
+   "rep": 82021,
+   "total": 164718,
+   "winner": "R",
+   "margin": -1.01
+  },
+  {
+   "state": "AZ",
+   "district": 10,
+   "dem": 81198,
+   "rep": 120675,
+   "total": 204345,
+   "winner": "R",
+   "margin": -19.56
+  },
+  {
+   "state": "AZ",
+   "district": 11,
+   "dem": 88019,
+   "rep": 160817,
+   "total": 252833,
+   "winner": "R",
+   "margin": -29.26
+  },
+  {
+   "state": "AZ",
+   "district": 12,
+   "dem": 95988,
+   "rep": 106223,
+   "total": 205604,
+   "winner": "R",
+   "margin": -5.06
+  },
+  {
+   "state": "AR",
+   "district": 1,
+   "dem": 67234,
+   "rep": 123798,
+   "total": 196425,
+   "winner": "R",
+   "margin": -29.61
+  },
+  {
+   "state": "AR",
+   "district": 2,
+   "dem": 67772,
+   "rep": 90724,
+   "total": 163035,
+   "winner": "R",
+   "margin": -14.48
+  },
+  {
+   "state": "AR",
+   "district": 3,
+   "dem": 96263,
+   "rep": 90729,
+   "total": 190760,
+   "winner": "D",
+   "margin": 2.96
+  },
+  {
+   "state": "AR",
+   "district": 4,
+   "dem": 68372,
+   "rep": 119661,
+   "total": 192974,
+   "winner": "R",
+   "margin": -27.28
+  },
+  {
+   "state": "AR",
+   "district": 5,
+   "dem": 59412,
+   "rep": 127850,
+   "total": 193500,
+   "winner": "R",
+   "margin": -36.55
+  },
+  {
+   "state": "AR",
+   "district": 6,
+   "dem": 63119,
+   "rep": 85229,
+   "total": 153341,
+   "winner": "R",
+   "margin": -14.9
+  },
+  {
+   "state": "CA",
+   "district": 1,
+   "dem": 111957,
+   "rep": 77351,
+   "total": 190479,
+   "winner": "D",
+   "margin": 18.28
+  },
+  {
+   "state": "CA",
+   "district": 2,
+   "dem": 94654,
+   "rep": 101481,
+   "total": 197448,
+   "winner": "R",
+   "margin": -3.48
+  },
+  {
+   "state": "CA",
+   "district": 3,
+   "dem": 94691,
+   "rep": 106760,
+   "total": 202686,
+   "winner": "R",
+   "margin": -5.99
+  },
+  {
+   "state": "CA",
+   "district": 4,
+   "dem": 102664,
+   "rep": 83197,
+   "total": 186605,
+   "winner": "D",
+   "margin": 10.47
+  },
+  {
+   "state": "CA",
+   "district": 5,
+   "dem": 116695,
+   "rep": 144303,
+   "total": 261939,
+   "winner": "R",
+   "margin": -10.58
+  },
+  {
+   "state": "CA",
+   "district": 6,
+   "dem": 161906,
+   "rep": 50598,
+   "total": 213088,
+   "winner": "D",
+   "margin": 52.38
+  },
+  {
+   "state": "CA",
+   "district": 7,
+   "dem": 135175,
+   "rep": 56267,
+   "total": 192121,
+   "winner": "D",
+   "margin": 41.22
+  },
+  {
+   "state": "CA",
+   "district": 8,
+   "dem": 113471,
+   "rep": 52590,
+   "total": 166644,
+   "winner": "D",
+   "margin": 36.66
+  },
+  {
+   "state": "CA",
+   "district": 9,
+   "dem": 104686,
+   "rep": 75580,
+   "total": 181047,
+   "winner": "D",
+   "margin": 16.15
+  },
+  {
+   "state": "CA",
+   "district": 10,
+   "dem": 114579,
+   "rep": 75293,
+   "total": 190692,
+   "winner": "D",
+   "margin": 20.69
+  },
+  {
+   "state": "CA",
+   "district": 11,
+   "dem": 196140,
+   "rep": 27507,
+   "total": 224025,
+   "winner": "D",
+   "margin": 75.4
+  },
+  {
+   "state": "CA",
+   "district": 12,
+   "dem": 123077,
+   "rep": 29910,
+   "total": 153375,
+   "winner": "D",
+   "margin": 60.9
+  },
+  {
+   "state": "CA",
+   "district": 13,
+   "dem": 137171,
+   "rep": 53317,
+   "total": 191087,
+   "winner": "D",
+   "margin": 44.02
+  },
+  {
+   "state": "CA",
+   "district": 14,
+   "dem": 132013,
+   "rep": 41349,
+   "total": 173870,
+   "winner": "D",
+   "margin": 52.3
+  },
+  {
+   "state": "CA",
+   "district": 15,
+   "dem": 107400,
+   "rep": 35341,
+   "total": 143159,
+   "winner": "D",
+   "margin": 50.48
+  },
+  {
+   "state": "CA",
+   "district": 16,
+   "dem": 162155,
+   "rep": 31339,
+   "total": 194020,
+   "winner": "D",
+   "margin": 67.61
+  },
+  {
+   "state": "CA",
+   "district": 17,
+   "dem": 204971,
+   "rep": 23622,
+   "total": 229212,
+   "winner": "D",
+   "margin": 79.33
+  },
+  {
+   "state": "CA",
+   "district": 18,
+   "dem": 138746,
+   "rep": 30005,
+   "total": 169234,
+   "winner": "D",
+   "margin": 64.44
+  },
+  {
+   "state": "CA",
+   "district": 19,
+   "dem": 142660,
+   "rep": 78021,
+   "total": 221129,
+   "winner": "D",
+   "margin": 29.29
+  },
+  {
+   "state": "CA",
+   "district": 20,
+   "dem": 127220,
+   "rep": 79730,
+   "total": 207677,
+   "winner": "D",
+   "margin": 22.95
+  },
+  {
+   "state": "CA",
+   "district": 21,
+   "dem": 149476,
+   "rep": 52236,
+   "total": 202344,
+   "winner": "D",
+   "margin": 48.21
+  },
+  {
+   "state": "CA",
+   "district": 22,
+   "dem": 127231,
+   "rep": 61731,
+   "total": 189490,
+   "winner": "D",
+   "margin": 34.66
+  },
+  {
+   "state": "CA",
+   "district": 23,
+   "dem": 93932,
+   "rep": 39953,
+   "total": 134430,
+   "winner": "D",
+   "margin": 40.32
+  },
+  {
+   "state": "CA",
+   "district": 24,
+   "dem": 98895,
+   "rep": 36340,
+   "total": 135681,
+   "winner": "D",
+   "margin": 46.26
+  },
+  {
+   "state": "CA",
+   "district": 25,
+   "dem": 91623,
+   "rep": 41665,
+   "total": 133826,
+   "winner": "D",
+   "margin": 37.48
+  },
+  {
+   "state": "CA",
+   "district": 26,
+   "dem": 69631,
+   "rep": 59560,
+   "total": 130214,
+   "winner": "D",
+   "margin": 7.8
+  },
+  {
+   "state": "CA",
+   "district": 27,
+   "dem": 64012,
+   "rep": 42543,
+   "total": 107391,
+   "winner": "D",
+   "margin": 20.15
+  },
+  {
+   "state": "CA",
+   "district": 28,
+   "dem": 73893,
+   "rep": 67285,
+   "total": 141981,
+   "winner": "D",
+   "margin": 4.68
+  },
+  {
+   "state": "CA",
+   "district": 29,
+   "dem": 70122,
+   "rep": 68481,
+   "total": 139367,
+   "winner": "D",
+   "margin": 1.18
+  },
+  {
+   "state": "CA",
+   "district": 30,
+   "dem": 92247,
+   "rep": 124245,
+   "total": 217756,
+   "winner": "R",
+   "margin": -14.78
+  },
+  {
+   "state": "CA",
+   "district": 31,
+   "dem": 91077,
+   "rep": 86525,
+   "total": 178534,
+   "winner": "D",
+   "margin": 2.56
+  },
+  {
+   "state": "CA",
+   "district": 32,
+   "dem": 124796,
+   "rep": 87713,
+   "total": 213246,
+   "winner": "D",
+   "margin": 17.45
+  },
+  {
+   "state": "CA",
+   "district": 33,
+   "dem": 76894,
+   "rep": 74586,
+   "total": 152278,
+   "winner": "D",
+   "margin": 1.52
+  },
+  {
+   "state": "CA",
+   "district": 34,
+   "dem": 55452,
+   "rep": 75866,
+   "total": 132174,
+   "winner": "R",
+   "margin": -15.55
+  },
+  {
+   "state": "CA",
+   "district": 35,
+   "dem": 53286,
+   "rep": 75070,
+   "total": 129428,
+   "winner": "R",
+   "margin": -16.97
+  },
+  {
+   "state": "CA",
+   "district": 36,
+   "dem": 103792,
+   "rep": 69003,
+   "total": 173381,
+   "winner": "D",
+   "margin": 20.13
+  },
+  {
+   "state": "CA",
+   "district": 37,
+   "dem": 118112,
+   "rep": 100068,
+   "total": 218657,
+   "winner": "D",
+   "margin": 8.27
+  },
+  {
+   "state": "CA",
+   "district": 38,
+   "dem": 113737,
+   "rep": 55221,
+   "total": 169366,
+   "winner": "D",
+   "margin": 34.63
+  },
+  {
+   "state": "CA",
+   "district": 39,
+   "dem": 80790,
+   "rep": 25872,
+   "total": 106952,
+   "winner": "D",
+   "margin": 51.49
+  },
+  {
+   "state": "CA",
+   "district": 40,
+   "dem": 87400,
+   "rep": 47812,
+   "total": 135574,
+   "winner": "D",
+   "margin": 29.28
+  },
+  {
+   "state": "CA",
+   "district": 41,
+   "dem": 161549,
+   "rep": 45622,
+   "total": 207694,
+   "winner": "D",
+   "margin": 55.96
+  },
+  {
+   "state": "CA",
+   "district": 42,
+   "dem": 139640,
+   "rep": 27965,
+   "total": 168072,
+   "winner": "D",
+   "margin": 66.63
+  },
+  {
+   "state": "CA",
+   "district": 43,
+   "dem": 117265,
+   "rep": 29732,
+   "total": 147399,
+   "winner": "D",
+   "margin": 59.55
+  },
+  {
+   "state": "CA",
+   "district": 44,
+   "dem": 64347,
+   "rep": 9334,
+   "total": 73925,
+   "winner": "D",
+   "margin": 74.66
+  },
+  {
+   "state": "CA",
+   "district": 45,
+   "dem": 88277,
+   "rep": 5068,
+   "total": 93744,
+   "winner": "D",
+   "margin": 89.14
+  },
+  {
+   "state": "CA",
+   "district": 46,
+   "dem": 92920,
+   "rep": 21593,
+   "total": 114815,
+   "winner": "D",
+   "margin": 62.29
+  },
+  {
+   "state": "CA",
+   "district": 47,
+   "dem": 98849,
+   "rep": 45859,
+   "total": 145139,
+   "winner": "D",
+   "margin": 36.62
+  },
+  {
+   "state": "CA",
+   "district": 48,
+   "dem": 118711,
+   "rep": 63282,
+   "total": 182549,
+   "winner": "D",
+   "margin": 30.46
+  },
+  {
+   "state": "CA",
+   "district": 49,
+   "dem": 63337,
+   "rep": 14062,
+   "total": 77759,
+   "winner": "D",
+   "margin": 63.66
+  },
+  {
+   "state": "CA",
+   "district": 50,
+   "dem": 72838,
+   "rep": 31799,
+   "total": 104974,
+   "winner": "D",
+   "margin": 39.22
+  },
+  {
+   "state": "CA",
+   "district": 51,
+   "dem": 114772,
+   "rep": 56490,
+   "total": 171804,
+   "winner": "D",
+   "margin": 34.03
+  },
+  {
+   "state": "CA",
+   "district": 52,
+   "dem": 93363,
+   "rep": 60386,
+   "total": 154183,
+   "winner": "D",
+   "margin": 21.45
+  },
+  {
+   "state": "CA",
+   "district": 53,
+   "dem": 83025,
+   "rep": 14156,
+   "total": 97615,
+   "winner": "D",
+   "margin": 70.87
+  },
+  {
+   "state": "CA",
+   "district": 54,
+   "dem": 92725,
+   "rep": 28197,
+   "total": 121339,
+   "winner": "D",
+   "margin": 53.36
+  },
+  {
+   "state": "CA",
+   "district": 55,
+   "dem": 90321,
+   "rep": 56228,
+   "total": 147009,
+   "winner": "D",
+   "margin": 23.26
+  },
+  {
+   "state": "CA",
+   "district": 56,
+   "dem": 100764,
+   "rep": 82913,
+   "total": 184151,
+   "winner": "D",
+   "margin": 9.72
+  },
+  {
+   "state": "CA",
+   "district": 57,
+   "dem": 69093,
+   "rep": 59827,
+   "total": 129294,
+   "winner": "D",
+   "margin": 7.19
+  },
+  {
+   "state": "CA",
+   "district": 58,
+   "dem": 62093,
+   "rep": 67239,
+   "total": 129672,
+   "winner": "R",
+   "margin": -3.98
+  },
+  {
+   "state": "CA",
+   "district": 59,
+   "dem": 83927,
+   "rep": 86709,
+   "total": 171043,
+   "winner": "R",
+   "margin": -1.63
+  },
+  {
+   "state": "CA",
+   "district": 60,
+   "dem": 78356,
+   "rep": 62605,
+   "total": 141337,
+   "winner": "D",
+   "margin": 11.17
+  },
+  {
+   "state": "CA",
+   "district": 61,
+   "dem": 68257,
+   "rep": 75524,
+   "total": 144174,
+   "winner": "R",
+   "margin": -5.05
+  },
+  {
+   "state": "CA",
+   "district": 62,
+   "dem": 106843,
+   "rep": 94711,
+   "total": 201959,
+   "winner": "D",
+   "margin": 6.02
+  },
+  {
+   "state": "CA",
+   "district": 63,
+   "dem": 95449,
+   "rep": 113534,
+   "total": 209407,
+   "winner": "R",
+   "margin": -8.65
+  },
+  {
+   "state": "CA",
+   "district": 64,
+   "dem": 97232,
+   "rep": 96634,
+   "total": 194314,
+   "winner": "D",
+   "margin": 0.31
+  },
+  {
+   "state": "CA",
+   "district": 65,
+   "dem": 123272,
+   "rep": 51487,
+   "total": 175298,
+   "winner": "D",
+   "margin": 41.08
+  },
+  {
+   "state": "CA",
+   "district": 66,
+   "dem": 113503,
+   "rep": 105971,
+   "total": 219906,
+   "winner": "D",
+   "margin": 3.43
+  },
+  {
+   "state": "CA",
+   "district": 67,
+   "dem": 114213,
+   "rep": 94855,
+   "total": 209460,
+   "winner": "D",
+   "margin": 9.26
+  },
+  {
+   "state": "CA",
+   "district": 68,
+   "dem": 80058,
+   "rep": 40427,
+   "total": 120840,
+   "winner": "D",
+   "margin": 32.89
+  },
+  {
+   "state": "CA",
+   "district": 69,
+   "dem": 96816,
+   "rep": 90881,
+   "total": 188141,
+   "winner": "D",
+   "margin": 3.16
+  },
+  {
+   "state": "CA",
+   "district": 70,
+   "dem": 82520,
+   "rep": 54938,
+   "total": 137813,
+   "winner": "D",
+   "margin": 20.07
+  },
+  {
+   "state": "CA",
+   "district": 71,
+   "dem": 93635,
+   "rep": 86650,
+   "total": 181104,
+   "winner": "D",
+   "margin": 3.87
+  },
+  {
+   "state": "CA",
+   "district": 72,
+   "dem": 89489,
+   "rep": 56849,
+   "total": 146781,
+   "winner": "D",
+   "margin": 22.3
+  },
+  {
+   "state": "CA",
+   "district": 73,
+   "dem": 81081,
+   "rep": 85169,
+   "total": 166835,
+   "winner": "R",
+   "margin": -2.46
+  },
+  {
+   "state": "CA",
+   "district": 74,
+   "dem": 72574,
+   "rep": 41217,
+   "total": 114246,
+   "winner": "D",
+   "margin": 27.56
+  },
+  {
+   "state": "CA",
+   "district": 75,
+   "dem": 77614,
+   "rep": 46385,
+   "total": 124572,
+   "winner": "D",
+   "margin": 25.18
+  },
+  {
+   "state": "CA",
+   "district": 76,
+   "dem": 96286,
+   "rep": 113985,
+   "total": 211072,
+   "winner": "R",
+   "margin": -8.42
+  },
+  {
+   "state": "CA",
+   "district": 77,
+   "dem": 80460,
+   "rep": 98672,
+   "total": 180109,
+   "winner": "R",
+   "margin": -10.17
+  },
+  {
+   "state": "CA",
+   "district": 78,
+   "dem": 75009,
+   "rep": 79635,
+   "total": 155600,
+   "winner": "R",
+   "margin": -2.99
+  },
+  {
+   "state": "CA",
+   "district": 79,
+   "dem": 83174,
+   "rep": 80317,
+   "total": 164663,
+   "winner": "D",
+   "margin": 1.75
+  },
+  {
+   "state": "CO",
+   "district": 1,
+   "dem": 157150,
+   "rep": 110119,
+   "total": 271816,
+   "winner": "D",
+   "margin": 17.6
+  },
+  {
+   "state": "CO",
+   "district": 2,
+   "dem": 108046,
+   "rep": 126584,
+   "total": 239693,
+   "winner": "R",
+   "margin": -7.9
+  },
+  {
+   "state": "CO",
+   "district": 3,
+   "dem": 130977,
+   "rep": 106625,
+   "total": 241938,
+   "winner": "D",
+   "margin": 10.25
+  },
+  {
+   "state": "CO",
+   "district": 4,
+   "dem": 162461,
+   "rep": 113989,
+   "total": 281513,
+   "winner": "D",
+   "margin": 17.53
+  },
+  {
+   "state": "CO",
+   "district": 5,
+   "dem": 115496,
+   "rep": 56918,
+   "total": 175955,
+   "winner": "D",
+   "margin": 33.98
+  },
+  {
+   "state": "CO",
+   "district": 6,
+   "dem": 160401,
+   "rep": 76962,
+   "total": 241043,
+   "winner": "D",
+   "margin": 35.15
+  },
+  {
+   "state": "CO",
+   "district": 7,
+   "dem": 125168,
+   "rep": 96852,
+   "total": 226406,
+   "winner": "D",
+   "margin": 12.75
+  },
+  {
+   "state": "CO",
+   "district": 8,
+   "dem": 139477,
+   "rep": 124687,
+   "total": 268158,
+   "winner": "D",
+   "margin": 5.6
+  },
+  {
+   "state": "CO",
+   "district": 9,
+   "dem": 100386,
+   "rep": 92729,
+   "total": 196743,
+   "winner": "D",
+   "margin": 3.96
+  },
+  {
+   "state": "CO",
+   "district": 10,
+   "dem": 88865,
+   "rep": 168152,
+   "total": 261739,
+   "winner": "R",
+   "margin": -30.85
+  },
+  {
+   "state": "CT",
+   "district": 1,
+   "dem": 114854,
+   "rep": 102719,
+   "total": 220071,
+   "winner": "D",
+   "margin": 5.58
+  },
+  {
+   "state": "CT",
+   "district": 2,
+   "dem": 114809,
+   "rep": 91105,
+   "total": 209391,
+   "winner": "D",
+   "margin": 11.51
+  },
+  {
+   "state": "CT",
+   "district": 3,
+   "dem": 122235,
+   "rep": 82183,
+   "total": 205917,
+   "winner": "D",
+   "margin": 19.59
+  },
+  {
+   "state": "CT",
+   "district": 4,
+   "dem": 119213,
+   "rep": 56627,
+   "total": 177674,
+   "winner": "D",
+   "margin": 35.59
+  },
+  {
+   "state": "CT",
+   "district": 5,
+   "dem": 127461,
+   "rep": 63402,
+   "total": 193353,
+   "winner": "D",
+   "margin": 33.56
+  },
+  {
+   "state": "CT",
+   "district": 6,
+   "dem": 137077,
+   "rep": 83257,
+   "total": 223300,
+   "winner": "D",
+   "margin": 24.43
+  },
+  {
+   "state": "CT",
+   "district": 7,
+   "dem": 138100,
+   "rep": 67987,
+   "total": 208758,
+   "winner": "D",
+   "margin": 34.02
+  },
+  {
+   "state": "CT",
+   "district": 8,
+   "dem": 124298,
+   "rep": 81924,
+   "total": 209613,
+   "winner": "D",
+   "margin": 20.55
+  },
+  {
+   "state": "DE",
+   "district": 1,
+   "dem": 121517,
+   "rep": 98876,
+   "total": 223435,
+   "winner": "D",
+   "margin": 10.27
+  },
+  {
+   "state": "DE",
+   "district": 2,
+   "dem": 133942,
+   "rep": 53498,
+   "total": 190057,
+   "winner": "D",
+   "margin": 42.92
+  },
+  {
+   "state": "FL",
+   "district": 1,
+   "dem": 83914,
+   "rep": 154307,
+   "total": 241031,
+   "winner": "R",
+   "margin": -29.55
+  },
+  {
+   "state": "FL",
+   "district": 2,
+   "dem": 66609,
+   "rep": 169584,
+   "total": 239432,
+   "winner": "R",
+   "margin": -43.6
+  },
+  {
+   "state": "FL",
+   "district": 3,
+   "dem": 135062,
+   "rep": 109754,
+   "total": 247583,
+   "winner": "D",
+   "margin": 10.34
+  },
+  {
+   "state": "FL",
+   "district": 4,
+   "dem": 107989,
+   "rep": 122301,
+   "total": 233750,
+   "winner": "R",
+   "margin": -6.21
+  },
+  {
+   "state": "FL",
+   "district": 5,
+   "dem": 122358,
+   "rep": 166545,
+   "total": 292714,
+   "winner": "R",
+   "margin": -15.29
+  },
+  {
+   "state": "FL",
+   "district": 6,
+   "dem": 128619,
+   "rep": 110655,
+   "total": 241234,
+   "winner": "D",
+   "margin": 7.51
+  },
+  {
+   "state": "FL",
+   "district": 7,
+   "dem": 89038,
+   "rep": 134852,
+   "total": 225804,
+   "winner": "R",
+   "margin": -20.46
+  },
+  {
+   "state": "FL",
+   "district": 8,
+   "dem": 112448,
+   "rep": 195763,
+   "total": 311392,
+   "winner": "R",
+   "margin": -27.03
+  },
+  {
+   "state": "FL",
+   "district": 9,
+   "dem": 126354,
+   "rep": 111953,
+   "total": 240947,
+   "winner": "D",
+   "margin": 6.04
+  },
+  {
+   "state": "FL",
+   "district": 10,
+   "dem": 111024,
+   "rep": 107621,
+   "total": 221434,
+   "winner": "D",
+   "margin": 1.56
+  },
+  {
+   "state": "FL",
+   "district": 11,
+   "dem": 121576,
+   "rep": 84022,
+   "total": 208204,
+   "winner": "D",
+   "margin": 18.27
+  },
+  {
+   "state": "FL",
+   "district": 12,
+   "dem": 110298,
+   "rep": 103278,
+   "total": 215677,
+   "winner": "D",
+   "margin": 3.29
+  },
+  {
+   "state": "FL",
+   "district": 13,
+   "dem": 126675,
+   "rep": 89474,
+   "total": 218363,
+   "winner": "D",
+   "margin": 17.21
+  },
+  {
+   "state": "FL",
+   "district": 14,
+   "dem": 138965,
+   "rep": 141728,
+   "total": 284009,
+   "winner": "R",
+   "margin": -0.98
+  },
+  {
+   "state": "FL",
+   "district": 15,
+   "dem": 116394,
+   "rep": 139983,
+   "total": 259416,
+   "winner": "R",
+   "margin": -9.2
+  },
+  {
+   "state": "FL",
+   "district": 16,
+   "dem": 126017,
+   "rep": 74865,
+   "total": 202365,
+   "winner": "D",
+   "margin": 25.46
+  },
+  {
+   "state": "FL",
+   "district": 17,
+   "dem": 124674,
+   "rep": 93617,
+   "total": 220183,
+   "winner": "D",
+   "margin": 14.23
+  },
+  {
+   "state": "FL",
+   "district": 18,
+   "dem": 121597,
+   "rep": 125240,
+   "total": 249066,
+   "winner": "R",
+   "margin": -1.48
+  },
+  {
+   "state": "FL",
+   "district": 19,
+   "dem": 116406,
+   "rep": 112738,
+   "total": 231593,
+   "winner": "D",
+   "margin": 1.6
+  },
+  {
+   "state": "FL",
+   "district": 20,
+   "dem": 127040,
+   "rep": 159397,
+   "total": 290015,
+   "winner": "R",
+   "margin": -11.3
+  },
+  {
+   "state": "FL",
+   "district": 21,
+   "dem": 111149,
+   "rep": 117869,
+   "total": 231618,
+   "winner": "R",
+   "margin": -2.93
+  },
+  {
+   "state": "FL",
+   "district": 22,
+   "dem": 115130,
+   "rep": 128801,
+   "total": 247035,
+   "winner": "R",
+   "margin": -5.6
+  },
+  {
+   "state": "FL",
+   "district": 23,
+   "dem": 116889,
+   "rep": 132904,
+   "total": 252323,
+   "winner": "R",
+   "margin": -6.41
+  },
+  {
+   "state": "FL",
+   "district": 24,
+   "dem": 112995,
+   "rep": 148367,
+   "total": 263924,
+   "winner": "R",
+   "margin": -13.53
+  },
+  {
+   "state": "FL",
+   "district": 25,
+   "dem": 108468,
+   "rep": 121981,
+   "total": 232541,
+   "winner": "R",
+   "margin": -5.86
+  },
+  {
+   "state": "FL",
+   "district": 26,
+   "dem": 146238,
+   "rep": 134769,
+   "total": 283497,
+   "winner": "D",
+   "margin": 4.08
+  },
+  {
+   "state": "FL",
+   "district": 27,
+   "dem": 149916,
+   "rep": 91481,
+   "total": 242769,
+   "winner": "D",
+   "margin": 24.21
+  },
+  {
+   "state": "FL",
+   "district": 28,
+   "dem": 116717,
+   "rep": 58585,
+   "total": 176736,
+   "winner": "D",
+   "margin": 33.16
+  },
+  {
+   "state": "FL",
+   "district": 29,
+   "dem": 81800,
+   "rep": 92841,
+   "total": 175879,
+   "winner": "R",
+   "margin": -6.32
+  },
+  {
+   "state": "FL",
+   "district": 30,
+   "dem": 105517,
+   "rep": 88250,
+   "total": 195192,
+   "winner": "D",
+   "margin": 8.91
+  },
+  {
+   "state": "FL",
+   "district": 31,
+   "dem": 84019,
+   "rep": 97014,
+   "total": 182063,
+   "winner": "R",
+   "margin": -7.18
+  },
+  {
+   "state": "FL",
+   "district": 32,
+   "dem": 117125,
+   "rep": 50225,
+   "total": 168281,
+   "winner": "D",
+   "margin": 39.98
+  },
+  {
+   "state": "FL",
+   "district": 33,
+   "dem": 93181,
+   "rep": 51472,
+   "total": 145636,
+   "winner": "D",
+   "margin": 28.83
+  },
+  {
+   "state": "FL",
+   "district": 34,
+   "dem": 138598,
+   "rep": 56561,
+   "total": 196242,
+   "winner": "D",
+   "margin": 42.04
+  },
+  {
+   "state": "FL",
+   "district": 35,
+   "dem": 115389,
+   "rep": 63176,
+   "total": 179822,
+   "winner": "D",
+   "margin": 29.24
+  },
+  {
+   "state": "FL",
+   "district": 36,
+   "dem": 127875,
+   "rep": 64105,
+   "total": 193440,
+   "winner": "D",
+   "margin": 33.22
+  },
+  {
+   "state": "FL",
+   "district": 37,
+   "dem": 128152,
+   "rep": 39986,
+   "total": 169126,
+   "winner": "D",
+   "margin": 52.44
+  },
+  {
+   "state": "GA",
+   "district": 1,
+   "dem": 86541,
+   "rep": 126810,
+   "total": 215774,
+   "winner": "R",
+   "margin": -18.87
+  },
+  {
+   "state": "GA",
+   "district": 2,
+   "dem": 44549,
+   "rep": 123934,
+   "total": 171155,
+   "winner": "R",
+   "margin": -47.12
+  },
+  {
+   "state": "GA",
+   "district": 3,
+   "dem": 78391,
+   "rep": 172659,
+   "total": 254141,
+   "winner": "R",
+   "margin": -37.55
+  },
+  {
+   "state": "GA",
+   "district": 4,
+   "dem": 184084,
+   "rep": 42080,
+   "total": 228010,
+   "winner": "D",
+   "margin": 62.79
+  },
+  {
+   "state": "GA",
+   "district": 5,
+   "dem": 103127,
+   "rep": 118090,
+   "total": 223276,
+   "winner": "R",
+   "margin": -6.76
+  },
+  {
+   "state": "GA",
+   "district": 6,
+   "dem": 86445,
+   "rep": 81988,
+   "total": 169965,
+   "winner": "D",
+   "margin": 2.65
+  },
+  {
+   "state": "GA",
+   "district": 7,
+   "dem": 130676,
+   "rep": 78154,
+   "total": 210676,
+   "winner": "D",
+   "margin": 25.15
+  },
+  {
+   "state": "GA",
+   "district": 8,
+   "dem": 87542,
+   "rep": 195805,
+   "total": 286119,
+   "winner": "R",
+   "margin": -38.21
+  },
+  {
+   "state": "GA",
+   "district": 9,
+   "dem": 47921,
+   "rep": 147059,
+   "total": 197973,
+   "winner": "R",
+   "margin": -50.85
+  },
+  {
+   "state": "GA",
+   "district": 10,
+   "dem": 91477,
+   "rep": 143780,
+   "total": 237522,
+   "winner": "R",
+   "margin": -22.23
+  },
+  {
+   "state": "GA",
+   "district": 11,
+   "dem": 126949,
+   "rep": 94844,
+   "total": 223602,
+   "winner": "D",
+   "margin": 14.48
+  },
+  {
+   "state": "GA",
+   "district": 12,
+   "dem": 159492,
+   "rep": 23792,
+   "total": 184265,
+   "winner": "D",
+   "margin": 74.04
+  },
+  {
+   "state": "GA",
+   "district": 13,
+   "dem": 110196,
+   "rep": 130736,
+   "total": 243206,
+   "winner": "R",
+   "margin": -8.53
+  },
+  {
+   "state": "GA",
+   "district": 14,
+   "dem": 102721,
+   "rep": 95751,
+   "total": 200333,
+   "winner": "D",
+   "margin": 3.51
+  },
+  {
+   "state": "GA",
+   "district": 15,
+   "dem": 79292,
+   "rep": 91616,
+   "total": 173065,
+   "winner": "R",
+   "margin": -7.21
+  },
+  {
+   "state": "GA",
+   "district": 16,
+   "dem": 95927,
+   "rep": 70703,
+   "total": 168395,
+   "winner": "D",
+   "margin": 15.14
+  },
+  {
+   "state": "GA",
+   "district": 17,
+   "dem": 57248,
+   "rep": 102959,
+   "total": 162831,
+   "winner": "R",
+   "margin": -28.53
+  },
+  {
+   "state": "GA",
+   "district": 18,
+   "dem": 74900,
+   "rep": 100853,
+   "total": 178358,
+   "winner": "R",
+   "margin": -14.77
+  },
+  {
+   "state": "GA",
+   "district": 19,
+   "dem": 96728,
+   "rep": 107212,
+   "total": 205793,
+   "winner": "R",
+   "margin": -5.14
+  },
+  {
+   "state": "HI",
+   "district": 1,
+   "dem": 96487,
+   "rep": 40118,
+   "total": 138683,
+   "winner": "D",
+   "margin": 41.26
+  },
+  {
+   "state": "HI",
+   "district": 2,
+   "dem": 92889,
+   "rep": 36925,
+   "total": 131895,
+   "winner": "D",
+   "margin": 43.11
+  },
+  {
+   "state": "HI",
+   "district": 3,
+   "dem": 136495,
+   "rep": 43523,
+   "total": 183284,
+   "winner": "D",
+   "margin": 51.65
+  },
+  {
+   "state": "ID",
+   "district": 1,
+   "dem": 80127,
+   "rep": 139547,
+   "total": 225919,
+   "winner": "R",
+   "margin": -27.05
+  },
+  {
+   "state": "ID",
+   "district": 2,
+   "dem": 97315,
+   "rep": 127488,
+   "total": 230237,
+   "winner": "R",
+   "margin": -13.42
+  },
+  {
+   "state": "ID",
+   "district": 3,
+   "dem": 58998,
+   "rep": 135977,
+   "total": 200774,
+   "winner": "R",
+   "margin": -39.48
+  },
+  {
+   "state": "IL",
+   "district": 1,
+   "dem": 97546,
+   "rep": 101106,
+   "total": 202763,
+   "winner": "R",
+   "margin": -1.79
+  },
+  {
+   "state": "IL",
+   "district": 2,
+   "dem": 113747,
+   "rep": 81345,
+   "total": 198757,
+   "winner": "D",
+   "margin": 16.61
+  },
+  {
+   "state": "IL",
+   "district": 3,
+   "dem": 103027,
+   "rep": 89623,
+   "total": 196691,
+   "winner": "D",
+   "margin": 6.96
+  },
+  {
+   "state": "IL",
+   "district": 4,
+   "dem": 93391,
+   "rep": 107075,
+   "total": 204642,
+   "winner": "R",
+   "margin": -6.83
+  },
+  {
+   "state": "IL",
+   "district": 5,
+   "dem": 120180,
+   "rep": 89391,
+   "total": 213225,
+   "winner": "D",
+   "margin": 14.69
+  },
+  {
+   "state": "IL",
+   "district": 6,
+   "dem": 89981,
+   "rep": 101904,
+   "total": 196743,
+   "winner": "R",
+   "margin": -6.21
+  },
+  {
+   "state": "IL",
+   "district": 7,
+   "dem": 101073,
+   "rep": 95228,
+   "total": 200652,
+   "winner": "D",
+   "margin": 2.98
+  },
+  {
+   "state": "IL",
+   "district": 8,
+   "dem": 87275,
+   "rep": 105247,
+   "total": 197040,
+   "winner": "R",
+   "margin": -9.34
+  },
+  {
+   "state": "IL",
+   "district": 9,
+   "dem": 104059,
+   "rep": 82862,
+   "total": 191218,
+   "winner": "D",
+   "margin": 11.34
+  },
+  {
+   "state": "IL",
+   "district": 10,
+   "dem": 128324,
+   "rep": 118899,
+   "total": 251732,
+   "winner": "D",
+   "margin": 3.81
+  },
+  {
+   "state": "IL",
+   "district": 11,
+   "dem": 120111,
+   "rep": 90146,
+   "total": 213124,
+   "winner": "D",
+   "margin": 14.25
+  },
+  {
+   "state": "IL",
+   "district": 12,
+   "dem": 106348,
+   "rep": 79379,
+   "total": 188331,
+   "winner": "D",
+   "margin": 14.52
+  },
+  {
+   "state": "IL",
+   "district": 13,
+   "dem": 117239,
+   "rep": 91768,
+   "total": 211897,
+   "winner": "D",
+   "margin": 12.19
+  },
+  {
+   "state": "IL",
+   "district": 14,
+   "dem": 126616,
+   "rep": 100432,
+   "total": 229958,
+   "winner": "D",
+   "margin": 11.53
+  },
+  {
+   "state": "IL",
+   "district": 15,
+   "dem": 137718,
+   "rep": 85812,
+   "total": 226768,
+   "winner": "D",
+   "margin": 23.22
+  },
+  {
+   "state": "IL",
+   "district": 16,
+   "dem": 109241,
+   "rep": 95704,
+   "total": 208317,
+   "winner": "D",
+   "margin": 6.61
+  },
+  {
+   "state": "IL",
+   "district": 17,
+   "dem": 109782,
+   "rep": 72232,
+   "total": 184348,
+   "winner": "D",
+   "margin": 20.63
+  },
+  {
+   "state": "IL",
+   "district": 18,
+   "dem": 98887,
+   "rep": 70270,
+   "total": 171449,
+   "winner": "D",
+   "margin": 16.92
+  },
+  {
+   "state": "IL",
+   "district": 19,
+   "dem": 121864,
+   "rep": 70992,
+   "total": 195037,
+   "winner": "D",
+   "margin": 26.38
+  },
+  {
+   "state": "IL",
+   "district": 20,
+   "dem": 102530,
+   "rep": 52735,
+   "total": 157554,
+   "winner": "D",
+   "margin": 32.07
+  },
+  {
+   "state": "IL",
+   "district": 21,
+   "dem": 129949,
+   "rep": 52799,
+   "total": 185324,
+   "winner": "D",
+   "margin": 42.22
+  },
+  {
+   "state": "IL",
+   "district": 22,
+   "dem": 110712,
+   "rep": 23362,
+   "total": 136184,
+   "winner": "D",
+   "margin": 65.15
+  },
+  {
+   "state": "IL",
+   "district": 23,
+   "dem": 114721,
+   "rep": 49454,
+   "total": 166572,
+   "winner": "D",
+   "margin": 39.75
+  },
+  {
+   "state": "IL",
+   "district": 24,
+   "dem": 107927,
+   "rep": 7155,
+   "total": 115995,
+   "winner": "D",
+   "margin": 87.57
+  },
+  {
+   "state": "IL",
+   "district": 25,
+   "dem": 137407,
+   "rep": 27099,
+   "total": 166890,
+   "winner": "D",
+   "margin": 67.05
+  },
+  {
+   "state": "IL",
+   "district": 26,
+   "dem": 144350,
+   "rep": 29113,
+   "total": 175557,
+   "winner": "D",
+   "margin": 66.43
+  },
+  {
+   "state": "IL",
+   "district": 27,
+   "dem": 153021,
+   "rep": 41300,
+   "total": 196357,
+   "winner": "D",
+   "margin": 57.49
+  },
+  {
+   "state": "IL",
+   "district": 28,
+   "dem": 163240,
+   "rep": 18167,
+   "total": 182884,
+   "winner": "D",
+   "margin": 79.97
+  },
+  {
+   "state": "IL",
+   "district": 29,
+   "dem": 170325,
+   "rep": 2527,
+   "total": 173833,
+   "winner": "D",
+   "margin": 97.08
+  },
+  {
+   "state": "IN",
+   "district": 1,
+   "dem": 90296,
+   "rep": 106642,
+   "total": 200438,
+   "winner": "R",
+   "margin": -8.3
+  },
+  {
+   "state": "IN",
+   "district": 2,
+   "dem": 102481,
+   "rep": 101186,
+   "total": 206152,
+   "winner": "D",
+   "margin": 0.64
+  },
+  {
+   "state": "IN",
+   "district": 3,
+   "dem": 92146,
+   "rep": 105047,
+   "total": 200354,
+   "winner": "R",
+   "margin": -6.54
+  },
+  {
+   "state": "IN",
+   "district": 4,
+   "dem": 89024,
+   "rep": 108170,
+   "total": 200472,
+   "winner": "R",
+   "margin": -9.71
+  },
+  {
+   "state": "IN",
+   "district": 5,
+   "dem": 135610,
+   "rep": 75613,
+   "total": 213001,
+   "winner": "D",
+   "margin": 28.4
+  },
+  {
+   "state": "IN",
+   "district": 6,
+   "dem": 113871,
+   "rep": 88856,
+   "total": 204772,
+   "winner": "D",
+   "margin": 12.34
+  },
+  {
+   "state": "IN",
+   "district": 7,
+   "dem": 77885,
+   "rep": 114456,
+   "total": 196010,
+   "winner": "R",
+   "margin": -19.01
+  },
+  {
+   "state": "IN",
+   "district": 8,
+   "dem": 123827,
+   "rep": 52292,
+   "total": 177932,
+   "winner": "D",
+   "margin": 40.62
+  },
+  {
+   "state": "IN",
+   "district": 9,
+   "dem": 88034,
+   "rep": 96748,
+   "total": 188262,
+   "winner": "R",
+   "margin": -4.72
+  },
+  {
+   "state": "IN",
+   "district": 10,
+   "dem": 113082,
+   "rep": 85306,
+   "total": 201436,
+   "winner": "D",
+   "margin": 14.0
+  },
+  {
+   "state": "IN",
+   "district": 11,
+   "dem": 84326,
+   "rep": 95997,
+   "total": 182849,
+   "winner": "R",
+   "margin": -6.47
+  },
+  {
+   "state": "IN",
+   "district": 12,
+   "dem": 79507,
+   "rep": 104746,
+   "total": 186849,
+   "winner": "R",
+   "margin": -13.7
+  },
+  {
+   "state": "IN",
+   "district": 13,
+   "dem": 88182,
+   "rep": 111780,
+   "total": 203185,
+   "winner": "R",
+   "margin": -11.8
+  },
+  {
+   "state": "IN",
+   "district": 14,
+   "dem": 88585,
+   "rep": 93151,
+   "total": 184846,
+   "winner": "R",
+   "margin": -2.51
+  },
+  {
+   "state": "IA",
+   "district": 1,
+   "dem": 85075,
+   "rep": 108798,
+   "total": 198074,
+   "winner": "R",
+   "margin": -12.24
+  },
+  {
+   "state": "IA",
+   "district": 2,
+   "dem": 114503,
+   "rep": 94669,
+   "total": 214196,
+   "winner": "D",
+   "margin": 9.48
+  },
+  {
+   "state": "IA",
+   "district": 3,
+   "dem": 117573,
+   "rep": 119564,
+   "total": 241945,
+   "winner": "R",
+   "margin": -0.84
+  },
+  {
+   "state": "IA",
+   "district": 4,
+   "dem": 119523,
+   "rep": 95519,
+   "total": 219814,
+   "winner": "D",
+   "margin": 11.16
+  },
+  {
+   "state": "IA",
+   "district": 5,
+   "dem": 128612,
+   "rep": 81362,
+   "total": 214809,
+   "winner": "D",
+   "margin": 22.5
+  },
+  {
+   "state": "IA",
+   "district": 6,
+   "dem": 129319,
+   "rep": 89873,
+   "total": 223367,
+   "winner": "D",
+   "margin": 18.0
+  },
+  {
+   "state": "IA",
+   "district": 7,
+   "dem": 134002,
+   "rep": 92319,
+   "total": 230260,
+   "winner": "D",
+   "margin": 18.42
+  },
+  {
+   "state": "KS",
+   "district": 1,
+   "dem": 47548,
+   "rep": 124443,
+   "total": 177240,
+   "winner": "R",
+   "margin": -44.71
+  },
+  {
+   "state": "KS",
+   "district": 2,
+   "dem": 71064,
+   "rep": 126068,
+   "total": 201815,
+   "winner": "R",
+   "margin": -27.9
+  },
+  {
+   "state": "KS",
+   "district": 3,
+   "dem": 76447,
+   "rep": 98460,
+   "total": 178982,
+   "winner": "R",
+   "margin": -12.59
+  },
+  {
+   "state": "KS",
+   "district": 4,
+   "dem": 103041,
+   "rep": 91577,
+   "total": 198805,
+   "winner": "D",
+   "margin": 5.89
+  },
+  {
+   "state": "KS",
+   "district": 5,
+   "dem": 88596,
+   "rep": 115495,
+   "total": 209299,
+   "winner": "R",
+   "margin": -13.18
+  },
+  {
+   "state": "KS",
+   "district": 6,
+   "dem": 127969,
+   "rep": 143468,
+   "total": 275335,
+   "winner": "R",
+   "margin": -5.71
+  },
+  {
+   "state": "KY",
+   "district": 1,
+   "dem": 78293,
+   "rep": 116657,
+   "total": 198832,
+   "winner": "R",
+   "margin": -19.68
+  },
+  {
+   "state": "KY",
+   "district": 2,
+   "dem": 75789,
+   "rep": 118151,
+   "total": 197365,
+   "winner": "R",
+   "margin": -21.84
+  },
+  {
+   "state": "KY",
+   "district": 3,
+   "dem": 134313,
+   "rep": 72909,
+   "total": 209587,
+   "winner": "D",
+   "margin": 29.63
+  },
+  {
+   "state": "KY",
+   "district": 4,
+   "dem": 78158,
+   "rep": 127031,
+   "total": 208503,
+   "winner": "R",
+   "margin": -23.82
+  },
+  {
+   "state": "KY",
+   "district": 5,
+   "dem": 105162,
+   "rep": 149622,
+   "total": 258594,
+   "winner": "R",
+   "margin": -17.45
+  },
+  {
+   "state": "KY",
+   "district": 6,
+   "dem": 81108,
+   "rep": 128289,
+   "total": 212900,
+   "winner": "R",
+   "margin": -22.53
+  },
+  {
+   "state": "KY",
+   "district": 7,
+   "dem": 73347,
+   "rep": 121960,
+   "total": 198553,
+   "winner": "R",
+   "margin": -24.89
+  },
+  {
+   "state": "KY",
+   "district": 8,
+   "dem": 76502,
+   "rep": 109867,
+   "total": 190186,
+   "winner": "R",
+   "margin": -17.9
+  },
+  {
+   "state": "KY",
+   "district": 9,
+   "dem": 49276,
+   "rep": 103997,
+   "total": 156767,
+   "winner": "R",
+   "margin": -35.7
+  },
+  {
+   "state": "LA",
+   "district": 1,
+   "dem": 66248,
+   "rep": 134316,
+   "total": 204788,
+   "winner": "R",
+   "margin": -33.94
+  },
+  {
+   "state": "LA",
+   "district": 2,
+   "dem": 67688,
+   "rep": 121481,
+   "total": 193117,
+   "winner": "R",
+   "margin": -28.44
+  },
+  {
+   "state": "LA",
+   "district": 3,
+   "dem": 101488,
+   "rep": 109305,
+   "total": 214192,
+   "winner": "R",
+   "margin": -3.71
+  },
+  {
+   "state": "LA",
+   "district": 4,
+   "dem": 85051,
+   "rep": 111766,
+   "total": 199365,
+   "winner": "R",
+   "margin": -13.57
+  },
+  {
+   "state": "LA",
+   "district": 5,
+   "dem": 76095,
+   "rep": 119581,
+   "total": 198903,
+   "winner": "R",
+   "margin": -22.22
+  },
+  {
+   "state": "LA",
+   "district": 6,
+   "dem": 79415,
+   "rep": 122540,
+   "total": 206103,
+   "winner": "R",
+   "margin": -21.35
+  },
+  {
+   "state": "LA",
+   "district": 7,
+   "dem": 78317,
+   "rep": 150060,
+   "total": 231947,
+   "winner": "R",
+   "margin": -31.41
+  },
+  {
+   "state": "LA",
+   "district": 8,
+   "dem": 55795,
+   "rep": 157401,
+   "total": 217117,
+   "winner": "R",
+   "margin": -47.66
+  },
+  {
+   "state": "LA",
+   "district": 9,
+   "dem": 91239,
+   "rep": 54670,
+   "total": 148419,
+   "winner": "D",
+   "margin": 25.06
+  },
+  {
+   "state": "LA",
+   "district": 10,
+   "dem": 81653,
+   "rep": 67155,
+   "total": 151906,
+   "winner": "D",
+   "margin": 9.74
+  },
+  {
+   "state": "ME",
+   "district": 1,
+   "dem": 159484,
+   "rep": 93409,
+   "total": 257576,
+   "winner": "D",
+   "margin": 26.13
+  },
+  {
+   "state": "ME",
+   "district": 2,
+   "dem": 138290,
+   "rep": 98166,
+   "total": 241785,
+   "winner": "D",
+   "margin": 16.97
+  },
+  {
+   "state": "ME",
+   "district": 3,
+   "dem": 124149,
+   "rep": 103698,
+   "total": 232543,
+   "winner": "D",
+   "margin": 8.98
+  },
+  {
+   "state": "MD",
+   "district": 1,
+   "dem": 98077,
+   "rep": 118648,
+   "total": 220553,
+   "winner": "R",
+   "margin": -9.49
+  },
+  {
+   "state": "MD",
+   "district": 2,
+   "dem": 122193,
+   "rep": 130394,
+   "total": 256677,
+   "winner": "R",
+   "margin": -3.25
+  },
+  {
+   "state": "MD",
+   "district": 3,
+   "dem": 158846,
+   "rep": 39266,
+   "total": 200388,
+   "winner": "D",
+   "margin": 60.36
+  },
+  {
+   "state": "MD",
+   "district": 4,
+   "dem": 161126,
+   "rep": 64802,
+   "total": 228522,
+   "winner": "D",
+   "margin": 42.63
+  },
+  {
+   "state": "MD",
+   "district": 5,
+   "dem": 138046,
+   "rep": 32747,
+   "total": 172915,
+   "winner": "D",
+   "margin": 61.65
+  },
+  {
+   "state": "MD",
+   "district": 6,
+   "dem": 154590,
+   "rep": 76193,
+   "total": 233854,
+   "winner": "D",
+   "margin": 33.97
+  },
+  {
+   "state": "MD",
+   "district": 7,
+   "dem": 165069,
+   "rep": 83009,
+   "total": 250435,
+   "winner": "D",
+   "margin": 33.08
+  },
+  {
+   "state": "MD",
+   "district": 8,
+   "dem": 187499,
+   "rep": 30308,
+   "total": 219282,
+   "winner": "D",
+   "margin": 72.17
+  },
+  {
+   "state": "MD",
+   "district": 9,
+   "dem": 120980,
+   "rep": 81279,
+   "total": 205320,
+   "winner": "D",
+   "margin": 19.63
+  },
+  {
+   "state": "MD",
+   "district": 10,
+   "dem": 114736,
+   "rep": 67643,
+   "total": 185463,
+   "winner": "D",
+   "margin": 25.82
+  },
+  {
+   "state": "MD",
+   "district": 11,
+   "dem": 108657,
+   "rep": 111563,
+   "total": 224325,
+   "winner": "R",
+   "margin": -1.32
+  },
+  {
+   "state": "MD",
+   "district": 12,
+   "dem": 99176,
+   "rep": 123842,
+   "total": 226748,
+   "winner": "R",
+   "margin": -11.06
+  },
+  {
+   "state": "MA",
+   "district": 1,
+   "dem": 139831,
+   "rep": 60002,
+   "total": 204756,
+   "winner": "D",
+   "margin": 39.95
+  },
+  {
+   "state": "MA",
+   "district": 2,
+   "dem": 124339,
+   "rep": 63137,
+   "total": 191677,
+   "winner": "D",
+   "margin": 32.65
+  },
+  {
+   "state": "MA",
+   "district": 3,
+   "dem": 117787,
+   "rep": 87408,
+   "total": 209641,
+   "winner": "D",
+   "margin": 14.8
+  },
+  {
+   "state": "MA",
+   "district": 4,
+   "dem": 113349,
+   "rep": 87682,
+   "total": 205286,
+   "winner": "D",
+   "margin": 12.77
+  },
+  {
+   "state": "MA",
+   "district": 5,
+   "dem": 130912,
+   "rep": 79583,
+   "total": 214180,
+   "winner": "D",
+   "margin": 24.38
+  },
+  {
+   "state": "MA",
+   "district": 6,
+   "dem": 144552,
+   "rep": 63078,
+   "total": 211155,
+   "winner": "D",
+   "margin": 39.24
+  },
+  {
+   "state": "MA",
+   "district": 7,
+   "dem": 137083,
+   "rep": 82501,
+   "total": 223335,
+   "winner": "D",
+   "margin": 24.86
+  },
+  {
+   "state": "MA",
+   "district": 8,
+   "dem": 119533,
+   "rep": 87934,
+   "total": 211004,
+   "winner": "D",
+   "margin": 15.23
+  },
+  {
+   "state": "MA",
+   "district": 9,
+   "dem": 115850,
+   "rep": 63485,
+   "total": 182677,
+   "winner": "D",
+   "margin": 29.2
+  },
+  {
+   "state": "MA",
+   "district": 10,
+   "dem": 144197,
+   "rep": 37135,
+   "total": 183729,
+   "winner": "D",
+   "margin": 59.04
+  },
+  {
+   "state": "MA",
+   "district": 11,
+   "dem": 124706,
+   "rep": 35144,
+   "total": 162611,
+   "winner": "D",
+   "margin": 56.03
+  },
+  {
+   "state": "MA",
+   "district": 12,
+   "dem": 119425,
+   "rep": 89335,
+   "total": 212287,
+   "winner": "D",
+   "margin": 14.41
+  },
+  {
+   "state": "MA",
+   "district": 13,
+   "dem": 118993,
+   "rep": 101992,
+   "total": 224707,
+   "winner": "D",
+   "margin": 7.69
+  },
+  {
+   "state": "MA",
+   "district": 14,
+   "dem": 116070,
+   "rep": 70659,
+   "total": 190478,
+   "winner": "D",
+   "margin": 24.32
+  },
+  {
+   "state": "MA",
+   "district": 15,
+   "dem": 137471,
+   "rep": 99778,
+   "total": 241379,
+   "winner": "D",
+   "margin": 15.89
+  },
+  {
+   "state": "MI",
+   "district": 1,
+   "dem": 95256,
+   "rep": 130116,
+   "total": 229063,
+   "winner": "R",
+   "margin": -15.47
+  },
+  {
+   "state": "MI",
+   "district": 2,
+   "dem": 107271,
+   "rep": 99100,
+   "total": 210348,
+   "winner": "D",
+   "margin": 3.96
+  },
+  {
+   "state": "MI",
+   "district": 3,
+   "dem": 118093,
+   "rep": 97093,
+   "total": 219614,
+   "winner": "D",
+   "margin": 9.76
+  },
+  {
+   "state": "MI",
+   "district": 4,
+   "dem": 104326,
+   "rep": 101135,
+   "total": 209751,
+   "winner": "D",
+   "margin": 1.55
+  },
+  {
+   "state": "MI",
+   "district": 5,
+   "dem": 141436,
+   "rep": 93572,
+   "total": 239002,
+   "winner": "D",
+   "margin": 20.37
+  },
+  {
+   "state": "MI",
+   "district": 6,
+   "dem": 116642,
+   "rep": 88156,
+   "total": 209168,
+   "winner": "D",
+   "margin": 13.91
+  },
+  {
+   "state": "MI",
+   "district": 7,
+   "dem": 108476,
+   "rep": 101612,
+   "total": 214985,
+   "winner": "D",
+   "margin": 3.27
+  },
+  {
+   "state": "MI",
+   "district": 8,
+   "dem": 113781,
+   "rep": 117124,
+   "total": 235876,
+   "winner": "R",
+   "margin": -1.45
+  },
+  {
+   "state": "MI",
+   "district": 9,
+   "dem": 118779,
+   "rep": 113800,
+   "total": 236760,
+   "winner": "D",
+   "margin": 2.14
+  },
+  {
+   "state": "MI",
+   "district": 10,
+   "dem": 114815,
+   "rep": 99051,
+   "total": 218613,
+   "winner": "D",
+   "margin": 7.37
+  },
+  {
+   "state": "MI",
+   "district": 11,
+   "dem": 130396,
+   "rep": 75295,
+   "total": 209037,
+   "winner": "D",
+   "margin": 26.79
+  },
+  {
+   "state": "MI",
+   "district": 12,
+   "dem": 157144,
+   "rep": 64028,
+   "total": 224623,
+   "winner": "D",
+   "margin": 42.1
+  },
+  {
+   "state": "MI",
+   "district": 13,
+   "dem": 136110,
+   "rep": 91571,
+   "total": 231870,
+   "winner": "D",
+   "margin": 19.56
+  },
+  {
+   "state": "MI",
+   "district": 14,
+   "dem": 127641,
+   "rep": 124640,
+   "total": 256295,
+   "winner": "D",
+   "margin": 1.19
+  },
+  {
+   "state": "MI",
+   "district": 15,
+   "dem": 173032,
+   "rep": 23427,
+   "total": 198327,
+   "winner": "D",
+   "margin": 76.15
+  },
+  {
+   "state": "MI",
+   "district": 16,
+   "dem": 119914,
+   "rep": 58458,
+   "total": 181667,
+   "winner": "D",
+   "margin": 34.45
+  },
+  {
+   "state": "MI",
+   "district": 17,
+   "dem": 136851,
+   "rep": 5547,
+   "total": 143466,
+   "winner": "D",
+   "margin": 92.21
+  },
+  {
+   "state": "MI",
+   "district": 18,
+   "dem": 135337,
+   "rep": 101819,
+   "total": 240479,
+   "winner": "D",
+   "margin": 14.13
+  },
+  {
+   "state": "MI",
+   "district": 19,
+   "dem": 131304,
+   "rep": 73148,
+   "total": 208153,
+   "winner": "D",
+   "margin": 28.44
+  },
+  {
+   "state": "MI",
+   "district": 20,
+   "dem": 130771,
+   "rep": 58452,
+   "total": 192237,
+   "winner": "D",
+   "margin": 38.22
+  },
+  {
+   "state": "MI",
+   "district": 21,
+   "dem": 123739,
+   "rep": 106242,
+   "total": 233998,
+   "winner": "D",
+   "margin": 7.61
+  },
+  {
+   "state": "MI",
+   "district": 22,
+   "dem": 107922,
+   "rep": 109317,
+   "total": 222347,
+   "winner": "R",
+   "margin": -0.64
+  },
+  {
+   "state": "MI",
+   "district": 23,
+   "dem": 123613,
+   "rep": 115928,
+   "total": 243919,
+   "winner": "D",
+   "margin": 3.21
+  },
+  {
+   "state": "MN",
+   "district": 1,
+   "dem": 107587,
+   "rep": 133022,
+   "total": 247750,
+   "winner": "R",
+   "margin": -10.57
+  },
+  {
+   "state": "MN",
+   "district": 2,
+   "dem": 153419,
+   "rep": 133714,
+   "total": 291864,
+   "winner": "D",
+   "margin": 6.86
+  },
+  {
+   "state": "MN",
+   "district": 3,
+   "dem": 140408,
+   "rep": 97087,
+   "total": 242411,
+   "winner": "D",
+   "margin": 18.24
+  },
+  {
+   "state": "MN",
+   "district": 4,
+   "dem": 116546,
+   "rep": 121323,
+   "total": 244589,
+   "winner": "R",
+   "margin": -2.01
+  },
+  {
+   "state": "MN",
+   "district": 5,
+   "dem": 149182,
+   "rep": 107659,
+   "total": 263581,
+   "winner": "D",
+   "margin": 16.17
+  },
+  {
+   "state": "MN",
+   "district": 6,
+   "dem": 123271,
+   "rep": 156005,
+   "total": 286322,
+   "winner": "R",
+   "margin": -11.72
+  },
+  {
+   "state": "MN",
+   "district": 7,
+   "dem": 177972,
+   "rep": 98840,
+   "total": 281889,
+   "winner": "D",
+   "margin": 28.59
+  },
+  {
+   "state": "MN",
+   "district": 8,
+   "dem": 131163,
+   "rep": 133654,
+   "total": 270988,
+   "winner": "R",
+   "margin": -0.94
+  },
+  {
+   "state": "MN",
+   "district": 9,
+   "dem": 140676,
+   "rep": 123963,
+   "total": 271076,
+   "winner": "D",
+   "margin": 6.32
+  },
+  {
+   "state": "MN",
+   "district": 10,
+   "dem": 185218,
+   "rep": 59199,
+   "total": 249820,
+   "winner": "D",
+   "margin": 51.56
+  },
+  {
+   "state": "MN",
+   "district": 11,
+   "dem": 147912,
+   "rep": 110943,
+   "total": 263985,
+   "winner": "D",
+   "margin": 14.28
+  },
+  {
+   "state": "MS",
+   "district": 1,
+   "dem": 47938,
+   "rep": 103762,
+   "total": 153794,
+   "winner": "R",
+   "margin": -36.8
+  },
+  {
+   "state": "MS",
+   "district": 2,
+   "dem": 94448,
+   "rep": 95656,
+   "total": 192287,
+   "winner": "R",
+   "margin": -0.64
+  },
+  {
+   "state": "MS",
+   "district": 3,
+   "dem": 64619,
+   "rep": 125866,
+   "total": 193416,
+   "winner": "R",
+   "margin": -32.15
+  },
+  {
+   "state": "MS",
+   "district": 4,
+   "dem": 107991,
+   "rep": 59022,
+   "total": 168745,
+   "winner": "D",
+   "margin": 29.32
+  },
+  {
+   "state": "MS",
+   "district": 5,
+   "dem": 82833,
+   "rep": 115931,
+   "total": 201056,
+   "winner": "R",
+   "margin": -16.65
+  },
+  {
+   "state": "MS",
+   "district": 6,
+   "dem": 90289,
+   "rep": 107532,
+   "total": 200211,
+   "winner": "R",
+   "margin": -8.72
+  },
+  {
+   "state": "MS",
+   "district": 7,
+   "dem": 66544,
+   "rep": 116848,
+   "total": 186440,
+   "winner": "R",
+   "margin": -27.43
+  },
+  {
+   "state": "MO",
+   "district": 1,
+   "dem": 73993,
+   "rep": 153425,
+   "total": 231643,
+   "winner": "R",
+   "margin": -34.93
+  },
+  {
+   "state": "MO",
+   "district": 2,
+   "dem": 101255,
+   "rep": 133200,
+   "total": 238673,
+   "winner": "R",
+   "margin": -13.63
+  },
+  {
+   "state": "MO",
+   "district": 3,
+   "dem": 80747,
+   "rep": 127677,
+   "total": 212356,
+   "winner": "R",
+   "margin": -22.52
+  },
+  {
+   "state": "MO",
+   "district": 4,
+   "dem": 144382,
+   "rep": 60208,
+   "total": 207256,
+   "winner": "D",
+   "margin": 41.14
+  },
+  {
+   "state": "MO",
+   "district": 5,
+   "dem": 112187,
+   "rep": 122196,
+   "total": 238471,
+   "winner": "R",
+   "margin": -4.27
+  },
+  {
+   "state": "MO",
+   "district": 6,
+   "dem": 88917,
+   "rep": 121198,
+   "total": 214917,
+   "winner": "R",
+   "margin": -15.36
+  },
+  {
+   "state": "MO",
+   "district": 7,
+   "dem": 100721,
+   "rep": 121359,
+   "total": 226219,
+   "winner": "R",
+   "margin": -9.29
+  },
+  {
+   "state": "MO",
+   "district": 8,
+   "dem": 101102,
+   "rep": 119286,
+   "total": 224158,
+   "winner": "R",
+   "margin": -8.25
+  },
+  {
+   "state": "MO",
+   "district": 9,
+   "dem": 68441,
+   "rep": 121823,
+   "total": 194380,
+   "winner": "R",
+   "margin": -28.06
+  },
+  {
+   "state": "MO",
+   "district": 10,
+   "dem": 115035,
+   "rep": 128253,
+   "total": 245812,
+   "winner": "R",
+   "margin": -5.43
+  },
+  {
+   "state": "MO",
+   "district": 11,
+   "dem": 125922,
+   "rep": 146434,
+   "total": 275468,
+   "winner": "R",
+   "margin": -7.53
+  },
+  {
+   "state": "MO",
+   "district": 12,
+   "dem": 167636,
+   "rep": 45202,
+   "total": 215042,
+   "winner": "D",
+   "margin": 57.52
+  },
+  {
+   "state": "MO",
+   "district": 13,
+   "dem": 161573,
+   "rep": 45553,
+   "total": 209276,
+   "winner": "D",
+   "margin": 56.01
+  },
+  {
+   "state": "MT",
+   "district": 1,
+   "dem": 124534,
+   "rep": 123213,
+   "total": 257113,
+   "winner": "D",
+   "margin": 0.53
+  },
+  {
+   "state": "MT",
+   "district": 2,
+   "dem": 107625,
+   "rep": 120669,
+   "total": 235665,
+   "winner": "R",
+   "margin": -5.71
+  },
+  {
+   "state": "NE",
+   "district": 1,
+   "dem": 54257,
+   "rep": 127846,
+   "total": 187264,
+   "winner": "R",
+   "margin": -40.41
+  },
+  {
+   "state": "NE",
+   "district": 2,
+   "dem": 67961,
+   "rep": 108081,
+   "total": 180562,
+   "winner": "R",
+   "margin": -22.79
+  },
+  {
+   "state": "NE",
+   "district": 3,
+   "dem": 102819,
+   "rep": 121199,
+   "total": 228065,
+   "winner": "R",
+   "margin": -8.2
+  },
+  {
+   "state": "NE",
+   "district": 4,
+   "dem": 108282,
+   "rep": 95853,
+   "total": 207169,
+   "winner": "D",
+   "margin": 6.09
+  },
+  {
+   "state": "NV",
+   "district": 1,
+   "dem": 106534,
+   "rep": 74057,
+   "total": 184835,
+   "winner": "D",
+   "margin": 17.98
+  },
+  {
+   "state": "NV",
+   "district": 2,
+   "dem": 124977,
+   "rep": 96966,
+   "total": 226829,
+   "winner": "D",
+   "margin": 12.62
+  },
+  {
+   "state": "NV",
+   "district": 3,
+   "dem": 107981,
+   "rep": 89174,
+   "total": 201933,
+   "winner": "D",
+   "margin": 9.54
+  },
+  {
+   "state": "NV",
+   "district": 4,
+   "dem": 120428,
+   "rep": 124069,
+   "total": 250410,
+   "winner": "R",
+   "margin": -1.49
+  },
+  {
+   "state": "NV",
+   "district": 5,
+   "dem": 73711,
+   "rep": 28452,
+   "total": 104491,
+   "winner": "D",
+   "margin": 44.3
+  },
+  {
+   "state": "NH",
+   "district": 1,
+   "dem": 121849,
+   "rep": 105022,
+   "total": 229311,
+   "winner": "D",
+   "margin": 7.42
+  },
+  {
+   "state": "NH",
+   "district": 2,
+   "dem": 137617,
+   "rep": 103527,
+   "total": 243961,
+   "winner": "D",
+   "margin": 14.14
+  },
+  {
+   "state": "NH",
+   "district": 3,
+   "dem": 125360,
+   "rep": 107985,
+   "total": 235577,
+   "winner": "D",
+   "margin": 7.45
+  },
+  {
+   "state": "NJ",
+   "district": 1,
+   "dem": 99643,
+   "rep": 125873,
+   "total": 228357,
+   "winner": "R",
+   "margin": -11.63
+  },
+  {
+   "state": "NJ",
+   "district": 2,
+   "dem": 91446,
+   "rep": 116857,
+   "total": 211219,
+   "winner": "R",
+   "margin": -12.2
+  },
+  {
+   "state": "NJ",
+   "district": 3,
+   "dem": 100100,
+   "rep": 113027,
+   "total": 215242,
+   "winner": "R",
+   "margin": -6.07
+  },
+  {
+   "state": "NJ",
+   "district": 4,
+   "dem": 120834,
+   "rep": 79414,
+   "total": 202407,
+   "winner": "D",
+   "margin": 20.68
+  },
+  {
+   "state": "NJ",
+   "district": 5,
+   "dem": 135969,
+   "rep": 36670,
+   "total": 173771,
+   "winner": "D",
+   "margin": 57.52
+  },
+  {
+   "state": "NJ",
+   "district": 6,
+   "dem": 108045,
+   "rep": 24346,
+   "total": 133408,
+   "winner": "D",
+   "margin": 63.22
+  },
+  {
+   "state": "NJ",
+   "district": 7,
+   "dem": 113182,
+   "rep": 27907,
+   "total": 142293,
+   "winner": "D",
+   "margin": 60.44
+  },
+  {
+   "state": "NJ",
+   "district": 8,
+   "dem": 95931,
+   "rep": 62329,
+   "total": 159911,
+   "winner": "D",
+   "margin": 21.23
+  },
+  {
+   "state": "NJ",
+   "district": 9,
+   "dem": 96681,
+   "rep": 47855,
+   "total": 145889,
+   "winner": "D",
+   "margin": 33.78
+  },
+  {
+   "state": "NJ",
+   "district": 10,
+   "dem": 118102,
+   "rep": 95178,
+   "total": 215140,
+   "winner": "D",
+   "margin": 10.75
+  },
+  {
+   "state": "NJ",
+   "district": 11,
+   "dem": 124174,
+   "rep": 89502,
+   "total": 216835,
+   "winner": "D",
+   "margin": 16.23
+  },
+  {
+   "state": "NJ",
+   "district": 12,
+   "dem": 104680,
+   "rep": 85546,
+   "total": 193236,
+   "winner": "D",
+   "margin": 10.06
+  },
+  {
+   "state": "NJ",
+   "district": 13,
+   "dem": 130627,
+   "rep": 63528,
+   "total": 196669,
+   "winner": "D",
+   "margin": 34.56
+  },
+  {
+   "state": "NJ",
+   "district": 14,
+   "dem": 130341,
+   "rep": 92863,
+   "total": 225948,
+   "winner": "D",
+   "margin": 16.79
+  },
+  {
+   "state": "NJ",
+   "district": 15,
+   "dem": 100033,
+   "rep": 119902,
+   "total": 223111,
+   "winner": "R",
+   "margin": -9.03
+  },
+  {
+   "state": "NJ",
+   "district": 16,
+   "dem": 127372,
+   "rep": 72426,
+   "total": 202521,
+   "winner": "D",
+   "margin": 27.5
+  },
+  {
+   "state": "NJ",
+   "district": 17,
+   "dem": 118657,
+   "rep": 73897,
+   "total": 194959,
+   "winner": "D",
+   "margin": 23.25
+  },
+  {
+   "state": "NJ",
+   "district": 18,
+   "dem": 103472,
+   "rep": 62749,
+   "total": 168350,
+   "winner": "D",
+   "margin": 24.5
+  },
+  {
+   "state": "NJ",
+   "district": 19,
+   "dem": 97584,
+   "rep": 121862,
+   "total": 222166,
+   "winner": "R",
+   "margin": -11.06
+  },
+  {
+   "state": "NJ",
+   "district": 20,
+   "dem": 98118,
+   "rep": 101456,
+   "total": 202058,
+   "winner": "R",
+   "margin": -1.67
+  },
+  {
+   "state": "NM",
+   "district": 1,
+   "dem": 126559,
+   "rep": 96418,
+   "total": 224463,
+   "winner": "D",
+   "margin": 13.52
+  },
+  {
+   "state": "NM",
+   "district": 2,
+   "dem": 134003,
+   "rep": 77966,
+   "total": 213655,
+   "winner": "D",
+   "margin": 26.44
+  },
+  {
+   "state": "NM",
+   "district": 3,
+   "dem": 112699,
+   "rep": 69244,
+   "total": 183568,
+   "winner": "D",
+   "margin": 23.88
+  },
+  {
+   "state": "NM",
+   "district": 4,
+   "dem": 70412,
+   "rep": 91084,
+   "total": 163220,
+   "winner": "R",
+   "margin": -12.8
+  },
+  {
+   "state": "NY",
+   "district": 1,
+   "dem": 122787,
+   "rep": 47241,
+   "total": 172856,
+   "winner": "D",
+   "margin": 44.43
+  },
+  {
+   "state": "NY",
+   "district": 2,
+   "dem": 101095,
+   "rep": 99874,
+   "total": 204309,
+   "winner": "D",
+   "margin": 0.61
+  },
+  {
+   "state": "NY",
+   "district": 3,
+   "dem": 99892,
+   "rep": 95505,
+   "total": 199222,
+   "winner": "D",
+   "margin": 2.25
+  },
+  {
+   "state": "NY",
+   "district": 4,
+   "dem": 83836,
+   "rep": 110812,
+   "total": 198391,
+   "winner": "R",
+   "margin": -13.86
+  },
+  {
+   "state": "NY",
+   "district": 5,
+   "dem": 111814,
+   "rep": 69287,
+   "total": 183717,
+   "winner": "D",
+   "margin": 23.48
+  },
+  {
+   "state": "NY",
+   "district": 6,
+   "dem": 120649,
+   "rep": 104637,
+   "total": 228826,
+   "winner": "D",
+   "margin": 7.11
+  },
+  {
+   "state": "NY",
+   "district": 7,
+   "dem": 98273,
+   "rep": 85037,
+   "total": 186865,
+   "winner": "D",
+   "margin": 7.22
+  },
+  {
+   "state": "NY",
+   "district": 8,
+   "dem": 109147,
+   "rep": 90192,
+   "total": 203462,
+   "winner": "D",
+   "margin": 9.51
+  },
+  {
+   "state": "NY",
+   "district": 9,
+   "dem": 111662,
+   "rep": 78221,
+   "total": 193678,
+   "winner": "D",
+   "margin": 17.61
+  },
+  {
+   "state": "NY",
+   "district": 10,
+   "dem": 80112,
+   "rep": 91844,
+   "total": 175760,
+   "winner": "R",
+   "margin": -6.82
+  },
+  {
+   "state": "NY",
+   "district": 11,
+   "dem": 91278,
+   "rep": 74861,
+   "total": 169461,
+   "winner": "D",
+   "margin": 9.88
+  },
+  {
+   "state": "NY",
+   "district": 12,
+   "dem": 96869,
+   "rep": 91718,
+   "total": 193010,
+   "winner": "D",
+   "margin": 2.73
+  },
+  {
+   "state": "NY",
+   "district": 13,
+   "dem": 131211,
+   "rep": 76844,
+   "total": 212165,
+   "winner": "D",
+   "margin": 26.13
+  },
+  {
+   "state": "NY",
+   "district": 14,
+   "dem": 111195,
+   "rep": 103018,
+   "total": 218470,
+   "winner": "D",
+   "margin": 3.82
+  },
+  {
+   "state": "NY",
+   "district": 15,
+   "dem": 99787,
+   "rep": 86619,
+   "total": 189205,
+   "winner": "D",
+   "margin": 7.06
+  },
+  {
+   "state": "NY",
+   "district": 16,
+   "dem": 117434,
+   "rep": 89068,
+   "total": 209687,
+   "winner": "D",
+   "margin": 13.74
+  },
+  {
+   "state": "NY",
+   "district": 17,
+   "dem": 115804,
+   "rep": 96527,
+   "total": 214522,
+   "winner": "D",
+   "margin": 9.08
+  },
+  {
+   "state": "NY",
+   "district": 18,
+   "dem": 129321,
+   "rep": 6990,
+   "total": 136976,
+   "winner": "D",
+   "margin": 89.74
+  },
+  {
+   "state": "NY",
+   "district": 19,
+   "dem": 100517,
+   "rep": 8722,
+   "total": 109791,
+   "winner": "D",
+   "margin": 84.03
+  },
+  {
+   "state": "NY",
+   "district": 20,
+   "dem": 116295,
+   "rep": 20826,
+   "total": 137886,
+   "winner": "D",
+   "margin": 69.62
+  },
+  {
+   "state": "NY",
+   "district": 21,
+   "dem": 118953,
+   "rep": 77858,
+   "total": 198651,
+   "winner": "D",
+   "margin": 20.88
+  },
+  {
+   "state": "NY",
+   "district": 22,
+   "dem": 116118,
+   "rep": 60602,
+   "total": 178252,
+   "winner": "D",
+   "margin": 31.41
+  },
+  {
+   "state": "NY",
+   "district": 23,
+   "dem": 146957,
+   "rep": 22147,
+   "total": 170545,
+   "winner": "D",
+   "margin": 73.81
+  },
+  {
+   "state": "NY",
+   "district": 24,
+   "dem": 172366,
+   "rep": 30284,
+   "total": 204915,
+   "winner": "D",
+   "margin": 70.11
+  },
+  {
+   "state": "NY",
+   "district": 25,
+   "dem": 75997,
+   "rep": 27070,
+   "total": 104049,
+   "winner": "D",
+   "margin": 47.47
+  },
+  {
+   "state": "NY",
+   "district": 26,
+   "dem": 175231,
+   "rep": 36612,
+   "total": 213632,
+   "winner": "D",
+   "margin": 65.43
+  },
+  {
+   "state": "NY",
+   "district": 27,
+   "dem": 137120,
+   "rep": 18000,
+   "total": 156204,
+   "winner": "D",
+   "margin": 76.79
+  },
+  {
+   "state": "NY",
+   "district": 28,
+   "dem": 75639,
+   "rep": 85555,
+   "total": 162606,
+   "winner": "R",
+   "margin": -6.15
+  },
+  {
+   "state": "NY",
+   "district": 29,
+   "dem": 86185,
+   "rep": 35164,
+   "total": 122530,
+   "winner": "D",
+   "margin": 42.04
+  },
+  {
+   "state": "NY",
+   "district": 30,
+   "dem": 47939,
+   "rep": 53907,
+   "total": 102727,
+   "winner": "R",
+   "margin": -5.86
+  },
+  {
+   "state": "NY",
+   "district": 31,
+   "dem": 145014,
+   "rep": 6091,
+   "total": 151723,
+   "winner": "D",
+   "margin": 91.94
+  },
+  {
+   "state": "NY",
+   "district": 32,
+   "dem": 118173,
+   "rep": 8379,
+   "total": 126922,
+   "winner": "D",
+   "margin": 86.76
+  },
+  {
+   "state": "NY",
+   "district": 33,
+   "dem": 94671,
+   "rep": 44898,
+   "total": 140430,
+   "winner": "D",
+   "margin": 35.66
+  },
+  {
+   "state": "NY",
+   "district": 34,
+   "dem": 68991,
+   "rep": 21624,
+   "total": 91252,
+   "winner": "D",
+   "margin": 52.27
+  },
+  {
+   "state": "NY",
+   "district": 35,
+   "dem": 103427,
+   "rep": 24906,
+   "total": 129043,
+   "winner": "D",
+   "margin": 61.19
+  },
+  {
+   "state": "NY",
+   "district": 36,
+   "dem": 92500,
+   "rep": 49566,
+   "total": 143450,
+   "winner": "D",
+   "margin": 30.22
+  },
+  {
+   "state": "NY",
+   "district": 37,
+   "dem": 107432,
+   "rep": 15804,
+   "total": 123869,
+   "winner": "D",
+   "margin": 74.35
+  },
+  {
+   "state": "NY",
+   "district": 38,
+   "dem": 127581,
+   "rep": 44450,
+   "total": 173128,
+   "winner": "D",
+   "margin": 48.32
+  },
+  {
+   "state": "NY",
+   "district": 39,
+   "dem": 111830,
+   "rep": 84261,
+   "total": 197829,
+   "winner": "D",
+   "margin": 14.06
+  },
+  {
+   "state": "NY",
+   "district": 40,
+   "dem": 107234,
+   "rep": 96599,
+   "total": 205802,
+   "winner": "D",
+   "margin": 5.22
+  },
+  {
+   "state": "NY",
+   "district": 41,
+   "dem": 110317,
+   "rep": 96075,
+   "total": 208264,
+   "winner": "D",
+   "margin": 6.9
+  },
+  {
+   "state": "NY",
+   "district": 42,
+   "dem": 103336,
+   "rep": 90438,
+   "total": 195838,
+   "winner": "D",
+   "margin": 6.66
+  },
+  {
+   "state": "NY",
+   "district": 43,
+   "dem": 97814,
+   "rep": 96515,
+   "total": 196433,
+   "winner": "D",
+   "margin": 0.67
+  },
+  {
+   "state": "NY",
+   "district": 44,
+   "dem": 115142,
+   "rep": 98123,
+   "total": 215935,
+   "winner": "D",
+   "margin": 7.98
+  },
+  {
+   "state": "NC",
+   "district": 1,
+   "dem": 115149,
+   "rep": 120988,
+   "total": 239973,
+   "winner": "R",
+   "margin": -2.47
+  },
+  {
+   "state": "NC",
+   "district": 2,
+   "dem": 84731,
+   "rep": 121780,
+   "total": 209855,
+   "winner": "R",
+   "margin": -17.94
+  },
+  {
+   "state": "NC",
+   "district": 3,
+   "dem": 76211,
+   "rep": 126748,
+   "total": 206510,
+   "winner": "R",
+   "margin": -24.9
+  },
+  {
+   "state": "NC",
+   "district": 4,
+   "dem": 91950,
+   "rep": 135396,
+   "total": 229833,
+   "winner": "R",
+   "margin": -19.11
+  },
+  {
+   "state": "NC",
+   "district": 5,
+   "dem": 138670,
+   "rep": 110145,
+   "total": 251149,
+   "winner": "D",
+   "margin": 11.46
+  },
+  {
+   "state": "NC",
+   "district": 6,
+   "dem": 129022,
+   "rep": 105843,
+   "total": 237261,
+   "winner": "D",
+   "margin": 9.87
+  },
+  {
+   "state": "NC",
+   "district": 7,
+   "dem": 81252,
+   "rep": 128324,
+   "total": 212357,
+   "winner": "R",
+   "margin": -22.46
+  },
+  {
+   "state": "NC",
+   "district": 8,
+   "dem": 102799,
+   "rep": 113502,
+   "total": 218758,
+   "winner": "R",
+   "margin": -4.95
+  },
+  {
+   "state": "NC",
+   "district": 9,
+   "dem": 107562,
+   "rep": 120104,
+   "total": 230333,
+   "winner": "R",
+   "margin": -5.51
+  },
+  {
+   "state": "NC",
+   "district": 10,
+   "dem": 102179,
+   "rep": 73270,
+   "total": 177339,
+   "winner": "D",
+   "margin": 16.48
+  },
+  {
+   "state": "NC",
+   "district": 11,
+   "dem": 114884,
+   "rep": 128352,
+   "total": 246411,
+   "winner": "R",
+   "margin": -5.54
+  },
+  {
+   "state": "NC",
+   "district": 12,
+   "dem": 122229,
+   "rep": 98975,
+   "total": 223654,
+   "winner": "D",
+   "margin": 10.51
+  },
+  {
+   "state": "NC",
+   "district": 13,
+   "dem": 183580,
+   "rep": 88236,
+   "total": 274848,
+   "winner": "D",
+   "margin": 35.08
+  },
+  {
+   "state": "NC",
+   "district": 14,
+   "dem": 161813,
+   "rep": 98221,
+   "total": 262690,
+   "winner": "D",
+   "margin": 24.46
+  },
+  {
+   "state": "NC",
+   "district": 15,
+   "dem": 110011,
+   "rep": 123151,
+   "total": 236060,
+   "winner": "R",
+   "margin": -5.64
+  },
+  {
+   "state": "NC",
+   "district": 16,
+   "dem": 78643,
+   "rep": 105461,
+   "total": 186266,
+   "winner": "R",
+   "margin": -14.57
+  },
+  {
+   "state": "NC",
+   "district": 17,
+   "dem": 121742,
+   "rep": 112472,
+   "total": 236578,
+   "winner": "D",
+   "margin": 3.96
+  },
+  {
+   "state": "NC",
+   "district": 18,
+   "dem": 94101,
+   "rep": 114786,
+   "total": 210987,
+   "winner": "R",
+   "margin": -9.9
+  },
+  {
+   "state": "NC",
+   "district": 19,
+   "dem": 117538,
+   "rep": 98653,
+   "total": 218477,
+   "winner": "D",
+   "margin": 8.74
+  },
+  {
+   "state": "ND",
+   "district": 1,
+   "dem": 60600,
+   "rep": 93366,
+   "total": 157896,
+   "winner": "R",
+   "margin": -21.28
+  },
+  {
+   "state": "ND",
+   "district": 2,
+   "dem": 80803,
+   "rep": 75521,
+   "total": 159860,
+   "winner": "D",
+   "margin": 3.38
+  },
+  {
+   "state": "OH",
+   "district": 1,
+   "dem": 96776,
+   "rep": 139728,
+   "total": 239420,
+   "winner": "R",
+   "margin": -18.16
+  },
+  {
+   "state": "OH",
+   "district": 2,
+   "dem": 111542,
+   "rep": 94243,
+   "total": 209186,
+   "winner": "D",
+   "margin": 8.41
+  },
+  {
+   "state": "OH",
+   "district": 3,
+   "dem": 121381,
+   "rep": 72795,
+   "total": 196373,
+   "winner": "D",
+   "margin": 25.02
+  },
+  {
+   "state": "OH",
+   "district": 4,
+   "dem": 99828,
+   "rep": 133039,
+   "total": 236304,
+   "winner": "R",
+   "margin": -14.26
+  },
+  {
+   "state": "OH",
+   "district": 5,
+   "dem": 101019,
+   "rep": 158278,
+   "total": 262302,
+   "winner": "R",
+   "margin": -22.08
+  },
+  {
+   "state": "OH",
+   "district": 6,
+   "dem": 75700,
+   "rep": 122615,
+   "total": 202782,
+   "winner": "R",
+   "margin": -23.66
+  },
+  {
+   "state": "OH",
+   "district": 7,
+   "dem": 90108,
+   "rep": 126680,
+   "total": 221740,
+   "winner": "R",
+   "margin": -16.87
+  },
+  {
+   "state": "OH",
+   "district": 8,
+   "dem": 72868,
+   "rep": 140707,
+   "total": 218290,
+   "winner": "R",
+   "margin": -31.76
+  },
+  {
+   "state": "OH",
+   "district": 9,
+   "dem": 136690,
+   "rep": 69952,
+   "total": 209870,
+   "winner": "D",
+   "margin": 32.3
+  },
+  {
+   "state": "OH",
+   "district": 10,
+   "dem": 106463,
+   "rep": 100028,
+   "total": 211141,
+   "winner": "D",
+   "margin": 3.12
+  },
+  {
+   "state": "OH",
+   "district": 11,
+   "dem": 108476,
+   "rep": 115772,
+   "total": 227985,
+   "winner": "R",
+   "margin": -3.25
+  },
+  {
+   "state": "OH",
+   "district": 12,
+   "dem": 132774,
+   "rep": 121972,
+   "total": 258227,
+   "winner": "D",
+   "margin": 4.24
+  },
+  {
+   "state": "OH",
+   "district": 13,
+   "dem": 140481,
+   "rep": 64621,
+   "total": 207965,
+   "winner": "D",
+   "margin": 36.99
+  },
+  {
+   "state": "OH",
+   "district": 14,
+   "dem": 100419,
+   "rep": 114003,
+   "total": 219255,
+   "winner": "R",
+   "margin": -6.34
+  },
+  {
+   "state": "OH",
+   "district": 15,
+   "dem": 128360,
+   "rep": 109612,
+   "total": 241593,
+   "winner": "D",
+   "margin": 7.88
+  },
+  {
+   "state": "OH",
+   "district": 16,
+   "dem": 123680,
+   "rep": 83151,
+   "total": 210082,
+   "winner": "D",
+   "margin": 19.6
+  },
+  {
+   "state": "OH",
+   "district": 17,
+   "dem": 114850,
+   "rep": 139398,
+   "total": 258838,
+   "winner": "R",
+   "margin": -9.66
+  },
+  {
+   "state": "OH",
+   "district": 18,
+   "dem": 91583,
+   "rep": 100947,
+   "total": 197392,
+   "winner": "R",
+   "margin": -4.86
+  },
+  {
+   "state": "OH",
+   "district": 19,
+   "dem": 99648,
+   "rep": 97052,
+   "total": 201698,
+   "winner": "D",
+   "margin": 1.32
+  },
+  {
+   "state": "OH",
+   "district": 20,
+   "dem": 96038,
+   "rep": 103374,
+   "total": 204824,
+   "winner": "R",
+   "margin": -3.68
+  },
+  {
+   "state": "OH",
+   "district": 21,
+   "dem": 123445,
+   "rep": 70205,
+   "total": 196464,
+   "winner": "D",
+   "margin": 27.49
+  },
+  {
+   "state": "OH",
+   "district": 22,
+   "dem": 146241,
+   "rep": 61859,
+   "total": 210508,
+   "winner": "D",
+   "margin": 40.55
+  },
+  {
+   "state": "OH",
+   "district": 23,
+   "dem": 161567,
+   "rep": 44667,
+   "total": 208265,
+   "winner": "D",
+   "margin": 56.68
+  },
+  {
+   "state": "OH",
+   "district": 24,
+   "dem": 128250,
+   "rep": 103356,
+   "total": 235483,
+   "winner": "D",
+   "margin": 10.75
+  },
+  {
+   "state": "OH",
+   "district": 25,
+   "dem": 110466,
+   "rep": 108702,
+   "total": 223464,
+   "winner": "D",
+   "margin": 0.8
+  },
+  {
+   "state": "OH",
+   "district": 26,
+   "dem": 120829,
+   "rep": 81190,
+   "total": 206548,
+   "winner": "D",
+   "margin": 19.62
+  },
+  {
+   "state": "OK",
+   "district": 1,
+   "dem": 43390,
+   "rep": 137527,
+   "total": 184096,
+   "winner": "R",
+   "margin": -52.03
+  },
+  {
+   "state": "OK",
+   "district": 2,
+   "dem": 80035,
+   "rep": 128833,
+   "total": 209844,
+   "winner": "R",
+   "margin": -23.36
+  },
+  {
+   "state": "OK",
+   "district": 3,
+   "dem": 59574,
+   "rep": 111867,
+   "total": 173229,
+   "winner": "R",
+   "margin": -30.5
+  },
+  {
+   "state": "OK",
+   "district": 4,
+   "dem": 68330,
+   "rep": 105366,
+   "total": 174660,
+   "winner": "R",
+   "margin": -21.32
+  },
+  {
+   "state": "OK",
+   "district": 5,
+   "dem": 72526,
+   "rep": 103859,
+   "total": 177840,
+   "winner": "R",
+   "margin": -17.76
+  },
+  {
+   "state": "OK",
+   "district": 6,
+   "dem": 64592,
+   "rep": 130307,
+   "total": 196224,
+   "winner": "R",
+   "margin": -33.72
+  },
+  {
+   "state": "OK",
+   "district": 7,
+   "dem": 52699,
+   "rep": 110882,
+   "total": 166055,
+   "winner": "R",
+   "margin": -35.57
+  },
+  {
+   "state": "OK",
+   "district": 8,
+   "dem": 61350,
+   "rep": 131524,
+   "total": 194548,
+   "winner": "R",
+   "margin": -36.38
+  },
+  {
+   "state": "OR",
+   "district": 1,
+   "dem": 120125,
+   "rep": 98016,
+   "total": 223815,
+   "winner": "D",
+   "margin": 10.14
+  },
+  {
+   "state": "OR",
+   "district": 2,
+   "dem": 139668,
+   "rep": 86637,
+   "total": 230383,
+   "winner": "D",
+   "margin": 23.43
+  },
+  {
+   "state": "OR",
+   "district": 3,
+   "dem": 213122,
+   "rep": 39047,
+   "total": 257466,
+   "winner": "D",
+   "margin": 69.03
+  },
+  {
+   "state": "OR",
+   "district": 4,
+   "dem": 124674,
+   "rep": 83994,
+   "total": 212975,
+   "winner": "D",
+   "margin": 19.5
+  },
+  {
+   "state": "OR",
+   "district": 5,
+   "dem": 148081,
+   "rep": 84849,
+   "total": 238178,
+   "winner": "D",
+   "margin": 27.15
+  },
+  {
+   "state": "OR",
+   "district": 6,
+   "dem": 103421,
+   "rep": 121178,
+   "total": 230474,
+   "winner": "R",
+   "margin": -7.91
+  },
+  {
+   "state": "OR",
+   "district": 7,
+   "dem": 100717,
+   "rep": 100092,
+   "total": 205673,
+   "winner": "D",
+   "margin": 0.31
+  },
+  {
+   "state": "OR",
+   "district": 8,
+   "dem": 87483,
+   "rep": 124662,
+   "total": 217571,
+   "winner": "R",
+   "margin": -17.53
+  },
+  {
+   "state": "PA",
+   "district": 1,
+   "dem": 101660,
+   "rep": 112695,
+   "total": 217152,
+   "winner": "R",
+   "margin": -5.15
+  },
+  {
+   "state": "PA",
+   "district": 2,
+   "dem": 139030,
+   "rep": 61428,
+   "total": 202963,
+   "winner": "D",
+   "margin": 38.71
+  },
+  {
+   "state": "PA",
+   "district": 3,
+   "dem": 115726,
+   "rep": 86663,
+   "total": 204807,
+   "winner": "D",
+   "margin": 14.36
+  },
+  {
+   "state": "PA",
+   "district": 4,
+   "dem": 76428,
+   "rep": 99286,
+   "total": 178775,
+   "winner": "R",
+   "margin": -13.01
+  },
+  {
+   "state": "PA",
+   "district": 5,
+   "dem": 95648,
+   "rep": 109150,
+   "total": 207740,
+   "winner": "R",
+   "margin": -6.59
+  },
+  {
+   "state": "PA",
+   "district": 6,
+   "dem": 101015,
+   "rep": 119176,
+   "total": 222581,
+   "winner": "R",
+   "margin": -8.25
+  },
+  {
+   "state": "PA",
+   "district": 7,
+   "dem": 103209,
+   "rep": 85634,
+   "total": 191945,
+   "winner": "D",
+   "margin": 9.31
+  },
+  {
+   "state": "PA",
+   "district": 8,
+   "dem": 72387,
+   "rep": 103697,
+   "total": 179580,
+   "winner": "R",
+   "margin": -17.78
+  },
+  {
+   "state": "PA",
+   "district": 9,
+   "dem": 72202,
+   "rep": 102916,
+   "total": 178724,
+   "winner": "R",
+   "margin": -17.54
+  },
+  {
+   "state": "PA",
+   "district": 10,
+   "dem": 82041,
+   "rep": 123786,
+   "total": 208822,
+   "winner": "R",
+   "margin": -20.28
+  },
+  {
+   "state": "PA",
+   "district": 11,
+   "dem": 70625,
+   "rep": 101242,
+   "total": 175434,
+   "winner": "R",
+   "margin": -17.81
+  },
+  {
+   "state": "PA",
+   "district": 12,
+   "dem": 80905,
+   "rep": 99306,
+   "total": 183629,
+   "winner": "R",
+   "margin": -10.21
+  },
+  {
+   "state": "PA",
+   "district": 13,
+   "dem": 90021,
+   "rep": 118744,
+   "total": 211762,
+   "winner": "R",
+   "margin": -13.76
+  },
+  {
+   "state": "PA",
+   "district": 14,
+   "dem": 103022,
+   "rep": 117076,
+   "total": 222708,
+   "winner": "R",
+   "margin": -6.39
+  },
+  {
+   "state": "PA",
+   "district": 15,
+   "dem": 102122,
+   "rep": 106888,
+   "total": 212017,
+   "winner": "R",
+   "margin": -2.28
+  },
+  {
+   "state": "PA",
+   "district": 16,
+   "dem": 98481,
+   "rep": 108979,
+   "total": 210209,
+   "winner": "R",
+   "margin": -5.06
+  },
+  {
+   "state": "PA",
+   "district": 17,
+   "dem": 137292,
+   "rep": 108669,
+   "total": 248420,
+   "winner": "D",
+   "margin": 11.64
+  },
+  {
+   "state": "PA",
+   "district": 18,
+   "dem": 114474,
+   "rep": 91216,
+   "total": 208894,
+   "winner": "D",
+   "margin": 11.31
+  },
+  {
+   "state": "PA",
+   "district": 19,
+   "dem": 118451,
+   "rep": 96196,
+   "total": 217625,
+   "winner": "D",
+   "margin": 10.37
+  },
+  {
+   "state": "PA",
+   "district": 20,
+   "dem": 105312,
+   "rep": 90489,
+   "total": 199315,
+   "winner": "D",
+   "margin": 7.57
+  },
+  {
+   "state": "PA",
+   "district": 21,
+   "dem": 114471,
+   "rep": 88211,
+   "total": 205516,
+   "winner": "D",
+   "margin": 12.96
+  },
+  {
+   "state": "PA",
+   "district": 22,
+   "dem": 106022,
+   "rep": 89704,
+   "total": 198738,
+   "winner": "D",
+   "margin": 8.34
+  },
+  {
+   "state": "PA",
+   "district": 23,
+   "dem": 136368,
+   "rep": 82712,
+   "total": 221517,
+   "winner": "D",
+   "margin": 24.49
+  },
+  {
+   "state": "PA",
+   "district": 24,
+   "dem": 173451,
+   "rep": 53172,
+   "total": 228188,
+   "winner": "D",
+   "margin": 53.07
+  },
+  {
+   "state": "PA",
+   "district": 25,
+   "dem": 188101,
+   "rep": 30134,
+   "total": 219923,
+   "winner": "D",
+   "margin": 72.38
+  },
+  {
+   "state": "PA",
+   "district": 26,
+   "dem": 192179,
+   "rep": 36034,
+   "total": 229565,
+   "winner": "D",
+   "margin": 68.42
+  },
+  {
+   "state": "PA",
+   "district": 27,
+   "dem": 131557,
+   "rep": 34691,
+   "total": 167755,
+   "winner": "D",
+   "margin": 58.27
+  },
+  {
+   "state": "PA",
+   "district": 28,
+   "dem": 135839,
+   "rep": 115480,
+   "total": 253669,
+   "winner": "D",
+   "margin": 8.1
+  },
+  {
+   "state": "PA",
+   "district": 29,
+   "dem": 117567,
+   "rep": 81795,
+   "total": 201873,
+   "winner": "D",
+   "margin": 17.94
+  },
+  {
+   "state": "RI",
+   "district": 1,
+   "dem": 138459,
+   "rep": 64772,
+   "total": 206973,
+   "winner": "D",
+   "margin": 36.26
+  },
+  {
+   "state": "RI",
+   "district": 2,
+   "dem": 158112,
+   "rep": 100619,
+   "total": 263590,
+   "winner": "D",
+   "margin": 22.22
+  },
+  {
+   "state": "SC",
+   "district": 1,
+   "dem": 67348,
+   "rep": 120782,
+   "total": 191759,
+   "winner": "R",
+   "margin": -28.4
+  },
+  {
+   "state": "SC",
+   "district": 2,
+   "dem": 76629,
+   "rep": 140338,
+   "total": 221247,
+   "winner": "R",
+   "margin": -29.36
+  },
+  {
+   "state": "SC",
+   "district": 3,
+   "dem": 77531,
+   "rep": 130646,
+   "total": 211455,
+   "winner": "R",
+   "margin": -25.51
+  },
+  {
+   "state": "SC",
+   "district": 4,
+   "dem": 94963,
+   "rep": 129773,
+   "total": 228300,
+   "winner": "R",
+   "margin": -15.49
+  },
+  {
+   "state": "SC",
+   "district": 5,
+   "dem": 110567,
+   "rep": 101173,
+   "total": 214884,
+   "winner": "D",
+   "margin": 4.44
+  },
+  {
+   "state": "SC",
+   "district": 6,
+   "dem": 107805,
+   "rep": 109794,
+   "total": 220872,
+   "winner": "R",
+   "margin": -0.91
+  },
+  {
+   "state": "SC",
+   "district": 7,
+   "dem": 122926,
+   "rep": 91771,
+   "total": 217307,
+   "winner": "D",
+   "margin": 14.51
+  },
+  {
+   "state": "SC",
+   "district": 8,
+   "dem": 102044,
+   "rep": 93659,
+   "total": 198595,
+   "winner": "D",
+   "margin": 4.28
+  },
+  {
+   "state": "SC",
+   "district": 9,
+   "dem": 102636,
+   "rep": 116960,
+   "total": 223020,
+   "winner": "R",
+   "margin": -6.52
+  },
+  {
+   "state": "SD",
+   "district": 1,
+   "dem": 75859,
+   "rep": 100691,
+   "total": 181362,
+   "winner": "R",
+   "margin": -14.07
+  },
+  {
+   "state": "SD",
+   "district": 2,
+   "dem": 95065,
+   "rep": 102363,
+   "total": 202183,
+   "winner": "R",
+   "margin": -3.7
+  },
+  {
+   "state": "TN",
+   "district": 1,
+   "dem": 152096,
+   "rep": 21528,
+   "total": 174854,
+   "winner": "D",
+   "margin": 75.2
+  },
+  {
+   "state": "TN",
+   "district": 2,
+   "dem": 98006,
+   "rep": 108139,
+   "total": 207812,
+   "winner": "R",
+   "margin": -4.92
+  },
+  {
+   "state": "TN",
+   "district": 3,
+   "dem": 79333,
+   "rep": 126248,
+   "total": 208627,
+   "winner": "R",
+   "margin": -22.82
+  },
+  {
+   "state": "TN",
+   "district": 4,
+   "dem": 66391,
+   "rep": 111351,
+   "total": 181676,
+   "winner": "R",
+   "margin": -25.3
+  },
+  {
+   "state": "TN",
+   "district": 5,
+   "dem": 88620,
+   "rep": 158021,
+   "total": 250205,
+   "winner": "R",
+   "margin": -28.14
+  },
+  {
+   "state": "TN",
+   "district": 6,
+   "dem": 96856,
+   "rep": 112098,
+   "total": 211791,
+   "winner": "R",
+   "margin": -7.29
+  },
+  {
+   "state": "TN",
+   "district": 7,
+   "dem": 111518,
+   "rep": 93183,
+   "total": 207573,
+   "winner": "D",
+   "margin": 8.96
+  },
+  {
+   "state": "TN",
+   "district": 8,
+   "dem": 75384,
+   "rep": 123288,
+   "total": 202494,
+   "winner": "R",
+   "margin": -24.11
+  },
+  {
+   "state": "TN",
+   "district": 9,
+   "dem": 65157,
+   "rep": 122841,
+   "total": 192074,
+   "winner": "R",
+   "margin": -30.68
+  },
+  {
+   "state": "TN",
+   "district": 10,
+   "dem": 72736,
+   "rep": 124653,
+   "total": 200519,
+   "winner": "R",
+   "margin": -26.3
+  },
+  {
+   "state": "TN",
+   "district": 11,
+   "dem": 75637,
+   "rep": 130226,
+   "total": 209448,
+   "winner": "R",
+   "margin": -26.52
+  },
+  {
+   "state": "TN",
+   "district": 12,
+   "dem": 51988,
+   "rep": 121386,
+   "total": 176805,
+   "winner": "R",
+   "margin": -40.03
+  },
+  {
+   "state": "TN",
+   "district": 13,
+   "dem": 53715,
+   "rep": 126216,
+   "total": 183188,
+   "winner": "R",
+   "margin": -40.29
+  },
+  {
+   "state": "TX",
+   "district": 1,
+   "dem": 31470,
+   "rep": 119228,
+   "total": 152587,
+   "winner": "R",
+   "margin": -58.23
+  },
+  {
+   "state": "TX",
+   "district": 2,
+   "dem": 44779,
+   "rep": 108195,
+   "total": 154744,
+   "winner": "R",
+   "margin": -41.46
+  },
+  {
+   "state": "TX",
+   "district": 3,
+   "dem": 40261,
+   "rep": 110757,
+   "total": 152863,
+   "winner": "R",
+   "margin": -46.68
+  },
+  {
+   "state": "TX",
+   "district": 4,
+   "dem": 73863,
+   "rep": 42734,
+   "total": 117308,
+   "winner": "D",
+   "margin": 26.7
+  },
+  {
+   "state": "TX",
+   "district": 5,
+   "dem": 64193,
+   "rep": 49815,
+   "total": 115211,
+   "winner": "D",
+   "margin": 12.61
+  },
+  {
+   "state": "TX",
+   "district": 6,
+   "dem": 42112,
+   "rep": 117884,
+   "total": 161826,
+   "winner": "R",
+   "margin": -47.36
+  },
+  {
+   "state": "TX",
+   "district": 7,
+   "dem": 62734,
+   "rep": 149197,
+   "total": 214133,
+   "winner": "R",
+   "margin": -40.8
+  },
+  {
+   "state": "TX",
+   "district": 8,
+   "dem": 67207,
+   "rep": 151981,
+   "total": 220712,
+   "winner": "R",
+   "margin": -38.68
+  },
+  {
+   "state": "TX",
+   "district": 9,
+   "dem": 66054,
+   "rep": 96355,
+   "total": 163294,
+   "winner": "R",
+   "margin": -18.66
+  },
+  {
+   "state": "TX",
+   "district": 10,
+   "dem": 73221,
+   "rep": 73492,
+   "total": 147313,
+   "winner": "R",
+   "margin": -0.18
+  },
+  {
+   "state": "TX",
+   "district": 11,
+   "dem": 101196,
+   "rep": 125319,
+   "total": 227504,
+   "winner": "R",
+   "margin": -10.65
+  },
+  {
+   "state": "TX",
+   "district": 12,
+   "dem": 87094,
+   "rep": 109228,
+   "total": 197553,
+   "winner": "R",
+   "margin": -11.27
+  },
+  {
+   "state": "TX",
+   "district": 13,
+   "dem": 52417,
+   "rep": 110186,
+   "total": 164237,
+   "winner": "R",
+   "margin": -35.53
+  },
+  {
+   "state": "TX",
+   "district": 14,
+   "dem": 68253,
+   "rep": 51939,
+   "total": 121456,
+   "winner": "D",
+   "margin": 13.57
+  },
+  {
+   "state": "TX",
+   "district": 15,
+   "dem": 62000,
+   "rep": 67567,
+   "total": 130547,
+   "winner": "R",
+   "margin": -4.3
+  },
+  {
+   "state": "TX",
+   "district": 16,
+   "dem": 83759,
+   "rep": 59031,
+   "total": 143575,
+   "winner": "D",
+   "margin": 17.32
+  },
+  {
+   "state": "TX",
+   "district": 17,
+   "dem": 67174,
+   "rep": 31793,
+   "total": 99837,
+   "winner": "D",
+   "margin": 35.75
+  },
+  {
+   "state": "TX",
+   "district": 18,
+   "dem": 72819,
+   "rep": 39727,
+   "total": 113749,
+   "winner": "D",
+   "margin": 29.4
+  },
+  {
+   "state": "TX",
+   "district": 19,
+   "dem": 62843,
+   "rep": 31631,
+   "total": 95366,
+   "winner": "D",
+   "margin": 33.04
+  },
+  {
+   "state": "TX",
+   "district": 20,
+   "dem": 96873,
+   "rep": 158671,
+   "total": 256354,
+   "winner": "R",
+   "margin": -24.18
+  },
+  {
+   "state": "TX",
+   "district": 21,
+   "dem": 133056,
+   "rep": 113990,
+   "total": 247956,
+   "winner": "D",
+   "margin": 7.72
+  },
+  {
+   "state": "TX",
+   "district": 22,
+   "dem": 80050,
+   "rep": 51541,
+   "total": 132366,
+   "winner": "D",
+   "margin": 21.66
+  },
+  {
+   "state": "TX",
+   "district": 23,
+   "dem": 124954,
+   "rep": 46252,
+   "total": 171952,
+   "winner": "D",
+   "margin": 45.97
+  },
+  {
+   "state": "TX",
+   "district": 24,
+   "dem": 54012,
+   "rep": 109119,
+   "total": 164980,
+   "winner": "R",
+   "margin": -33.78
+  },
+  {
+   "state": "TX",
+   "district": 25,
+   "dem": 75033,
+   "rep": 98161,
+   "total": 174655,
+   "winner": "R",
+   "margin": -13.35
+  },
+  {
+   "state": "TX",
+   "district": 26,
+   "dem": 72127,
+   "rep": 96433,
+   "total": 169092,
+   "winner": "R",
+   "margin": -14.42
+  },
+  {
+   "state": "TX",
+   "district": 27,
+   "dem": 94512,
+   "rep": 174696,
+   "total": 271083,
+   "winner": "R",
+   "margin": -29.79
+  },
+  {
+   "state": "TX",
+   "district": 28,
+   "dem": 81253,
+   "rep": 127767,
+   "total": 209726,
+   "winner": "R",
+   "margin": -22.25
+  },
+  {
+   "state": "TX",
+   "district": 29,
+   "dem": 59793,
+   "rep": 46865,
+   "total": 107168,
+   "winner": "D",
+   "margin": 12.12
+  },
+  {
+   "state": "TX",
+   "district": 30,
+   "dem": 124560,
+   "rep": 36354,
+   "total": 161753,
+   "winner": "D",
+   "margin": 54.82
+  },
+  {
+   "state": "TX",
+   "district": 31,
+   "dem": 71150,
+   "rep": 77683,
+   "total": 149362,
+   "winner": "R",
+   "margin": -4.39
+  },
+  {
+   "state": "TX",
+   "district": 32,
+   "dem": 65740,
+   "rep": 96396,
+   "total": 163606,
+   "winner": "R",
+   "margin": -18.91
+  },
+  {
+   "state": "TX",
+   "district": 33,
+   "dem": 48733,
+   "rep": 127007,
+   "total": 177322,
+   "winner": "R",
+   "margin": -44.54
+  },
+  {
+   "state": "TX",
+   "district": 34,
+   "dem": 51414,
+   "rep": 110183,
+   "total": 163163,
+   "winner": "R",
+   "margin": -36.37
+  },
+  {
+   "state": "TX",
+   "district": 35,
+   "dem": 68075,
+   "rep": 48104,
+   "total": 116727,
+   "winner": "D",
+   "margin": 17.19
+  },
+  {
+   "state": "TX",
+   "district": 36,
+   "dem": 70889,
+   "rep": 140928,
+   "total": 213400,
+   "winner": "R",
+   "margin": -33.07
+  },
+  {
+   "state": "TX",
+   "district": 37,
+   "dem": 50866,
+   "rep": 120048,
+   "total": 172699,
+   "winner": "R",
+   "margin": -40.48
+  },
+  {
+   "state": "TX",
+   "district": 38,
+   "dem": 91515,
+   "rep": 124434,
+   "total": 216755,
+   "winner": "R",
+   "margin": -15.24
+  },
+  {
+   "state": "TX",
+   "district": 39,
+   "dem": 60428,
+   "rep": 59406,
+   "total": 120139,
+   "winner": "D",
+   "margin": 0.85
+  },
+  {
+   "state": "TX",
+   "district": 40,
+   "dem": 83026,
+   "rep": 77121,
+   "total": 160742,
+   "winner": "D",
+   "margin": 3.69
+  },
+  {
+   "state": "TX",
+   "district": 41,
+   "dem": 105464,
+   "rep": 89709,
+   "total": 196046,
+   "winner": "D",
+   "margin": 8.07
+  },
+  {
+   "state": "TX",
+   "district": 42,
+   "dem": 71248,
+   "rep": 106358,
+   "total": 178517,
+   "winner": "R",
+   "margin": -19.77
+  },
+  {
+   "state": "TX",
+   "district": 43,
+   "dem": 72589,
+   "rep": 40897,
+   "total": 114041,
+   "winner": "D",
+   "margin": 27.93
+  },
+  {
+   "state": "TX",
+   "district": 44,
+   "dem": 67943,
+   "rep": 190822,
+   "total": 259892,
+   "winner": "R",
+   "margin": -47.49
+  },
+  {
+   "state": "TX",
+   "district": 45,
+   "dem": 79432,
+   "rep": 97755,
+   "total": 177708,
+   "winner": "R",
+   "margin": -10.34
+  },
+  {
+   "state": "TX",
+   "district": 46,
+   "dem": 62904,
+   "rep": 34741,
+   "total": 98162,
+   "winner": "D",
+   "margin": 28.84
+  },
+  {
+   "state": "TX",
+   "district": 47,
+   "dem": 69096,
+   "rep": 31568,
+   "total": 101360,
+   "winner": "D",
+   "margin": 37.28
+  },
+  {
+   "state": "TX",
+   "district": 48,
+   "dem": 58585,
+   "rep": 109550,
+   "total": 169047,
+   "winner": "R",
+   "margin": -30.31
+  },
+  {
+   "state": "TX",
+   "district": 49,
+   "dem": 60479,
+   "rep": 91583,
+   "total": 153202,
+   "winner": "R",
+   "margin": -20.45
+  },
+  {
+   "state": "UT",
+   "district": 1,
+   "dem": 58062,
+   "rep": 97047,
+   "total": 159917,
+   "winner": "R",
+   "margin": -25.13
+  },
+  {
+   "state": "UT",
+   "district": 2,
+   "dem": 77090,
+   "rep": 115019,
+   "total": 198390,
+   "winner": "R",
+   "margin": -19.74
+  },
+  {
+   "state": "UT",
+   "district": 3,
+   "dem": 87482,
+   "rep": 88324,
+   "total": 180708,
+   "winner": "R",
+   "margin": -0.48
+  },
+  {
+   "state": "UT",
+   "district": 4,
+   "dem": 43489,
+   "rep": 138986,
+   "total": 189631,
+   "winner": "R",
+   "margin": -52.33
+  },
+  {
+   "state": "UT",
+   "district": 5,
+   "dem": 61340,
+   "rep": 156376,
+   "total": 224370,
+   "winner": "R",
+   "margin": -43.65
+  },
+  {
+   "state": "VT",
+   "district": 1,
+   "dem": 107292,
+   "rep": 49959,
+   "total": 160442,
+   "winner": "D",
+   "margin": 36.46
+  },
+  {
+   "state": "VT",
+   "district": 2,
+   "dem": 111970,
+   "rep": 49015,
+   "total": 163885,
+   "winner": "D",
+   "margin": 39.11
+  },
+  {
+   "state": "VA",
+   "district": 1,
+   "dem": 59738,
+   "rep": 104505,
+   "total": 167447,
+   "winner": "R",
+   "margin": -27.26
+  },
+  {
+   "state": "VA",
+   "district": 2,
+   "dem": 91540,
+   "rep": 108137,
+   "total": 202555,
+   "winner": "R",
+   "margin": -8.31
+  },
+  {
+   "state": "VA",
+   "district": 3,
+   "dem": 103144,
+   "rep": 108274,
+   "total": 214272,
+   "winner": "R",
+   "margin": -2.43
+  },
+  {
+   "state": "VA",
+   "district": 4,
+   "dem": 88768,
+   "rep": 117220,
+   "total": 208592,
+   "winner": "R",
+   "margin": -13.81
+  },
+  {
+   "state": "VA",
+   "district": 5,
+   "dem": 106935,
+   "rep": 135838,
+   "total": 245229,
+   "winner": "R",
+   "margin": -11.91
+  },
+  {
+   "state": "VA",
+   "district": 6,
+   "dem": 98989,
+   "rep": 132056,
+   "total": 234174,
+   "winner": "R",
+   "margin": -14.31
+  },
+  {
+   "state": "VA",
+   "district": 7,
+   "dem": 119246,
+   "rep": 132818,
+   "total": 254578,
+   "winner": "R",
+   "margin": -5.38
+  },
+  {
+   "state": "VA",
+   "district": 8,
+   "dem": 158259,
+   "rep": 120489,
+   "total": 281071,
+   "winner": "D",
+   "margin": 13.55
+  },
+  {
+   "state": "VA",
+   "district": 9,
+   "dem": 124836,
+   "rep": 89908,
+   "total": 216478,
+   "winner": "D",
+   "margin": 16.26
+  },
+  {
+   "state": "VA",
+   "district": 10,
+   "dem": 124987,
+   "rep": 101765,
+   "total": 228985,
+   "winner": "D",
+   "margin": 10.24
+  },
+  {
+   "state": "VA",
+   "district": 11,
+   "dem": 116913,
+   "rep": 71696,
+   "total": 190174,
+   "winner": "D",
+   "margin": 23.97
+  },
+  {
+   "state": "VA",
+   "district": 12,
+   "dem": 105782,
+   "rep": 70137,
+   "total": 177669,
+   "winner": "D",
+   "margin": 20.26
+  },
+  {
+   "state": "VA",
+   "district": 13,
+   "dem": 107763,
+   "rep": 99271,
+   "total": 208783,
+   "winner": "D",
+   "margin": 4.1
+  },
+  {
+   "state": "VA",
+   "district": 14,
+   "dem": 144734,
+   "rep": 75064,
+   "total": 221732,
+   "winner": "D",
+   "margin": 31.7
+  },
+  {
+   "state": "VA",
+   "district": 15,
+   "dem": 119254,
+   "rep": 114646,
+   "total": 236312,
+   "winner": "D",
+   "margin": 1.97
+  },
+  {
+   "state": "VA",
+   "district": 16,
+   "dem": 150048,
+   "rep": 69453,
+   "total": 221500,
+   "winner": "D",
+   "margin": 36.72
+  },
+  {
+   "state": "VA",
+   "district": 17,
+   "dem": 138596,
+   "rep": 73728,
+   "total": 214064,
+   "winner": "D",
+   "margin": 30.55
+  },
+  {
+   "state": "WA",
+   "district": 1,
+   "dem": 130368,
+   "rep": 103634,
+   "total": 239180,
+   "winner": "D",
+   "margin": 11.42
+  },
+  {
+   "state": "WA",
+   "district": 2,
+   "dem": 211182,
+   "rep": 39441,
+   "total": 254704,
+   "winner": "D",
+   "margin": 68.53
+  },
+  {
+   "state": "WA",
+   "district": 3,
+   "dem": 121803,
+   "rep": 56333,
+   "total": 181120,
+   "winner": "D",
+   "margin": 36.75
+  },
+  {
+   "state": "WA",
+   "district": 4,
+   "dem": 124387,
+   "rep": 94724,
+   "total": 224369,
+   "winner": "D",
+   "margin": 13.54
+  },
+  {
+   "state": "WA",
+   "district": 5,
+   "dem": 115097,
+   "rep": 105837,
+   "total": 225463,
+   "winner": "D",
+   "margin": 4.19
+  },
+  {
+   "state": "WA",
+   "district": 6,
+   "dem": 105422,
+   "rep": 67000,
+   "total": 175847,
+   "winner": "D",
+   "margin": 22.28
+  },
+  {
+   "state": "WA",
+   "district": 7,
+   "dem": 109176,
+   "rep": 94659,
+   "total": 207619,
+   "winner": "D",
+   "margin": 7.12
+  },
+  {
+   "state": "WA",
+   "district": 8,
+   "dem": 171762,
+   "rep": 63802,
+   "total": 239250,
+   "winner": "D",
+   "margin": 45.83
+  },
+  {
+   "state": "WA",
+   "district": 9,
+   "dem": 137935,
+   "rep": 104650,
+   "total": 247675,
+   "winner": "D",
+   "margin": 13.72
+  },
+  {
+   "state": "WA",
+   "district": 10,
+   "dem": 130738,
+   "rep": 82415,
+   "total": 217316,
+   "winner": "D",
+   "margin": 22.67
+  },
+  {
+   "state": "WA",
+   "district": 11,
+   "dem": 136149,
+   "rep": 94819,
+   "total": 235227,
+   "winner": "D",
+   "margin": 17.89
+  },
+  {
+   "state": "WA",
+   "district": 12,
+   "dem": 73915,
+   "rep": 96846,
+   "total": 174492,
+   "winner": "R",
+   "margin": -13.43
+  },
+  {
+   "state": "WA",
+   "district": 13,
+   "dem": 100775,
+   "rep": 109075,
+   "total": 216107,
+   "winner": "R",
+   "margin": -3.96
+  },
+  {
+   "state": "WA",
+   "district": 14,
+   "dem": 82129,
+   "rep": 115977,
+   "total": 202538,
+   "winner": "R",
+   "margin": -17.09
+  },
+  {
+   "state": "WV",
+   "district": 1,
+   "dem": 79173,
+   "rep": 97191,
+   "total": 179589,
+   "winner": "R",
+   "margin": -10.22
+  },
+  {
+   "state": "WV",
+   "district": 2,
+   "dem": 66102,
+   "rep": 85705,
+   "total": 155402,
+   "winner": "R",
+   "margin": -12.91
+  },
+  {
+   "state": "WV",
+   "district": 3,
+   "dem": 74920,
+   "rep": 104034,
+   "total": 182781,
+   "winner": "R",
+   "margin": -16.27
+  },
+  {
+   "state": "WV",
+   "district": 4,
+   "dem": 83650,
+   "rep": 110514,
+   "total": 198170,
+   "winner": "R",
+   "margin": -13.84
+  },
+  {
+   "state": "WI",
+   "district": 1,
+   "dem": 181186,
+   "rep": 69130,
+   "total": 254100,
+   "winner": "D",
+   "margin": 44.77
+  },
+  {
+   "state": "WI",
+   "district": 2,
+   "dem": 148136,
+   "rep": 86399,
+   "total": 238054,
+   "winner": "D",
+   "margin": 26.32
+  },
+  {
+   "state": "WI",
+   "district": 3,
+   "dem": 97292,
+   "rep": 156390,
+   "total": 256511,
+   "winner": "R",
+   "margin": -23.3
+  },
+  {
+   "state": "WI",
+   "district": 4,
+   "dem": 113495,
+   "rep": 77750,
+   "total": 193754,
+   "winner": "D",
+   "margin": 18.69
+  },
+  {
+   "state": "WI",
+   "district": 5,
+   "dem": 123576,
+   "rep": 99539,
+   "total": 226033,
+   "winner": "D",
+   "margin": 10.77
+  },
+  {
+   "state": "WI",
+   "district": 6,
+   "dem": 170110,
+   "rep": 44642,
+   "total": 216746,
+   "winner": "D",
+   "margin": 58.42
+  },
+  {
+   "state": "WI",
+   "district": 7,
+   "dem": 138127,
+   "rep": 101765,
+   "total": 244174,
+   "winner": "D",
+   "margin": 15.16
+  },
+  {
+   "state": "WI",
+   "district": 8,
+   "dem": 120522,
+   "rep": 95812,
+   "total": 220971,
+   "winner": "D",
+   "margin": 11.42
+  },
+  {
+   "state": "WI",
+   "district": 9,
+   "dem": 123284,
+   "rep": 89408,
+   "total": 216885,
+   "winner": "D",
+   "margin": 15.93
+  },
+  {
+   "state": "WI",
+   "district": 10,
+   "dem": 114779,
+   "rep": 102050,
+   "total": 220761,
+   "winner": "D",
+   "margin": 5.87
+  },
+  {
+   "state": "WI",
+   "district": 11,
+   "dem": 103156,
+   "rep": 137114,
+   "total": 243483,
+   "winner": "R",
+   "margin": -14.13
+  },
+  {
+   "state": "WI",
+   "district": 12,
+   "dem": 119539,
+   "rep": 104753,
+   "total": 227849,
+   "winner": "D",
+   "margin": 6.59
+  },
+  {
+   "state": "WI",
+   "district": 13,
+   "dem": 124009,
+   "rep": 97641,
+   "total": 225010,
+   "winner": "D",
+   "margin": 11.9
+  },
+  {
+   "state": "WY",
+   "district": 1,
+   "dem": 82868,
+   "rep": 164958,
+   "total": 254190,
+   "winner": "R",
+   "margin": -33.12
+  }
+ ]
+}
