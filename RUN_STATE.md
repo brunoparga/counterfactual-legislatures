@@ -1,5 +1,7 @@
 # Unattended run state — started 2026-09-08
 
+**What to do is in `RUN_PLAN.md`. This file is only the status.**
+
 Live scratchpad for a long run that may outlast a session. **A future session
 should read this first and resume at the first phase not marked done.** Each
 phase commits on its own, so partial completion is still useful and nothing is
