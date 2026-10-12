@@ -30,10 +30,28 @@
 /* Section headings inside a country. */
 h3 { font-size: 1.02rem; margin: 2rem 0 .2rem; letter-spacing:-.01em; }
 
-/* Jump links. The page is long enough now to need them. */
+/* Navigation. The bullets between links are in the markup, so the separation
+   survives the stylesheet not loading; these rules only space them. */
 .sub { margin-bottom: 1.1rem; }
-.toc { margin: 0 0 2.4rem; font-size: .9rem; }
-.toc a { display:inline-block; margin: 0 1.1rem .3rem 0; white-space: nowrap; }
+.sitenav, .toc { font-size: .9rem; line-height: 2; }
+.sitenav { margin: 0 0 2.4rem; padding-bottom: 1rem;
+           border-bottom: 1px solid var(--rule); }
+.toc { margin: 0 0 1.6rem; }
+.sitenav a, .toc a, .sitenav span { white-space: nowrap; }
+.sitenav .sep, .toc .sep { color: var(--rule); margin: 0 .55rem; }
+.sitenav [aria-current] { color: var(--fg); font-weight: 600; }
+
+/* Home-page index of the country pages. */
+.cards { display:grid; gap:1rem; margin:2rem 0 0;
+         grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+.card { display:block; background:#14171d; border:1px solid var(--rule);
+        border-radius:6px; padding:1rem 1.1rem; text-decoration:none;
+        color:var(--fg); }
+.card:hover { border-color:#4a5160; }
+.card .ctitle { display:block; color:var(--link); font-weight:600; }
+.card .cfig { display:block; font-size:1.7rem; line-height:1.2;
+              letter-spacing:-.02em; margin:.5rem 0 .1rem; }
+.card .clab { display:block; color:var(--dim); font-size:.85rem; line-height:1.45; }
 
 /* Tables. Dense and numeric; the first column is a label and the rest are
    figures, so everything but the first column is right-aligned. Nothing wraps,
