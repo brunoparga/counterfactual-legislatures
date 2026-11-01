@@ -6,6 +6,18 @@ This file is the recipe. It is written so that someone with no access to this
 machine can rebuild any artifact and get the same bytes, and so that a future
 maintainer can tell what an existing file was made from.
 
+Start here after a fresh clone:
+
+    python3 verify.py
+
+It rebuilds everything that is a pure function of committed bytes and compares
+the result against what is stored, re-asserts every validation gate with the
+answers written into the script rather than read from the artifact claiming
+them, recomputes each published headline from the rows underneath it, and
+checks the site against the data. Anything needing the 9.7 GB of fetched input
+reports `skip` and says what to fetch. It writes nothing inside the
+repository.
+
 Companion files, split by audience:
 
 - `LICENSE-DATA.md` — what you may do with the outputs (for reusers)
